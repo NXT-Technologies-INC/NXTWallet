@@ -28,14 +28,14 @@
   },
   "onboarding": {
     "title": "Cài đặt ví",
-    "sync_desc": "Nếu bạn đã có tiện ích mở rộng MetaMask hoặc ví khác, hãy đồng bộ hoặc nhập ví để quản lý các tài sản hiện có của bạn.",
+    "sync_desc": "Nếu bạn đã có tiện ích mở rộng NxtWallet hoặc ví khác, hãy đồng bộ hoặc nhập ví để quản lý các tài sản hiện có của bạn.",
     "create_desc": "Cài đặt ví đầu tiên của bạn và bắt đầu khám phá các ứng dụng phi tập trung.",
     "import": "Nhập một ví có sẵn hoặc tạo ví mới",
     "import_wallet_button": "Đồng bộ hoặc nhập ví",
     "new_to_crypto": "Bạn mới tìm hiểu về tiền mã hóa?",
     "start_exploring_now": "Tạo một ví mới",
     "unlock": "Mở khóa",
-    "new_to_metamask": "Bạn mới sử dụng MetaMask?",
+    "new_to_metamask": "Bạn mới sử dụng NxtWallet?",
     "already_have_wallet": "Bạn đã có ví?",
     "optin_back_title": "Chú ý!",
     "optin_back_desc": "Vui lòng đồng ý hoặc không đồng ý cho phép sử dụng tính năng phân tích dữ liệu. Bạn cũng có thể cập nhật tùy chọn này trong phần cài đặt.",
@@ -43,15 +43,15 @@
     "warning_text_1": "Các tài khoản và ví hiện tại của bạn sẽ bị",
     "warning_text_2": "gỡ bỏ",
     "warning_text_3": "nếu bạn tiếp tục.",
-    "warning_text_4": "Bạn CHỈ có thể khôi phục chúng bằng Cụm từ khôi phục bí mật cho ví của bạn. MetaMask không thể giúp bạn khôi phục.",
+    "warning_text_4": "Bạn CHỈ có thể khôi phục chúng bằng Cụm từ khôi phục bí mật cho ví của bạn. NxtWallet không thể giúp bạn khôi phục.",
     "warning_proceed": "Gỡ bỏ ví & tiếp tục",
     "warning_cancel": "Hủy",
     "step1": "Cài đặt ví",
     "step2": "Tạo mật khẩu",
     "step3": "Bảo mật ví",
     "already_have": "Bạn đã có ví?",
-    "sync_existing": "Đồng bộ ví MetaMask hiện có của bạn từ tiện ích mở rộng của trình duyệt hoặc nhập ví theo cách thủ công.",
-    "scan_title": "Các bước đồng bộ với tiện ích mở rộng MetaMask",
+    "sync_existing": "Đồng bộ ví NxtWallet hiện có của bạn từ tiện ích mở rộng của trình duyệt hoặc nhập ví theo cách thủ công.",
+    "scan_title": "Các bước đồng bộ với tiện ích mở rộng NxtWallet",
     "scan": "Quét",
     "scan_step_1": "Mở tiện ích mở rộng trên máy tính",
     "scan_step_2": "Tới phần Cài đặt > Nâng cao",
@@ -62,12 +62,12 @@
     "delete_current": "Đang xóa ví hiện tại"
   },
   "onboarding_carousel": {
-    "title1": "Chào mừng bạn đến với MetaMask",
+    "title1": "Chào mừng bạn đến với NxtWallet",
     "title2": "Quản lý các tài sản kỹ thuật số của bạn",
     "title3": "Cánh cổng đưa bạn tới web3",
-    "subtitle1": "MetaMask là một ví an toàn được hàng triệu người tin dùng, giúp tất cả mọi người tiếp cận dễ dàng với thế giới web3.",
+    "subtitle1": "NxtWallet là một ví an toàn được hàng triệu người tin dùng, giúp tất cả mọi người tiếp cận dễ dàng với thế giới web3.",
     "subtitle2": "Lưu trữ, chi tiêu và gửi các tài sản kỹ thuật số của bạn như Token, Ethereum, bộ sưu tập độc đáo.",
-    "subtitle3": "Đăng nhập vào MetaMask và thực hiện giao dịch để đầu tư, kiếm tiền, chơi trò chơi, bán và hơn thế nữa!",
+    "subtitle3": "Đăng nhập vào NxtWallet và thực hiện giao dịch để đầu tư, kiếm tiền, chơi trò chơi, bán và hơn thế nữa!",
     "get_started": "Bắt đầu"
   },
   "onboarding_wizard": {
@@ -98,7 +98,7 @@
       "title": "Điều hướng chính",
       "content1": "Chạm vào đây",
       "content2": "để truy cập Ví, Trình duyệt và hoạt động Giao dịch.",
-      "content3": "Bạn có thể thực hiện nhiều hành động hơn với tài khoản của mình và truy cập phần cài đặt của MetaMask."
+      "content3": "Bạn có thể thực hiện nhiều hành động hơn với tài khoản của mình và truy cập phần cài đặt của NxtWallet."
     },
     "step5": {
       "title": "Khám phá Trình duyệt",
@@ -114,14 +114,14 @@
     "subtitle": "Sẽ không tốn nhiều thời gian"
   },
   "import_wallet": {
-    "title": "Bạn đã là người dùng MetaMask?",
+    "title": "Bạn đã là người dùng NxtWallet?",
     "sub_title": "Đồng bộ với tiện ích mở rộng",
     "sync_help": "Đồng bộ ví của bạn với tiện ích mở rộng",
     "sync_help_step_one": "1. Mở tiện ích mở rộng",
     "sync_help_step_two": "2. Tới phần Cài đặt > Nâng cao",
     "sync_help_step_three": "3. Nhấp vào \"Đồng bộ với thiết bị di động\"",
     "sync_help_step_four": "4. Quét Mã QR để bắt đầu đồng bộ",
-    "sync_from_browser_extension_button": "Đồng bộ với tiện ích mở rộng MetaMask",
+    "sync_from_browser_extension_button": "Đồng bộ với tiện ích mở rộng NxtWallet",
     "or": "HOẶC",
     "import_from_seed_button": "Nhập bằng Cụm từ khôi phục bí mật"
   },
@@ -141,13 +141,13 @@
     "this_action": "Thao tác này không thể đảo ngược.",
     "you_can_only": "Bạn CHỈ có thể khôi phục ví này bằng ",
     "recovery_phrase": "Cụm từ khôi phục bí mật của bạn ",
-    "metamask_does_not": "MetaMask không giữ Cụm từ khôi phục bí mật của bạn.",
+    "metamask_does_not": "NxtWallet không giữ Cụm từ khôi phục bí mật của bạn.",
     "i_understand": "Tôi hiểu, tiếp tục",
     "passcode_not_set_error": "Lỗi: Chưa thiết lập mật mã.",
     "wrong_password_error": "Lỗi: Giải mã không thành công",
     "wrong_password_error_android": "Lỗi: error:1e000065:Cipher functions:OPENSSL_internal:BAD_DECRYPT",
     "vault_error": "Lỗi: Không thể mở khóa nếu không có dữ liệu vault trước đó.",
-    "clean_vault_error": "MetaMask đã gặp lỗi do đạt đến giới hạn bộ nhớ. Dữ liệu cục bộ đã bị hỏng. Vui lòng cài đặt lại MetaMask và khôi phục bằng Cụm từ khôi phục bí mật của bạn."
+    "clean_vault_error": "NxtWallet đã gặp lỗi do đạt đến giới hạn bộ nhớ. Dữ liệu cục bộ đã bị hỏng. Vui lòng cài đặt lại NxtWallet và khôi phục bằng Cụm từ khôi phục bí mật của bạn."
   },
   "enter_password": {
     "title": "Nhập mật khẩu của bạn",
@@ -158,7 +158,7 @@
   },
   "choose_password": {
     "title": "Tạo mật khẩu",
-    "subtitle": "Mật khẩu này sẽ chỉ mở khóa ví MetaMask của bạn trên thiết bị này.",
+    "subtitle": "Mật khẩu này sẽ chỉ mở khóa ví NxtWallet của bạn trên thiết bị này.",
     "password": "Mật khẩu mới",
     "confirm_password": "Xác nhận mật khẩu",
     "create_button": "Tạo mật khẩu",
@@ -176,7 +176,7 @@
     "remember_me": "Ghi nhớ",
     "security_alert_title": "Cảnh báo bảo mật",
     "security_alert_message": "Để tiếp tục, bạn cần bật Mật mã hoặc bất kỳ phương thức xác thực sinh trắc học nào được hỗ trợ trong thiết bị của bạn (FaceID, TouchID hoặc Vân tay)",
-    "i_understand": "Tôi hiểu rằng MetaMask không thể khôi phục mật khẩu này cho tôi.",
+    "i_understand": "Tôi hiểu rằng NxtWallet không thể khôi phục mật khẩu này cho tôi.",
     "learn_more": "Tìm hiểu thêm.",
     "secure": "Bảo mật ví",
     "confirm": "Xác nhận Cụm từ khôi phục bí mật",
@@ -184,7 +184,7 @@
   },
   "reset_password": {
     "title": "Đổi mật khẩu",
-    "subtitle": "Mật khẩu này sẽ chỉ mở khóa ví MetaMask của bạn trên thiết bị này.",
+    "subtitle": "Mật khẩu này sẽ chỉ mở khóa ví NxtWallet của bạn trên thiết bị này.",
     "password": "Mật khẩu mới",
     "confirm_password": "Xác nhận mật khẩu",
     "reset_button": "Đặt lại mật khẩu",
@@ -202,7 +202,7 @@
     "remember_me": "Ghi nhớ",
     "security_alert_title": "Cảnh báo bảo mật",
     "security_alert_message": "Để tiếp tục, bạn cần bật Mật mã hoặc bất kỳ phương thức xác thực sinh trắc học nào được hỗ trợ trong thiết bị của bạn (FaceID, TouchID hoặc Vân tay)",
-    "i_understand": "Tôi hiểu rằng MetaMask không thể khôi phục mật khẩu này cho tôi.",
+    "i_understand": "Tôi hiểu rằng NxtWallet không thể khôi phục mật khẩu này cho tôi.",
     "learn_more": "Tìm hiểu thêm.",
     "secure": "Bảo mật ví",
     "confirm": "Xác nhận Cụm từ khôi phục bí mật",
@@ -252,7 +252,7 @@
     "lock_ok": "CÓ",
     "lock_cancel": "KHÔNG",
     "feedback": "Phản hồi",
-    "metamask_support": "Hỗ trợ MetaMask",
+    "metamask_support": "Hỗ trợ NxtWallet",
     "public_address": "Địa chỉ công khai"
   },
   "send": {
@@ -285,7 +285,7 @@
     "no_tokens": "Bạn không có Token nào!",
     "no_nfts_yet": "Chưa có NFT",
     "nfts_autodetection_title": "Phát hiện NFT",
-    "nfts_autodetection_desc": "Cho phép MetaMask tự động phát hiện NFT từ OpenSea và hiển thị trên ví MetaMask của bạn.",
+    "nfts_autodetection_desc": "Cho phép NxtWallet tự động phát hiện NFT từ OpenSea và hiển thị trên ví NxtWallet của bạn.",
     "nfts_autodetection_cta": "Bật tính năng phát hiện NFT trong phần Cài đặt",
     "learn_more": "Tìm hiểu thêm",
     "add_collectibles": "Nhập NFT",
@@ -347,9 +347,9 @@
     "here": "tại đây",
     "agree": "Tôi đồng ý",
     "decline": "Không, cảm ơn",
-    "description_title": "Giúp chúng tôi cải thiện MetaMask",
-    "description_content_1": "MetaMask muốn thu thập dữ liệu sử dụng cơ bản để hiểu rõ hơn cách người dùng tương tác với ứng dụng dành cho thiết bị di động. Dữ liệu này sẽ được dùng để liên tục cải thiện khả năng sử dụng và trải nghiệm người dùng đối với sản phẩm của chúng tôi.",
-    "description_content_2": "MetaMask sẽ...",
+    "description_title": "Giúp chúng tôi cải thiện NxtWallet",
+    "description_content_1": "NxtWallet muốn thu thập dữ liệu sử dụng cơ bản để hiểu rõ hơn cách người dùng tương tác với ứng dụng dành cho thiết bị di động. Dữ liệu này sẽ được dùng để liên tục cải thiện khả năng sử dụng và trải nghiệm người dùng đối với sản phẩm của chúng tôi.",
+    "description_content_2": "NxtWallet sẽ...",
     "action_description_1": "Luôn cho phép bạn chọn không tham gia thông qua phần Cài đặt",
     "action_description_2": "Gửi các sự kiện nhấp chuột & lượt xem trang ẩn danh",
     "action_description_3": "Gửi dữ liệu quốc gia, khu vực, thành phố (không phải vị trí cụ thể)",
@@ -440,7 +440,7 @@
     "state_logs": "Nhật ký trạng thái",
     "auto_lock": "Tự động khóa",
     "auto_lock_desc": "Chọn khoảng thời gian trước khi ứng dụng tự động khóa.",
-    "state_logs_desc": "Điều này sẽ giúp MetaMask gỡ lỗi bất kỳ sự cố nào bạn có thể gặp phải. Vui lòng gửi đến bộ phận hỗ trợ MetaMask thông qua biểu tượng bánh hamburger > Gửi phản hồi hoặc trả lời phiếu hỏi đáp hiện tại của bạn nếu có.",
+    "state_logs_desc": "Điều này sẽ giúp NxtWallet gỡ lỗi bất kỳ sự cố nào bạn có thể gặp phải. Vui lòng gửi đến bộ phận hỗ trợ NxtWallet thông qua biểu tượng bánh hamburger > Gửi phản hồi hoặc trả lời phiếu hỏi đáp hiện tại của bạn nếu có.",
     "autolock_immediately": "Ngay lập tức",
     "autolock_never": "Không bao giờ",
     "autolock_after": "Sau {{time}} giây",
@@ -463,7 +463,7 @@
     "save_rpc_url": "LƯU",
     "invalid_rpc_prefix": "URI yêu cầu tiền tố HTTPS thích hợp",
     "invalid_rpc_url": "URL của RPC không hợp lệ",
-    "sync_with_extension": "Đồng bộ với tiện ích mở rộng MetaMask",
+    "sync_with_extension": "Đồng bộ với tiện ích mở rộng NxtWallet",
     "sync_with_extension_desc": "Thao tác này sẽ nhập tất cả tài khoản tiện ích mở rộng lên thiết bị này.",
     "sync": "ĐỒNG BỘ",
     "clear_approved_dapps": "XÓA CÁC DAPP ĐÃ ĐƯỢC PHÊ DUYỆT",
@@ -476,7 +476,7 @@
     "protect_title": "Bảo vệ ví của bạn",
     "video_failed": "Không thể tải video lên.",
     "protect_desc": "Bảo vệ ví của bạn bằng cách lưu Cụm từ khôi phục bí mật ở những nơi khác nhau, như trên giấy, trình quản lý mật khẩu và/hoặc đám mây.",
-    "protect_desc_no_backup": "Đây là cụm từ gồm 12 từ cho ví của bạn. Cụm từ này có thể được sử dụng để kiểm soát tất cả tài khoản hiện tại và tương lai của bạn, bao gồm cả khả năng gửi tiền trong ví của bạn đi. Hãy cất giữ cụm từ này an toàn, KHÔNG chia sẻ nó với bất kỳ ai. MetaMask không thể giúp bạn khôi phục khóa này.",
+    "protect_desc_no_backup": "Đây là cụm từ gồm 12 từ cho ví của bạn. Cụm từ này có thể được sử dụng để kiểm soát tất cả tài khoản hiện tại và tương lai của bạn, bao gồm cả khả năng gửi tiền trong ví của bạn đi. Hãy cất giữ cụm từ này an toàn, KHÔNG chia sẻ nó với bất kỳ ai. NxtWallet không thể giúp bạn khôi phục khóa này.",
     "learn_more": "Tìm hiểu thêm.",
     "seedphrase_not_backed_up": "Quan trọng! Cụm từ khôi phục bí mật chưa được sao lưu",
     "seedphrase_backed_up": "Đã sao lưu Cụm từ khôi phục bí mật",
@@ -527,7 +527,7 @@
     "remove_network_title": "Bạn có muốn gỡ bỏ mạng này?",
     "remove_network": "Gỡ bỏ",
     "cancel_remove_network": "Hủy",
-    "info_title": "Giới thiệu về MetaMask",
+    "info_title": "Giới thiệu về NxtWallet",
     "experimental_title": "Thử nghiệm",
     "experimental_desc": "WalletConnect & hơn thế nữa...",
     "legal_title": "Pháp lý",
@@ -547,7 +547,7 @@
     "clear_history_desc": "Chọn tùy chọn này để xóa toàn bộ lịch sử duyệt web của bạn.",
     "clear_cookies_desc": "Chọn tùy chọn này để xóa cookie trình duyệt của bạn.",
     "metametrics_title": "Tham gia vào MetaMetrics",
-    "metametrics_description": "Tham gia vào MetaMetrics để giúp chúng tôi cải thiện MetaMask.",
+    "metametrics_description": "Tham gia vào MetaMetrics để giúp chúng tôi cải thiện NxtWallet.",
     "third_party_title": "Nhận các giao dịch chuyển đến",
     "third_party_description": "API của bên thứ ba (Etherscan) được sử dụng để hiển thị các giao dịch chuyển đến của bạn trong phần lịch sử. Hãy tắt nếu bạn không muốn chúng tôi lấy dữ liệu từ các dịch vụ đó.",
     "metametrics_opt_out": "Chọn không tham gia MetaMetrics",
@@ -600,7 +600,7 @@
       "khôi phục bí mật (SRP)",
       " cấp ",
       "toàn quyền truy cập vào ví, tiền và tài khoản của bạn.\n\n",
-      "MetaMask là một",
+      "NxtWallet là một",
       "ví không giám hộ",
       ". Nghĩa là,",
       "bạn là chủ sở hữu SRP của bạn."
@@ -609,14 +609,14 @@
     "private_key_warning": "Đây là khóa cá nhân cho tài khoản đang được chọn: {{accountName}}. Đừng bao giờ tiết lộ khóa này. Bất kỳ ai có khóa cá nhân của bạn đều có toàn quyền kiểm soát tài khoản của bạn, bao gồm cả quyền chuyển bất kỳ khoản tiền nào của bạn đi.",
     "seed_phrase_warning_explanation": [
       "Đảm bảo không có ai đang nhìn vào màn hình của bạn. ",
-      "Bộ phận Hỗ trợ MetaMask sẽ không bao giờ yêu cầu điều này."
+      "Bộ phận Hỗ trợ NxtWallet sẽ không bao giờ yêu cầu điều này."
     ],
     "private_key_warning_explanation": "Đừng bao giờ tiết lộ khóa này. Bất kỳ ai có khóa cá nhân của bạn đều có toàn quyền kiểm soát tài khoản của bạn, bao gồm cả quyền chuyển bất kỳ khoản tiền nào của bạn đi.",
     "reveal_credential_modal": [
       "{{credentialName}} của bạn cung cấp ",
       "toàn quyền truy cập vào tài khoản và tiền của bạn.\n\nĐừng chia sẻ điều này với bất kỳ ai.\n",
       "toàn quyền truy cập vào ví và tiền của bạn.\n\nĐừng chia sẻ điều này với bất kỳ ai.\n",
-      "Bộ phận Hỗ trợ của MetaMask sẽ không yêu cầu điều này, ",
+      "Bộ phận Hỗ trợ của NxtWallet sẽ không yêu cầu điều này, ",
       "nhưng những kẻ lừa đảo qua mạng thì có."
     ],
     "seed_phrase": "Cụm từ khôi phục bí mật của bạn",
@@ -642,7 +642,7 @@
   },
   "password_reset": {
     "password_title": "Mật khẩu",
-    "password_desc": "Chọn một mật khẩu mạnh để mở khóa ứng dụng MetaMask trên thiết bị của bạn. Nếu làm mất mật khẩu này, bạn sẽ cần dùng Cụm từ khôi phục bí mật để nhập lại ví.",
+    "password_desc": "Chọn một mật khẩu mạnh để mở khóa ứng dụng NxtWallet trên thiết bị của bạn. Nếu làm mất mật khẩu này, bạn sẽ cần dùng Cụm từ khôi phục bí mật để nhập lại ví.",
     "password_learn_more": "Tìm hiểu thêm.",
     "change_password": "Đổi mật khẩu"
   },
@@ -679,7 +679,7 @@
     "cancel": "Hủy",
     "error": "Lỗi",
     "attempting_to_scan_with_wallet_locked": "Có vẻ như bạn đang cố quét mã QR, bạn cần mở khóa ví của mình để làm được điều đó.",
-    "attempting_sync_from_wallet_error": "Có vẻ như bạn đang cố đồng bộ với tiện ích mở rộng. Để làm như vậy, bạn sẽ cần xóa ví hiện tại của mình. \n\nSau khi bạn đã xóa hoặc cài đặt lại phiên bản ứng dụng mới, hãy chọn tùy chọn \"Đồng bộ với Tiện ích mở rộng MetaMask\". Lưu ý quan trọng! Trước khi xóa ví, hãy đảm bảo rằng bạn đã sao lưu Cụm từ khôi phục bí mật."
+    "attempting_sync_from_wallet_error": "Có vẻ như bạn đang cố đồng bộ với tiện ích mở rộng. Để làm như vậy, bạn sẽ cần xóa ví hiện tại của mình. \n\nSau khi bạn đã xóa hoặc cài đặt lại phiên bản ứng dụng mới, hãy chọn tùy chọn \"Đồng bộ với Tiện ích mở rộng NxtWallet\". Lưu ý quan trọng! Trước khi xóa ví, hãy đảm bảo rằng bạn đã sao lưu Cụm từ khôi phục bí mật."
   },
   "action_view": {
     "cancel": "Hủy",
@@ -782,7 +782,7 @@
     "gas_education_1": "Phí gas được trả cho những người khai thác tiền mã hóa để xử lý các giao dịch trên ",
     "gas_education_2_ethereum": "mạng Ethereum.",
     "gas_education_2": "mạng.",
-    "gas_education_3": "MetaMask không thu lợi nhuận từ phí gas.",
+    "gas_education_3": "NxtWallet không thu lợi nhuận từ phí gas.",
     "gas_education_4": "Phí gas biến động dựa trên lưu lượng mạng và mức độ phức tạp của giao dịch.",
     "gas_education_learn_more": "Tìm hiểu thêm về phí gas",
     "confusable_title": "Kiểm tra địa chỉ người nhận",
@@ -797,7 +797,7 @@
     "invalid_qr_code_sync": "Mã QR không hợp lệ. Vui lòng quét mã QR đồng bộ của ví cứng.",
     "no_camera_permission": "Camera chưa được cấp phép. Vui lòng cho phép và thử lại",
     "invalid_qr_code_sign": "Mã QR không hợp lệ. Vui lòng kiểm tra ví cứng và thử lại.",
-    "no_camera_permission_android": "Bạn cần cho phép MetaMask truy cập vào camera để tiếp tục. Bạn cũng có thể cần thay đổi cài đặt của hệ thống.",
+    "no_camera_permission_android": "Bạn cần cho phép NxtWallet truy cập vào camera để tiếp tục. Bạn cũng có thể cần thay đổi cài đặt của hệ thống.",
     "mismatched_qr_request_id": "Dữ liệu giao dịch không đồng nhất. Vui lòng sử dụng Keystone của bạn để ký mã QR bên dưới và nhấn vào 'Lấy Chữ Ký'."
   },
   "custom_gas": {
@@ -810,7 +810,7 @@
     "save": "Lưu",
     "warning_gas_limit": "Giới hạn gas phải lớn hơn 20999",
     "warning_gas_limit_estimated": "Giới hạn gas ước tính là {{gas}}, hãy sử dụng nó làm giá trị tối thiểu",
-    "cost_explanation": "Phí gas chi trả cho chi phí xử lý giao dịch của bạn trên mạng Ethereum. MetaMask không thu lợi nhuận từ khoản phí này. Phí càng cao thì giao dịch của bạn càng có nhiều cơ hội được xử lý."
+    "cost_explanation": "Phí gas chi trả cho chi phí xử lý giao dịch của bạn trên mạng Ethereum. NxtWallet không thu lợi nhuận từ khoản phí này. Phí càng cao thì giao dịch của bạn càng có nhiều cơ hội được xử lý."
   },
   "spend_limit_edition": {
     "save": "Lưu",
@@ -869,7 +869,7 @@
     "change_url": "Thay đổi URL",
     "switch_network": "Chuyển mạng",
     "dapp_browser": "TRÌNH DUYỆT DAPP",
-    "dapp_browser_message": "MetaMask là ví và trình duyệt của bạn cho trang web phi tập trung. Hãy xem thử!",
+    "dapp_browser_message": "NxtWallet là ví và trình duyệt của bạn cho trang web phi tập trung. Hãy xem thử!",
     "featured_dapps": "DAPP NỔI BẬT",
     "my_favorites": "ƯA THÍCH",
     "search": "Tìm hoặc gõ URL",
@@ -996,7 +996,7 @@
   "sync_with_extension": {
     "title": "Đồng bộ dữ liệu từ Tiện ích mở rộng",
     "short_title": "Đồng bộ với Tiện ích mở rộng",
-    "label": "Mở tiện ích mở rộng của MetaMask trên trình duyệt máy tính của bạn, sau đó truy cập \"Cài đặt\" > \"Nâng cao\", nhấp vào \"Đồng bộ với thiết bị di động\" và sau đó nhập mật khẩu của bạn để xem Mã QR",
+    "label": "Mở tiện ích mở rộng của NxtWallet trên trình duyệt máy tính của bạn, sau đó truy cập \"Cài đặt\" > \"Nâng cao\", nhấp vào \"Đồng bộ với thiết bị di động\" và sau đó nhập mật khẩu của bạn để xem Mã QR",
     "button_continue": "Tiếp tục",
     "please_wait": "Vui lòng đợi trong lúc chúng tôi đồng bộ dữ liệu của bạn...",
     "error_title": "Chúng tôi rất tiếc!",
@@ -1012,11 +1012,11 @@
     "something_wrong": "Rất tiếc! Đã xảy ra lỗi...",
     "something_wrong_desc": "Chúng tôi gặp sự cố khi cố đồng bộ ví của bạn. Vui lòng thử lại sau hoặc nhập ví của bạn bằng Cụm từ khôi phục bí mật",
     "allow_biometrics_title": "Bạn có muốn bật {{biometrics}}?",
-    "allow_biometrics_desc": "Bạn có thể sử dụng {{biometrics}} để xác thực trên MetaMask"
+    "allow_biometrics_desc": "Bạn có thể sử dụng {{biometrics}} để xác thực trên NxtWallet"
   },
   "sync_with_extension_success": {
     "title": "Đã nhập ví",
-    "sync_complete_1": "Xin lưu ý, MetaMask không thể khôi phục Cụm từ khôi phục bí mật của bạn nếu bạn làm mất nó. Bạn có thể tìm Cụm từ khôi phục bí mật trong",
+    "sync_complete_1": "Xin lưu ý, NxtWallet không thể khôi phục Cụm từ khôi phục bí mật của bạn nếu bạn làm mất nó. Bạn có thể tìm Cụm từ khôi phục bí mật trong",
     "sync_complete_2": "Cài đặt > Bảo mật & Quyền riêng tư",
     "button_continue": "Xong",
     "password_tip": "Mật khẩu để mở khóa ví trên thiết bị di động của bạn trùng với mật khẩu bạn thiết lập cho tiện ích mở rộng.",
@@ -1081,9 +1081,9 @@
   },
   "authentication": {
     "auth_prompt_title": "Yêu cầu xác thực",
-    "auth_prompt_desc": "Vui lòng xác thực để sử dụng MetaMask",
+    "auth_prompt_desc": "Vui lòng xác thực để sử dụng NxtWallet",
     "fingerprint_prompt_title": "Yêu cầu xác thực",
-    "fingerprint_prompt_desc": "Sử dụng vân tay của bạn để mở khóa MetaMask",
+    "fingerprint_prompt_desc": "Sử dụng vân tay của bạn để mở khóa NxtWallet",
     "fingerprint_prompt_cancel": "Hủy"
   },
   "accountApproval": {
@@ -1100,7 +1100,7 @@
   },
   "import_private_key": {
     "title": "Nhập tài khoản",
-    "description_one": "Có thể xem các tài khoản đã nhập trên ví nhưng không thể phục hồi các tài khoản đã nhập bằng Cụm từ khôi phục bí mật MetaMask của bạn.",
+    "description_one": "Có thể xem các tài khoản đã nhập trên ví nhưng không thể phục hồi các tài khoản đã nhập bằng Cụm từ khôi phục bí mật NxtWallet của bạn.",
     "learn_more_here": "Tìm hiểu thêm về tài khoản đã nhập tại đây.",
     "subtitle": "Dán chuỗi khóa cá nhân của bạn",
     "cta_text": "NHẬP",
@@ -1112,7 +1112,7 @@
   },
   "import_private_key_success": {
     "title": "Tài khoản đã được nhập thành công!",
-    "description_one": "Giờ đây bạn sẽ có thể xem tài khoản của bạn trên MetaMask."
+    "description_one": "Giờ đây bạn sẽ có thể xem tài khoản của bạn trên NxtWallet."
   },
   "first_incoming_transaction": {
     "title": "{{asset}} đã được nạp vào tài khoản của bạn",
@@ -1127,7 +1127,7 @@
     "step_1_description": "Tạo mật khẩu",
     "step_2": "Bước 2:",
     "step_2_description": "Lưu Cụm từ khôi phục bí mật của ví",
-    "info_text_1": "Dành ít phút để hoàn tất việc cài đặt cho ví MetaMask của bạn.",
+    "info_text_1": "Dành ít phút để hoàn tất việc cài đặt cho ví NxtWallet của bạn.",
     "info_text_2": "Điều này sẽ đảm bảo chỉ mình bạn có quyền truy cập tiền của bạn và sẽ cho phép bạn khôi phục ví nếu làm mất thiết bị",
     "cta_text": "Tạo mật khẩu",
     "creating_password": "Đang tạo mật khẩu..."
@@ -1149,7 +1149,7 @@
     "what_is_seedphrase_title": "\"Cụm từ khôi phục bí mật\" là gì",
     "what_is_seedphrase_text_1": "Cụm từ khôi phục bí mật là một nhóm gồm mười hai từ chứa tất cả thông tin về ví của bạn, bao gồm cả tiền trong đó. Nó như một mật mã bí mật được dùng để truy cập toàn bộ ví của bạn.",
     "what_is_seedphrase_text_2": "Bạn phải giữ Cụm từ khôi phục bí mật một cách bảo mật và an toàn. Nếu ai đó có được Cụm từ khôi phục bí mật của bạn, thì họ sẽ có toàn quyền kiểm soát các tài khoản của bạn.",
-    "what_is_seedphrase_text_3": "Lưu cụm từ này ở một nơi mà bạn có thể truy cập. Nếu bạn làm mất, thì ngay cả MetaMask cũng không thể giúp bạn khôi phục."
+    "what_is_seedphrase_text_3": "Lưu cụm từ này ở một nơi mà bạn có thể truy cập. Nếu bạn làm mất, thì ngay cả NxtWallet cũng không thể giúp bạn khôi phục."
   },
   "account_backup_step_1B": {
     "title": "Bảo vệ ví của bạn",
@@ -1222,7 +1222,7 @@
   },
   "account_backup_step_6": {
     "title": "Lời khuyên bảo mật",
-    "info_text": "MetaMask không thể khôi phục Cụm từ khôi phục bí mật của bạn nếu bạn làm mất",
+    "info_text": "NxtWallet không thể khôi phục Cụm từ khôi phục bí mật của bạn nếu bạn làm mất",
     "tip_1": "Hãy giữ vài bản sao Cụm từ khôi phục bí mật của bạn",
     "tip_2": "Lưu cụm từ trong trình quản lý mật khẩu đáng tin cậy và cất giữ bản sao lưu trên giấy ở nơi an toàn",
     "tip_3": "Không bao giờ chia sẻ cụm từ này với bất cứ ai",
@@ -1260,7 +1260,7 @@
     "congratulations": "Chúc mừng",
     "success": "Bạn đã bảo vệ thành công ví của mình. Hãy nhớ giữ Cụm từ khôi phục bí mật an toàn, đó là trách nhiệm của bạn!",
     "hint": "Để lại gợi ý cho chính bạn?",
-    "recover": "MetaMask không thể khôi phục ví của bạn nếu bạn mất cụm từ này. Bạn có thể tìm Cụm từ khôi phục bí mật của bạn trong phần Cài đặt > Bảo mật & Quyền riêng tư.",
+    "recover": "NxtWallet không thể khôi phục ví của bạn nếu bạn mất cụm từ này. Bạn có thể tìm Cụm từ khôi phục bí mật của bạn trong phần Cài đặt > Bảo mật & Quyền riêng tư.",
     "learn": "Tìm hiểu thêm",
     "done": "Xong",
     "recovery_hint": "Gợi ý khôi phục",
@@ -1273,7 +1273,7 @@
   "phishing": {
     "ethereum_phishing_detection": "Phát hiện lừa đảo qua mạng Ethereum",
     "ethereum_phishing_detector": "Trình phát hiện lừa đảo qua mạng Ethereum",
-    "intro": " hiện nằm trong danh sách cảnh báo miền của MetaMask. Điều này có nghĩa là dựa trên thông tin mà chúng tôi có được, MetaMask tin rằng miền này hiện có thể ảnh hưởng đến tính bảo mật của bạn và với vai trò là tính năng an toàn bổ sung, MetaMask đã hạn chế quyền truy cập vào trang web. Để ghi đè điều này, vui lòng đọc phần còn lại của cảnh báo này để biết hướng dẫn về cách tiếp tục và chấp nhận rủi ro riêng của bạn.",
+    "intro": " hiện nằm trong danh sách cảnh báo miền của NxtWallet. Điều này có nghĩa là dựa trên thông tin mà chúng tôi có được, NxtWallet tin rằng miền này hiện có thể ảnh hưởng đến tính bảo mật của bạn và với vai trò là tính năng an toàn bổ sung, NxtWallet đã hạn chế quyền truy cập vào trang web. Để ghi đè điều này, vui lòng đọc phần còn lại của cảnh báo này để biết hướng dẫn về cách tiếp tục và chấp nhận rủi ro riêng của bạn.",
     "reasons": "Có nhiều lý do khiến các trang web có thể xuất hiện trong danh sách cảnh báo của chúng tôi và danh sách cảnh báo của chúng tôi tổng hợp từ các danh sách khác được sử dụng rộng rãi trong ngành. Những lý do như vậy có thể bao gồm các rủi ro về gian lận hoặc bảo mật đã biết, chẳng hạn như các miền có kết quả thử nghiệm khẳng định trên",
     "list_content": "Các miền trong danh sách cảnh báo này có thể bao gồm các trang web hoàn toàn độc hại và các trang web hợp pháp đã bị kẻ xấu xâm nhập.",
     "to_read_more": "Để đọc thêm về trang web này,",
@@ -1308,7 +1308,7 @@
     "received_message": "Chạm để xem giao dịch này",
     "received_payment_message": "Bạn đã nhận {{amount}} DAI",
     "prompt_title": "Bật thông báo đẩy",
-    "prompt_desc": "Bật thông báo để MetaMask có thể thông báo cho bạn biết khi bạn nhận ETH hoặc khi giao dịch của bạn được xác nhận.",
+    "prompt_desc": "Bật thông báo để NxtWallet có thể thông báo cho bạn biết khi bạn nhận ETH hoặc khi giao dịch của bạn được xác nhận.",
     "prompt_ok": "Có",
     "prompt_cancel": "Không, cảm ơn",
     "wc_connected_title": "Đã kết nối với {{title}}",
@@ -1467,7 +1467,7 @@
     "wyre_minimum_deposit": "Số tiền nạp tối thiểu là {{amount}}",
     "wyre_maximum_deposit": "Số tiền nạp tối đa là {{amount}}",
     "wyre_purchase": "Mua {{currency}}",
-    "wyre_total_label": "Wyre (qua MetaMask)",
+    "wyre_total_label": "Wyre (qua NxtWallet)",
     "buy_with": "Mua bằng",
     "plus_fee": "Cộng phí {{fee}}",
     "notifications": {
@@ -1496,12 +1496,12 @@
         "average_gas_fee": "Phí gas trung bình hiện tại là:",
         "subtitle_1": "Nếu bạn định hoán đổi hoặc chuyển {{ticker}}, hãy mua dư ra để trả cho phí gas.",
         "subtitle_2": "Phí gas để thực hiện giao dịch tách biệt với chi phí mua {{ticker}}.",
-        "subtitle_3": "MetaMask không thu lợi nhuận từ phí gas."
+        "subtitle_3": "NxtWallet không thu lợi nhuận từ phí gas."
       },
       "step_2": {
         "title": "Phí gas là gì?",
         "subtitle_1": "Gas cung cấp năng lượng cho các giao dịch trên mạng Ethereum. Đó là một khoản phí được trả bằng {{ticker}} cho những người khai thác tiền mã hóa để họ xử lý các giao dịch của bạn.",
-        "subtitle_2": "MetaMask không thu lợi nhuận từ phí gas.",
+        "subtitle_2": "NxtWallet không thu lợi nhuận từ phí gas.",
         "learn_more": "Tìm hiểu thêm về phí gas"
       },
       "step_3": {
@@ -1562,7 +1562,7 @@
     "select_region_currency": "Chọn đơn vị tiền tệ của khu vực",
     "no_tokens_match": "Không có token nào khớp với \"{{searchString}}\"",
     "no_currency_match": "Không có đơn vị tiền tệ nào khớp với \"{{searchString}}\"",
-    "buy_from_vetted": "Để mua {{ticker}} từ một trong những nhà cung cấp tích hợp của chúng tôi, bạn sẽ được chuyển đến cổng thanh toán của họ một cách an toàn mà không cần rời khỏi ứng dụng MetaMask",
+    "buy_from_vetted": "Để mua {{ticker}} từ một trong những nhà cung cấp tích hợp của chúng tôi, bạn sẽ được chuyển đến cổng thanh toán của họ một cách an toàn mà không cần rời khỏi ứng dụng NxtWallet",
     "price": "Giá",
     "total_fees": "Tổng phí",
     "processing_fee": "Phí xử lý",
@@ -1638,13 +1638,13 @@
       "best_swap": "cặp hoán đổi tốt nhất",
       "across": "khắp...",
       "want_to_learn_more": "Muốn tìm hiểu thêm?",
-      "learn_more": "Tìm hiểu thêm về Hoán đổi trên MetaMask",
+      "learn_more": "Tìm hiểu thêm về Hoán đổi trên NxtWallet",
       "what_are": "Hoán đổi Token là gì?",
       "review_audits": "Xem lại kết quả kiểm tra hợp đồng chính thức của chúng tôi",
       "start_swapping": "Bắt đầu hoán đổi"
     },
     "feature_off_title": "Tạm thời không được cung cấp",
-    "feature_off_body": "Tính năng Hoán đổi trên MetaMask đang được bảo trì. Vui lòng thử lại sau.",
+    "feature_off_body": "Tính năng Hoán đổi trên NxtWallet đang được bảo trì. Vui lòng thử lại sau.",
     "wrong_network_title": "Giao dịch hoán đổi không có sẵn",
     "wrong_network_body": "Bạn chỉ có thể hoán đổi những Token trên Mạng chính của Ethereum.",
     "unallowed_asset_title": "Không thể hoán đổi Token này",
@@ -1722,19 +1722,19 @@
     "estimated_gas_fee": "Phí gas ước tính",
     "max_gas_fee": "Phí gas tối đa",
     "edit": "Sửa",
-    "quotes_include_fee": "Báo giá bao gồm {{fee}}% phí MetaMask",
+    "quotes_include_fee": "Báo giá bao gồm {{fee}}% phí NxtWallet",
     "tap_to_swap": "Chạm để hoán đổi",
     "swipe_to_swap": "Vuốt để hoán đổi",
     "swipe_to": "Vuốt để",
     "swap": "hoán đổi",
     "completed_swap": "Vuốt!",
-    "metamask_swap_fee": "Phí Hoán đổi của MetaMask",
+    "metamask_swap_fee": "Phí Hoán đổi của NxtWallet",
     "fee_text": {
       "get_the": "Nhận",
       "best_price": "giá tốt nhất",
       "from_the": "từ",
       "top_liquidity": "các nguồn có tính thanh khoản cao nhất mọi lúc.",
-      "fee_is_applied": "Khoản phí {{fee}} được tự động tính vào từng báo giá, phí này giúp MetaMask liên tục phát triển để trở nên tốt hơn nữa."
+      "fee_is_applied": "Khoản phí {{fee}} được tự động tính vào từng báo giá, phí này giúp NxtWallet liên tục phát triển để trở nên tốt hơn nữa."
     },
     "enable": {
       "this_will": "Thao tác này sẽ",
@@ -1799,7 +1799,7 @@
     "gas_education_1": "Phí gas được trả cho những người khai thác tiền mã hóa để xử lý các giao dịch trên ",
     "gas_education_2_ethereum": "mạng Ethereum.",
     "gas_education_2": "mạng.",
-    "gas_education_3": "MetaMask không thu lợi nhuận từ phí gas.",
+    "gas_education_3": "NxtWallet không thu lợi nhuận từ phí gas.",
     "gas_education_4": "Chúng tôi mong đợi",
     "gas_education_5": "\"Phí gas ước tính\"",
     "gas_education_6": "sẽ là mức phí thực tế. Số tiền chính xác phụ thuộc vào điều kiện mạng.",
@@ -1846,15 +1846,15 @@
   "switch_custom_network": {
     "title_existing_network": "Trang web này muốn chuyển mạng",
     "title_new_network": "Đã thêm mạng mới",
-    "switch_warning": "Thao tác này sẽ chuyển mạng đã chọn trong MetaMask sang mạng đã thêm trước đó:",
+    "switch_warning": "Thao tác này sẽ chuyển mạng đã chọn trong NxtWallet sang mạng đã thêm trước đó:",
     "available": "hiện có sẵn trong trình chọn mạng.",
     "cancel": "Hủy",
     "switch": "Chuyển mạng"
   },
   "add_custom_network": {
     "title": "Cho phép trang web này thêm mạng?",
-    "warning": "Thao tác này cho phép sử dụng mạng này trong MetaMask.",
-    "warning_subtext_1": "MetaMask không xác minh các mạng tùy chỉnh hoặc tính bảo mật của chúng.",
+    "warning": "Thao tác này cho phép sử dụng mạng này trong NxtWallet.",
+    "warning_subtext_1": "NxtWallet không xác minh các mạng tùy chỉnh hoặc tính bảo mật của chúng.",
     "warning_subtext_2": "Tìm hiểu về",
     "warning_subtext_3": "lừa đảo và rủi ro bảo mật mạng",
     "display_name": "Tên hiển thị",
@@ -1933,7 +1933,7 @@
     "estimated_gas_fee_tooltip_text_1": "Phí gas được trả cho những người khai thác tiền mã hóa để xử lý các giao dịch trên",
     "estimated_gas_fee_tooltip_text_2": " mạng",
     "estimated_gas_fee_tooltip_text_3": " Ethereum.",
-    "estimated_gas_fee_tooltip_text_4": "MetaMask không thu lợi nhuận từ phí gas.",
+    "estimated_gas_fee_tooltip_text_4": "NxtWallet không thu lợi nhuận từ phí gas.",
     "estimated_gas_fee_tooltip_text_5": "Phí gas do mạng thiết lập và biến động dựa trên lưu lượng mạng cũng như mức độ phức tạp của giao dịch.",
     "learn_more": "Tìm hiểu thêm về phí gas",
     "legacy_gas_suggestion_tooltip": "Đề xuất phí gas này sử dụng phương pháp ước tính phí gas cũ và có thể không chính xác."
@@ -1955,7 +1955,7 @@
     "high_fees": "Tại sao phí cao quá vậy?",
     "missing_tokens": "Tôi đang bị thiếu Token...",
     "swap_issues": "Tôi không thể hoán đổi...",
-    "mobile_sentiment": "Bạn thấy thế nào về MetaMask trên thiết bị di động?",
+    "mobile_sentiment": "Bạn thấy thế nào về NxtWallet trên thiết bị di động?",
     "sentiment_good_face": "😁",
     "sentiment_bad_face": "☹️",
     "sentiment_good": "Thích!",
@@ -1999,12 +1999,12 @@
   },
   "remember_me": {
     "enable_remember_me": "Bật Ghi nhớ",
-    "enable_remember_me_description": "Khi bật Ghi nhớ, bất kỳ ai có quyền truy cập vào điện thoại của bạn đều có thể truy cập vào tài khoản MetaMask của bạn."
+    "enable_remember_me_description": "Khi bật Ghi nhớ, bất kỳ ai có quyền truy cập vào điện thoại của bạn đều có thể truy cập vào tài khoản NxtWallet của bạn."
   },
   "turn_off_remember_me": {
     "title": "Nhập mật khẩu để tắt Ghi nhớ",
     "placeholder": "Mật khẩu",
-    "description": "Nếu bạn tắt tùy chọn này, bạn sẽ cần nhập mật khẩu để mở khóa MetaMask kể từ bây giờ.",
+    "description": "Nếu bạn tắt tùy chọn này, bạn sẽ cần nhập mật khẩu để mở khóa NxtWallet kể từ bây giờ.",
     "action": "Tắt Ghi nhớ"
   }
 }

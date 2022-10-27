@@ -28,14 +28,14 @@
   },
   "onboarding": {
     "title": "ウォレットのセットアップ",
-    "sync_desc": "すでに MetaMask拡張機能または別のウォレットをお持ちの場合は、既存のアセットを管理できるよう同期またはインポートしてください。",
+    "sync_desc": "すでに NxtWallet拡張機能または別のウォレットをお持ちの場合は、既存のアセットを管理できるよう同期またはインポートしてください。",
     "create_desc": "最初のウォレットを設定して分散型アプリを使い始めましょう。",
     "import": "既存のウォレットをインポートするか、新しいウォレットを作成してください",
     "import_wallet_button": "ウォレットを同期またはインポート",
     "new_to_crypto": "暗号資産は初めてですか？",
     "start_exploring_now": "新規ウォレットを作成",
     "unlock": "ロック解除",
-    "new_to_metamask": "MetaMaskを初めてご利用ですか？",
+    "new_to_metamask": "NxtWalletを初めてご利用ですか？",
     "already_have_wallet": "すでにウォレットをお持ちですか？",
     "optin_back_title": "ご注意！",
     "optin_back_desc": "データ分析の使用に同意または拒否してください。このオプションは設定で更新することもできます。",
@@ -43,15 +43,15 @@
     "warning_text_1": "続行した場合、",
     "warning_text_2": "現在のウォレットとアカウントは",
     "warning_text_3": "削除されます。",
-    "warning_text_4": "ウォレットの秘密のリカバリーフレーズでしか復元できません。MetaMaskは復元をお手伝いできません。",
+    "warning_text_4": "ウォレットの秘密のリカバリーフレーズでしか復元できません。NxtWalletは復元をお手伝いできません。",
     "warning_proceed": "ウォレットを削除して先に進む",
     "warning_cancel": "キャンセル",
     "step1": "ウォレットのセットアップ",
     "step2": "パスワードを作成",
     "step3": "ウォレットの安全を確保",
     "already_have": "すでにウォレットをお持ちですか？",
-    "sync_existing": "既存のMetaMaskウォレットをブラウザの拡張機能から同期するか、手動でインポートしてください。",
-    "scan_title": "MetaMask拡張機能と同期させる方法",
+    "sync_existing": "既存のNxtWalletウォレットをブラウザの拡張機能から同期するか、手動でインポートしてください。",
+    "scan_title": "NxtWallet拡張機能と同期させる方法",
     "scan": "スキャン",
     "scan_step_1": "デスクトップで拡張機能を開きます",
     "scan_step_2": "設定 > 詳細設定に移動します",
@@ -62,12 +62,12 @@
     "delete_current": "現在のウォレットを削除しています"
   },
   "onboarding_carousel": {
-    "title1": "MetaMaskへようこそ",
+    "title1": "NxtWalletへようこそ",
     "title2": "デジタルアセットの管理",
     "title3": "web3へのゲートウェイ",
-    "subtitle1": "多くのユーザーを持つMetaMaskは、すべての人にweb3への門戸を開く安全なウォレットです。",
+    "subtitle1": "多くのユーザーを持つNxtWalletは、すべての人にweb3への門戸を開く安全なウォレットです。",
     "subtitle2": "トークン、Etherum、ユニークなコレクティブルなどのデジタルアセットを保管、使用、転送できます。",
-    "subtitle3": "MetaMaskにログインすることで、投資、収益の獲得、売却、ゲームなどのトランザクションを行うことができます。",
+    "subtitle3": "NxtWalletにログインすることで、投資、収益の獲得、売却、ゲームなどのトランザクションを行うことができます。",
     "get_started": "開始"
   },
   "onboarding_wizard": {
@@ -98,7 +98,7 @@
       "title": "メインナビゲーション",
       "content1": "ここをタップして",
       "content2": "ウォレット、ブラウザ、トランザクションアクティビティにアクセスします。",
-      "content3": "アカウントで他の操作を行ったり、MetaMaskの設定にアクセスすることもできます。"
+      "content3": "アカウントで他の操作を行ったり、NxtWalletの設定にアクセスすることもできます。"
     },
     "step5": {
       "title": "ブラウザの使用",
@@ -114,14 +114,14 @@
     "subtitle": "少しだけお待ちください"
   },
   "import_wallet": {
-    "title": "すでにMetaMaskをご使用ですか？",
+    "title": "すでにNxtWalletをご使用ですか？",
     "sub_title": "拡張機能との同期",
     "sync_help": "拡張機能とウォレットを同期します",
     "sync_help_step_one": "1. 拡張機能を開きます",
     "sync_help_step_two": "2. 設定 > 詳細設定に移動します",
     "sync_help_step_three": "3. 「モバイルと同期」をクリックします",
     "sync_help_step_four": "4. QRコードをスキャンして同期を開始します",
-    "sync_from_browser_extension_button": "MetaMask拡張機能と同期",
+    "sync_from_browser_extension_button": "NxtWallet拡張機能と同期",
     "or": "または",
     "import_from_seed_button": "秘密のリカバリーフレーズを使用してインポートします"
   },
@@ -141,13 +141,13 @@
     "this_action": "この操作は元に戻せません。",
     "you_can_only": "このウォレットを復元するには",
     "recovery_phrase": "秘密のリカバリーフレーズを使用するしかありません",
-    "metamask_does_not": "MetaMaskはお客様の秘密のリカバリーフレーズを把握していません。",
+    "metamask_does_not": "NxtWalletはお客様の秘密のリカバリーフレーズを把握していません。",
     "i_understand": "理解したうえで続けます",
     "passcode_not_set_error": "エラー: パスコードが設定されていません。",
     "wrong_password_error": "エラー: 解読に失敗しました",
     "wrong_password_error_android": "エラー: error:1e000065:Cipher functions:OPENSSL_internal:BAD_DECRYPT",
     "vault_error": "エラー: 以前のボールトなしにロックを解除できません。",
-    "clean_vault_error": "ストレージの制限に達したためMetaMaskでエラーが発生しました。ローカルデータが破損しています。MetaMaskを再インストールして、秘密のリカバリーフレーズで復元してください。"
+    "clean_vault_error": "ストレージの制限に達したためNxtWalletでエラーが発生しました。ローカルデータが破損しています。NxtWalletを再インストールして、秘密のリカバリーフレーズで復元してください。"
   },
   "enter_password": {
     "title": "パスワードを入力してください",
@@ -158,7 +158,7 @@
   },
   "choose_password": {
     "title": "パスワードを作成",
-    "subtitle": "このパスワードはこのデバイスでのみMetaMaskウォレットのロックを解除します。",
+    "subtitle": "このパスワードはこのデバイスでのみNxtWalletウォレットのロックを解除します。",
     "password": "新しいパスワード",
     "confirm_password": "パスワードの確認",
     "create_button": "パスワードを作成",
@@ -176,7 +176,7 @@
     "remember_me": "認証情報を保存",
     "security_alert_title": "セキュリティアラート",
     "security_alert_message": "先に進むには、パスコードもしくはデバイスが対応している生体認証方法 (FaceID、TouchID、または指紋) をオンにする必要があります",
-    "i_understand": "MetaMaskがこのパスワードを復元できないことを理解しています。",
+    "i_understand": "NxtWalletがこのパスワードを復元できないことを理解しています。",
     "learn_more": "詳細。",
     "secure": "ウォレットの安全を確保",
     "confirm": "秘密のリカバリーフレーズの確認",
@@ -184,7 +184,7 @@
   },
   "reset_password": {
     "title": "パスワードを変更",
-    "subtitle": "このパスワードはこのデバイスでのみMetaMaskウォレットのロックを解除します。",
+    "subtitle": "このパスワードはこのデバイスでのみNxtWalletウォレットのロックを解除します。",
     "password": "新しいパスワード",
     "confirm_password": "パスワードの確認",
     "reset_button": "パスワードをリセット",
@@ -202,7 +202,7 @@
     "remember_me": "認証情報を保存",
     "security_alert_title": "セキュリティアラート",
     "security_alert_message": "先に進むには、パスコードもしくはデバイスが対応している生体認証方法 (FaceID、TouchID、または指紋) をオンにする必要があります",
-    "i_understand": "MetaMaskがこのパスワードを復元できないことを理解しています。",
+    "i_understand": "NxtWalletがこのパスワードを復元できないことを理解しています。",
     "learn_more": "詳細。",
     "secure": "ウォレットの安全を確保",
     "confirm": "秘密のリカバリーフレーズの確認",
@@ -252,7 +252,7 @@
     "lock_ok": "はい",
     "lock_cancel": "いいえ",
     "feedback": "フィードバック",
-    "metamask_support": "MetaMaskサポート",
+    "metamask_support": "NxtWalletサポート",
     "public_address": "パブリックアドレス"
   },
   "send": {
@@ -285,7 +285,7 @@
     "no_tokens": "トークンがありません！",
     "no_nfts_yet": "まだ NFT がありません",
     "nfts_autodetection_title": "NFT の検出",
-    "nfts_autodetection_desc": "MetaMaskがOpenSeaからNFTを自動検出し、MetaMaskウォレットに表示できるように許可してください。",
+    "nfts_autodetection_desc": "NxtWalletがOpenSeaからNFTを自動検出し、NxtWalletウォレットに表示できるように許可してください。",
     "nfts_autodetection_cta": "設定でNFTの検出をオンにしてください",
     "learn_more": "詳細",
     "add_collectibles": "NFTをインポート",
@@ -347,9 +347,9 @@
     "here": "こちらのプライバシーポリシーをご覧ください",
     "agree": "同意する",
     "decline": "同意しない",
-    "description_title": "MetaMaskの改善にご協力ください",
-    "description_content_1": "MetaMaskは、ユーザーがモバイルアプリをどのように利用しているのかをより詳しく把握するため、基本的な使用状況データを収集したいと考えています。このデータは、製品の使いやすさとユーザーエクスペリエンスを引き続き改善するために使用されます。",
-    "description_content_2": "MetaMaskは...",
+    "description_title": "NxtWalletの改善にご協力ください",
+    "description_content_1": "NxtWalletは、ユーザーがモバイルアプリをどのように利用しているのかをより詳しく把握するため、基本的な使用状況データを収集したいと考えています。このデータは、製品の使いやすさとユーザーエクスペリエンスを引き続き改善するために使用されます。",
+    "description_content_2": "NxtWalletは...",
     "action_description_1": "ユーザーが設定でいつでもオプトアウトできるようにしています",
     "action_description_2": "匿名のクリック・ページ閲覧情報を送信します",
     "action_description_3": "国、地域、市区町村データ (具体的な場所を除く) のデータを送信します",
@@ -440,7 +440,7 @@
     "state_logs": "ステータスログ",
     "auto_lock": "自動ロック",
     "auto_lock_desc": "アプリケーションが自動的にロックされるまでの時間を選択してください。",
-    "state_logs_desc": "これはMetaMaskが問題のデバッグを行ううえで参考になります。ハンバーガーアイコン > フィードバックを送信、またはチケットがある場合はそのチケットに返信して、MetaMaskサポートまでお送りください。",
+    "state_logs_desc": "これはNxtWalletが問題のデバッグを行ううえで参考になります。ハンバーガーアイコン > フィードバックを送信、またはチケットがある場合はそのチケットに返信して、NxtWalletサポートまでお送りください。",
     "autolock_immediately": "すぐに",
     "autolock_never": "しない",
     "autolock_after": "{{time}}秒後",
@@ -463,7 +463,7 @@
     "save_rpc_url": "保存",
     "invalid_rpc_prefix": "URIには適切なHTTPSプレフィックスが必要です",
     "invalid_rpc_url": "無効なRPC URL",
-    "sync_with_extension": "MetaMask拡張機能と同期",
+    "sync_with_extension": "NxtWallet拡張機能と同期",
     "sync_with_extension_desc": "これにより、拡張機能のアカウントがすべてこのデバイスにインポートされます。",
     "sync": "同期",
     "clear_approved_dapps": "承認済みのDappsを消去",
@@ -476,7 +476,7 @@
     "protect_title": "ウォレットを保護",
     "video_failed": "動画を読み込めませんでした。",
     "protect_desc": "紙やパスワードマネージャー、クラウドなど、さまざまな場所に秘密のリカバリーフレーズを保管して、ウォレットを守りましょう。",
-    "protect_desc_no_backup": "これはウォレットの 12  の単語からなるフレーズです。このフレーズはウォレットの資金の送金を含む、現在と未来のすべてのアカウントのコントロールに使用できます。このフレーズを安全に保管し、他人に絶対に教えないでください。MetaMask  はこのキーの復元をお手伝いできません。",
+    "protect_desc_no_backup": "これはウォレットの 12  の単語からなるフレーズです。このフレーズはウォレットの資金の送金を含む、現在と未来のすべてのアカウントのコントロールに使用できます。このフレーズを安全に保管し、他人に絶対に教えないでください。NxtWallet  はこのキーの復元をお手伝いできません。",
     "learn_more": "詳細。",
     "seedphrase_not_backed_up": "重要！秘密のリカバリーフレーズがバックアップされていません",
     "seedphrase_backed_up": "秘密のリカバリーフレーズのバックアップ",
@@ -527,7 +527,7 @@
     "remove_network_title": "このネットワークを削除しますか？",
     "remove_network": "削除",
     "cancel_remove_network": "キャンセル",
-    "info_title": "MetaMaskについて",
+    "info_title": "NxtWalletについて",
     "experimental_title": "実験的",
     "experimental_desc": "WalletConnect他...",
     "legal_title": "法的情報",
@@ -547,7 +547,7 @@
     "clear_history_desc": "ブラウザの履歴をすべて削除するにはこのオプションを選択します。",
     "clear_cookies_desc": "ブラウザのCookieを消去するにはこのオプションを選択します。",
     "metametrics_title": "MetaMetricsに参加",
-    "metametrics_description": "MetaMetricsに参加して、MetaMaskの改善にご協力ください。",
+    "metametrics_description": "MetaMetricsに参加して、NxtWalletの改善にご協力ください。",
     "third_party_title": "受信トランザクションを取得",
     "third_party_description": "履歴への受信トランザクションの表示には、サードパーティー API (Etherscan) が使用されます。これらのサービスからデータを取得しないようにするには、オフにしてください。",
     "metametrics_opt_out": "MetaMetricsオプトアウト",
@@ -600,7 +600,7 @@
       "リカバリーフレーズ (SRP)",
       "は",
       "ウォレット、資金、アカウントへのフルアクセスを可能にします。\n\n",
-      "MetaMaskは",
+      "NxtWalletは",
       "ノンカストディアルウォレットです",
       "そのため、",
       "ユーザーがSRPの唯一の所有者となります。"
@@ -609,14 +609,14 @@
     "private_key_warning": "これは現在選択されたアカウント {{accountName}} の秘密鍵です。この鍵は絶対に開示しないでください。資金の送金を含め、秘密鍵を持っていれば誰でもアカウントを完全にコントロールできます。",
     "seed_phrase_warning_explanation": [
       "誰にも画面を見られていないことを確認してください。",
-      "MetaMaskサポートがこれを求めることはありません。"
+      "NxtWalletサポートがこれを求めることはありません。"
     ],
     "private_key_warning_explanation": "この鍵は絶対に開示しないでください。資金の送金を含め、秘密鍵を持っていれば誰でもアカウントを完全にコントロールできます。",
     "reveal_credential_modal": [
       "{{credentialName}}があれば、",
       "アカウントと資金に完全にアクセスできます。\n\n誰にも教えないでください。",
       "ウォレットと資金に完全にアクセスできます。\n\n誰にも教えないでください。",
-      "MetaMask サポートがこの情報を尋ねることはなく、",
+      "NxtWallet サポートがこの情報を尋ねることはなく、",
       "もし尋ねられた場合はフィッシング詐欺の可能性があります。"
     ],
     "seed_phrase": "秘密のリカバリーフレーズ",
@@ -642,7 +642,7 @@
   },
   "password_reset": {
     "password_title": "パスワード",
-    "password_desc": "デバイスでMetaMaskアプリのロックを解除するための強いパスワードを選択してください。このパスワードを紛失した場合、ウォレットを再インポートするのに秘密のリカバリーフレーズが必要になります。",
+    "password_desc": "デバイスでNxtWalletアプリのロックを解除するための強いパスワードを選択してください。このパスワードを紛失した場合、ウォレットを再インポートするのに秘密のリカバリーフレーズが必要になります。",
     "password_learn_more": "詳細。",
     "change_password": "パスワードを変更"
   },
@@ -679,7 +679,7 @@
     "cancel": "キャンセル",
     "error": "エラー",
     "attempting_to_scan_with_wallet_locked": "QRコードをスキャンしようとしているようですが、使用するにはウォレットのロックを解除する必要があります。",
-    "attempting_sync_from_wallet_error": "拡張機能と同期しようとしているようですが、これを行うには現在のウォレットを消去する必要があります。\n\n消去してアプリの新しいバージョンを再インストールしたら、「MetaMask拡張機能と同期」オプションを選択してください。ウォレットを消去する前に、必ず秘密のリカバリーフレーズがバックアップされていることを確認してください。"
+    "attempting_sync_from_wallet_error": "拡張機能と同期しようとしているようですが、これを行うには現在のウォレットを消去する必要があります。\n\n消去してアプリの新しいバージョンを再インストールしたら、「NxtWallet拡張機能と同期」オプションを選択してください。ウォレットを消去する前に、必ず秘密のリカバリーフレーズがバックアップされていることを確認してください。"
   },
   "action_view": {
     "cancel": "キャンセル",
@@ -782,7 +782,7 @@
     "gas_education_1": "ガス代は、",
     "gas_education_2_ethereum": "Ethereumネットワークでトランザクションを処理するクリプトマイナーに支払われます。",
     "gas_education_2": "ネットワーク。",
-    "gas_education_3": "MetaMaskはガス代で利益を得ることはありません。",
+    "gas_education_3": "NxtWalletはガス代で利益を得ることはありません。",
     "gas_education_4": "ガス代は、ネットワークトラフィックとトランザクションの複雑さに応じて変動します。",
     "gas_education_learn_more": "ガス代の詳細をご覧ください",
     "confusable_title": "受取人のアドレスを確認してください",
@@ -797,7 +797,7 @@
     "invalid_qr_code_sync": "QRコードが無効です。ハードウェアの同期QR コードをスキャンしてください。",
     "no_camera_permission": "カメラが承認されていません。パーミッションを付与して再度お試しください",
     "invalid_qr_code_sign": "無効な QR コードです。ハードウェアを確認して再度お試しください。",
-    "no_camera_permission_android": "続けるには、MetaMask によるカメラへのアクセスを許可する必要があります。また、システム設定の変更が必要な場合もあります。",
+    "no_camera_permission_android": "続けるには、NxtWallet によるカメラへのアクセスを許可する必要があります。また、システム設定の変更が必要な場合もあります。",
     "mismatched_qr_request_id": "トランザクションデータが一致していません。Keystone で下の QR コードに署名して、[署名を取得] をタップしてください。"
   },
   "custom_gas": {
@@ -810,7 +810,7 @@
     "save": "保存",
     "warning_gas_limit": "ガス代の上限は20999よりも高く設定する必要があります",
     "warning_gas_limit_estimated": "ガス上限の見積もりは{{gas}}です。最低値として使用してください",
-    "cost_explanation": "ガス代は、Ethereumネットワーク上でトランザクションの処理コストに支払われます。MetaMaskがガス代で利益を得ることはありません。ガス代が高いほど、トランザクションが処理される可能性が高くなります。"
+    "cost_explanation": "ガス代は、Ethereumネットワーク上でトランザクションの処理コストに支払われます。NxtWalletがガス代で利益を得ることはありません。ガス代が高いほど、トランザクションが処理される可能性が高くなります。"
   },
   "spend_limit_edition": {
     "save": "保存",
@@ -869,7 +869,7 @@
     "change_url": "URLを変更",
     "switch_network": "ネットワークを切り替える",
     "dapp_browser": "Dappsブラウザ",
-    "dapp_browser_message": "MetaMaskは分散型ウェブ用のブラウザであり、ウォレットです。ぜひ一度ご覧ください！",
+    "dapp_browser_message": "NxtWalletは分散型ウェブ用のブラウザであり、ウォレットです。ぜひ一度ご覧ください！",
     "featured_dapps": "注目のDapps",
     "my_favorites": "お気に入り",
     "search": "検索するか、URLを入力してください",
@@ -996,7 +996,7 @@
   "sync_with_extension": {
     "title": "拡張機能からデータを同期",
     "short_title": "Extensionと同期",
-    "label": "デスクトップブラウザでMetaMask拡張機能を開いて、「設定」 > 「詳細設定」の順に移動し、「モバイルと同期」をクリックして、パスワードを入力すると、QR コードが表示されます",
+    "label": "デスクトップブラウザでNxtWallet拡張機能を開いて、「設定」 > 「詳細設定」の順に移動し、「モバイルと同期」をクリックして、パスワードを入力すると、QR コードが表示されます",
     "button_continue": "続行",
     "please_wait": "データを同期する間お待ちください...",
     "error_title": "申し訳ございません！",
@@ -1012,11 +1012,11 @@
     "something_wrong": "何か問題が発生しました...",
     "something_wrong_desc": "ウォレットの同期がうまくいきません。後ほど再度試すか、秘密のリカバリーフレーズを使用してウォレットをインポートしてください",
     "allow_biometrics_title": "{{biometrics}}を有効にしますか？",
-    "allow_biometrics_desc": "{{biometrics}}を使ってMetaMaskで認証できます"
+    "allow_biometrics_desc": "{{biometrics}}を使ってNxtWalletで認証できます"
   },
   "sync_with_extension_success": {
     "title": "ウォレットがインポートされました",
-    "sync_complete_1": "秘密のリカバリーフレーズを紛失すると、MetaMaskでは復元できませんのでご注意ください。秘密のリカバリーフレーズは次の場所で確認できます:",
+    "sync_complete_1": "秘密のリカバリーフレーズを紛失すると、NxtWalletでは復元できませんのでご注意ください。秘密のリカバリーフレーズは次の場所で確認できます:",
     "sync_complete_2": "設定 > セキュリティとプライバシー",
     "button_continue": "完了",
     "password_tip": "モバイルウォレットのロックを解除するパスワードは、拡張機能に設定されたものと同じです。",
@@ -1081,9 +1081,9 @@
   },
   "authentication": {
     "auth_prompt_title": "認証が必要です",
-    "auth_prompt_desc": "MetaMaskを使用するには認証してください",
+    "auth_prompt_desc": "NxtWalletを使用するには認証してください",
     "fingerprint_prompt_title": "認証が必要です",
-    "fingerprint_prompt_desc": "指紋でMetaMaskのロックを解除してください",
+    "fingerprint_prompt_desc": "指紋でNxtWalletのロックを解除してください",
     "fingerprint_prompt_cancel": "キャンセル"
   },
   "accountApproval": {
@@ -1100,7 +1100,7 @@
   },
   "import_private_key": {
     "title": "アカウントをインポート",
-    "description_one": "インポートされたアカウントはウォレットに表示されますが、MetaMaskの秘密のリカバリーフレーズでは復元できません。",
+    "description_one": "インポートされたアカウントはウォレットに表示されますが、NxtWalletの秘密のリカバリーフレーズでは復元できません。",
     "learn_more_here": "インポートされたアカウントに関する詳細はこちらをご覧ください。",
     "subtitle": "秘密鍵の文字列をペーストしてください",
     "cta_text": "インポート",
@@ -1112,7 +1112,7 @@
   },
   "import_private_key_success": {
     "title": "アカウントがインポートされました！",
-    "description_one": "これでMetaMaskにアカウントが表示されるようになりました。"
+    "description_one": "これでNxtWalletにアカウントが表示されるようになりました。"
   },
   "first_incoming_transaction": {
     "title": "アカウントに{{asset}}が入金されました。",
@@ -1127,7 +1127,7 @@
     "step_1_description": "パスワードを作成",
     "step_2": "ステップ 2:",
     "step_2_description": "ウォレットの秘密のリカバリーフレーズを保存",
-    "info_text_1": "MetaMaskウォレットのセットアップを完了させてください。",
+    "info_text_1": "NxtWalletウォレットのセットアップを完了させてください。",
     "info_text_2": "これにより、本人だけが資金にアクセスでき、デバイスを紛失した場合でもウォレットを復元できるようになります",
     "cta_text": "パスワードを作成",
     "creating_password": "パスワードを作成中..."
@@ -1149,7 +1149,7 @@
     "what_is_seedphrase_title": "「秘密のリカバリーフレーズ」とは",
     "what_is_seedphrase_text_1": "秘密のリカバリーフレーズは、12の単語からなる文であり、ここには資金をはじめとするウォレットの情報がすべて含まれています。つまり、ウォレットのすべてにアクセスするための暗号のようなものです。",
     "what_is_seedphrase_text_2": "秘密のリカバリーフレーズは、極秘かつ安全に保管する必要があります。秘密のリカバリーフレーズが他人に知られると、アカウントをコントロールされます。",
-    "what_is_seedphrase_text_3": "自分だけがアクセスできる場所に保管してください。紛失すると、MetaMaskでも復元できません。"
+    "what_is_seedphrase_text_3": "自分だけがアクセスできる場所に保管してください。紛失すると、NxtWalletでも復元できません。"
   },
   "account_backup_step_1B": {
     "title": "ウォレットの安全を確保",
@@ -1222,7 +1222,7 @@
   },
   "account_backup_step_6": {
     "title": "セキュリティに関するアドバイス",
-    "info_text": "秘密のリカバリーフレーズを紛失すると、MetaMaskでは復元できません",
+    "info_text": "秘密のリカバリーフレーズを紛失すると、NxtWalletでは復元できません",
     "tip_1": "秘密のリカバリーフレーズは複数のバックアップをとっておいてください",
     "tip_2": "フレーズは信頼できるパスワードマネージャーに保管したり、紙に書いて安全な場所に保管してください",
     "tip_3": "フレーズは誰にも教えないでください",
@@ -1260,7 +1260,7 @@
     "congratulations": "おめでとうございます",
     "success": "ウォレットが保護されました。秘密のリカバリーフレーズを安全に保管するのは、ユーザーの責任であることをお忘れなく。",
     "hint": "ヒントを残しますか？",
-    "recover": "秘密のリカバリーフレーズを紛失すると、MetaMaskでは復元できません。秘密のリカバリーフレーズは「設定」 > 「セキュリティとプライバシー」で確認できます。",
+    "recover": "秘密のリカバリーフレーズを紛失すると、NxtWalletでは復元できません。秘密のリカバリーフレーズは「設定」 > 「セキュリティとプライバシー」で確認できます。",
     "learn": "詳細",
     "done": "完了",
     "recovery_hint": "復元のヒント",
@@ -1273,8 +1273,8 @@
   "phishing": {
     "ethereum_phishing_detection": "Ethereumフィッシング検知",
     "ethereum_phishing_detector": "Ethereumフィッシング検知ツール",
-    "intro": "は、現在MetaMaskのドメイン警告リストに登録されています。つまり、MetaMaskは、利用可能な情報に基づき、このサイトによりユーザーのセキュリティが侵害される可能性があると考えています。そのため、追加のセキュリティ対策として、MetaMaskはこのサイトへのアクセスを制限しています。この制限を解除するには、この警告の続きを読み、自己責任で続行する方法をご確認ください。",
-    "reasons": "サイトがMetaMaskの警告リストに登録される理由はさまざまですが、MetaMaskの警告リストには業界で広く使用されている他のリストの情報がまとめられています。そうした理由には、次のようなテストで不審と判断されたドメインなど、既知の詐欺またはセキュリティ上のリスクなどが含まれます",
+    "intro": "は、現在NxtWalletのドメイン警告リストに登録されています。つまり、NxtWalletは、利用可能な情報に基づき、このサイトによりユーザーのセキュリティが侵害される可能性があると考えています。そのため、追加のセキュリティ対策として、NxtWalletはこのサイトへのアクセスを制限しています。この制限を解除するには、この警告の続きを読み、自己責任で続行する方法をご確認ください。",
+    "reasons": "サイトがNxtWalletの警告リストに登録される理由はさまざまですが、NxtWalletの警告リストには業界で広く使用されている他のリストの情報がまとめられています。そうした理由には、次のようなテストで不審と判断されたドメインなど、既知の詐欺またはセキュリティ上のリスクなどが含まれます",
     "list_content": "これらの警告リストに登録されているドメインには、明らかに悪質なウェブサイトの他、正当なウェブサイトでありながら不正行為によりセキュリティが侵害されものも含まれます。",
     "to_read_more": "このサイトに関する詳細は、",
     "review_on_etherscam": "Etherscamのドメインをご覧ください。",
@@ -1308,7 +1308,7 @@
     "received_message": "このトランザクションを表示するにはタップしてください",
     "received_payment_message": "{{amount}}DAI受け取りました",
     "prompt_title": "プッシュ通知を有効にする",
-    "prompt_desc": "ETHを受け取ったり、トランザクションが確認された際にMetaMaskが通知できるよう、通知を有効にしてください。",
+    "prompt_desc": "ETHを受け取ったり、トランザクションが確認された際にNxtWalletが通知できるよう、通知を有効にしてください。",
     "prompt_ok": "はい",
     "prompt_cancel": "いいえ、結構です",
     "wc_connected_title": "{{title}}に接続されました",
@@ -1467,7 +1467,7 @@
     "wyre_minimum_deposit": "最低入金額は{{amount}}です",
     "wyre_maximum_deposit": "最高入金額は{{amount}}です",
     "wyre_purchase": "{{currency}}の購入",
-    "wyre_total_label": "Wyre (MetaMask経由)",
+    "wyre_total_label": "Wyre (NxtWallet経由)",
     "buy_with": "購入方法:",
     "plus_fee": "プラス{{fee}}の手数料",
     "notifications": {
@@ -1496,12 +1496,12 @@
         "average_gas_fee": "現在の平均ガス代:",
         "subtitle_1": "{{ticker}} をスワップまたは送金する場合、ガス代が支払えるよう余分に購入してください。",
         "subtitle_2": "トランザクションのガス代は、{{ticker}} の購入代とは別になります。",
-        "subtitle_3": "MetaMaskはガス代で利益を得ることはありません。"
+        "subtitle_3": "NxtWalletはガス代で利益を得ることはありません。"
       },
       "step_2": {
         "title": "ガス代とは",
         "subtitle_1": "ガス代は、Ethereum ネットワークでのトランザクションに必要なトランザクションの処理手数料で、{{ticker}} でクリプトマイナーに支払われます。",
-        "subtitle_2": "MetaMaskはガス代で利益を得ることはありません。",
+        "subtitle_2": "NxtWalletはガス代で利益を得ることはありません。",
         "learn_more": "ガス代の詳細をご覧ください"
       },
       "step_3": {
@@ -1562,7 +1562,7 @@
     "select_region_currency": "地域の通貨を選択",
     "no_tokens_match": "「{{searchString}}」に一致するトークンがありません",
     "no_currency_match": "「{{searchString}}」に一致する通貨がありません",
-    "buy_from_vetted": "提携プロバイダーから {{ticker}} を購入するため、MetaMask アプリから直接提携プロバイダーのポータルに安全に転送されます",
+    "buy_from_vetted": "提携プロバイダーから {{ticker}} を購入するため、NxtWallet アプリから直接提携プロバイダーのポータルに安全に転送されます",
     "price": "価格",
     "total_fees": "手数料合計",
     "processing_fee": "処理手数料",
@@ -1638,13 +1638,13 @@
       "best_swap": "スワップを",
       "across": "検索...",
       "want_to_learn_more": "さらに詳しく知りたい場合",
-      "learn_more": "MetaMask Swapsの詳細",
+      "learn_more": "NxtWallet Swapsの詳細",
       "what_are": "トークンスワップとは",
       "review_audits": "公式コントラクト監査をご覧ください",
       "start_swapping": "スワップを開始"
     },
     "feature_off_title": "一時的に利用できません",
-    "feature_off_body": "MetaMask Swapsはメンテナンス中です。後ほどご確認ください。",
+    "feature_off_body": "NxtWallet Swapsはメンテナンス中です。後ほどご確認ください。",
     "wrong_network_title": "Swapsが利用できません",
     "wrong_network_body": "トークンのスワップはEthereum Main Networkでのみ可能です。",
     "unallowed_asset_title": "このトークンはスワップできません",
@@ -1722,19 +1722,19 @@
     "estimated_gas_fee": "ガス代の見積もり",
     "max_gas_fee": "最高ガス代",
     "edit": "編集",
-    "quotes_include_fee": "クォートには {{fee}}%のMetaMask手数料が含まれています",
+    "quotes_include_fee": "クォートには {{fee}}%のNxtWallet手数料が含まれています",
     "tap_to_swap": "タップしてスワップ",
     "swipe_to_swap": "スワイプしてスワップ",
     "swipe_to": "スワイプして",
     "swap": "スワップ",
     "completed_swap": "スワップ！",
-    "metamask_swap_fee": "MetaMaskのスワップ手数料",
+    "metamask_swap_fee": "NxtWalletのスワップ手数料",
     "fee_text": {
       "get_the": "トップの",
       "best_price": "流動性",
       "from_the": "ソースから",
       "top_liquidity": "毎回最も有利な価格を利用。",
-      "fee_is_applied": "それぞれのクォートには、{{fee}}の手数料が自動的に含まれています。この手数料はMetaMaskのさらなる継続的な改善に使用されます。"
+      "fee_is_applied": "それぞれのクォートには、{{fee}}の手数料が自動的に含まれています。この手数料はNxtWalletのさらなる継続的な改善に使用されます。"
     },
     "enable": {
       "this_will": "これにより",
@@ -1799,7 +1799,7 @@
     "gas_education_1": "ガス代は、",
     "gas_education_2_ethereum": "Ethereumネットワークでトランザクションを処理するクリプトマイナーに支払われます。",
     "gas_education_2": "ネットワーク。",
-    "gas_education_3": "MetaMaskはガス代で利益を得ることはありません。",
+    "gas_education_3": "NxtWalletはガス代で利益を得ることはありません。",
     "gas_education_4": "「ガス代の見積もり」　",
     "gas_education_5": "は",
     "gas_education_6": "実際の手数料の見積もりです。正確な金額はネットワークの状況により異なります。",
@@ -1846,15 +1846,15 @@
   "switch_custom_network": {
     "title_existing_network": "このサイトがネットワークの変更を求めています",
     "title_new_network": "新しいネットワークが追加されました",
-    "switch_warning": "これにより、MetaMask内で選択されたネットワークから以前追加されたネットワークに切り替わります:",
+    "switch_warning": "これにより、NxtWallet内で選択されたネットワークから以前追加されたネットワークに切り替わります:",
     "available": "がネットワークセレクターで利用可能になりました。",
     "cancel": "キャンセル",
     "switch": "ネットワークを切り替える"
   },
   "add_custom_network": {
     "title": "このサイトによるネットワークの追加を許可しますか？",
-    "warning": "これにより、このネットワークがMetaMaskで使用可能になります。",
-    "warning_subtext_1": "MetaMaskはカスタムネットワークやそのセキュリティを検証しません。",
+    "warning": "これにより、このネットワークがNxtWalletで使用可能になります。",
+    "warning_subtext_1": "NxtWalletはカスタムネットワークやそのセキュリティを検証しません。",
     "warning_subtext_2": "詐欺やネットワークセキュリティのリスクに関する",
     "warning_subtext_3": "詳細をご覧ください",
     "display_name": "表示名",
@@ -1933,7 +1933,7 @@
     "estimated_gas_fee_tooltip_text_1": "ガス代は",
     "estimated_gas_fee_tooltip_text_2": " Ethereum",
     "estimated_gas_fee_tooltip_text_3": "ネットワークでトランザクションを処理するクリプトマイナーに支払われます。",
-    "estimated_gas_fee_tooltip_text_4": "MetaMaskはガス代で利益を得ることはありません。",
+    "estimated_gas_fee_tooltip_text_4": "NxtWalletはガス代で利益を得ることはありません。",
     "estimated_gas_fee_tooltip_text_5": "ガス代はネットワークにより設定され、ネットワークトラフィックとトランザクションの複雑さに応じて変動します。",
     "learn_more": "ガス代の詳細をご覧ください",
     "legacy_gas_suggestion_tooltip": "このガス代の提案には旧式のガス代の見積もりが使用されているため、不正確な可能性があります。"
@@ -1955,7 +1955,7 @@
     "high_fees": "手数料が高い理由",
     "missing_tokens": "トークンが足りない...",
     "swap_issues": "スワップできない...",
-    "mobile_sentiment": "MetaMaskモバイルの感想をお聞かせください。",
+    "mobile_sentiment": "NxtWalletモバイルの感想をお聞かせください。",
     "sentiment_good_face": "😁",
     "sentiment_bad_face": "☹️",
     "sentiment_good": "非常に満足！",
@@ -1999,12 +1999,12 @@
   },
   "remember_me": {
     "enable_remember_me": "認証情報の保存を有効にする",
-    "enable_remember_me_description": "認証情報の保存を有効にすると、携帯にアクセスできる人は誰でも MetaMask アカウントにアクセスできるようになります。"
+    "enable_remember_me_description": "認証情報の保存を有効にすると、携帯にアクセスできる人は誰でも NxtWallet アカウントにアクセスできるようになります。"
   },
   "turn_off_remember_me": {
     "title": "認証情報の保存を無効にするには、パスワードを入力してください",
     "placeholder": "パスワード",
-    "description": "このオプションを無効にすると、今後 MetaMask のロックを解除するのにパスワードが必要になります。",
+    "description": "このオプションを無効にすると、今後 NxtWallet のロックを解除するのにパスワードが必要になります。",
     "action": "認証情報の保存を無効にする"
   }
 }

@@ -28,14 +28,14 @@
   },
   "onboarding": {
     "title": "지갑 설정",
-    "sync_desc": "MetaMask 확장 프로그램 또는 다른 지갑이 이미 있는 경우, 동기화하거나 가져와 기존 자산을 관리하세요.",
+    "sync_desc": "NxtWallet 확장 프로그램 또는 다른 지갑이 이미 있는 경우, 동기화하거나 가져와 기존 자산을 관리하세요.",
     "create_desc": "첫 번째 지갑을 설정하고 분산되어 있는 앱 탐색을 시작하세요.",
     "import": "기존 지갑 가져오기 또는 새 지갑 생성",
     "import_wallet_button": "지갑 동기화 또는 가져오기",
     "new_to_crypto": "암호화폐가 처음이세요?",
     "start_exploring_now": "새 지갑 생성",
     "unlock": "로그인",
-    "new_to_metamask": "MetaMask가 처음이세요?",
+    "new_to_metamask": "NxtWallet가 처음이세요?",
     "already_have_wallet": "이미 지갑이 있나요?",
     "optin_back_title": "주의하세요!",
     "optin_back_desc": "데이터 분석 사용에 동의하거나 거부하세요.  설정에서 이 옵션을 업데이트할 수도 있습니다.",
@@ -43,15 +43,15 @@
     "warning_text_1": "기존 지갑과 계정은",
     "warning_text_2": "제거됩니다",
     "warning_text_3": "(계속 진행할 경우).",
-    "warning_text_4": "지갑의 계정 시드 구문으로만 복구할 수 있습니다. MetaMask는 복구를 도울 수 없습니다.",
+    "warning_text_4": "지갑의 계정 시드 구문으로만 복구할 수 있습니다. NxtWallet는 복구를 도울 수 없습니다.",
     "warning_proceed": "지갑 제거 및 진행",
     "warning_cancel": "취소",
     "step1": "지갑 설정",
     "step2": "암호 생성",
     "step3": "보안 지갑",
     "already_have": "이미 지갑이 있나요?",
-    "sync_existing": "브라우저 확장 기능으로 기존 MetaMask 지갑을 동기화하거나 수동으로 가져옵니다.",
-    "scan_title": "MetaMask 확장 프로그램과 동기화하는 방법",
+    "sync_existing": "브라우저 확장 기능으로 기존 NxtWallet 지갑을 동기화하거나 수동으로 가져옵니다.",
+    "scan_title": "NxtWallet 확장 프로그램과 동기화하는 방법",
     "scan": "스캔",
     "scan_step_1": "데스크톱에서 확장 프로그램 열기",
     "scan_step_2": "설정  > 고급으로 이동",
@@ -62,12 +62,12 @@
     "delete_current": "기존 지갑 삭제 중"
   },
   "onboarding_carousel": {
-    "title1": "MetaMask 방문을 환영합니다",
+    "title1": "NxtWallet 방문을 환영합니다",
     "title2": "디지털 자산 관리",
     "title3": "web3로 가는 게이트웨이",
-    "subtitle1": "수백만이 믿고 쓰는 MetaMask는 누구나 web3의 세계에 접근하게 해주는 보안 지갑입니다.",
+    "subtitle1": "수백만이 믿고 쓰는 NxtWallet는 누구나 web3의 세계에 접근하게 해주는 보안 지갑입니다.",
     "subtitle2": "토큰, 이더리움, 고유한 수집품 등의 디지털 자산을 저장, 사용 및 전송하세요.",
-    "subtitle3": "MetaMask로 로그인하고 투자, 수익 활동, 게임, 판매 등을 위한 거래를 시작하세요!",
+    "subtitle3": "NxtWallet로 로그인하고 투자, 수익 활동, 게임, 판매 등을 위한 거래를 시작하세요!",
     "get_started": "시작하기"
   },
   "onboarding_wizard": {
@@ -98,7 +98,7 @@
       "title": "기본 탐색",
       "content1": "여기를 탭하여",
       "content2": "지갑, 브라우저, 거래 내역에 액세스하세요.",
-      "content3": "계정에서 다양한 작업을 수행하고 MetaMask 설정에 액세스할 수 있습니다."
+      "content3": "계정에서 다양한 작업을 수행하고 NxtWallet 설정에 액세스할 수 있습니다."
     },
     "step5": {
       "title": "브라우저 탐색",
@@ -114,14 +114,14 @@
     "subtitle": "오래 걸리지 않습니다."
   },
   "import_wallet": {
-    "title": "이미 MetaMask 사용자인가요?",
+    "title": "이미 NxtWallet 사용자인가요?",
     "sub_title": "확장 프로그램과 동기화",
     "sync_help": "확장 프로그램과 지갑 동기화",
     "sync_help_step_one": "1. 확장 프로그램 열기",
     "sync_help_step_two": "2. 설정  > 고급으로 이동",
     "sync_help_step_three": "3. \"모바일과 동기화\" 클릭",
     "sync_help_step_four": "4. QR 코드를 스캔하여 동기화 시작",
-    "sync_from_browser_extension_button": "MetaMask 확장 프로그램과 동기화",
+    "sync_from_browser_extension_button": "NxtWallet 확장 프로그램과 동기화",
     "or": "또는",
     "import_from_seed_button": "계정 시드 구문으로 가져오기"
   },
@@ -141,9 +141,9 @@
     "this_action": "이 작업은 취소할 수 없습니다.",
     "you_can_only": "이 지갑은 계정 시드 구문으로만 ",
     "recovery_phrase": "복구할 수 있습니다. ",
-    "metamask_does_not": "MetaMask에는 계정 시드 구문이 저장되어 있지 않습니다.",
+    "metamask_does_not": "NxtWallet에는 계정 시드 구문이 저장되어 있지 않습니다.",
     "i_understand": "이해했으며 계속하겠습니다.",
-    "clean_vault_error": "저장 한도에 도달하여 MetaMask 오류가 발생했습니다. 로컬 데이터가 손상되었습니다. MetaMask를 다시 설치하고 계정 시드 구문으로 복구하십시오."
+    "clean_vault_error": "저장 한도에 도달하여 NxtWallet 오류가 발생했습니다. 로컬 데이터가 손상되었습니다. NxtWallet를 다시 설치하고 계정 시드 구문으로 복구하십시오."
   },
   "enter_password": {
     "title": "암호 입력",
@@ -154,7 +154,7 @@
   },
   "choose_password": {
     "title": "암호 생성",
-    "subtitle": "이 암호는 이 장치에서만 MetaMask 지갑의 잠금을 해제합니다.",
+    "subtitle": "이 암호는 이 장치에서만 NxtWallet 지갑의 잠금을 해제합니다.",
     "password": "새 암호",
     "confirm_password": "암호 확인",
     "create_button": "암호 생성",
@@ -172,14 +172,14 @@
     "remember_me": "자동 로그인",
     "security_alert_title": "보안 경고",
     "security_alert_message": "계속하려면 암호를 켜거나 장치에서 지원하는 생체 인증 방법(FaceID, TouchID 또는 지문)을 켜야 합니다.",
-    "i_understand": "MetaMask가 이 암호를 복구할 수 없음을 이해합니다.",
+    "i_understand": "NxtWallet가 이 암호를 복구할 수 없음을 이해합니다.",
     "learn_more": "자세한 내용을 알아보십시오.",
     "secure": "보안 지갑",
     "confirm": "계정 시드 구문 확인"
   },
   "reset_password": {
     "title": "암호 변경",
-    "subtitle": "이 암호는 이 장치에서만 MetaMask 지갑의 잠금을 해제합니다.",
+    "subtitle": "이 암호는 이 장치에서만 NxtWallet 지갑의 잠금을 해제합니다.",
     "password": "새 암호",
     "confirm_password": "암호 확인",
     "reset_button": "암호 재설정",
@@ -197,7 +197,7 @@
     "remember_me": "자동 로그인",
     "security_alert_title": "보안 경고",
     "security_alert_message": "계속하려면 암호를 켜거나 장치에서 지원하는 생체 인증 방법(FaceID, TouchID 또는 지문)을 켜야 합니다.",
-    "i_understand": "MetaMask가 이 암호를 복구할 수 없음을 이해합니다.",
+    "i_understand": "NxtWallet가 이 암호를 복구할 수 없음을 이해합니다.",
     "learn_more": "자세한 내용을 알아보십시오.",
     "secure": "보안 지갑",
     "confirm": "계정 시드 구문 확인",
@@ -247,7 +247,7 @@
     "lock_ok": "예",
     "lock_cancel": "아니요",
     "feedback": "피드백",
-    "metamask_support": "MetaMask 지원",
+    "metamask_support": "NxtWallet 지원",
     "public_address": "공개 주소"
   },
   "send": {
@@ -327,9 +327,9 @@
     "here": "여기",
     "agree": "동의함",
     "decline": "괜찮습니다",
-    "description_title": "MetaMask 개선에 참여",
-    "description_content_1": "MetaMask는 사용자의 모바일 앱 사용 방식을 더 잘 이해하기 위해 기본 사용 데이터를 수집하고자 합니다. 이 데이터는 제품의 사용 편의성과 사용자 경험을 지속적으로 개선하는 데 사용됩니다.",
-    "description_content_2": "MetaMask에서는...",
+    "description_title": "NxtWallet 개선에 참여",
+    "description_content_1": "NxtWallet는 사용자의 모바일 앱 사용 방식을 더 잘 이해하기 위해 기본 사용 데이터를 수집하고자 합니다. 이 데이터는 제품의 사용 편의성과 사용자 경험을 지속적으로 개선하는 데 사용됩니다.",
+    "description_content_2": "NxtWallet에서는...",
     "action_description_1": "언제든 설정을 통해 옵트아웃할 수 있습니다.",
     "action_description_2": "익명화된 클릭 및 페이지뷰 이벤트 보내기",
     "action_description_3": "국가, 지역, 도시 데이터(구체적 위치 아님) 보내기",
@@ -397,7 +397,7 @@
     "state_logs": "상태 로그",
     "auto_lock": "자동 잠금",
     "auto_lock_desc": "어느 정도 시간이 지나면 애플리케이션을 자동으로 잠글지 선택합니다.",
-    "state_logs_desc": "그러면 MetaMask가 앞으로 발생할 문제를 디버깅하는 데 도움이 됩니다. 햄버거 아이콘 > 피드백 보내기, 또는 기존 티켓(있는 경우)에 답신하여 MetaMask 지원 팀에게 보내 주십시오.",
+    "state_logs_desc": "그러면 NxtWallet가 앞으로 발생할 문제를 디버깅하는 데 도움이 됩니다. 햄버거 아이콘 > 피드백 보내기, 또는 기존 티켓(있는 경우)에 답신하여 NxtWallet 지원 팀에게 보내 주십시오.",
     "autolock_immediately": "즉시",
     "autolock_never": "안 함",
     "autolock_after": "{{time}}초 후",
@@ -420,7 +420,7 @@
     "save_rpc_url": "저장",
     "invalid_rpc_prefix": "URI에는 적절한 HTTPS 접두사가 필요합니다.",
     "invalid_rpc_url": "잘못된 RPC URL",
-    "sync_with_extension": "MetaMask 확장 프로그램과 동기화",
+    "sync_with_extension": "NxtWallet 확장 프로그램과 동기화",
     "sync_with_extension_desc": "모든 확장 계정을 이 장치로 가져옵니다.",
     "sync": "동기화",
     "clear_approved_dapps": "승인된 디앱 지우기",
@@ -476,7 +476,7 @@
     "remove_network_title": "이 네트워크를 제거할까요?",
     "remove_network": "제거",
     "cancel_remove_network": "취소",
-    "info_title": "MetaMask 정보",
+    "info_title": "NxtWallet 정보",
     "experimental_title": "실험용",
     "experimental_desc": "WalletConnect 등...",
     "legal_title": "법적",
@@ -496,7 +496,7 @@
     "clear_history_desc": "전체 탐색 기록을 지우려면 이 옵션을 선택하세요.",
     "clear_cookies_desc": "브라우저의 쿠키를 지우려면 이 옵션을 선택하세요.",
     "metametrics_title": "MetaMetrics에 참여",
-    "metametrics_description": "MetaMetrics에 참여하여 MetaMask 개선에 도움을 주세요.",
+    "metametrics_description": "MetaMetrics에 참여하여 NxtWallet 개선에 도움을 주세요.",
     "third_party_title": "수신 거래 받기",
     "third_party_description": "타사 API(Etherscan)는 수신 거래를 기록에 표시하는 데 사용됩니다. 해당 서비스에서 데이터를 가져오지 않으려면 설정을 끄세요.",
     "metametrics_opt_out": "MetaMetrics 옵트아웃",
@@ -551,7 +551,7 @@
   },
   "password_reset": {
     "password_title": "암호",
-    "password_desc": "장치에서 MetaMask 앱의 잠금을 해제할 강력한 암호를 선택하십시오. 이 암호를 잊는 경우, 지갑을 다시 가져오려면 계정 시드 구문이 필요합니다.",
+    "password_desc": "장치에서 NxtWallet 앱의 잠금을 해제할 강력한 암호를 선택하십시오. 이 암호를 잊는 경우, 지갑을 다시 가져오려면 계정 시드 구문이 필요합니다.",
     "password_learn_more": "자세한 내용을 알아보십시오.",
     "change_password": "암호 변경"
   },
@@ -588,7 +588,7 @@
     "cancel": "취소",
     "error": "오류",
     "attempting_to_scan_with_wallet_locked": "QR 코드 스캔을 시도 중이십니까? 이를 사용하려면 지갑을 잠금 해제해야 합니다.",
-    "attempting_sync_from_wallet_error": "확장 프로그램과 동기화를 시도 중인 것 같습니다. 이를 위해서는 기존 지갑을 지워야 합니다. \n\n지우기를 완료한 후 또는 최신 버전의 앱을 재설치한 후 \"MetaMask 확장 프로그램과 동기화\" 옵션을 선택하십시오. 중요! 지갑을 지우기 전에 계정 시드 구문을 백업했는지 확인하십시오."
+    "attempting_sync_from_wallet_error": "확장 프로그램과 동기화를 시도 중인 것 같습니다. 이를 위해서는 기존 지갑을 지워야 합니다. \n\n지우기를 완료한 후 또는 최신 버전의 앱을 재설치한 후 \"NxtWallet 확장 프로그램과 동기화\" 옵션을 선택하십시오. 중요! 지갑을 지우기 전에 계정 시드 구문을 백업했는지 확인하십시오."
   },
   "action_view": {
     "cancel": "취소",
@@ -686,7 +686,7 @@
     "gas_education_1": "가스 요금은 이더리움 네트워크에서 거래를 진행하는 암호화폐 채굴자에게 ",
     "gas_education_2_ethereum": "지불됩니다.",
     "gas_education_2": "네트워크.",
-    "gas_education_3": "MetaMask는 가스 요금으로 수익을 얻지 않습니다.",
+    "gas_education_3": "NxtWallet는 가스 요금으로 수익을 얻지 않습니다.",
     "gas_education_4": "가스 요금은 네트워크 트래픽과 거래 복잡성에 따라 변동됩니다.",
     "gas_education_learn_more": "가스 요금 자세히 알아보기",
     "confusable_title": "수신인 주소를 확인하십시오.",
@@ -702,7 +702,7 @@
     "save": "저장",
     "warning_gas_limit": "가스 한도는 20999보다 크고 7920027보다 작아야 합니다.",
     "warning_gas_limit_estimated": "추정 Gas 한도는 {{gas}}입니다. 이를 최소값으로 사용하십시오.",
-    "cost_explanation": "가스 요금에는 이더리움 네트워크에서 거래를 처리하고 보관하는 비용이 포함됩니다. MetaMask는 이 요금을 이용해 이득을 얻지 않습니다. 수수료가 높을수록 거래 처리 가능성이 높아집니다."
+    "cost_explanation": "가스 요금에는 이더리움 네트워크에서 거래를 처리하고 보관하는 비용이 포함됩니다. NxtWallet는 이 요금을 이용해 이득을 얻지 않습니다. 수수료가 높을수록 거래 처리 가능성이 높아집니다."
   },
   "spend_limit_edition": {
     "save": "저장",
@@ -761,7 +761,7 @@
     "change_url": "url 변경",
     "switch_network": "네트워크 전환",
     "dapp_browser": "디앱 브라우저",
-    "dapp_browser_message": "MetaMask는 분산된 웹용 지갑이자 브라우저입니다. 둘러보세요!",
+    "dapp_browser_message": "NxtWallet는 분산된 웹용 지갑이자 브라우저입니다. 둘러보세요!",
     "featured_dapps": "주요 디앱",
     "my_favorites": "내 즐겨찾기",
     "search": "URL 검색 또는 입력",
@@ -881,7 +881,7 @@
   "sync_with_extension": {
     "title": "확장 프로그램에서 데이터 동기화",
     "short_title": "확장 프로그램과 동기화",
-    "label": "데스크톱 브라우저에서 MetaMask 확장 프로그램을 열고 \"설정\" > \"고급\"으로 이동하여 \"모바일과 동기화\"를 클릭한 다음 암호를 입력하여 QR 코드를 확인합니다.",
+    "label": "데스크톱 브라우저에서 NxtWallet 확장 프로그램을 열고 \"설정\" > \"고급\"으로 이동하여 \"모바일과 동기화\"를 클릭한 다음 암호를 입력하여 QR 코드를 확인합니다.",
     "button_continue": "계속",
     "please_wait": "데이터를 동기화하는 동안 기다려주세요...",
     "error_title": "이런!",
@@ -897,11 +897,11 @@
     "something_wrong": "이런! 문제가 발생했습니다...",
     "something_wrong_desc": "지갑을 동기화하는 동안 문제가 발생했습니다. 나중에 다시 시도하거나 계정 시드 구문을 사용하여 지갑을 가져오십시오.",
     "allow_biometrics_title": "{{biometrics}}을(를) 활성화할까요?",
-    "allow_biometrics_desc": "MetaMask에서 {{biometrics}}을(를) 사용하여 인증할 수 있습니다."
+    "allow_biometrics_desc": "NxtWallet에서 {{biometrics}}을(를) 사용하여 인증할 수 있습니다."
   },
   "sync_with_extension_success": {
     "title": "지갑 가져옴",
-    "sync_complete_1": "계정 시드 구문을 잊은 경우, MetaMask에서 복구할 수 없으니 잘 기억하시기 바랍니다. 다음 설정에서 계정 시드 구문을 찾을 수 있습니다.",
+    "sync_complete_1": "계정 시드 구문을 잊은 경우, NxtWallet에서 복구할 수 없으니 잘 기억하시기 바랍니다. 다음 설정에서 계정 시드 구문을 찾을 수 있습니다.",
     "sync_complete_2": "설정  > 보안 및 개인정보 보호",
     "button_continue": "완료",
     "password_tip": "모바일 지갑의 잠금을 해제하는 암호는 확장 프로그램에 설정한 것과 동일합니다.",
@@ -966,9 +966,9 @@
   },
   "authentication": {
     "auth_prompt_title": "인증 필요",
-    "auth_prompt_desc": "MetaMask를 사용하려면 인증하세요.",
+    "auth_prompt_desc": "NxtWallet를 사용하려면 인증하세요.",
     "fingerprint_prompt_title": "인증 필요",
-    "fingerprint_prompt_desc": "지문을 사용하여 MetaMask 잠금 해제",
+    "fingerprint_prompt_desc": "지문을 사용하여 NxtWallet 잠금 해제",
     "fingerprint_prompt_cancel": "취소"
   },
   "accountApproval": {
@@ -985,7 +985,7 @@
   },
   "import_private_key": {
     "title": "계정 가져오기",
-    "description_one": "가져온 계정은 지갑에서 볼 수 있지만 MetaMask 계정 시드 구문으로 복구할 수 없습니다.",
+    "description_one": "가져온 계정은 지갑에서 볼 수 있지만 NxtWallet 계정 시드 구문으로 복구할 수 없습니다.",
     "learn_more_here": "여기에서 가져온 계정에 대해 자세히 알아보세요.",
     "subtitle": "비공개 키 문자열 붙여넣기",
     "cta_text": "가져오기",
@@ -997,7 +997,7 @@
   },
   "import_private_key_success": {
     "title": "계정을 가져왔습니다!",
-    "description_one": "이제 MetaMask에서 귀하의 계정을 볼 수 있습니다."
+    "description_one": "이제 NxtWallet에서 귀하의 계정을 볼 수 있습니다."
   },
   "first_incoming_transaction": {
     "title": "계정에 {{asset}} 예치됨",
@@ -1012,7 +1012,7 @@
     "step_1_description": "암호 생성",
     "step_2": "Step 2:",
     "step_2_description": "지갑 계정 시드 구문 저장",
-    "info_text_1": "잠시 시간을 내어 MetaMask 지갑 설정을 완료하세요.",
+    "info_text_1": "잠시 시간을 내어 NxtWallet 지갑 설정을 완료하세요.",
     "info_text_2": "그러면 본인만 자금에 액세스할 수 있고 장치를 분실할 경우 지갑을 복구할 수 있습니다.",
     "cta_text": "암호 생성",
     "creating_password": "암호 생성 중.."
@@ -1034,7 +1034,7 @@
     "what_is_seedphrase_title": "'계정 시드 구문'이란",
     "what_is_seedphrase_text_1": "계정 시드 구문은 자금을 포함해 지갑에 대한 모든 정보가 담긴 12개의 단어 조합입니다. 전체 지갑에 액세스하는 데 사용되는 비밀 코드와 같습니다.",
     "what_is_seedphrase_text_2": "계정 시드 구문은 기밀로 안전하게 보관해야 합니다. 다른 사람이 귀하의 계정 시드 구문을 알아내면, 계정을 제어할 수 있습니다.",
-    "what_is_seedphrase_text_3": "본인만 접근할 수 있는 곳에 보관하세요. 분실할 경우, MetaMask도 복구를 도울 수 없습니다."
+    "what_is_seedphrase_text_3": "본인만 접근할 수 있는 곳에 보관하세요. 분실할 경우, NxtWallet도 복구를 도울 수 없습니다."
   },
   "account_backup_step_1B": {
     "title": "지갑 보호하기",
@@ -1107,7 +1107,7 @@
   },
   "account_backup_step_6": {
     "title": "보안 팁",
-    "info_text": "계정 시드 구문을 잊은 경우, MetaMask가 복구해드릴 수 없습니다.",
+    "info_text": "계정 시드 구문을 잊은 경우, NxtWallet가 복구해드릴 수 없습니다.",
     "tip_1": "계정 시드 구문을 여러 곳에 백업하십시오.",
     "tip_2": "믿을 만한 암호 관리자에 구문을 저장하고 안전한 곳에 메모해두세요.",
     "tip_3": "이 구문은 누구에게도 공유하지 마세요.",
@@ -1145,7 +1145,7 @@
     "congratulations": "축하합니다.",
     "success": "지갑을 보호했습니다. 계정 시드 구문을 안전하게 보관할 책임은 귀하에게 있습니다.",
     "hint": "힌트를 남기시겠어요?",
-    "recover": "계정 시드 구문을 잊으면, MetaMask가 지갑을 복구할 수 없습니다. 설정 > 보안 및 개인정보 보호에서 계정 시드 구문을 찾을 수 있습니다.",
+    "recover": "계정 시드 구문을 잊으면, NxtWallet가 지갑을 복구할 수 없습니다. 설정 > 보안 및 개인정보 보호에서 계정 시드 구문을 찾을 수 있습니다.",
     "learn": "자세히 알아보기",
     "done": "완료",
     "recovery_hint": "복구 힌트",
@@ -1158,7 +1158,7 @@
   "phishing": {
     "ethereum_phishing_detection": "이더리움 피싱 감지",
     "ethereum_phishing_detector": "이더리움 피싱 감지기는",
-    "intro": " 현재 MetaMask 도메인 경고 목록에 있습니다. 그래서 MetaMask는 사용 가능한 정보를 기반으로 이 도메인이 현재 보안을 훼손할 수 있다고 판단했으며 보안 기능을 추가하여 사이트에 대한 액세스를 제한했습니다. 이를 재정의하려면, 위험을 감수하고 계속 진행하는 방법이 적힌 이 경고의 나머지 지침을 읽으세요.",
+    "intro": " 현재 NxtWallet 도메인 경고 목록에 있습니다. 그래서 NxtWallet는 사용 가능한 정보를 기반으로 이 도메인이 현재 보안을 훼손할 수 있다고 판단했으며 보안 기능을 추가하여 사이트에 대한 액세스를 제한했습니다. 이를 재정의하려면, 위험을 감수하고 계속 진행하는 방법이 적힌 이 경고의 나머지 지침을 읽으세요.",
     "reasons": "경고 목록에 사이트가 표시되는 이유는 여러 가지이며, 당사의 경고 목록은 널리 사용되는 다른 산업 목록에서 수집한 것입니다. 이러한 이유에는 테스트에서 위험성이 밝혀진 도메인처럼 알려진 사기 또는 보안 위험 등이 있습니다. ",
     "list_content": "이러한 경고 목록의 도메인에는 노골적인 악성 웹사이트, 악의적 공격자에 의해 손상된 합법적인 웹사이트가 포함될 수 있습니다.",
     "to_read_more": "이 사이트에 대해 자세히 알아보려면 ",
@@ -1193,7 +1193,7 @@
     "received_message": "이 거래를 보려면 탭",
     "received_payment_message": "{{amount}} DAI 받음",
     "prompt_title": "푸시 알림 활성화",
-    "prompt_desc": "알림을 활성화하시면 귀하가 ETH를 받거나 거래가 확인되었을 때 MetaMask가 알려드릴 수 있습니다.",
+    "prompt_desc": "알림을 활성화하시면 귀하가 ETH를 받거나 거래가 확인되었을 때 NxtWallet가 알려드릴 수 있습니다.",
     "prompt_ok": "예",
     "prompt_cancel": "괜찮습니다",
     "wc_connected_title": "{{title}}에 연결됨",
@@ -1353,7 +1353,7 @@
     "wyre_minimum_deposit": "최소 예치금은 {{amount}}입니다.",
     "wyre_maximum_deposit": "최대 예치금은 {{amount}}입니다.",
     "wyre_purchase": "{{currency}} 구입",
-    "wyre_total_label": "Wyre(MetaMask 이용)",
+    "wyre_total_label": "Wyre(NxtWallet 이용)",
     "buy_with": "구매 수단",
     "plus_fee": "+ {{fee}} 수수료",
     "notifications": {
@@ -1380,12 +1380,12 @@
         "average_gas_fee": "현재 평균 가스 요금:",
         "subtitle_1": "{{ticker}}를 스왑하거나 전송하려는 계획이라면 가스 요금을 충당할 수 있도록 여유분을 구매하십시오.",
         "subtitle_2": "거래를 위한 가스 요금은 {{ticker}} 구매의 비용과 별도입니다.",
-        "subtitle_3": "MetaMask는 가스 요금으로 수익을 얻지 않습니다."
+        "subtitle_3": "NxtWallet는 가스 요금으로 수익을 얻지 않습니다."
       },
       "step_2": {
         "title": "가스 요금이란 무엇입니까?",
         "subtitle_1": "가스는 이더리움 네트워크에서 이루어지는 거래의 동력이 됩니다. 이는 거래를 진행하는 암호화폐 채굴자에게 {{ticker}}에서 지불되는 요금입니다.",
-        "subtitle_2": "MetaMask는 가스 요금으로 수익을 얻지 않습니다.",
+        "subtitle_2": "NxtWallet는 가스 요금으로 수익을 얻지 않습니다.",
         "learn_more": "가스 요금 자세히 알아보기"
       },
       "step_3": {
@@ -1410,13 +1410,13 @@
       "best_swap": "스왑을",
       "across": "찾아보세요...",
       "want_to_learn_more": "자세한 정보를 확인하고 싶으신가요?",
-      "learn_more": "MetaMask Swaps에 대해 자세히 알아보기",
+      "learn_more": "NxtWallet Swaps에 대해 자세히 알아보기",
       "what_are": "토큰 스왑이란?",
       "review_audits": "당사의 공식 계약 감사 검토",
       "start_swapping": "스왑 시작"
     },
     "feature_off_title": "일시적으로 사용할 수 없음",
-    "feature_off_body": "MetaMask Swaps가 점검 중입니다. 나중에 다시 확인하세요.",
+    "feature_off_body": "NxtWallet Swaps가 점검 중입니다. 나중에 다시 확인하세요.",
     "wrong_network_title": "스왑 불가능",
     "wrong_network_body": "이더리움 메인 네트워크에서만 토큰을 스왑할 수 있습니다.",
     "unallowed_asset_title": "이 토큰을 스왑할 수 없습니다.",
@@ -1474,19 +1474,19 @@
     "estimated_gas_fee": "예상 Gas 요금",
     "max_gas_fee": "최대 가스 요금",
     "edit": "편집",
-    "quotes_include_fee": "견적에는 {{fee}}%의 MetaMask 수수료가 포함됩니다.",
+    "quotes_include_fee": "견적에는 {{fee}}%의 NxtWallet 수수료가 포함됩니다.",
     "tap_to_swap": "탭하여 스왑",
     "swipe_to_swap": "스와이프하여 스왑",
     "swipe_to": "스와이프하여",
     "swap": "스왑",
     "completed_swap": "스왑!",
-    "metamask_swap_fee": "MetaMask 스왑 수수료",
+    "metamask_swap_fee": "NxtWallet 스왑 수수료",
     "fee_text": {
       "get_the": "언제나",
       "best_price": "최고의",
       "from_the": "유동성 소스에서",
       "top_liquidity": "최고의 가격으로 이용하세요.",
-      "fee_is_applied": "{{fee}}의 수수료는 각 견적에 자동으로 반영되며 MetaMask를 더욱 개선할 수 있도록 현재 진행 중인 개발에 사용됩니다."
+      "fee_is_applied": "{{fee}}의 수수료는 각 견적에 자동으로 반영되며 NxtWallet를 더욱 개선할 수 있도록 현재 진행 중인 개발에 사용됩니다."
     },
     "enable": {
       "this_will": "이는",
@@ -1571,7 +1571,7 @@
   "whats_new": {
     "title": "최근 소식 보기",
     "feature_security_settings_title": "개선된 보안 설정",
-    "feature_security_settings_text": "이제 MetaMask 앱 암호를 변경하고 설정 > 보안 및 개인정보 보호에서 지갑 계정 시드 구문을 백업하는 방법을 확인할 수 있습니다.",
+    "feature_security_settings_text": "이제 NxtWallet 앱 암호를 변경하고 설정 > 보안 및 개인정보 보호에서 지갑 계정 시드 구문을 백업하는 방법을 확인할 수 있습니다.",
     "feature_security_settings_button": "설정에서 보기"
   },
   "invalid_network": {
@@ -1584,15 +1584,15 @@
   "switch_custom_network": {
     "title_existing_network": "사이트에서 네트워크를 전환하고자 합니다.",
     "title_new_network": "새 네트워크 추가됨",
-    "switch_warning": "이는 MetaMask 내의 선택된 네트워크를 이전에 추가된 다음 네트워크로 전환합니다.",
+    "switch_warning": "이는 NxtWallet 내의 선택된 네트워크를 이전에 추가된 다음 네트워크로 전환합니다.",
     "available": "은(는) 이제 네트워크 선택기에서 사용할 수 있습니다.",
     "cancel": "취소",
     "switch": "네트워크 전환"
   },
   "add_custom_network": {
     "title": "이 사이트에서 네트워크를 추가하도록 허용하시겠습니까?",
-    "warning": "이는 이 네트워크가 MetaMask 내에서 사용될 수 있도록 합니다.",
-    "warning_subtext_1": "MetaMask는 맞춤형 네트워크 또는 그 보안을 검증하지 않습니다.",
+    "warning": "이는 이 네트워크가 NxtWallet 내에서 사용될 수 있도록 합니다.",
+    "warning_subtext_1": "NxtWallet는 맞춤형 네트워크 또는 그 보안을 검증하지 않습니다.",
     "warning_subtext_2": "사기와 네트워크",
     "warning_subtext_3": "보안 위험에 대해 자세히 알아보기",
     "display_name": "표시되는 이름",
@@ -1615,6 +1615,6 @@
   "secret_phrase_video_subtitle": {
     "title": "KO KR CC",
     "language": "ko-kr",
-    "uri": "https://github.com/MetaMask/metamask-mobile/blob/main/app/videos/subtitles/secretPhrase/subtitles-ko-kr.vtt?raw=true"
+    "uri": "https://github.com/NxtWallet/metamask-mobile/blob/main/app/videos/subtitles/secretPhrase/subtitles-ko-kr.vtt?raw=true"
   }
 }

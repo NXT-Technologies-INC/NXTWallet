@@ -28,14 +28,14 @@
   },
   "onboarding": {
     "title": "Configuração da carteira",
-    "sync_desc": "Caso você já tenha a extensão da MetaMask ou outra carteira, sincronize-a ou importe-a para gerenciar seus ativos existentes.",
+    "sync_desc": "Caso você já tenha a extensão da NxtWallet ou outra carteira, sincronize-a ou importe-a para gerenciar seus ativos existentes.",
     "create_desc": "Configure sua primeira carteira e comece a explorar aplicativos descentralizados.",
     "import": "Importe uma carteira existente ou crie uma nova",
     "import_wallet_button": "Sincronizar ou importar carteira",
     "new_to_crypto": "Novo nas criptomoedas?",
     "start_exploring_now": "Criar uma nova carteira",
     "unlock": "Entrar",
-    "new_to_metamask": "Novo na MetaMask?",
+    "new_to_metamask": "Novo na NxtWallet?",
     "already_have_wallet": "Já tem uma carteira?",
     "optin_back_title": "Atenção!",
     "optin_back_desc": "Por favor, concorde ou discorde do uso de análise de dados. Você também pode alterar essa opção nas configurações.",
@@ -43,15 +43,15 @@
     "warning_text_1": "Sua carteira e suas contas atuais serão",
     "warning_text_2": "removidas",
     "warning_text_3": "se você prosseguir.",
-    "warning_text_4": "Você SOMENTE poderá recuperá-las com a Frase Secreta de Recuperação. A MetaMask não poderá ajudar você a recuperá-las.",
+    "warning_text_4": "Você SOMENTE poderá recuperá-las com a Frase Secreta de Recuperação. A NxtWallet não poderá ajudar você a recuperá-las.",
     "warning_proceed": "Remover a carteira e prosseguir",
     "warning_cancel": "Cancelar",
     "step1": "Configuração da carteira",
     "step2": "Criar senha",
     "step3": "Carteira segura",
     "already_have": "Já tem uma carteira?",
-    "sync_existing": "Sincronize sua carteira MetaMask existente usando a extensão do navegador ou a importe manualmente.",
-    "scan_title": "Passos para sincronizar com a extensão da MetaMask",
+    "sync_existing": "Sincronize sua carteira NxtWallet existente usando a extensão do navegador ou a importe manualmente.",
+    "scan_title": "Passos para sincronizar com a extensão da NxtWallet",
     "scan": "Faça a leitura",
     "scan_step_1": "Abra a extensão no computador",
     "scan_step_2": "Acesse Configurações > Avançado",
@@ -62,12 +62,12 @@
     "delete_current": "Excluindo carteira atual"
   },
   "onboarding_carousel": {
-    "title1": "Boas-vindas à MetaMask",
+    "title1": "Boas-vindas à NxtWallet",
     "title2": "Administre seus ativos digitais",
     "title3": "Sua porta de entrada para a Web3",
-    "subtitle1": "Com a confiança de milhões de usuários, a MetaMask é uma carteira segura que torna o mundo da Web3 acessível a todos.",
+    "subtitle1": "Com a confiança de milhões de usuários, a NxtWallet é uma carteira segura que torna o mundo da Web3 acessível a todos.",
     "subtitle2": "Armazene, gaste e envie ativos digitais como tokens, Ethereum e colecionáveis únicos.",
-    "subtitle3": "Entre com a MetaMask e faça transações para investir, ganhar, jogar, vender e mais!",
+    "subtitle3": "Entre com a NxtWallet e faça transações para investir, ganhar, jogar, vender e mais!",
     "get_started": "Primeiros passos"
   },
   "onboarding_wizard": {
@@ -98,7 +98,7 @@
       "title": "Navegação principal",
       "content1": "Toque aqui",
       "content2": "para acessar sua carteira, navegador e atividades em transações.",
-      "content3": "Você pode realizar mais ações com as suas contas e acessar as configurações da MetaMask."
+      "content3": "Você pode realizar mais ações com as suas contas e acessar as configurações da NxtWallet."
     },
     "step5": {
       "title": "Explore o navegador",
@@ -114,14 +114,14 @@
     "subtitle": "Não deve demorar muito"
   },
   "import_wallet": {
-    "title": "Já é usuário da MetaMask?",
+    "title": "Já é usuário da NxtWallet?",
     "sub_title": "Sincronize com a extensão",
     "sync_help": "Sincronize sua carteira com a extensão",
     "sync_help_step_one": "1. Abra a extensão",
     "sync_help_step_two": "2. Acesse Configurações > Avançado",
     "sync_help_step_three": "3. Clique em \"Sincronizar com dispositivo móvel\"",
     "sync_help_step_four": "4. Faça a leitura do código QR para iniciar a sincronização",
-    "sync_from_browser_extension_button": "Sincronizar com a extensão da MetaMask",
+    "sync_from_browser_extension_button": "Sincronizar com a extensão da NxtWallet",
     "or": "OU",
     "import_from_seed_button": "Importe usando a Frase Secreta de Recuperação"
   },
@@ -141,13 +141,13 @@
     "this_action": "Esta ação não poderá ser desfeita.",
     "you_can_only": "Você SÓ poderá recuperar esta carteira com a sua",
     "recovery_phrase": "Frase Secreta de Recuperação",
-    "metamask_does_not": "A MetaMask não sabe a sua Frase Secreta de Recuperação.",
+    "metamask_does_not": "A NxtWallet não sabe a sua Frase Secreta de Recuperação.",
     "i_understand": "Eu compreendo. Continuar.",
     "passcode_not_set_error": "Erro: código de acesso não definido.",
     "wrong_password_error": "Erro: falha ao descriptografar",
     "wrong_password_error_android": "Erro: error:1e000065:Cipher functions:OPENSSL_internal:BAD_DECRYPT",
     "vault_error": "Erro: não é possível desbloquear sem um cofre anterior.",
-    "clean_vault_error": "A MetaMask encontrou um erro por ter atingido um limite de armazenamento. Os dados locais foram corrompidos. Reinstale a MetaMask e restaure os dados com sua Frase Secreta de Recuperação."
+    "clean_vault_error": "A NxtWallet encontrou um erro por ter atingido um limite de armazenamento. Os dados locais foram corrompidos. Reinstale a NxtWallet e restaure os dados com sua Frase Secreta de Recuperação."
   },
   "enter_password": {
     "title": "Insira sua senha",
@@ -158,7 +158,7 @@
   },
   "choose_password": {
     "title": "Criar senha",
-    "subtitle": "Esta senha desbloqueará sua carteira MetaMask somente neste dispositivo.",
+    "subtitle": "Esta senha desbloqueará sua carteira NxtWallet somente neste dispositivo.",
     "password": "Nova senha",
     "confirm_password": "Confirmar senha",
     "create_button": "Criar senha",
@@ -176,7 +176,7 @@
     "remember_me": "Lembrar de mim",
     "security_alert_title": "Alerta de segurança",
     "security_alert_message": "Para prosseguir, você precisa ativar o código de acesso ou algum método de autenticação por biometria compatível com o seu dispositivo (Face ID, Touch ID ou impressão digital)",
-    "i_understand": "Eu compreendo que a MetaMask não poderá recuperar essa senha para mim.",
+    "i_understand": "Eu compreendo que a NxtWallet não poderá recuperar essa senha para mim.",
     "learn_more": "Saiba mais.",
     "secure": "Carteira segura",
     "confirm": "Confirmar Frase Secreta de Recuperação",
@@ -184,7 +184,7 @@
   },
   "reset_password": {
     "title": "Alterar senha",
-    "subtitle": "Esta senha desbloqueará sua carteira MetaMask somente neste dispositivo.",
+    "subtitle": "Esta senha desbloqueará sua carteira NxtWallet somente neste dispositivo.",
     "password": "Nova senha",
     "confirm_password": "Confirmar senha",
     "reset_button": "Redefinir senha",
@@ -202,7 +202,7 @@
     "remember_me": "Lembrar de mim",
     "security_alert_title": "Alerta de segurança",
     "security_alert_message": "Para prosseguir, você precisa ativar o código de acesso ou algum método de autenticação por biometria compatível com o seu dispositivo (Face ID, Touch ID ou impressão digital)",
-    "i_understand": "Eu compreendo que a MetaMask não poderá recuperar essa senha para mim.",
+    "i_understand": "Eu compreendo que a NxtWallet não poderá recuperar essa senha para mim.",
     "learn_more": "Saiba mais.",
     "secure": "Carteira segura",
     "confirm": "Confirmar Frase Secreta de Recuperação",
@@ -252,7 +252,7 @@
     "lock_ok": "SIM",
     "lock_cancel": "NÃO",
     "feedback": "Comentário",
-    "metamask_support": "Suporte da MetaMask",
+    "metamask_support": "Suporte da NxtWallet",
     "public_address": "Endereço público"
   },
   "send": {
@@ -285,7 +285,7 @@
     "no_tokens": "Você não tem nenhum token!",
     "no_nfts_yet": "Nenhum NFT até agora",
     "nfts_autodetection_title": "Detecção de NFTs",
-    "nfts_autodetection_desc": "Permita que a MetaMask detecte NFTs automaticamente do OpenSea e os exiba na sua carteira MetaMask.",
+    "nfts_autodetection_desc": "Permita que a NxtWallet detecte NFTs automaticamente do OpenSea e os exiba na sua carteira NxtWallet.",
     "nfts_autodetection_cta": "Ative a detecção de NFTs nas configurações",
     "learn_more": "Saiba mais",
     "add_collectibles": "Importar NFTs",
@@ -347,9 +347,9 @@
     "here": "aqui",
     "agree": "Concordo",
     "decline": "Não, obrigado",
-    "description_title": "Ajude a melhorar a MetaMask",
-    "description_content_1": "A MetaMask gostaria de coletar dados básicos de utilização para entender melhor como os usuários interagem com o aplicativo móvel. Esses dados serão usados para aprimorar continuamente a usabilidade e a experiência do usuário com o nosso produto.",
-    "description_content_2": "A MetaMask...",
+    "description_title": "Ajude a melhorar a NxtWallet",
+    "description_content_1": "A NxtWallet gostaria de coletar dados básicos de utilização para entender melhor como os usuários interagem com o aplicativo móvel. Esses dados serão usados para aprimorar continuamente a usabilidade e a experiência do usuário com o nosso produto.",
+    "description_content_2": "A NxtWallet...",
     "action_description_1": "Sempre permitirá que você revogue a permissão nas configurações",
     "action_description_2": "Enviará eventos anonimizados de cliques e visualizações de páginas",
     "action_description_3": "Enviará dados de país, região e cidade (localização não específica)",
@@ -440,7 +440,7 @@
     "state_logs": "Logs de estado",
     "auto_lock": "Bloqueio automático",
     "auto_lock_desc": "Selecione o tempo para bloquear o aplicativo automaticamente.",
-    "state_logs_desc": "Isso ajudará a MetaMask a depurar qualquer problema que você possa encontrar. Envie ao suporte da MetaMask através do ícone de hambúrguer > Enviar comentário ou responda ao seu chamado existente, se for o caso.",
+    "state_logs_desc": "Isso ajudará a NxtWallet a depurar qualquer problema que você possa encontrar. Envie ao suporte da NxtWallet através do ícone de hambúrguer > Enviar comentário ou responda ao seu chamado existente, se for o caso.",
     "autolock_immediately": "Imediatamente",
     "autolock_never": "Nunca",
     "autolock_after": "Depois de {{time}} segundos",
@@ -463,7 +463,7 @@
     "save_rpc_url": "SALVAR",
     "invalid_rpc_prefix": "Os URIs precisam do prefixo HTTPS apropriado",
     "invalid_rpc_url": "URL de RPC inválido",
-    "sync_with_extension": "Sincronizar com a extensão da MetaMask",
+    "sync_with_extension": "Sincronizar com a extensão da NxtWallet",
     "sync_with_extension_desc": "Isso importará todas as contas da extensão para este dispositivo.",
     "sync": "SINCRONIZAR",
     "clear_approved_dapps": "LIMPAR DAPPS APROVADOS",
@@ -476,7 +476,7 @@
     "protect_title": "Proteja sua carteira",
     "video_failed": "Falha ao carregar o vídeo.",
     "protect_desc": "Proteja sua carteira guardando sua Frase Secreta de Recuperação em vários lugares, como uma folha de papel, um gerenciador de senhas ou a nuvem.",
-    "protect_desc_no_backup": "Esta é a frase de 12 palavras da sua carteira. Ela pode ser usada para assumir o controle de todas as suas contas atuais e futuras, incluindo a possibilidade de retirar valores da sua carteira. Guarde esta frase em segurança e NÃO a compartilhe com ninguém. A MetaMask não poderá ajudar a recuperar esta chave.",
+    "protect_desc_no_backup": "Esta é a frase de 12 palavras da sua carteira. Ela pode ser usada para assumir o controle de todas as suas contas atuais e futuras, incluindo a possibilidade de retirar valores da sua carteira. Guarde esta frase em segurança e NÃO a compartilhe com ninguém. A NxtWallet não poderá ajudar a recuperar esta chave.",
     "learn_more": "Saiba mais.",
     "seedphrase_not_backed_up": "Importante! Não foi feito backup da Frase Secreta de Recuperação",
     "seedphrase_backed_up": "Frase Secreta de Recuperação salva em backup",
@@ -527,7 +527,7 @@
     "remove_network_title": "Deseja remover essa rede?",
     "remove_network": "Remover",
     "cancel_remove_network": "Cancelar",
-    "info_title": "Sobre a MetaMask",
+    "info_title": "Sobre a NxtWallet",
     "experimental_title": "Experimental",
     "experimental_desc": "WalletConnect e mais...",
     "legal_title": "Jurídico",
@@ -547,7 +547,7 @@
     "clear_history_desc": "Selecione essa opção para limpar todo seu histórico de navegação.",
     "clear_cookies_desc": "Selecione essa opção para limpar os cookies do seu navegador.",
     "metametrics_title": "Participar da MetaMetrics",
-    "metametrics_description": "Participe da MetaMetrics para ajudar a melhorar a MetaMask.",
+    "metametrics_description": "Participe da MetaMetrics para ajudar a melhorar a NxtWallet.",
     "third_party_title": "Receba transações de entrada",
     "third_party_description": "APIs de terceiros (Etherscan) são usadas para exibir suas transações de entrada no histórico. Desative essa opção caso não queira que extraiamos dados desses serviços.",
     "metametrics_opt_out": "Sair da MetaMetrics",
@@ -600,7 +600,7 @@
       "Frase Secreta de Recuperação (FSR)",
       " dá ",
       "acesso total à sua carteira, fundos e contas.\n\n",
-      "A MetaMask é uma ",
+      "A NxtWallet é uma ",
       "carteira sem custódia",
       ". Isso significa que ",
       "você é o responsável pela sua FSR."
@@ -609,14 +609,14 @@
     "private_key_warning": "Esta é a chave privada da conta atual selecionada: {{accountName}}. Nunca divulgue esta chave. Qualquer pessoa que tiver a chave privada poderá controlar totalmente a sua conta, inclusive retirar seus fundos.",
     "seed_phrase_warning_explanation": [
       "Certifique-se de que não há ninguém olhando para a sua tela. ",
-      "O suporte da MetaMask nunca pedirá essa informação."
+      "O suporte da NxtWallet nunca pedirá essa informação."
     ],
     "private_key_warning_explanation": "Nunca divulgue esta chave. Qualquer pessoa que tiver a chave privada poderá controlar totalmente a sua conta, inclusive retirar seus fundos.",
     "reveal_credential_modal": [
       "Sua {{credentialName}} oferece ",
       "acesso total à sua conta e fundos.\n\nNão compartilhe com ninguém.\n",
       "acesso total à sua carteira e fundos.\n\nNão compartilhe com ninguém.\n",
-      "O suporte da MetaMask nunca pedirá essa informação, ",
+      "O suporte da NxtWallet nunca pedirá essa informação, ",
       "mas golpistas talvez peçam."
     ],
     "seed_phrase": "Sua Frase Secreta de Recuperação",
@@ -642,7 +642,7 @@
   },
   "password_reset": {
     "password_title": "Senha",
-    "password_desc": "Escolha uma senha forte para desbloquear o app da MetaMask no seu dispositivo. Caso perca essa senha, você precisará da sua Frase Secreta de Recuperação para reimportar a carteira.",
+    "password_desc": "Escolha uma senha forte para desbloquear o app da NxtWallet no seu dispositivo. Caso perca essa senha, você precisará da sua Frase Secreta de Recuperação para reimportar a carteira.",
     "password_learn_more": "Saiba mais.",
     "change_password": "Alterar senha"
   },
@@ -679,7 +679,7 @@
     "cancel": "Cancelar",
     "error": "Erro",
     "attempting_to_scan_with_wallet_locked": "Parece que você está tentando fazer a leitura de um código QR. Você precisa desbloquear sua carteira para poder usá-lo.",
-    "attempting_sync_from_wallet_error": "Parece que você está tentando sincronizar com a extensão. Para isso, você precisará apagar sua carteira atual. \n\nDepois de apagar ou reinstalar uma nova versão do app, selecione a opção \"Sincronizar com a extensão MetaMask\". Importante: antes de apagar sua carteira, certifique-se de ter guardado sua Frase Secreta de Recuperação."
+    "attempting_sync_from_wallet_error": "Parece que você está tentando sincronizar com a extensão. Para isso, você precisará apagar sua carteira atual. \n\nDepois de apagar ou reinstalar uma nova versão do app, selecione a opção \"Sincronizar com a extensão NxtWallet\". Importante: antes de apagar sua carteira, certifique-se de ter guardado sua Frase Secreta de Recuperação."
   },
   "action_view": {
     "cancel": "Cancelar",
@@ -782,7 +782,7 @@
     "gas_education_1": "As taxas de Gas são pagas aos criptomineradores que processam as transações na ",
     "gas_education_2_ethereum": "rede Ethereum.",
     "gas_education_2": "rede.",
-    "gas_education_3": "A MetaMask não lucra com as taxas de Gas.",
+    "gas_education_3": "A NxtWallet não lucra com as taxas de Gas.",
     "gas_education_4": "As taxas de Gas flutuam com base no tráfego da rede e na complexidade da transação.",
     "gas_education_learn_more": "Saiba mais sobre as taxas de Gas",
     "confusable_title": "Verifique o endereço do destinatário",
@@ -797,7 +797,7 @@
     "invalid_qr_code_sync": "Código QR inválido. Escaneie o código QR de sincronização da carteira de hardware.",
     "no_camera_permission": "Câmera não autorizada. Por favor, autorize e tente novamente",
     "invalid_qr_code_sign": "Código QR inválido. Verifique seu hardware e tente novamente.",
-    "no_camera_permission_android": "A MetaMask deve ser autorizada a acessar sua câmera para continuar. Também pode ser necessário alterar as configurações do seu sistema.",
+    "no_camera_permission_android": "A NxtWallet deve ser autorizada a acessar sua câmera para continuar. Também pode ser necessário alterar as configurações do seu sistema.",
     "mismatched_qr_request_id": "Dados de transação incongruentes. Use sua Keystone para assinar o código QR abaixo e toque em “Obter assinatura”."
   },
   "custom_gas": {
@@ -810,7 +810,7 @@
     "save": "Salvar",
     "warning_gas_limit": "O limite de Gas deve ser maior que 20999",
     "warning_gas_limit_estimated": "O limite estimado de Gas é de {{gas}}; use como valor mínimo",
-    "cost_explanation": "A taxa de Gas cobre o custo de processamento da sua transação na rede Ethereum. A MetaMask não lucra com essa taxa. Quanto maior a taxa, maiores as chances de a sua transação ser processada."
+    "cost_explanation": "A taxa de Gas cobre o custo de processamento da sua transação na rede Ethereum. A NxtWallet não lucra com essa taxa. Quanto maior a taxa, maiores as chances de a sua transação ser processada."
   },
   "spend_limit_edition": {
     "save": "Salvar",
@@ -869,7 +869,7 @@
     "change_url": "Alterar URL",
     "switch_network": "Trocar de rede",
     "dapp_browser": "NAVEGADOR PARA DAPPS",
-    "dapp_browser_message": "A MetaMask é a sua carteira e seu navegador para a web descentralizada. Explore um pouco a plataforma!",
+    "dapp_browser_message": "A NxtWallet é a sua carteira e seu navegador para a web descentralizada. Explore um pouco a plataforma!",
     "featured_dapps": "DAPPS EM DESTAQUE",
     "my_favorites": "MEUS FAVORITOS",
     "search": "Pesquise ou digite um URL",
@@ -996,7 +996,7 @@
   "sync_with_extension": {
     "title": "Sincronizar dados da extensão",
     "short_title": "Sincronizar com a extensão",
-    "label": "Abra a extensão da MetaMask no navegador do seu computador, acesse \"Configurações\" > \"Avançado\", clique em \"Sincronizar com dispositivo móvel\" e insira sua senha para ver o código QR.",
+    "label": "Abra a extensão da NxtWallet no navegador do seu computador, acesse \"Configurações\" > \"Avançado\", clique em \"Sincronizar com dispositivo móvel\" e insira sua senha para ver o código QR.",
     "button_continue": "Continuar",
     "please_wait": "Aguarde enquanto sincronizamos seus dados...",
     "error_title": "Desculpe!",
@@ -1012,11 +1012,11 @@
     "something_wrong": "Ops! Algo deu errado...",
     "something_wrong_desc": "Encontramos dificuldades ao tentar sincronizar sua carteira. Tente novamente mais tarde ou importe sua carteira usando a Frase Secreta de Recuperação.",
     "allow_biometrics_title": "Deseja habilitar {{biometrics}}?",
-    "allow_biometrics_desc": "Você pode usar {{biometrics}} para se autenticar na MetaMask"
+    "allow_biometrics_desc": "Você pode usar {{biometrics}} para se autenticar na NxtWallet"
   },
   "sync_with_extension_success": {
     "title": "Carteira importada",
-    "sync_complete_1": "Lembre-se, a MetaMask não poderá recuperar sua Frase Secreta de Recuperação caso você a perca. Você pode encontrar a Frase Secreta de Recuperação em",
+    "sync_complete_1": "Lembre-se, a NxtWallet não poderá recuperar sua Frase Secreta de Recuperação caso você a perca. Você pode encontrar a Frase Secreta de Recuperação em",
     "sync_complete_2": "Configurações > Segurança e privacidade",
     "button_continue": "Concluído",
     "password_tip": "A senha para desbloquear sua carteira móvel é a mesma que você definiu para a extensão.",
@@ -1081,9 +1081,9 @@
   },
   "authentication": {
     "auth_prompt_title": "Autenticação necessária",
-    "auth_prompt_desc": "Faça a autenticação para usar a MetaMask",
+    "auth_prompt_desc": "Faça a autenticação para usar a NxtWallet",
     "fingerprint_prompt_title": "Autenticação necessária",
-    "fingerprint_prompt_desc": "Use sua impressão digital para desbloquear a MetaMask",
+    "fingerprint_prompt_desc": "Use sua impressão digital para desbloquear a NxtWallet",
     "fingerprint_prompt_cancel": "Cancelar"
   },
   "accountApproval": {
@@ -1100,7 +1100,7 @@
   },
   "import_private_key": {
     "title": "Importar conta",
-    "description_one": "As contas importadas podem ser visualizadas na sua carteira, mas não poderão ser recuperadas usando sua Frase Secreta de Recuperação da MetaMask.",
+    "description_one": "As contas importadas podem ser visualizadas na sua carteira, mas não poderão ser recuperadas usando sua Frase Secreta de Recuperação da NxtWallet.",
     "learn_more_here": "Saiba mais sobre contas importadas aqui.",
     "subtitle": "Cole a sequência de caracteres da sua chave privada",
     "cta_text": "IMPORTAR",
@@ -1112,7 +1112,7 @@
   },
   "import_private_key_success": {
     "title": "Conta importada com sucesso!",
-    "description_one": "Agora você poderá ver sua conta na MetaMask."
+    "description_one": "Agora você poderá ver sua conta na NxtWallet."
   },
   "first_incoming_transaction": {
     "title": "{{asset}} foi depositado na sua conta",
@@ -1127,7 +1127,7 @@
     "step_1_description": "Criar senha",
     "step_2": "2º passo:",
     "step_2_description": "Guardar a Frase Secreta de Recuperação da carteira",
-    "info_text_1": "Reserve alguns instantes para concluir a configuração da sua carteira MetaMask.",
+    "info_text_1": "Reserve alguns instantes para concluir a configuração da sua carteira NxtWallet.",
     "info_text_2": "Isso garantirá que somente você poderá acessar seus fundos e permitirá que você recupere a carteira caso perca seu dispositivo",
     "cta_text": "Criar senha",
     "creating_password": "Criando senha..."
@@ -1149,7 +1149,7 @@
     "what_is_seedphrase_title": "O que é a \"Frase Secreta de Recuperação\"",
     "what_is_seedphrase_text_1": "A Frase Secreta de Recuperação é um conjunto de 12 palavras que contém todas as informações sobre a sua carteira, incluindo seus fundos. Ela é como um código secreto usado para acessar sua carteira completa.",
     "what_is_seedphrase_text_2": "Você deve manter sua Frase Secreta de Recuperação em segredo e em segurança. Caso uma pessoa tenha acesso à sua Frase Secreta de Recuperação, ela terá controle sobre as suas contas.",
-    "what_is_seedphrase_text_3": "Guarde-a em um lugar onde somente você poderá acessá-la. Caso você perca a frase, nem mesmo a MetaMask poderá ajudar a recuperá-la."
+    "what_is_seedphrase_text_3": "Guarde-a em um lugar onde somente você poderá acessá-la. Caso você perca a frase, nem mesmo a NxtWallet poderá ajudar a recuperá-la."
   },
   "account_backup_step_1B": {
     "title": "Proteja sua carteira",
@@ -1222,7 +1222,7 @@
   },
   "account_backup_step_6": {
     "title": "Dicas de segurança",
-    "info_text": "A MetaMask não poderá recuperar sua Frase Secreta de Recuperação caso você a perca",
+    "info_text": "A NxtWallet não poderá recuperar sua Frase Secreta de Recuperação caso você a perca",
     "tip_1": "Guarde várias cópias da sua Frase Secreta de Recuperação",
     "tip_2": "Guarde a frase em um gerenciador de senhas de confiança, além de cópias em papel em um lugar seguro",
     "tip_3": "Nunca compartilhe essa frase com ninguém",
@@ -1260,7 +1260,7 @@
     "congratulations": "Parabéns",
     "success": "Você protegeu sua carteira com sucesso. Lembre-se de guardar sua Frase Secreta de Recuperação em segurança. É sua responsabilidade!",
     "hint": "Deseja criar uma dica para você?",
-    "recover": "A MetaMask não poderá recuperar sua carteira caso você a perca. Você pode encontrar sua Frase Secreta de Recuperação em Configurações > Segurança e privacidade.",
+    "recover": "A NxtWallet não poderá recuperar sua carteira caso você a perca. Você pode encontrar sua Frase Secreta de Recuperação em Configurações > Segurança e privacidade.",
     "learn": "Saiba mais",
     "done": "Concluído",
     "recovery_hint": "Dica de recuperação",
@@ -1273,7 +1273,7 @@
   "phishing": {
     "ethereum_phishing_detection": "Detecção de phishing do Ethereum",
     "ethereum_phishing_detector": "Detector de phishing do Ethereum",
-    "intro": " está na lista de advertência de domínios da MetaMask. Isso significa que, com base nas informações que temos, a MetaMask acredita que esse domínio pode comprometer sua segurança e, como recurso adicional de proteção, restringiu o acesso ao site. Para ignorar essa restrição, leia o restante da advertência para saber como continuar por sua conta e risco.",
+    "intro": " está na lista de advertência de domínios da NxtWallet. Isso significa que, com base nas informações que temos, a NxtWallet acredita que esse domínio pode comprometer sua segurança e, como recurso adicional de proteção, restringiu o acesso ao site. Para ignorar essa restrição, leia o restante da advertência para saber como continuar por sua conta e risco.",
     "reasons": "Há vários motivos para um site constar na nossa lista de advertência, que compila informações de outras listas amplamente usadas pela indústria. Esses motivos podem incluir riscos conhecidos de fraude ou segurança, como domínios que acusam positivo no ",
     "list_content": "Os domínios presentes nessas listas de advertência podem incluir sites puramente maliciosos e sites legítimos que foram comprometidos por um agente malicioso.",
     "to_read_more": "Para ler mais sobre esse site ",
@@ -1308,7 +1308,7 @@
     "received_message": "Toque para ver essa transação",
     "received_payment_message": "Você recebeu {{amount}} DAI",
     "prompt_title": "Habilitar notificações push",
-    "prompt_desc": "Habilite as notificações para que a MetaMask informe quando você tiver recebido ETH ou quando suas transações forem confirmadas.",
+    "prompt_desc": "Habilite as notificações para que a NxtWallet informe quando você tiver recebido ETH ou quando suas transações forem confirmadas.",
     "prompt_ok": "Sim",
     "prompt_cancel": "Não, obrigado",
     "wc_connected_title": "Conectado ao {{title}}",
@@ -1467,7 +1467,7 @@
     "wyre_minimum_deposit": "O depósito mínimo é de {{amount}}",
     "wyre_maximum_deposit": "O depósito máximo é de {{amount}}",
     "wyre_purchase": "Compra de {{currency}}",
-    "wyre_total_label": "Wyre (via MetaMask)",
+    "wyre_total_label": "Wyre (via NxtWallet)",
     "buy_with": "Comprar com",
     "plus_fee": "Mais uma taxa de {{fee}}",
     "notifications": {
@@ -1496,12 +1496,12 @@
         "average_gas_fee": "Taxa de Gas média atual:",
         "subtitle_1": "Se você pretende trocar ou transferir seu {{ticker}}, compre a mais para cobrir as taxas de gás.",
         "subtitle_2": "As taxas de gás para transações são separadas do custo de compra de {{ticker}}.",
-        "subtitle_3": "A MetaMask não lucra com as taxas de Gas."
+        "subtitle_3": "A NxtWallet não lucra com as taxas de Gas."
       },
       "step_2": {
         "title": "O que são as taxas de Gas?",
         "subtitle_1": "Transações na rede Ethereum são alimentadas por gás. Trata-se de uma taxa paga em {{ticker}} aos mineradores de criptomoedas que processam suas transações.",
-        "subtitle_2": "A MetaMask não lucra com as taxas de Gas.",
+        "subtitle_2": "A NxtWallet não lucra com as taxas de Gas.",
         "learn_more": "Saiba mais sobre as taxas de Gas"
       },
       "step_3": {
@@ -1562,7 +1562,7 @@
     "select_region_currency": "Selecione a região da moeda",
     "no_tokens_match": "Nenhum token corresponde a “{{searchString}}”",
     "no_currency_match": "Nenhuma moeda corresponde a “{{searchString}}”",
-    "buy_from_vetted": "Para comprar {{ticker}} de uma de nossas integrações, você será levado em segurança ao respectivo portal sem sair do app da MetaMask",
+    "buy_from_vetted": "Para comprar {{ticker}} de uma de nossas integrações, você será levado em segurança ao respectivo portal sem sair do app da NxtWallet",
     "price": "Preço",
     "total_fees": "Taxas totais",
     "processing_fee": "Taxa de processamento",
@@ -1638,13 +1638,13 @@
       "best_swap": "melhor swap",
       "across": "em...",
       "want_to_learn_more": "Quer saber mais?",
-      "learn_more": "Saiba mais sobre o recurso de swaps da MetaMask",
+      "learn_more": "Saiba mais sobre o recurso de swaps da NxtWallet",
       "what_are": "O que são swaps de tokens?",
       "review_audits": "Consulte nossa auditoria oficial dos contratos",
       "start_swapping": "Comece a fazer swap"
     },
     "feature_off_title": "Temporariamente indisponível",
-    "feature_off_body": "O recurso de swaps do MetaMask está em manutenção. Verifique novamente mais tarde.",
+    "feature_off_body": "O recurso de swaps do NxtWallet está em manutenção. Verifique novamente mais tarde.",
     "wrong_network_title": "Swaps não disponíveis",
     "wrong_network_body": "Você só pode fazer swap de tokens na rede principal do Ethereum.",
     "unallowed_asset_title": "Não é possível fazer swap desse token",
@@ -1722,19 +1722,19 @@
     "estimated_gas_fee": "Taxa de Gas estimada",
     "max_gas_fee": "Taxa de Gas máxima",
     "edit": "Editar",
-    "quotes_include_fee": "As cotações incluem uma taxa de {{fee}}% da MetaMask",
+    "quotes_include_fee": "As cotações incluem uma taxa de {{fee}}% da NxtWallet",
     "tap_to_swap": "Toque para fazer swap",
     "swipe_to_swap": "Deslize para fazer swap",
     "swipe_to": "Deslize para",
     "swap": "swap",
     "completed_swap": "Fazer swap!",
-    "metamask_swap_fee": "Taxa de swap da MetaMask",
+    "metamask_swap_fee": "Taxa de swap da NxtWallet",
     "fee_text": {
       "get_the": "Encontre o",
       "best_price": "melhor preço",
       "from_the": "com as",
       "top_liquidity": "melhores fontes de liquidez, sempre.",
-      "fee_is_applied": "Uma taxa de {{fee}} é somada automaticamente a cada cotação, o que apoia o desenvolvimento contínuo para tornar a MetaMask ainda melhor."
+      "fee_is_applied": "Uma taxa de {{fee}} é somada automaticamente a cada cotação, o que apoia o desenvolvimento contínuo para tornar a NxtWallet ainda melhor."
     },
     "enable": {
       "this_will": "Isso",
@@ -1799,7 +1799,7 @@
     "gas_education_1": "As taxas de Gas são pagas aos criptomineradores que processam as transações na ",
     "gas_education_2_ethereum": "rede Ethereum.",
     "gas_education_2": "rede.",
-    "gas_education_3": "A MetaMask não lucra com as taxas de Gas.",
+    "gas_education_3": "A NxtWallet não lucra com as taxas de Gas.",
     "gas_education_4": "A",
     "gas_education_5": "\"taxa de Gas estimada\"",
     "gas_education_6": "é a taxa efetiva esperada. O valor exato dependerá das condições da rede.",
@@ -1846,15 +1846,15 @@
   "switch_custom_network": {
     "title_existing_network": "Este site deseja trocar de rede",
     "title_new_network": "Nova rede adicionada",
-    "switch_warning": "Isso trocará a rede selecionada na MetaMask para uma rede adicionada anteriormente:",
+    "switch_warning": "Isso trocará a rede selecionada na NxtWallet para uma rede adicionada anteriormente:",
     "available": "está disponível agora no seletor de redes.",
     "cancel": "Cancelar",
     "switch": "Trocar de rede"
   },
   "add_custom_network": {
     "title": "Permitir que este site adicione uma rede?",
-    "warning": "Isso permite que esta rede seja usada na MetaMask.",
-    "warning_subtext_1": "A MetaMask não verifica redes personalizadas nem sua segurança.",
+    "warning": "Isso permite que esta rede seja usada na NxtWallet.",
+    "warning_subtext_1": "A NxtWallet não verifica redes personalizadas nem sua segurança.",
     "warning_subtext_2": "Saiba sobre",
     "warning_subtext_3": "golpes e riscos de segurança nas redes",
     "display_name": "Nome de exibição",
@@ -1933,7 +1933,7 @@
     "estimated_gas_fee_tooltip_text_1": "As taxas de Gas são pagas aos criptomineradores que processam as transações na",
     "estimated_gas_fee_tooltip_text_2": " rede",
     "estimated_gas_fee_tooltip_text_3": " Ethereum.",
-    "estimated_gas_fee_tooltip_text_4": "A MetaMask não lucra com as taxas de Gas.",
+    "estimated_gas_fee_tooltip_text_4": "A NxtWallet não lucra com as taxas de Gas.",
     "estimated_gas_fee_tooltip_text_5": "As taxas de Gas são definidas pela rede e flutuam com base no tráfego da rede e na complexidade da transação.",
     "learn_more": "Saiba mais sobre as taxas de Gas",
     "legacy_gas_suggestion_tooltip": "Essa sugestão de taxa de Gas está usando uma estimativa legada de Gas que pode estar incorreta."
@@ -1955,7 +1955,7 @@
     "high_fees": "Por que as taxas são tão altas?",
     "missing_tokens": "Estou com tokens faltando...",
     "swap_issues": "Não consigo fazer swap...",
-    "mobile_sentiment": "O que você achou da MetaMask móvel?",
+    "mobile_sentiment": "O que você achou da NxtWallet móvel?",
     "sentiment_good_face": "😁",
     "sentiment_bad_face": "☹️",
     "sentiment_good": "Adorei!",
@@ -1999,12 +1999,12 @@
   },
   "remember_me": {
     "enable_remember_me": "Ativar \"Lembrar de mim\"",
-    "enable_remember_me_description": "Quando \"Lembrar de mim\" estiver ativado, qualquer pessoa com acesso ao seu telefone poderá acessar sua conta da MetaMask."
+    "enable_remember_me_description": "Quando \"Lembrar de mim\" estiver ativado, qualquer pessoa com acesso ao seu telefone poderá acessar sua conta da NxtWallet."
   },
   "turn_off_remember_me": {
     "title": "Insira sua senha para desativar \"Lembrar de mim\"",
     "placeholder": "Senha",
-    "description": "Se desativar essa opção, você precisará de sua senha para desbloquear a MetaMask a partir de agora.",
+    "description": "Se desativar essa opção, você precisará de sua senha para desbloquear a NxtWallet a partir de agora.",
     "action": "Desativar \"Lembrar de mim\""
   }
 }

@@ -28,14 +28,14 @@
   },
   "onboarding": {
     "title": "Pag-set up ng wallet",
-    "sync_desc": "Kung nakakuha ka na ng MetaMask extension o ng ibang wallet, i-sync o i-import ito para mapamahalaan ang mga kasalukuyan mong asset.",
+    "sync_desc": "Kung nakakuha ka na ng NxtWallet extension o ng ibang wallet, i-sync o i-import ito para mapamahalaan ang mga kasalukuyan mong asset.",
     "create_desc": "I-set up ang una mong wallet at simulang i-explore ang mga desentralisadong app.",
     "import": "Mag-import ng kasalukuyang wallet o gumawa ng panibago",
     "import_wallet_button": "Mag-sync o mag-import ng wallet",
     "new_to_crypto": "Bago ka lang ba sa crypto?",
     "start_exploring_now": "Gumawa ng bagong wallet",
     "unlock": "Mag-log in",
-    "new_to_metamask": "Bago ka ba sa MetaMask?",
+    "new_to_metamask": "Bago ka ba sa NxtWallet?",
     "already_have_wallet": "May wallet ka na ba?",
     "optin_back_title": "Paalala!",
     "optin_back_desc": "Sumang-ayon o huwag sumang-ayon sa paggamit ng data analytics.  Puwede mo ring i-update ang opsyong ito sa Mga Setting.",
@@ -43,15 +43,15 @@
     "warning_text_1": "Ang iyong kasalukuyang wallet at mga account ay",
     "warning_text_2": "tatanggalin",
     "warning_text_3": "kung magpapatuloy ka.",
-    "warning_text_4": "Mare-recover mo LANG ang mga iyon gamit ang Secret Recovery Phrase ng iyong wallet. Hindi makakatulong sa iyo ang MetaMask na i-recover ito.",
+    "warning_text_4": "Mare-recover mo LANG ang mga iyon gamit ang Secret Recovery Phrase ng iyong wallet. Hindi makakatulong sa iyo ang NxtWallet na i-recover ito.",
     "warning_proceed": "Tanggalin ang wallet at magpatuloy",
     "warning_cancel": "Kanselahin",
     "step1": "Pag-set up ng wallet",
     "step2": "Gumawa ng password",
     "step3": "I-secure ang wallet",
     "already_have": "May wallet ka na ba?",
-    "sync_existing": "I-sync ang iyong kasalukuyang MetaMask wallet mula sa browser extension o i-import ito nang manu-mano.",
-    "scan_title": "Mga hakbang para i-sync sa MetaMask extension",
+    "sync_existing": "I-sync ang iyong kasalukuyang NxtWallet wallet mula sa browser extension o i-import ito nang manu-mano.",
+    "scan_title": "Mga hakbang para i-sync sa NxtWallet extension",
     "scan": "I-scan",
     "scan_step_1": "Buksan ang extension sa desktop",
     "scan_step_2": "Pumunta sa Mga Setting  > Advanced",
@@ -62,12 +62,12 @@
     "delete_current": "Dine-delete ang kasalukuyang wallet"
   },
   "onboarding_carousel": {
-    "title1": "Welcome sa MetaMask",
+    "title1": "Welcome sa NxtWallet",
     "title2": "Pamahalaan ang iyong mga digital asset",
     "title3": "Ang iyong gateway sa web3",
-    "subtitle1": "Pinagkakatiwalaan ng milyon-milyon, ang MetaMask ay isang secure na wallet na nagbibigay-daan sa web3 na ma-access ng lahat.",
+    "subtitle1": "Pinagkakatiwalaan ng milyon-milyon, ang NxtWallet ay isang secure na wallet na nagbibigay-daan sa web3 na ma-access ng lahat.",
     "subtitle2": "Mag-store, gumastos at magpadala ng mga digital asset gaya ng token, ethereum, mga natatanging collectible.",
-    "subtitle3": "Mag-log in sa MetaMask at gumawa ng mga transaksyon para mag-invest, kumita, maglaro, magbenta at higit pa!",
+    "subtitle3": "Mag-log in sa NxtWallet at gumawa ng mga transaksyon para mag-invest, kumita, maglaro, magbenta at higit pa!",
     "get_started": "Magsimula"
   },
   "onboarding_wizard": {
@@ -98,7 +98,7 @@
       "title": "Pangunahing Navigation",
       "content1": "Mag-tap dito",
       "content2": "para ma-access ang iyong Wallet, Browser, at History ng transaksyon.",
-      "content3": "Marami kang magagawa sa iyong mga account at maa-access mo ang mga setting ng MetaMask."
+      "content3": "Marami kang magagawa sa iyong mga account at maa-access mo ang mga setting ng NxtWallet."
     },
     "step5": {
       "title": "I-explore ang Browser",
@@ -114,14 +114,14 @@
     "subtitle": "Hindi ito aabutin nang matagal"
   },
   "import_wallet": {
-    "title": "User ka na ba ng MetaMask?",
+    "title": "User ka na ba ng NxtWallet?",
     "sub_title": "I-sync sa extension",
     "sync_help": "I-sync ang iyong wallet sa extension",
     "sync_help_step_one": "1. Buksan ang extension",
     "sync_help_step_two": "2. Pumunta sa Mga Setting  > Advanced",
     "sync_help_step_three": "3. I-click ang \"I-sync sa Mobile\"",
     "sync_help_step_four": "4. I-scan ang QR Code para simulan ang pag-sync",
-    "sync_from_browser_extension_button": "I-sync sa MetaMask extension",
+    "sync_from_browser_extension_button": "I-sync sa NxtWallet extension",
     "or": "O KAYA",
     "import_from_seed_button": "I-import gamit ang Lihim na Recovery Phrase"
   },
@@ -141,13 +141,13 @@
     "this_action": "Hindi maa-undo ang aksyong ito.",
     "you_can_only": "Mare-recover mo LANG ang wallet na ito gamit ang iyong ",
     "recovery_phrase": "Secret Recovery Phrase ",
-    "metamask_does_not": "Hindi hawak ng MetaMask ang iyong Secret Recovery Phrase.",
+    "metamask_does_not": "Hindi hawak ng NxtWallet ang iyong Secret Recovery Phrase.",
     "i_understand": "Nauunawaan ko, magpatuloy",
     "passcode_not_set_error": "Error: Hindi nakatakda ang passcode.",
     "wrong_password_error": "Error: Nabigo ang pag-decrypt",
     "wrong_password_error_android": "Error: error:1e000065:Cipher functions:OPENSSL_internal:BAD_DECRYPT",
     "vault_error": "Error: Hindi ma-unlock nang wala ang nakaraang vault.",
-    "clean_vault_error": "Nagkaroon ng error ang MetaMask dahil sa pag-abot sa limitasyon ng storage. Na-corrupt ang lokal na data. Paki-install ulit ang MetaMask at i-restore gamit ang iyong Lihim na Recovery Phrase."
+    "clean_vault_error": "Nagkaroon ng error ang NxtWallet dahil sa pag-abot sa limitasyon ng storage. Na-corrupt ang lokal na data. Paki-install ulit ang NxtWallet at i-restore gamit ang iyong Lihim na Recovery Phrase."
   },
   "enter_password": {
     "title": "Ilagay ang iyong password",
@@ -158,7 +158,7 @@
   },
   "choose_password": {
     "title": "Gumawa ng password",
-    "subtitle": "Maa-unlock ng password na ito ang iyong MetaMask wallet sa device lang na ito.",
+    "subtitle": "Maa-unlock ng password na ito ang iyong NxtWallet wallet sa device lang na ito.",
     "password": "Bagong Password",
     "confirm_password": "Kumpirmahin ang password",
     "create_button": "Gumawa ng password",
@@ -176,7 +176,7 @@
     "remember_me": "Tandaan ako",
     "security_alert_title": "Panseguridad na Alerto",
     "security_alert_message": "Para magpatuloy, kailangan mong i-on ang Passcode o ang anumang paraan ng pag-authenticate ng biometrics na sinusuportahan ng iyong device (FaceID, TouchID o Fingerprint)",
-    "i_understand": "Nauunawaan kong hindi mare-recover ng MetaMask ang password na ito para sa akin.",
+    "i_understand": "Nauunawaan kong hindi mare-recover ng NxtWallet ang password na ito para sa akin.",
     "learn_more": "Matuto pa.",
     "secure": "I-secure ang wallet",
     "confirm": "Kumpirmahin ang Lihim na Recovery Phrase",
@@ -184,7 +184,7 @@
   },
   "reset_password": {
     "title": "Palitan ang password",
-    "subtitle": "Maa-unlock ng password na ito ang iyong MetaMask wallet sa device lang na ito.",
+    "subtitle": "Maa-unlock ng password na ito ang iyong NxtWallet wallet sa device lang na ito.",
     "password": "Bagong Password",
     "confirm_password": "Kumpirmahin ang password",
     "reset_button": "I-reset ang password",
@@ -202,7 +202,7 @@
     "remember_me": "Tandaan ako",
     "security_alert_title": "Panseguridad na Alerto",
     "security_alert_message": "Para magpatuloy, kailangan mong i-on ang Passcode o ang anumang paraan ng pag-authenticate ng biometrics na sinusuportahan ng iyong device (FaceID, TouchID o Fingerprint)",
-    "i_understand": "Nauunawaan kong hindi mare-recover ng MetaMask ang password na ito para sa akin.",
+    "i_understand": "Nauunawaan kong hindi mare-recover ng NxtWallet ang password na ito para sa akin.",
     "learn_more": "Matuto pa.",
     "secure": "I-secure ang wallet",
     "confirm": "Kumpirmahin ang Secret Recovery Phrase",
@@ -252,7 +252,7 @@
     "lock_ok": "OO",
     "lock_cancel": "HINDI",
     "feedback": "Feedback",
-    "metamask_support": "Suporta sa MetaMask",
+    "metamask_support": "Suporta sa NxtWallet",
     "public_address": "Pampublikong Address"
   },
   "send": {
@@ -285,7 +285,7 @@
     "no_tokens": "Wala kang anumang token!",
     "no_nfts_yet": "Wala pang mga NFT",
     "nfts_autodetection_title": "Pagtuklas ng NFT",
-    "nfts_autodetection_desc": "Payagan ang MetaMask na awtomatikong makita ang mga NFT mula sa OpenSea at ipakita sa iyong wallet sa MetaMask.",
+    "nfts_autodetection_desc": "Payagan ang NxtWallet na awtomatikong makita ang mga NFT mula sa OpenSea at ipakita sa iyong wallet sa NxtWallet.",
     "nfts_autodetection_cta": "I-on ang pagtuklas ng NFT sa Mga Setting",
     "learn_more": "Matuto pa",
     "add_collectibles": "MAGDAGDAG NG MGA NFT",
@@ -347,9 +347,9 @@
     "here": "dito",
     "agree": "Sang-ayon ako",
     "decline": "Huwag na lang",
-    "description_title": "Tulungan kaming mapahusay ang MetaMask",
-    "description_content_1": "Gustong kunin ng MetaMask ang pangunahing data ng paggamit para mas maunawaan kung paano ginagamit ng mga user ang mobile app. Gagamitin ang data na ito para patuloy na mapahusay ang kakayahang magamit at karanasan ng user sa paggamit ng produkto namin.",
-    "description_content_2": "Gagawin ng MetaMask ang sumusunod...",
+    "description_title": "Tulungan kaming mapahusay ang NxtWallet",
+    "description_content_1": "Gustong kunin ng NxtWallet ang pangunahing data ng paggamit para mas maunawaan kung paano ginagamit ng mga user ang mobile app. Gagamitin ang data na ito para patuloy na mapahusay ang kakayahang magamit at karanasan ng user sa paggamit ng produkto namin.",
+    "description_content_2": "Gagawin ng NxtWallet ang sumusunod...",
     "action_description_1": "Palagi kang papayagang mag-opt out sa pamamagitan ng Mga Setting",
     "action_description_2": "Magpapadala ng mga anonymous na kaganapang pag-click at pagtingin sa page",
     "action_description_3": "Magpapadala ng data ng bansa, rehiyon, lungsod (hindi partikular na lokasyon)",
@@ -440,7 +440,7 @@
     "state_logs": "Mga Log ng Estado",
     "auto_lock": "Awtomatikong i-lock",
     "auto_lock_desc": "Piliin kung gaano katagal bago awtomatikong mala-lock ang application.",
-    "state_logs_desc": "Makakatulong ito sa MetaMask na ma-debug ang anumang isyung kaharapin mo. Pakipadala ito sa suporta ng MetaMask sa pamamagitan ng icon na hamburger > Magpadala ng Feedback, o mag-reply sa kasalukuyan mong ticket kung mayroon.",
+    "state_logs_desc": "Makakatulong ito sa NxtWallet na ma-debug ang anumang isyung kaharapin mo. Pakipadala ito sa suporta ng NxtWallet sa pamamagitan ng icon na hamburger > Magpadala ng Feedback, o mag-reply sa kasalukuyan mong ticket kung mayroon.",
     "autolock_immediately": "Kaagad",
     "autolock_never": "Huwag Kailanman",
     "autolock_after": "Makalipas ang {{time}} (na) segundo",
@@ -463,7 +463,7 @@
     "save_rpc_url": "I-SAVE",
     "invalid_rpc_prefix": "Kailangan ng mga URI ng naaangkop na HTTPS prefix",
     "invalid_rpc_url": "Hindi valid ang RPC URL",
-    "sync_with_extension": "I-sync sa MetaMask Extension",
+    "sync_with_extension": "I-sync sa NxtWallet Extension",
     "sync_with_extension_desc": "Ii-import nito ang lahat ng extension account sa device na ito.",
     "sync": "I-SYNC",
     "clear_approved_dapps": "I-CLEAR ANG INAPRUBAHANG DAPPS",
@@ -476,7 +476,7 @@
     "protect_title": "Protektahan ang iyong wallet",
     "video_failed": "Hindi Na-load ang Video.",
     "protect_desc": "Protektahan ang iyong wallet sa pamamagitan ng pag-save ng iyong Lihim na Recovery Phrase sa iba't ibang lugar gaya sa isang piraso ng papel, password manager at/o sa cloud.",
-    "protect_desc_no_backup": "Ito ang 12 salita na parirala ng iyong wallet. Maaaring gamitin ang pariralang ito upang kontrolin ang lahat ng iyong kasalukuyan at hinaharap na account, kabilang ang kakayahang magpadala ng mga pondo sa iyong wallet. Panatilihing ligtas ang pagkakatago ng pariralang ito, HUWAG ibahagi ito kaninuman. Hindi ka matutulungan ng MetaMask na mabawi ang key na ito.",
+    "protect_desc_no_backup": "Ito ang 12 salita na parirala ng iyong wallet. Maaaring gamitin ang pariralang ito upang kontrolin ang lahat ng iyong kasalukuyan at hinaharap na account, kabilang ang kakayahang magpadala ng mga pondo sa iyong wallet. Panatilihing ligtas ang pagkakatago ng pariralang ito, HUWAG ibahagi ito kaninuman. Hindi ka matutulungan ng NxtWallet na mabawi ang key na ito.",
     "learn_more": "Matuto pa.",
     "seedphrase_not_backed_up": "Mahalaga! Hindi na-back up ang lihim na recovery phrase",
     "seedphrase_backed_up": "Na-back up ang lihim na recovery phrase",
@@ -527,7 +527,7 @@
     "remove_network_title": "Gusto mo bang tanggalin ang network na ito?",
     "remove_network": "Tanggalin",
     "cancel_remove_network": "Kanselahin",
-    "info_title": "Tungkol sa MetaMask",
+    "info_title": "Tungkol sa NxtWallet",
     "experimental_title": "Pinag-eeksperimentuhan",
     "experimental_desc": "WalletConnect at higit pa...",
     "legal_title": "Ligal",
@@ -547,7 +547,7 @@
     "clear_history_desc": "Piliin ang opsyong ito para i-clear ang iyong buong history ng pag-browse.",
     "clear_cookies_desc": "Piliin ang opsyong ito para i-clear ang cookies ng iyong browser.",
     "metametrics_title": "Sumali sa MetaMetrics",
-    "metametrics_description": "Sumali sa MetaMetrics para mas mapahusay namin ang MetaMask.",
+    "metametrics_description": "Sumali sa MetaMetrics para mas mapahusay namin ang NxtWallet.",
     "third_party_title": "Makuha ang mga papasok na transaksyon",
     "third_party_description": "Ang mga third party AP (Etherscan) ay ginagamit para ipakita ang iyong mga papasok na transakyon sa history. I-off kung ayaw mong i-pull namin ang data mula sa mga serbisyong iyon.",
     "metametrics_opt_out": "Pag-opt out sa MetaMetrics",
@@ -600,7 +600,7 @@
       "Secret Recovery Phrase (SRP)",
       " ay nagbibigay ng ",
       "ganap na access sa iyong wallet, mga pondo at mga account.\n\n",
-      "Ang MetaMask ay isang ",
+      "Ang NxtWallet ay isang ",
       "non-custodial na wallet",
       ". Ibig sabihin, ",
       "ikaw ang may ari ng SRP mo."
@@ -609,14 +609,14 @@
     "private_key_warning": "Ito ang pribadong key para sa kasalukuyang napiling account: {{accountName}}. Huwag ipaalam ang key na ito. Ang sinumang nakakalaam ng iyong pribadong key ay ganap na makokontrol ang iyong account, pati na ang pag-transfer ng alinman sa iyong mga pondo.",
     "seed_phrase_warning_explanation": [
       "Tiyaking walang tumitingin sa iyong screen. ",
-      "Ang Suporta ng MetaMask ay hindi kailanman hihiling nito."
+      "Ang Suporta ng NxtWallet ay hindi kailanman hihiling nito."
     ],
     "private_key_warning_explanation": "Huwag ipaalam ang key na ito. Ang sinumang nakakalaam ng iyong pribadong key ay ganap na makokontrol ang iyong account, pati na ang pag-transfer ng alinman sa iyong mga pondo.",
     "reveal_credential_modal": [
       "Ang iyong {{credentialName}} ay nagbibigay ng ",
       "buong access sa iyong account at pondo.\n\nHuwag ibahagi ito sa iba.\n",
       "buong access sa iyong wallet at pondo.\n\nHuwag ibahagi ito sa iba.\n",
-      "Hindi ito hihingin sayo ng MetaMask Support, ",
+      "Hindi ito hihingin sayo ng NxtWallet Support, ",
       "pero pwedeng hingiin ng mga manloloko."
     ],
     "seed_phrase": "Ang Iyong Lihim na Recovery Phrase",
@@ -642,7 +642,7 @@
   },
   "password_reset": {
     "password_title": "Password",
-    "password_desc": "Pumili ng mahirap hulaang password para ma-unlock ang MetaMask app sa iyong device. Kung makakalimutan mo ang password na ito, kakailanganin mo ang iyong Lihim na Recovery Phrase para ma-import ulit ang iyong wallet.",
+    "password_desc": "Pumili ng mahirap hulaang password para ma-unlock ang NxtWallet app sa iyong device. Kung makakalimutan mo ang password na ito, kakailanganin mo ang iyong Lihim na Recovery Phrase para ma-import ulit ang iyong wallet.",
     "password_learn_more": "Matuto pa.",
     "change_password": "Palitan ang password"
   },
@@ -679,7 +679,7 @@
     "cancel": "Kanselahin",
     "error": "Error",
     "attempting_to_scan_with_wallet_locked": "Mukhang sinusubukan mong mag-scan ng QR code, kailangan mong i-unlock ang iyong wallet para magamit ito.",
-    "attempting_sync_from_wallet_error": "Mukhang sinusubukan mong mag-sync sa extension. Para magawa ito, kakailanganin mong burahin ang iyong kasalukuyang wallet. \n\nSa oras na mgabura o mag-install ka ng bagong bersyon ng app, piliin ang opsyong \"I-sync gamit ang MetaMask Extension\". Mahalaga! Bago burahin ang iyong wallet, tiyaking na-back up mo ang iyong Secret Recovery Phrase."
+    "attempting_sync_from_wallet_error": "Mukhang sinusubukan mong mag-sync sa extension. Para magawa ito, kakailanganin mong burahin ang iyong kasalukuyang wallet. \n\nSa oras na mgabura o mag-install ka ng bagong bersyon ng app, piliin ang opsyong \"I-sync gamit ang NxtWallet Extension\". Mahalaga! Bago burahin ang iyong wallet, tiyaking na-back up mo ang iyong Secret Recovery Phrase."
   },
   "action_view": {
     "cancel": "Kanselahin",
@@ -782,7 +782,7 @@
     "gas_education_1": "Binabayaran ang mga bayarin sa gas sa mga crypto miner na nagpoproseso ng mga transaksyon sa ",
     "gas_education_2_ethereum": "Network ng Ethereum.",
     "gas_education_2": "network.",
-    "gas_education_3": "Hindi kumikita ang MetaMask mula sa mga bayarin sa gas.",
+    "gas_education_3": "Hindi kumikita ang NxtWallet mula sa mga bayarin sa gas.",
     "gas_education_4": "Nagbabago-bago ang mga bayarin sa gas batay sa trapiko sa network at pagkakumplikado ng transaksyon.",
     "gas_education_learn_more": "Matuto pa tungkol sa mga bayarin sa gas",
     "confusable_title": "Tingnan ang address ng tatanggap",
@@ -797,7 +797,7 @@
     "invalid_qr_code_sync": "Maling QR code. paki-scan ang sync QR code ng hardware wallet.",
     "no_camera_permission": "Hindi awtorisado ang kamera. Mangyaring magbigay ng pahintulot at subukang muli",
     "invalid_qr_code_sign": "Di-wastong QR-code. Mangyaring suriin ang iyong hardware at subukang muli.",
-    "no_camera_permission_android": "Kailangan mong bigyan ng access ang MetaMask sa iyong kamera upang magpatuloy. Maaaring kailanganin mo ring baguhin ang iyong mga setting ng sistema.",
+    "no_camera_permission_android": "Kailangan mong bigyan ng access ang NxtWallet sa iyong kamera upang magpatuloy. Maaaring kailanganin mo ring baguhin ang iyong mga setting ng sistema.",
     "mismatched_qr_request_id": "Hindi tugmang datos ng transakyon. Mangyaring gamitin ang iyong Keystone para lagdaan ang QR code sa ibaba at i-tap ang 'Kumuha ng Lagda'."
   },
   "custom_gas": {
@@ -810,7 +810,7 @@
     "save": "I-save",
     "warning_gas_limit": "Ang limitasyon sa gas ay dapat na higit sa 20999 at mababa sa 7920027",
     "warning_gas_limit_estimated": "Ang tinatayang limitasyon sa gas ay {{gas}}, gamitin ito bilang minimum na halaga",
-    "cost_explanation": "Kasama sa bayarin sa gas ang gastusin sa pagproseso ng iyong transaksyon sa Ethereum network. Hindi kumikita ang MetaMask mula sa bayaring ito. Kapag mas malaki ang bayarin, mas malaki ang tsansa na maproseso ang iyong transaksyon."
+    "cost_explanation": "Kasama sa bayarin sa gas ang gastusin sa pagproseso ng iyong transaksyon sa Ethereum network. Hindi kumikita ang NxtWallet mula sa bayaring ito. Kapag mas malaki ang bayarin, mas malaki ang tsansa na maproseso ang iyong transaksyon."
   },
   "spend_limit_edition": {
     "save": "I-save",
@@ -869,7 +869,7 @@
     "change_url": "Baguhin ang URL",
     "switch_network": "Lumipat ng network",
     "dapp_browser": "DAPP BROWSER",
-    "dapp_browser_message": "Ang MetaMask ay ang iyong wallet at browser para sa decentralized web. Mag-explore!",
+    "dapp_browser_message": "Ang NxtWallet ay ang iyong wallet at browser para sa decentralized web. Mag-explore!",
     "featured_dapps": "ITINATAMPOK NA DAPPS",
     "my_favorites": "MGA PABORITO KO",
     "search": "Maghanap o mag-type ng URL",
@@ -996,7 +996,7 @@
   "sync_with_extension": {
     "title": "Mag-sync ng data mula sa Extension",
     "short_title": "Mag-sync sa Extension",
-    "label": "Buksan ang MetaMask extension sa iyong desktop browser, pagkatapos ay pumunta sa \"Mga Setting\" > \"Advanced\", i-click ang \"I-sync sa Mobile\" at pagkatapos ay ilagay ang iyong password para makita ang QR Code",
+    "label": "Buksan ang NxtWallet extension sa iyong desktop browser, pagkatapos ay pumunta sa \"Mga Setting\" > \"Advanced\", i-click ang \"I-sync sa Mobile\" at pagkatapos ay ilagay ang iyong password para makita ang QR Code",
     "button_continue": "Magpatuloy",
     "please_wait": "Maghintay habang sini-sync namin ang iyong data...",
     "error_title": "Paumanhin!",
@@ -1012,11 +1012,11 @@
     "something_wrong": "Ooops! Nagkaproblema...",
     "something_wrong_desc": "Nagkakaroon kami ng mga isyu habang sinusubukang i-sync ang iyong wallet. Pakisubukan ulit sa ibang pagkakataon o i-import ang iyong wallet gamit ang iyong Lihim na Recovery Phrase",
     "allow_biometrics_title": "Gusto mo bang i-enable ang {{biometrics}}?",
-    "allow_biometrics_desc": "Puwede mong gamitin ang {{biometrics}} para i-authenticate sa MetaMask"
+    "allow_biometrics_desc": "Puwede mong gamitin ang {{biometrics}} para i-authenticate sa NxtWallet"
   },
   "sync_with_extension_success": {
     "title": "Na-import ang wallet",
-    "sync_complete_1": "Tandaan, hindi mare-recover ng MetaMask ang iyong Lihim na Recovery Phrase sakaling malimutan mo ito. Makikita mo ang Lihim na Recovery Phrase sa",
+    "sync_complete_1": "Tandaan, hindi mare-recover ng NxtWallet ang iyong Lihim na Recovery Phrase sakaling malimutan mo ito. Makikita mo ang Lihim na Recovery Phrase sa",
     "sync_complete_2": "Mga Setting > Seguridad at Pagkapribado",
     "button_continue": "Tapos na",
     "password_tip": "Ang password para ma-unlock ang iyong mobile wallet ay ang parehong password na itinakda mo para sa extension.",
@@ -1081,9 +1081,9 @@
   },
   "authentication": {
     "auth_prompt_title": "Kinakailangan ang pag-authenticate",
-    "auth_prompt_desc": "Mag-authenticate para magamit ang MetaMask",
+    "auth_prompt_desc": "Mag-authenticate para magamit ang NxtWallet",
     "fingerprint_prompt_title": "Kinakailangan ang pag-authenticate",
-    "fingerprint_prompt_desc": "Gamitin ang iyong fingerprint para i-unlock ang MetaMask",
+    "fingerprint_prompt_desc": "Gamitin ang iyong fingerprint para i-unlock ang NxtWallet",
     "fingerprint_prompt_cancel": "Kanselahin"
   },
   "accountApproval": {
@@ -1100,7 +1100,7 @@
   },
   "import_private_key": {
     "title": "Mag-import ng Account",
-    "description_one": "Ang mga na-import na account ay makikita sa iyong wallet pero hindi mare-recover gamit ang iyong Lihim na Recovery Phrase sa MetaMask.",
+    "description_one": "Ang mga na-import na account ay makikita sa iyong wallet pero hindi mare-recover gamit ang iyong Lihim na Recovery Phrase sa NxtWallet.",
     "learn_more_here": "Matuto pa tungkol sa mga na-import na account dito.",
     "subtitle": "I-paste ang string ng iyong pribadong key",
     "cta_text": "I-IMPORT",
@@ -1112,7 +1112,7 @@
   },
   "import_private_key_success": {
     "title": "Matagumpay na na-import ang account!",
-    "description_one": "Makikita mo na ngayon ang iyong account sa MetaMask."
+    "description_one": "Makikita mo na ngayon ang iyong account sa NxtWallet."
   },
   "first_incoming_transaction": {
     "title": "Nag-deposit ng {{asset}} sa iyong account",
@@ -1127,7 +1127,7 @@
     "step_1_description": "Gumawa ng password",
     "step_2": "Hakbang 2:",
     "step_2_description": "I-save ang Lihim na Recovery Phrase ng wallet",
-    "info_text_1": "Maglaan nang ilang sandali para tapusin ang pag-set up ng iyong MetaMask wallet.",
+    "info_text_1": "Maglaan nang ilang sandali para tapusin ang pag-set up ng iyong NxtWallet wallet.",
     "info_text_2": "Matitiyak nitong ikaw lang ang makaka-access sa iyong mga pondo at na mare-recover mo ang iyong wallet kung maiwawala mo ang iyong device",
     "cta_text": "Gumawa ng Password",
     "creating_password": "Gumagawa ng password..."
@@ -1149,7 +1149,7 @@
     "what_is_seedphrase_title": "Ano ang 'Lihim na Recovery Phrase'",
     "what_is_seedphrase_text_1": "Ang Lihim na Recovery Phrase ay isang set ng labindalawang salita na naglalaman ng lahat ng impormasyon tungkol sa iyong wallet, kasama ang iyong mga pondo. Para itong lihim na code na ginagamit para ma-access ang iyong buong wallet.",
     "what_is_seedphrase_text_2": "Dapat mong panatilihing lihim at ligtas ang iyong Lihim na Recovery Phrase. Kung may makakakuha ng iyong Lihim na Recovery Phrase, makokontrol nila ang iyong mga account.",
-    "what_is_seedphrase_text_3": "I-save ito sa isang lugar na ikaw lang ang makaka-access. Kung maiwawala mo ito, hindi ka matutulungan ng MetaMask na ma-recover ito."
+    "what_is_seedphrase_text_3": "I-save ito sa isang lugar na ikaw lang ang makaka-access. Kung maiwawala mo ito, hindi ka matutulungan ng NxtWallet na ma-recover ito."
   },
   "account_backup_step_1B": {
     "title": "I-secure ang iyong wallet",
@@ -1222,7 +1222,7 @@
   },
   "account_backup_step_6": {
     "title": "Mga Panseguridad na Tip",
-    "info_text": "Hindi mare-recover ng MetaMask ang iyong Lihim na Recovery Phrase sakaling maiwala mo ito",
+    "info_text": "Hindi mare-recover ng NxtWallet ang iyong Lihim na Recovery Phrase sakaling maiwala mo ito",
     "tip_1": "Magtabi ng maraming backup ng iyong Lihim na Recovery Phrase",
     "tip_2": "Itabi ang phrase sa pinagkakatiwalaang password manager at papel na backup sa isang ligtas na lugar",
     "tip_3": "Huwag ibahagi ang phrase na ito sa sinuman",
@@ -1260,7 +1260,7 @@
     "congratulations": "Pagbati",
     "success": "Matagumpay mong naprotektahan ang iyong wallet. Tiyaking panatilihing ligtas ang iyong Secret Recovery Phrase, responsibilidad mo ito!",
     "hint": "Mag-iwan ng hint para sa sarili mo?",
-    "recover": "Hindi mare-recover ng MetaMask ang iyong wallet sakaling maiwala mo ito. Makikita mo ang iyong Lihim na Recovery Phrase sa Mga Setting > Seguridad at Pagkapribado.",
+    "recover": "Hindi mare-recover ng NxtWallet ang iyong wallet sakaling maiwala mo ito. Makikita mo ang iyong Lihim na Recovery Phrase sa Mga Setting > Seguridad at Pagkapribado.",
     "learn": "Matuto pa",
     "done": "Tapos na",
     "recovery_hint": "Hint sa pag-recovery",
@@ -1273,7 +1273,7 @@
   "phishing": {
     "ethereum_phishing_detection": "Pag-detect ng Phishing ng Ethereum",
     "ethereum_phishing_detector": "Pang-detect ng Phishing ng Ethereum",
-    "intro": " ay kasalukuyang nasa listahan ng babala sa domain ng MetaMask. Ibig sabihin nito ay batay sa impormasyong available sa amin, naniniwala ang MetaMask na maaaring makompromiso ng domain na ito ang iyong seguridad at, bilang dagdag na feature ng seguridad, pinaghigpitan ng MetaMask ang pag-access sa site. Para ma-override ito, pakibasa ang natitirang bahagi ng babala para sa mga instruction kung paano magpapatuloy.",
+    "intro": " ay kasalukuyang nasa listahan ng babala sa domain ng NxtWallet. Ibig sabihin nito ay batay sa impormasyong available sa amin, naniniwala ang NxtWallet na maaaring makompromiso ng domain na ito ang iyong seguridad at, bilang dagdag na feature ng seguridad, pinaghigpitan ng NxtWallet ang pag-access sa site. Para ma-override ito, pakibasa ang natitirang bahagi ng babala para sa mga instruction kung paano magpapatuloy.",
     "reasons": "Maraming dahilan kung paano maaaring lumabas ang mga site sa aming listahan ng babala, at ang listahan namin ay pinagsama-sama mula sa iba pang ginagamit na listahan sa industriya. Maaaring kasama sa mga nasabing dahilan ang mga kilalang panganib sa panloloko o seguridad, gaya ng mga domain na nagpositibo sa ",
     "list_content": "Maaaring kasama sa mga domain sa mga listahan ng babala na ito ang mga nakakahamak na website at lehitimong website na nakompromiso ng isang nakakahamak na actor.",
     "to_read_more": "Para magbasa ng higit pang impormasyon tungkol sa site na ito ",
@@ -1308,7 +1308,7 @@
     "received_message": "Mag-tap para tingnan ang transaksyong ito",
     "received_payment_message": "Nakatanggap ka ng {{amount}} DAI",
     "prompt_title": "I-enable ang Mga Push Notification",
-    "prompt_desc": "I-enable ang mga notification para maipaalam sa iyo ng MetaMask kapag nakatanggap ka ng ETH o kapag nakumpirma na ang iyong mga transaksyon.",
+    "prompt_desc": "I-enable ang mga notification para maipaalam sa iyo ng NxtWallet kapag nakatanggap ka ng ETH o kapag nakumpirma na ang iyong mga transaksyon.",
     "prompt_ok": "Oo",
     "prompt_cancel": "Huwag na lang",
     "wc_connected_title": "Nakakonekta sa {{title}}",
@@ -1467,7 +1467,7 @@
     "wyre_minimum_deposit": "Ang minimum na deposit ay {{amount}}",
     "wyre_maximum_deposit": "Ang maximum na deposit ay {{amount}}",
     "wyre_purchase": "{{currency}} na Pagbili",
-    "wyre_total_label": "Wyre (sa pamamagitan ng MetaMask)",
+    "wyre_total_label": "Wyre (sa pamamagitan ng NxtWallet)",
     "buy_with": "Bumili gamit ang",
     "plus_fee": "At dagdag na bayarin na {{fee}}",
     "notifications": {
@@ -1496,12 +1496,12 @@
         "average_gas_fee": "Kasalukuyang average na bayarin sa gas:",
         "subtitle_1": "Kung plano mong i-swap o i-transfer ang iyong {{ticker}}, bumili ng dagdag para mabayaran ang mga bayarin sa gas.",
         "subtitle_2": "Ang mga bayarin sa gas para sa mga transaksyon ay hiwalay sa gastusin sa pagbili ng {{ticker}}.",
-        "subtitle_3": "Hindi kumikita ang MetaMask mula sa mga bayarin sa gas."
+        "subtitle_3": "Hindi kumikita ang NxtWallet mula sa mga bayarin sa gas."
       },
       "step_2": {
         "title": "Ano ang mga bayarin sa gas?",
         "subtitle_1": "Pinapatakbo ng gas ang mga transaksyon sa Ethereum network. Isa itong bayarin na binabayaran sa {{ticker}} sa mga crypto miner na nagpoproseso sa iyong mga transaksyon.",
-        "subtitle_2": "Hindi kumikita ang MetaMask mula sa mga bayarin sa gas.",
+        "subtitle_2": "Hindi kumikita ang NxtWallet mula sa mga bayarin sa gas.",
         "learn_more": "Matuto pa tungkol sa mga bayarin sa gas"
       },
       "step_3": {
@@ -1562,7 +1562,7 @@
     "select_region_currency": "Piliin ang Currency ng Rehiyon",
     "no_tokens_match": "Walang katugmang mga token “{{searchString}}”",
     "no_currency_match": "Walang katugmang mga currency “{{searchString}}”",
-    "buy_from_vetted": "Para bumili ng {{ticker}} mula sa isa sa aming mga integrasyon, ligtas mong makukuha ang kanilang portal nang hindi umaalis sa MetaMask app",
+    "buy_from_vetted": "Para bumili ng {{ticker}} mula sa isa sa aming mga integrasyon, ligtas mong makukuha ang kanilang portal nang hindi umaalis sa NxtWallet app",
     "price": "Presyo",
     "total_fees": "Kabuuang Bayarin",
     "processing_fee": "Bayad sa Pagproseso",
@@ -1638,13 +1638,13 @@
       "best_swap": "pinakasulit na swap",
       "across": "sa lahat ng...",
       "want_to_learn_more": "Gusto mo bang matuto pa?",
-      "learn_more": "Matuto pa tungkol sa MetaMask Swaps",
+      "learn_more": "Matuto pa tungkol sa NxtWallet Swaps",
       "what_are": "Ano ang mga token swap?",
       "review_audits": "Suriin ang aming audit ng mga opisyal na kontrata",
       "start_swapping": "Simulang mag-swap"
     },
     "feature_off_title": "Pansamantalang hindi available",
-    "feature_off_body": "Kasalukuyang minementina ang MetaMask Swaps. Bumalik sa ibang pagkakataon.",
+    "feature_off_body": "Kasalukuyang minementina ang NxtWallet Swaps. Bumalik sa ibang pagkakataon.",
     "wrong_network_title": "Hindi available ang mga swap",
     "wrong_network_body": "Makakapag-swap ka lang ng mga token sa Ethereum Main Network.",
     "unallowed_asset_title": "Hindi masa-swap ang token na ito",
@@ -1722,19 +1722,19 @@
     "estimated_gas_fee": "Tinatayang bayarin sa gas",
     "max_gas_fee": "Max na bayarin sa gas",
     "edit": "I-edit",
-    "quotes_include_fee": "Kasama sa quote ang {{fee}}% na bayarin sa MetaMask",
+    "quotes_include_fee": "Kasama sa quote ang {{fee}}% na bayarin sa NxtWallet",
     "tap_to_swap": "I-tap para I-swap",
     "swipe_to_swap": "I-swipe para i-swap",
     "swipe_to": "I-swipe para",
     "swap": "i-swap",
     "completed_swap": "I-swap!",
-    "metamask_swap_fee": "Bayarin sa Pag-swap ng MetaMask",
+    "metamask_swap_fee": "Bayarin sa Pag-swap ng NxtWallet",
     "fee_text": {
       "get_the": "Makuha ang",
       "best_price": "pinakasulit na presyo",
       "from_the": "mula kay/sa",
       "top_liquidity": "mga nangungunang pinagkunan ng liquidity palagi.",
-      "fee_is_applied": "Ang bayarin na {{fee}} ay awtomatikong fina-factor sa bawat quote, na sumusuporta sa kasalukuyang development para mas mapahusay ang MetaMask."
+      "fee_is_applied": "Ang bayarin na {{fee}} ay awtomatikong fina-factor sa bawat quote, na sumusuporta sa kasalukuyang development para mas mapahusay ang NxtWallet."
     },
     "enable": {
       "this_will": "Magagawa nitong",
@@ -1799,7 +1799,7 @@
     "gas_education_1": "Binabayaran ang mga bayarin sa gas sa mga crypto miner na nagpoproseso ng mga transaksyon sa ",
     "gas_education_2_ethereum": "Network ng Ethereum.",
     "gas_education_2": "network.",
-    "gas_education_3": "Hindi kumikita ang MetaMask mula sa mga bayarin sa gas.",
+    "gas_education_3": "Hindi kumikita ang NxtWallet mula sa mga bayarin sa gas.",
     "gas_education_4": "Ang",
     "gas_education_5": "“Tinatayang bayarin sa gas”",
     "gas_education_6": "ay ang inaasahan naming magiging aktuwal na bayarin. Ang eksaktong halaga ay nakadepende sa mga kundisyon ng network.",
@@ -1846,15 +1846,15 @@
   "switch_custom_network": {
     "title_existing_network": "Gustong palitan ng site ang network",
     "title_new_network": "Nagdagdag ng bagong network",
-    "switch_warning": "Papalitan nito ang napiling network sa MetaMask at gagamitin ang nakaraang idinagdag na network:",
+    "switch_warning": "Papalitan nito ang napiling network sa NxtWallet at gagamitin ang nakaraang idinagdag na network:",
     "available": "ay available na ngayon sa network selector.",
     "cancel": "Kanselahin",
     "switch": "Lumipat ng Network"
   },
   "add_custom_network": {
     "title": "Payagan ang site na ito na magdagdag ng network?",
-    "warning": "Binibigyang-daan nito na magamit ang network sa MetaMask.",
-    "warning_subtext_1": "Hindi vine-verify ng MetaMask ang mga custom na network o ang seguridad ng mga ito.",
+    "warning": "Binibigyang-daan nito na magamit ang network sa NxtWallet.",
+    "warning_subtext_1": "Hindi vine-verify ng NxtWallet ang mga custom na network o ang seguridad ng mga ito.",
     "warning_subtext_2": "Alamin ang tungkol sa",
     "warning_subtext_3": "mga scam at panganib sa seguridad ng network",
     "display_name": "Ipinapakitang pangalan",
@@ -1933,7 +1933,7 @@
     "estimated_gas_fee_tooltip_text_1": "Ang mga bayarin sa gas ay binabayaran sa mga minero ng crypto na nagpoproseso ng mga transaksyon sa",
     "estimated_gas_fee_tooltip_text_2": " Ethereum",
     "estimated_gas_fee_tooltip_text_3": " network.",
-    "estimated_gas_fee_tooltip_text_4": "Ang MetaMask ay hindi kumikita mula sa mga bayarin sa gas.",
+    "estimated_gas_fee_tooltip_text_4": "Ang NxtWallet ay hindi kumikita mula sa mga bayarin sa gas.",
     "estimated_gas_fee_tooltip_text_5": "Ang mga bayarin sa gas ay itinakda ng network at nagbabago-bago batay sa trapiko sa network at pagiging kumplikado ng transaksyon.",
     "learn_more": "Matuto pa tungkol sa mga bayarin sa gas",
     "legacy_gas_suggestion_tooltip": "Ang suhestyon sa bayad sa gas na ito ay gumagamit ng legacy na pagtatantya ng gas na maaaring hindi tumpak."
@@ -1955,7 +1955,7 @@
     "high_fees": "Bakit napakataas ng mga bayarin?",
     "missing_tokens": "Kulang ako ng mga token...",
     "swap_issues": "Hindi ko magawang magpalit...",
-    "mobile_sentiment": "Ano ang pakiramdam mo tungkol sa MetaMask mobile?",
+    "mobile_sentiment": "Ano ang pakiramdam mo tungkol sa NxtWallet mobile?",
     "sentiment_good_face": "😁",
     "sentiment_bad_face": "☹️",
     "sentiment_good": "Gustung-gusto ko ito!",
@@ -1999,12 +1999,12 @@
   },
   "remember_me": {
     "enable_remember_me": "I-on ang Tandaan ako",
-    "enable_remember_me_description": "Kapag naka-on ang tandaan ako, sinumang may access sa iyong telepono ay makaka-access sa iyong MetaMask account."
+    "enable_remember_me_description": "Kapag naka-on ang tandaan ako, sinumang may access sa iyong telepono ay makaka-access sa iyong NxtWallet account."
   },
   "turn_off_remember_me": {
     "title": "Ilagay ang iyong password para i-off ang Tandaan ako",
     "placeholder": "Password",
-    "description": "Kung in-off mo ang opsyong ito, kakailanganin mo ang iyong password upang i-unlock ang MetaMask mula ngayon.",
+    "description": "Kung in-off mo ang opsyong ito, kakailanganin mo ang iyong password upang i-unlock ang NxtWallet mula ngayon.",
     "action": "I-off ang Tandaan ako"
   }
 }
