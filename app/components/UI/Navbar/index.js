@@ -219,7 +219,7 @@ export function getNavigationOptionsTitle(
         </TouchableOpacity>
       ),
     headerStyle: innerStyles.headerStyle,
-    headerTintColor: colors.primary.default,
+    headerTintColor: importedColors.primary.default,
   };
 }
 

@@ -287,13 +287,19 @@ const HomeTabs = () => {
           />
           <Tab.Screen 
             name="ExplorerView" 
-            component={SettingsModalStack} 
+            component={AboutFlow} 
           />
         </Tab.Navigator>
       </Drawer>
     </DrawerContext.Provider>
   );
 };
+
+const AboutFlow = () => (
+  <Stack.Navigator mode="modal">
+    <Stack.Screen name="AboutView" component={AppInformation} mode={'modal'}/>
+  </Stack.Navigator>
+);
 
 const Webview = () => (
   <Stack.Navigator>
