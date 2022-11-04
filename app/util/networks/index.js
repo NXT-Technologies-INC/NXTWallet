@@ -84,8 +84,8 @@ const NetworkList = {
     networkType: 'goerli',
   },
   [RPC]: {
-    name: 'NextChain Network',
-    shortName: 'NextChain',
+    name: 'NXTChain Network',
+    shortName: 'NXTChain',
     chainId: 27,
     color: colors.primary.default,
     networkType: 'rpc',

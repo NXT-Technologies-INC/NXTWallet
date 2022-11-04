@@ -28,14 +28,14 @@
   },
   "onboarding": {
     "title": "Cüzdan kurulumu",
-    "sync_desc": "Zaten NxtWallet uzantısı veya başka bir cüzdan aldıysanız mevcut varlıklarınızı yönetmek için onu senkronize edin veya içe aktarın.",
+    "sync_desc": "Zaten NXTWallet uzantısı veya başka bir cüzdan aldıysanız mevcut varlıklarınızı yönetmek için onu senkronize edin veya içe aktarın.",
     "create_desc": "İlk cüzdan kurulumunuzu yapın ve merkeziyetsiz uygulamaları keşfetmeye başlayın.",
     "import": "Mevcut bir cüzdanı içe aktarın veya yeni bir tane oluşturun.",
     "import_wallet_button": "Cüzdanı senkronize et veya içe aktar",
     "new_to_crypto": "Kriptoda yeni misiniz?",
     "start_exploring_now": "Yeni bir cüzdan oluştur",
     "unlock": "Kilidini Aç",
-    "new_to_metamask": "NxtWallet'te yeni misiniz?",
+    "new_to_metamask": "NXTWallet'te yeni misiniz?",
     "already_have_wallet": "Zaten bir cüzdanınız var mı?",
     "optin_back_title": "Dikkat!",
     "optin_back_desc": "Lütfen veri analitiklerinin kullanımını kabul edin veya reddedin. Bu seçeneği ayarlar kısmında da güncelleyebilirsiniz.",
@@ -43,15 +43,15 @@
     "warning_text_1": "İlerlediğiniz takdirde",
     "warning_text_2": "geçerli cüzdan ve hesaplarınız",
     "warning_text_3": "kaldırılacak.",
-    "warning_text_4": "Onları sadece cüzdanınızın Gizli Kurtarma İfadesi ile kurtarabilirsiniz. NxtWallet onu kurtarmanıza yardımcı olamaz.",
+    "warning_text_4": "Onları sadece cüzdanınızın Gizli Kurtarma İfadesi ile kurtarabilirsiniz. NXTWallet onu kurtarmanıza yardımcı olamaz.",
     "warning_proceed": "Cüzdanı kaldır ve ilerle",
     "warning_cancel": "İptal",
     "step1": "Cüzdan kurulumu",
     "step2": "Şifre oluştur",
     "step3": "Cüzdanı güvenli hale getir",
     "already_have": "Zaten bir cüzdanınız var mı?",
-    "sync_existing": "Tarayıcı uzantısından mevcut NxtWallet cüzdanınızı senkronize edin veya manuel olarak içe aktarın.",
-    "scan_title": "NxtWallet uzantısı ile senkronize etme adımları",
+    "sync_existing": "Tarayıcı uzantısından mevcut NXTWallet cüzdanınızı senkronize edin veya manuel olarak içe aktarın.",
+    "scan_title": "NXTWallet uzantısı ile senkronize etme adımları",
     "scan": "Tara",
     "scan_step_1": "Uzantıyı masaüstünde aç",
     "scan_step_2": "Ayarlar > Gelişmiş kısmına gidin",
@@ -62,12 +62,12 @@
     "delete_current": "Geçerli cüzdan siliniyor"
   },
   "onboarding_carousel": {
-    "title1": "NxtWallet'e Hoş Geldiniz",
+    "title1": "NXTWallet'e Hoş Geldiniz",
     "title2": "Dijital varlıklarını yönet",
     "title3": "web3 ağ geçidiniz",
-    "subtitle1": "Milyonların güvendiği NxtWallet web3 dünyasını herkes için erişilebilir kılan güvenli bir cüzdandır.",
+    "subtitle1": "Milyonların güvendiği NXTWallet web3 dünyasını herkes için erişilebilir kılan güvenli bir cüzdandır.",
     "subtitle2": "Token, ethereum, eşsiz koleksiyonlar gibi dijital varlıkları tutun, harcayın ve gönderin.",
-    "subtitle3": "NxtWallet ile oturum açın ve yatırım yapmak, kazanmak, oyun oynamak ve satmak ve daha fazlası için işlem yapın!",
+    "subtitle3": "NXTWallet ile oturum açın ve yatırım yapmak, kazanmak, oyun oynamak ve satmak ve daha fazlası için işlem yapın!",
     "get_started": "Başla"
   },
   "onboarding_wizard": {
@@ -98,7 +98,7 @@
       "title": "Ana Gezinti Menüsü",
       "content1": "Buraya dokunarak",
       "content2": "Cüzdanınıza, Tarayıcıya ve İşlem faaliyetlerine erişim sağlayın.",
-      "content3": "Hesaplarınızla daha fazla işlem yapabilir ve NxtWallet ayarlarına erişim sağlayabilirsiniz."
+      "content3": "Hesaplarınızla daha fazla işlem yapabilir ve NXTWallet ayarlarına erişim sağlayabilirsiniz."
     },
     "step5": {
       "title": "Tarayıcıyı Keşfet",
@@ -114,14 +114,14 @@
     "subtitle": "Bu işlem uzun sürmeyecektir"
   },
   "import_wallet": {
-    "title": "Zaten NxtWallet kullanıcısı mısınız?",
+    "title": "Zaten NXTWallet kullanıcısı mısınız?",
     "sub_title": "Uzantı ile senkronize et",
     "sync_help": "Uzantı ile cüzdanını senkronize et",
     "sync_help_step_one": "1. Uzantıyı aç",
     "sync_help_step_two": "2. Ayarlar > Gelişmiş kısmına gidin",
     "sync_help_step_three": "3. “Mobil ile Senkronize Et” düğmesine tıklayın",
     "sync_help_step_four": "4. Senkronize etmeye başlamak için QR kodunu tarayın",
-    "sync_from_browser_extension_button": "NxtWallet uzantısı ile senkronize et",
+    "sync_from_browser_extension_button": "NXTWallet uzantısı ile senkronize et",
     "or": "VEYA",
     "import_from_seed_button": "Gizli Kurtarma İfadesini kullanarak içe aktar"
   },
@@ -141,13 +141,13 @@
     "this_action": "Bu eylem geri alınamaz.",
     "you_can_only": "Bu cüzdanı SADECE",
     "recovery_phrase": "Gizli Kurtarma İfadenizle kurtarabilirsiniz",
-    "metamask_does_not": "Gizli Kurtarma İfadeniz NxtWallet'in içerisinde bulunmaz.",
+    "metamask_does_not": "Gizli Kurtarma İfadeniz NXTWallet'in içerisinde bulunmaz.",
     "i_understand": "Anlıyorum, devam et",
     "passcode_not_set_error": "Hata: Parola ayarlanmadı.",
     "wrong_password_error": "Hata: Şifre çözme başarısız oldu",
     "wrong_password_error_android": "Hata: error:1e000065:Şifreleme fonksiyonları:OPENSSL_internal:BAD_DECRYPT",
     "vault_error": "Hata: Önceki bir vault olmadan kilidi açılamaz.",
-    "clean_vault_error": "NxtWallet, depolama limitine ulaşılmasından dolayı bir hata ile karşılaştı. Yerel veriler bozuldu. Lütfen NxtWallet'ı tekrar yükleyin ve Gizli Kurtarma İfadenizi kullanarak geri yükleyin."
+    "clean_vault_error": "NXTWallet, depolama limitine ulaşılmasından dolayı bir hata ile karşılaştı. Yerel veriler bozuldu. Lütfen NXTWallet'ı tekrar yükleyin ve Gizli Kurtarma İfadenizi kullanarak geri yükleyin."
   },
   "enter_password": {
     "title": "Şifrenizi girin",
@@ -158,7 +158,7 @@
   },
   "choose_password": {
     "title": "Şifre oluştur",
-    "subtitle": "Bu şifre sadece bu cihazda NxtWallet cüzdanınızın kilidini açar.",
+    "subtitle": "Bu şifre sadece bu cihazda NXTWallet cüzdanınızın kilidini açar.",
     "password": "Yeni Şifre",
     "confirm_password": "Şifreyi onayla",
     "create_button": "Şifre oluştur",
@@ -176,7 +176,7 @@
     "remember_me": "Beni hatırla",
     "security_alert_title": "Güvenlik Uyarısı",
     "security_alert_message": "İlerlemek için Parolayı veya cihazınızda desteklenen herhangi bir biyometrik kimlik doğrulama yöntemini (FaceID, TouchID veya Parmak İzi) açmanız gerekir.",
-    "i_understand": "NxtWallet'ın benim için bu şifreyi kurtaramadığını anlıyorum.",
+    "i_understand": "NXTWallet'ın benim için bu şifreyi kurtaramadığını anlıyorum.",
     "learn_more": "Daha fazlasını öğren.",
     "secure": "Cüzdanı güvenli hale getir",
     "confirm": "Gizli Kurtarma İfadesini onayla",
@@ -184,7 +184,7 @@
   },
   "reset_password": {
     "title": "Şifreyi değiştir",
-    "subtitle": "Bu şifre sadece bu cihazda NxtWallet cüzdanınızın kilidini açar.",
+    "subtitle": "Bu şifre sadece bu cihazda NXTWallet cüzdanınızın kilidini açar.",
     "password": "Yeni Şifre",
     "confirm_password": "Şifreyi onayla",
     "reset_button": "Şifreyi sıfırla",
@@ -202,7 +202,7 @@
     "remember_me": "Beni hatırla",
     "security_alert_title": "Güvenlik Uyarısı",
     "security_alert_message": "İlerlemek için Parolayı veya cihazınızda desteklenen herhangi bir biyometrik kimlik doğrulama yöntemini (FaceID, TouchID veya Parmak İzi) açmanız gerekir.",
-    "i_understand": "NxtWallet'ın benim için bu şifreyi kurtaramadığını anlıyorum.",
+    "i_understand": "NXTWallet'ın benim için bu şifreyi kurtaramadığını anlıyorum.",
     "learn_more": "Daha fazlasını öğren.",
     "secure": "Cüzdanı güvenli hale getir",
     "confirm": "Gizli Kurtarma İfadesini onayla",
@@ -252,7 +252,7 @@
     "lock_ok": "EVET",
     "lock_cancel": "HAYIR",
     "feedback": "Geri Bildirim",
-    "metamask_support": "NxtWallet Destek",
+    "metamask_support": "NXTWallet Destek",
     "public_address": "Halka Açık Adres"
   },
   "send": {
@@ -285,7 +285,7 @@
     "no_tokens": "Tokeniniz yok!",
     "no_nfts_yet": "Henüz NFT yok",
     "nfts_autodetection_title": "NFT algılama",
-    "nfts_autodetection_desc": "NxtWallet'ın OpenSea'den NFT'leri otomatik olarak algılayıp NxtWallet cüzdanınızda göstermesine izin verin.",
+    "nfts_autodetection_desc": "NXTWallet'ın OpenSea'den NFT'leri otomatik olarak algılayıp NXTWallet cüzdanınızda göstermesine izin verin.",
     "nfts_autodetection_cta": "Ayarlarda NFT algılamayı açın",
     "learn_more": "Daha fazlasını öğren",
     "add_collectibles": "NFT'leri içe aktar",
@@ -347,9 +347,9 @@
     "here": "bakın:",
     "agree": "Kabul Ediyorum",
     "decline": "Hayır, teşekkürler",
-    "description_title": "NxtWallet'ı iyileştirmemize yardımcı olun",
-    "description_content_1": "NxtWallet olarak kullanıcılarımızın mobil uygulama ile nasıl etkileşimde bulunduğunu daha iyi anlamak amacıyla temel kullanım verileri toplamak isteriz. Bu veriler ürünümüze ilişkin kullanılabilirliği ve kullanıcı deneyimini devamlı iyileştirmek amacıyla kullanılacaktır.",
-    "description_content_2": "NxtWallet...",
+    "description_title": "NXTWallet'ı iyileştirmemize yardımcı olun",
+    "description_content_1": "NXTWallet olarak kullanıcılarımızın mobil uygulama ile nasıl etkileşimde bulunduğunu daha iyi anlamak amacıyla temel kullanım verileri toplamak isteriz. Bu veriler ürünümüze ilişkin kullanılabilirliği ve kullanıcı deneyimini devamlı iyileştirmek amacıyla kullanılacaktır.",
+    "description_content_2": "NXTWallet...",
     "action_description_1": "Her zaman Ayarlar kısmından vazgeçebilmenize izin verir",
     "action_description_2": "İsimsiz tıklama ve sayfa görüntüleme etkinlikleri gönderir",
     "action_description_3": "Ülke, bölge, şehir (belirli bir konum değil) verileri gönderir",
@@ -440,7 +440,7 @@
     "state_logs": "Durum Günlükleri",
     "auto_lock": "Otomatik kilitle",
     "auto_lock_desc": "Uygulama otomatik olarak kilitlenmeden süre miktarını seçin.",
-    "state_logs_desc": "Bu, NxtWallet'ın, karşılaşabileceğiniz her sorunu çözmesine yardımcı olur. Lütfen hamburger simgesinden > Geri Bildirim Gönder kısmından NxtWallet destek bölümüne gönderin veya varsa mevcut sorgunuza yanıt verin.",
+    "state_logs_desc": "Bu, NXTWallet'ın, karşılaşabileceğiniz her sorunu çözmesine yardımcı olur. Lütfen hamburger simgesinden > Geri Bildirim Gönder kısmından NXTWallet destek bölümüne gönderin veya varsa mevcut sorgunuza yanıt verin.",
     "autolock_immediately": "Hemen",
     "autolock_never": "Hiçbir Zaman",
     "autolock_after": "{{time}} saniye sonra",
@@ -463,7 +463,7 @@
     "save_rpc_url": "KAYDET",
     "invalid_rpc_prefix": "URI adresleri uygun HTTPS ön eki gerektirir",
     "invalid_rpc_url": "RPC URL geçersiz",
-    "sync_with_extension": "NxtWallet uzantısı ile senkronize et",
+    "sync_with_extension": "NXTWallet uzantısı ile senkronize et",
     "sync_with_extension_desc": "Bu işlem, tüm uzantı hesaplarını bu cihaza aktaracak.",
     "sync": "SENKRONİZE ET",
     "clear_approved_dapps": "ONAYLI MERKEZİYETSİZ UYGULAMALARI TEMİZLE",
@@ -476,7 +476,7 @@
     "protect_title": "Cüzdanınızı koruyun",
     "video_failed": "Video Yükleme İşlemi Başarısız Oldu.",
     "protect_desc": "Gizli Kurtarma İfadenizi bir kağıt parçası, şifre yöneticisi ve/veya bulut gibi çeşitli yerlere kaydederek cüzdanını koruyun.",
-    "protect_desc_no_backup": "Bu sizin cüzdanınızın 12 sözcükten oluşan ifadesidir. Bu ifade, cüzdanınızda para gönderme kabiliyeti de dahil olmak üzere tüm şimdiki ve gelecekteki hesaplarınızı kontrol etmek için kullanılabilir. Bu ifadeyi güvenli bir şekilde saklayın, hiç kimseyle PAYLAŞMAYIN. NxtWallet bu anahtarı kurtarmanıza yardımcı olamaz.",
+    "protect_desc_no_backup": "Bu sizin cüzdanınızın 12 sözcükten oluşan ifadesidir. Bu ifade, cüzdanınızda para gönderme kabiliyeti de dahil olmak üzere tüm şimdiki ve gelecekteki hesaplarınızı kontrol etmek için kullanılabilir. Bu ifadeyi güvenli bir şekilde saklayın, hiç kimseyle PAYLAŞMAYIN. NXTWallet bu anahtarı kurtarmanıza yardımcı olamaz.",
     "learn_more": "Daha fazlasını öğren.",
     "seedphrase_not_backed_up": "Önemli! Gizli Kurtarma İfadesi yedeklenmedi",
     "seedphrase_backed_up": "Gizli Kurtarma İfadesi yedeklendi",
@@ -527,7 +527,7 @@
     "remove_network_title": "Bu ağı kaldırmak istiyor musunuz?",
     "remove_network": "Kaldır",
     "cancel_remove_network": "İptal",
-    "info_title": "NxtWallet Hakkında",
+    "info_title": "NXTWallet Hakkında",
     "experimental_title": "Deneysel",
     "experimental_desc": "WalletConnect ve daha fazlası...",
     "legal_title": "Hukuki",
@@ -547,7 +547,7 @@
     "clear_history_desc": "Tüm tarayıcı geçmişini temizlemek için bu seçeneği seçin.",
     "clear_cookies_desc": "Tarayıcının çerezlerini temizlemek için bu seçeneği seçin.",
     "metametrics_title": "MetaMetrics'e katıl",
-    "metametrics_description": "NxtWallet'ı daha iyi hale getirebilmemize yardımcı olmak için MetaMetrics'e katılın.",
+    "metametrics_description": "NXTWallet'ı daha iyi hale getirebilmemize yardımcı olmak için MetaMetrics'e katılın.",
     "third_party_title": "Gelen işlemleri al",
     "third_party_description": "Geçmişteki gelen işlemlerini göstermek için Üçüncü taraf API'ler (Etherscan) kullanılır. Bu hizmetlerden veri çekmemizi istemiyorsanız bunu kapatın.",
     "metametrics_opt_out": "MetaMetrics'ten Ayrıl",
@@ -600,7 +600,7 @@
       "Gizli Kurtarma İfadesi (GKİ)",
       " cüzdanınıza,",
       " paranıza ve hesaplarınıza tam erişim verir.\n\n",
-      "NxtWallet,",
+      "NXTWallet,",
       "emanete dayalı olmayan bir cüzdandır",
       ". Yani, ",
       "GKİ'niz size aittir."
@@ -609,14 +609,14 @@
     "private_key_warning": "Bu, halihazırda seçili hesabın özel anahtarıdır: {{accountName}}. Bu anahtarı hiçbir zaman ifşa etmeyin. Özel anahtara sahip olan herkes, paranızın tamamını transfer etmek de dahil olmak üzere hesabınızı tam olarak kontrol edebilir.",
     "seed_phrase_warning_explanation": [
       "Hiç kimsenin ekranınıza bakmadığından emin olun.",
-      "NxtWallet Destek bölümü bunu asla talep etmez."
+      "NXTWallet Destek bölümü bunu asla talep etmez."
     ],
     "private_key_warning_explanation": "Bu anahtarı hiçbir zaman ifşa etmeyin. Özel anahtarınıza sahip olan herkes, paranızın tamamını transfer etmek de dahil olmak üzere hesabınızı tamamen kontrol edebilir.",
     "reveal_credential_modal": [
       "{{credentialName}} bilgileriniz ",
       "hesabınıza ve paranıza tam erişim sunar.\n\nBunu hiç kimseyle paylaşmayın.",
       "cüzdanınıza ve paranıza tam erişim sunar.\n\nBunu hiç kimseyle paylaşmayın.",
-      "NxtWallet Destek tarafından bu talep edilmez, ",
+      "NXTWallet Destek tarafından bu talep edilmez, ",
       "ancak dolandırıcılar tarafından talep edilebilir."
     ],
     "seed_phrase": "Gizli Kurtarma İfadeniz",
@@ -642,7 +642,7 @@
   },
   "password_reset": {
     "password_title": "Şifre",
-    "password_desc": "Cihazınızda NxtWallet uygulamasının kilidini açmak için güçlü bir şifre seçin. Bu şifreyi kaybettiğiniz takdirde cüzdanınızı yeniden içe aktarmak için Gizli Kurtarma İfadenize ihtiyacınız olacaktır.",
+    "password_desc": "Cihazınızda NXTWallet uygulamasının kilidini açmak için güçlü bir şifre seçin. Bu şifreyi kaybettiğiniz takdirde cüzdanınızı yeniden içe aktarmak için Gizli Kurtarma İfadenize ihtiyacınız olacaktır.",
     "password_learn_more": "Daha fazlasını öğren.",
     "change_password": "Şifreyi değiştir"
   },
@@ -679,7 +679,7 @@
     "cancel": "İptal",
     "error": "Hata",
     "attempting_to_scan_with_wallet_locked": "Görünüşe göre bir QR kodunu taramaya çalışıyorsunuz, bunu kullanmak için cüzdanınızın kilidini açmanız gerekecek.",
-    "attempting_sync_from_wallet_error": "Görünüşe göre uzantı ile senkronize etmeye çalışıyorsunuz. Bunu yapabilmek için mevcut cüzdanınızı silmeniz gerekecek. \n\nUygulamayı sildiğinizde veya uygulamanın yeni bir sürümünü tekrar yüklediğinizde \"NxtWallet Uzantısı ile Senkronize Et\" seçeneğini seçin. Önemli! Cüzdanınızı silmeden önce Gizli Kurtarma İfadenizi yedeklediğinizden emin olun."
+    "attempting_sync_from_wallet_error": "Görünüşe göre uzantı ile senkronize etmeye çalışıyorsunuz. Bunu yapabilmek için mevcut cüzdanınızı silmeniz gerekecek. \n\nUygulamayı sildiğinizde veya uygulamanın yeni bir sürümünü tekrar yüklediğinizde \"NXTWallet Uzantısı ile Senkronize Et\" seçeneğini seçin. Önemli! Cüzdanınızı silmeden önce Gizli Kurtarma İfadenizi yedeklediğinizden emin olun."
   },
   "action_view": {
     "cancel": "İptal",
@@ -782,7 +782,7 @@
     "gas_education_1": "Gaz ücretleri",
     "gas_education_2_ethereum": "Ethereum ağında işlem gerçekleştiren kripto madencilerine ödenir.",
     "gas_education_2": "ağda işlem gerçekleştiren kripto madencilerine ödenir.",
-    "gas_education_3": "NxtWallet gaz ücretlerinden kâr elde etmez.",
+    "gas_education_3": "NXTWallet gaz ücretlerinden kâr elde etmez.",
     "gas_education_4": "Gaz ücretleri ağ trafiğine ve işlem karmaşıklığına göre dalgalanır.",
     "gas_education_learn_more": "Gaz ücretleri hakkında daha fazla bilgi alın",
     "confusable_title": "Alıcı adresini kontrol edin",
@@ -797,7 +797,7 @@
     "invalid_qr_code_sync": "Geçersiz QR kodu. Lütfen donanım cüzdanının senkronizasyon QR kodunu tarayın.",
     "no_camera_permission": "Kamera izni yok. Lütfen izin verin ve tekrar deneyin",
     "invalid_qr_code_sign": "Geçersiz QR kodu. Lütfen donanımınızı kontrol edin ve tekrar deneyin.",
-    "no_camera_permission_android": "Devam etmek için kameranıza NxtWallet erişim izni vermeniz gerekiyor. Ayrıca sistem ayarlarınızı değiştirmeniz gerekebilir.",
+    "no_camera_permission_android": "Devam etmek için kameranıza NXTWallet erişim izni vermeniz gerekiyor. Ayrıca sistem ayarlarınızı değiştirmeniz gerekebilir.",
     "mismatched_qr_request_id": "Uyumsuz işlem verisi. Lütfen aşağıdaki QR koduyla imzalamak için Kilidinizi kullanın ve 'İmzayı Al' tuşuna tıklayın."
   },
   "custom_gas": {
@@ -810,7 +810,7 @@
     "save": "Kaydet",
     "warning_gas_limit": "Gaz limiti 20999 üzerinde olmalıdır",
     "warning_gas_limit_estimated": "Tahmini gaz limiti {{gas}}, minimum değer olarak bunu kullanın",
-    "cost_explanation": "Gaz ücreti Ethereum ağında işleminizin gerçekleştirilme maliyetini kapsar. NxtWallet bu ücretten kâr elde etmez. Ücret ne kadar yüksek olursa işleminizin gerçekleşme şansı o kadar yüksek olur."
+    "cost_explanation": "Gaz ücreti Ethereum ağında işleminizin gerçekleştirilme maliyetini kapsar. NXTWallet bu ücretten kâr elde etmez. Ücret ne kadar yüksek olursa işleminizin gerçekleşme şansı o kadar yüksek olur."
   },
   "spend_limit_edition": {
     "save": "Kaydet",
@@ -869,7 +869,7 @@
     "change_url": "Url adresini değiştir",
     "switch_network": "Ağ değiştir",
     "dapp_browser": "MERKEZİYETSİZ TARAYICI",
-    "dapp_browser_message": "NxtWallet, merkeziyetsiz web için cüzdanınız ve tarayıcınızdır. Bir bakın!",
+    "dapp_browser_message": "NXTWallet, merkeziyetsiz web için cüzdanınız ve tarayıcınızdır. Bir bakın!",
     "featured_dapps": "ÖNE ÇIKAN MERKEZİYETSİZ UYGULAMALAR",
     "my_favorites": "FAVORİLERİM",
     "search": "Ara veya URL adresi gir",
@@ -996,7 +996,7 @@
   "sync_with_extension": {
     "title": "Verileri Uzantıdan senkronize et",
     "short_title": "Uzantı ile senkronize et",
-    "label": "Masaüstü tarayıcınızda NxtWallet uzantısını açın, ardından \"Ayarlar\" > \"Gelişmiş\" kısmına gidin, \"Mobil ile Senkronize Et\" seçeneğine tıklayın ve ardından QR kodunu görmek içni şifrenizi girin",
+    "label": "Masaüstü tarayıcınızda NXTWallet uzantısını açın, ardından \"Ayarlar\" > \"Gelişmiş\" kısmına gidin, \"Mobil ile Senkronize Et\" seçeneğine tıklayın ve ardından QR kodunu görmek içni şifrenizi girin",
     "button_continue": "Devam",
     "please_wait": "Biz verilerinizi senkronize ederken lütfen bekleyin...",
     "error_title": "Üzgünüz!",
@@ -1012,11 +1012,11 @@
     "something_wrong": "Hay aksi! Bir şeyler ters gitti...",
     "something_wrong_desc": "Cüzdanınızı senkronize etmeye çalışırken sorun yaşıyoruz. Lütfen daha sonra tekrar deneyin veya Gizli Kurtarma İfadenizi kullanarak cüzdanınızı içe aktarın",
     "allow_biometrics_title": "{{biometrics}} seçeneğini etkinleştirmek istiyor musunuz?",
-    "allow_biometrics_desc": "NxtWallet üzerinde kimlik doğrulamak için {{biometrics}} seçeneğini kullanabilirsiniz"
+    "allow_biometrics_desc": "NXTWallet üzerinde kimlik doğrulamak için {{biometrics}} seçeneğini kullanabilirsiniz"
   },
   "sync_with_extension_success": {
     "title": "Cüzdan içe aktarıldı",
-    "sync_complete_1": "Unutmayın, Gizli Kurtarma İfadenizi kaybettiğiniz takdirde NxtWallet onu kurtaramaz. Gizli Kurtarma İfadenizi şurada bulabilirsiniz:",
+    "sync_complete_1": "Unutmayın, Gizli Kurtarma İfadenizi kaybettiğiniz takdirde NXTWallet onu kurtaramaz. Gizli Kurtarma İfadenizi şurada bulabilirsiniz:",
     "sync_complete_2": "Ayarlar > Güvenlik ve Gizlilik",
     "button_continue": "Bitti",
     "password_tip": "Mobil cüzdanınızın kilidini açan şifre uzantı için belirlediğiniz şifre ile aynıdır.",
@@ -1081,9 +1081,9 @@
   },
   "authentication": {
     "auth_prompt_title": "Doğrulama gerekli",
-    "auth_prompt_desc": "NxtWallet'ı kullanabilmek için lütfen doğrulama yapın",
+    "auth_prompt_desc": "NXTWallet'ı kullanabilmek için lütfen doğrulama yapın",
     "fingerprint_prompt_title": "Doğrulama gerekli",
-    "fingerprint_prompt_desc": "NxtWallet'ın kilidini açmak için parmak izinizi kullanın",
+    "fingerprint_prompt_desc": "NXTWallet'ın kilidini açmak için parmak izinizi kullanın",
     "fingerprint_prompt_cancel": "İptal"
   },
   "accountApproval": {
@@ -1100,7 +1100,7 @@
   },
   "import_private_key": {
     "title": "Hesabı İçe Aktar",
-    "description_one": "İçe aktarılan hesaplar cüzdanınızda görüntülenebilir ancak NxtWallet Gizli Kurtarma İfadenizle kurtarılamaz.",
+    "description_one": "İçe aktarılan hesaplar cüzdanınızda görüntülenebilir ancak NXTWallet Gizli Kurtarma İfadenizle kurtarılamaz.",
     "learn_more_here": "Burada içe aktarılan hesaplar hakkında daha fazla bilgi alın.",
     "subtitle": "Özel anahtar dizinizi yapıştırın",
     "cta_text": "İÇE AKTAR",
@@ -1112,7 +1112,7 @@
   },
   "import_private_key_success": {
     "title": "Hesap başarılı bir şekilde içe aktarıldı!",
-    "description_one": "Artık hesabınızı NxtWallet'ta görüntüleyebileceksiniz."
+    "description_one": "Artık hesabınızı NXTWallet'ta görüntüleyebileceksiniz."
   },
   "first_incoming_transaction": {
     "title": "Hesabınıza {{asset}} yatırıldı",
@@ -1127,7 +1127,7 @@
     "step_1_description": "Şifre oluştur",
     "step_2": "Adım 2:",
     "step_2_description": "Cüzdan Gizli Kurtarma İfadesini kaydedin",
-    "info_text_1": "NxtWallet cüzdanınızın kurulumunu bitirmek için birkaç dakika ayırın.",
+    "info_text_1": "NXTWallet cüzdanınızın kurulumunu bitirmek için birkaç dakika ayırın.",
     "info_text_2": "Bu, sadece cihazınızı kaybettiğiniz takdirde paranıza erişim sağlayabilmenizi ve cüzdanınızı kurtarmanızı sağlar",
     "cta_text": "Şifre oluştur",
     "creating_password": "Şifre oluşturuluyor..."
@@ -1149,7 +1149,7 @@
     "what_is_seedphrase_title": "‘Gizli Kurtarma İfadesi’ nedir",
     "what_is_seedphrase_text_1": "Gizli Kurtarma İfadesi, paranız da dahil olmak üzere cüzdanınız hakkında tüm bilgileri içeren on iki sözcükten oluşan bir dizidir. Cüzdanınıza erişim sağlamak için kullanılan gizli bir kod gibidir.",
     "what_is_seedphrase_text_2": "Gizli Kurtarma İfadenizi gizli ve güvende tutmalısınız. Gizli Kurtarma İfadenizi ele geçiren biri hesaplarınızın kontrolünü de ele geçirir.",
-    "what_is_seedphrase_text_3": "Sadece sizin erişim sağlayabileceğiniz bir yere kaydedin. Kaybettiğiniz takdirde onu kurtarmanıza NxtWallet bile yardımcı olamaz."
+    "what_is_seedphrase_text_3": "Sadece sizin erişim sağlayabileceğiniz bir yere kaydedin. Kaybettiğiniz takdirde onu kurtarmanıza NXTWallet bile yardımcı olamaz."
   },
   "account_backup_step_1B": {
     "title": "Cüzdanınızı koruyun",
@@ -1222,7 +1222,7 @@
   },
   "account_backup_step_6": {
     "title": "Güvenlik İpuçları",
-    "info_text": "NxtWallet, Gizli Kurtarma İfadenizi kaybettiğiniz takdirde kurtaramaz",
+    "info_text": "NXTWallet, Gizli Kurtarma İfadenizi kaybettiğiniz takdirde kurtaramaz",
     "tip_1": "Gizli Kurtarma İfadenizin birden fazla yedeğini tutun",
     "tip_2": "İfadeyi güvenilen bir şifre yöneticisinde ve güvenli bir yerde kağıt yedekler halinde saklayın",
     "tip_3": "Bu ifadeyi asla hiç kimseyle paylaşmayın",
@@ -1260,7 +1260,7 @@
     "congratulations": "Tebrikler",
     "success": "Cüzdanınızı başarılı bir şekilde korudunuz! Gizli Kurtarma İfadenizi güvende tutmayı unutmayın, bu sizin sorumluluğunuzdadır!",
     "hint": "Kendine bir ipucu bırak?",
-    "recover": "Kaybettiğiniz takdirde NxtWallet cüzdanınızı kurtaramaz. Gizli Kurtarma İfadenizi Ayarlar > Güvenlik ve Gizlilik kısmında bulabilirsiniz.",
+    "recover": "Kaybettiğiniz takdirde NXTWallet cüzdanınızı kurtaramaz. Gizli Kurtarma İfadenizi Ayarlar > Güvenlik ve Gizlilik kısmında bulabilirsiniz.",
     "learn": "Daha fazlasını öğren",
     "done": "Bitti",
     "recovery_hint": "Kurtarma ipucu",
@@ -1273,7 +1273,7 @@
   "phishing": {
     "ethereum_phishing_detection": "Ethereum Kimlik Avı Algılama",
     "ethereum_phishing_detector": "Ethereum Kimlik Avı Algılayıcı",
-    "intro": " şu anda NxtWallet alan adı uyarı listesindedir. Yani, bizde bulunan bilgilere göre NxtWallet, bu alan adının şu anda güvenliğinizi ihlal edebiliyor olduğuna inanıyor ve ek bir güvenlik özelliği olarak NxtWallet bu siteye erişimi kısıtlamıştır. Bunu geçersiz kılmak için lütfen riski size ait olmak üzere nasıl devam edebileceğiniz hakkındaki talimatlar için bu uyarının geri kalan kısmını okuyun.",
+    "intro": " şu anda NXTWallet alan adı uyarı listesindedir. Yani, bizde bulunan bilgilere göre NXTWallet, bu alan adının şu anda güvenliğinizi ihlal edebiliyor olduğuna inanıyor ve ek bir güvenlik özelliği olarak NXTWallet bu siteye erişimi kısıtlamıştır. Bunu geçersiz kılmak için lütfen riski size ait olmak üzere nasıl devam edebileceğiniz hakkındaki talimatlar için bu uyarının geri kalan kısmını okuyun.",
     "reasons": "Uyarı listemizde sitelerin yer almasının pek çok sebebi vardır ve uyarı listemiz diğer çok kullanılan sektör listelerinden derlenir. Sebepleri şunlar olabilir: Şurada pozitif olan alan adları gibi bilinen dolandırıcılık veya güvenlik riskleri:",
     "list_content": "Bu uyarı listelerinde yer alan alan adları, tamamen kötü amaçlı web siteleri ve kötü amaçlı bir aktör tarafından gizliliği ihlal edilen meşru web siteler olabilir.",
     "to_read_more": "Bu site hakkında daha fazlasını okumak için ",
@@ -1308,7 +1308,7 @@
     "received_message": "Bu işlemi görüntülemek için dokunun",
     "received_payment_message": "{{amount}} DAI aldınız",
     "prompt_title": "Anlık Bildirimleri Etkinleştir",
-    "prompt_desc": "NxtWallet'ın ne zaman ETH aldığınızı veya işlemlerinizin ne zaman onaylandığını size bildirebilmesi için bildirimleri etkinleştirin.",
+    "prompt_desc": "NXTWallet'ın ne zaman ETH aldığınızı veya işlemlerinizin ne zaman onaylandığını size bildirebilmesi için bildirimleri etkinleştirin.",
     "prompt_ok": "Evet",
     "prompt_cancel": "Hayır, teşekkürler",
     "wc_connected_title": "{{title}} alanına bağlanıldı",
@@ -1467,7 +1467,7 @@
     "wyre_minimum_deposit": "Minimum yatırılması gereken tutar{{amount}}",
     "wyre_maximum_deposit": "Maksimum yatırılması gereken tutar {{amount}}",
     "wyre_purchase": "{{currency}} Satın Al",
-    "wyre_total_label": "Wyre (NxtWallet ile)",
+    "wyre_total_label": "Wyre (NXTWallet ile)",
     "buy_with": "Şununla satın al:",
     "plus_fee": "Artı {{fee}} ücret",
     "notifications": {
@@ -1496,12 +1496,12 @@
         "average_gas_fee": "Güncel ortalama gas ücreti:",
         "subtitle_1": "{{ticker}} öğenizi değiştirmeyi ve aktarmayı planlıyorsanız gaz ücretlerini karşılamak için ekstra satın alın.",
         "subtitle_2": "İşlemlerin gaz ücretleri {{ticker}} satın almanın maliyetinden ayrıdır.",
-        "subtitle_3": "NxtWallet gaz ücretlerinden kâr elde etmez."
+        "subtitle_3": "NXTWallet gaz ücretlerinden kâr elde etmez."
       },
       "step_2": {
         "title": "Gaz ücretleri nedir?",
         "subtitle_1": "Ethereum ağındaki gaz gücü işlemleri. İşlemlerinizi gerçekleştiren kripto madencilerine {{ticker}} cinsinde ödenen bir ücrettir.",
-        "subtitle_2": "NxtWallet gaz ücretlerinden kâr elde etmez.",
+        "subtitle_2": "NXTWallet gaz ücretlerinden kâr elde etmez.",
         "learn_more": "Gaz ücretleri hakkında daha fazla bilgi alın"
       },
       "step_3": {
@@ -1562,7 +1562,7 @@
     "select_region_currency": "Bölge Para Birimini Seç",
     "no_tokens_match": "“{{searchString}}” ile eşleşen token yok",
     "no_currency_match": "“{{searchString}}” ile eşleşen para birimi yok",
-    "buy_from_vetted": "Entegrasyonlarımızdan birinden {{ticker}} satın almak için NxtWallet uygulamasından ayrılmadan güvenli bir şekilde kendilerinin portalına gideceksin",
+    "buy_from_vetted": "Entegrasyonlarımızdan birinden {{ticker}} satın almak için NXTWallet uygulamasından ayrılmadan güvenli bir şekilde kendilerinin portalına gideceksin",
     "price": "Fiyat",
     "total_fees": "Toplam Ücretler",
     "processing_fee": "İşlem Ücreti",
@@ -1638,13 +1638,13 @@
       "best_swap": "swap işlemini",
       "across": "bul...",
       "want_to_learn_more": "Daha fazla bilgi almak mı istiyorsunuz?",
-      "learn_more": "NxtWallet Swap işlemleri hakkında daha fazla bilgi alın",
+      "learn_more": "NXTWallet Swap işlemleri hakkında daha fazla bilgi alın",
       "what_are": "Token swap nedir?",
       "review_audits": "Resmi sözleşme denetimimizi inceleyin",
       "start_swapping": "Swap işlemine başlayın"
     },
     "feature_off_title": "Geçici olarak kullanılamıyor",
-    "feature_off_body": "NxtWallet Swaps şu anda bakım altındadır. Lütfen daha sonra tekrar kontrol edin.",
+    "feature_off_body": "NXTWallet Swaps şu anda bakım altındadır. Lütfen daha sonra tekrar kontrol edin.",
     "wrong_network_title": "Swaplar kullanılamıyor",
     "wrong_network_body": "Sadece Ethereum Ana Ağında token swap işlemi gerçekleştirebilirsiniz.",
     "unallowed_asset_title": "Bu token ile swap gerçekleştirilemiyor",
@@ -1722,19 +1722,19 @@
     "estimated_gas_fee": "Tahmini gaz ücreti",
     "max_gas_fee": "Maks. gaz ücreti",
     "edit": "Düzenle",
-    "quotes_include_fee": "%{{fee}} NxtWallet ücreti tekliflere dahildir",
+    "quotes_include_fee": "%{{fee}} NXTWallet ücreti tekliflere dahildir",
     "tap_to_swap": "Swap gerçekleştirmek için dokun",
     "swipe_to_swap": "Swap gerçekleştirmek için kaydır",
     "swipe_to": "Swap gerçekleştirmek için",
     "swap": "kaydır",
     "completed_swap": "Swap gerçekleştir!",
-    "metamask_swap_fee": "NxtWallet Swap ücreti",
+    "metamask_swap_fee": "NXTWallet Swap ücreti",
     "fee_text": {
       "get_the": "Tüm zamanların en iyi likidite",
       "best_price": "kaynaklarından",
       "from_the": "en iyi fiyatı",
       "top_liquidity": "al.",
-      "fee_is_applied": "Her bir teklife otomatik olarak {{fee}} dahil edilir, bu da NxtWallet'ı çok daha iyi hale getirmek için süregelen gelişimi destekler."
+      "fee_is_applied": "Her bir teklife otomatik olarak {{fee}} dahil edilir, bu da NXTWallet'ı çok daha iyi hale getirmek için süregelen gelişimi destekler."
     },
     "enable": {
       "this_will": "Bu,",
@@ -1799,7 +1799,7 @@
     "gas_education_1": "Gaz ücretleri",
     "gas_education_2_ethereum": "Ethereum ağında işlem gerçekleştiren kripto madencilerine ödenir.",
     "gas_education_2": "ağda işlem gerçekleştiren kripto madencilerine ödenir.",
-    "gas_education_3": "NxtWallet gaz ücretlerinden kâr elde etmez.",
+    "gas_education_3": "NXTWallet gaz ücretlerinden kâr elde etmez.",
     "gas_education_4": "Bu",
     "gas_education_5": "“Tahmini gaz ücreti”",
     "gas_education_6": "olmasını beklediğimiz gerçek ücrettir. Tam tutar ağ koşullarına bağlıdır.",
@@ -1846,15 +1846,15 @@
   "switch_custom_network": {
     "title_existing_network": "Bu site ağ değiştirmek istiyor",
     "title_new_network": "Yeni ağ eklendi",
-    "switch_warning": "Bu işlem, NxtWallet dahilindeki seçili ağı daha önceden eklenen bir ağ ile değiştirecek:",
+    "switch_warning": "Bu işlem, NXTWallet dahilindeki seçili ağı daha önceden eklenen bir ağ ile değiştirecek:",
     "available": "artık ağ seçicide mevcut.",
     "cancel": "İptal",
     "switch": "Ağ değiştir"
   },
   "add_custom_network": {
     "title": "Bu sitenin ağ eklemesine izin ver?",
-    "warning": "Bu, bu ağın NxtWallet dahilinde kullanılmasına izin verir.",
-    "warning_subtext_1": "NxtWallet kişisel ağları veya onların güvenliğini doğrulamaz.",
+    "warning": "Bu, bu ağın NXTWallet dahilinde kullanılmasına izin verir.",
+    "warning_subtext_1": "NXTWallet kişisel ağları veya onların güvenliğini doğrulamaz.",
     "warning_subtext_2": "Dolandırıcılıklar ve ağ güvenlik riskleri",
     "warning_subtext_3": "hakkında bilgi alın",
     "display_name": "Görüntü adı",
@@ -1933,7 +1933,7 @@
     "estimated_gas_fee_tooltip_text_1": "Gaz ücretleri",
     "estimated_gas_fee_tooltip_text_2": " Ethereum",
     "estimated_gas_fee_tooltip_text_3": "ağında işlem gerçekleştiren kripto madencilerine ödenir.",
-    "estimated_gas_fee_tooltip_text_4": "NxtWallet gaz ücretlerinden kâr elde etmez.",
+    "estimated_gas_fee_tooltip_text_4": "NXTWallet gaz ücretlerinden kâr elde etmez.",
     "estimated_gas_fee_tooltip_text_5": "Gaz ücretleri ağ tarafından belirlenir ve ağ trafiğine ve işlemin karmaşıklığına göre dalgalanır.",
     "learn_more": "Gaz ücretleri hakkında daha fazla bilgi alın",
     "legacy_gas_suggestion_tooltip": "Bu gaz ücreti yanlış olabilen eski gaz tahmininin kullanılmasını öneriyor."
@@ -1955,7 +1955,7 @@
     "high_fees": "Ücretler neden bu kadar yüksek?",
     "missing_tokens": "Tokenlerim eksik...",
     "swap_issues": "Swap gerçekleştiremiyorum...",
-    "mobile_sentiment": "NxtWallet mobil hakkında ne düşünüyorsunuz?",
+    "mobile_sentiment": "NXTWallet mobil hakkında ne düşünüyorsunuz?",
     "sentiment_good_face": "😁",
     "sentiment_bad_face": "☹️",
     "sentiment_good": "Bayıldım!",
@@ -1999,12 +1999,12 @@
   },
   "remember_me": {
     "enable_remember_me": "Beni Hatırla özelliğini aç",
-    "enable_remember_me_description": "Beni Hatırla özelliği açıldığında telefonunuza erişimi olan herkes NxtWallet hesabınıza erişim sağlayabilir."
+    "enable_remember_me_description": "Beni Hatırla özelliği açıldığında telefonunuza erişimi olan herkes NXTWallet hesabınıza erişim sağlayabilir."
   },
   "turn_off_remember_me": {
     "title": "Beni Hatırla özelliğini kapatmak için parolanızı girin",
     "placeholder": "Parola",
-    "description": "Bu seçeneği kapatırsanız şu andan itibaren NxtWallet'in kilidini açmak için şifrenizi girmeniz gerekecektir.",
+    "description": "Bu seçeneği kapatırsanız şu andan itibaren NXTWallet'in kilidini açmak için şifrenizi girmeniz gerekecektir.",
     "action": "Beni Hatırla özelliğini kapat"
   }
 }

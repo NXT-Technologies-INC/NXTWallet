@@ -28,14 +28,14 @@
   },
   "onboarding": {
     "title": "Configuração da carteira",
-    "sync_desc": "Se você já tiver a extensão do NxtWallet ou outra carteira, sincronize-a ou importe-a para gerenciar os ativos existentes.",
+    "sync_desc": "Se você já tiver a extensão do NXTWallet ou outra carteira, sincronize-a ou importe-a para gerenciar os ativos existentes.",
     "create_desc": "Configure sua primeira carteira e comece a explorar os apps descentralizados.",
     "import": "Importe uma carteira existente ou crie uma nova",
     "import_wallet_button": "Sincronizar ou importar carteira",
     "new_to_crypto": "A criptomoeda é uma novidade para você?",
     "start_exploring_now": "Criar nova carteira",
     "unlock": "Desbloquear",
-    "new_to_metamask": "O NxtWallet é uma novidade para você?",
+    "new_to_metamask": "O NXTWallet é uma novidade para você?",
     "already_have_wallet": "Já tem uma carteira?",
     "optin_back_title": "Fique de olho!",
     "optin_back_desc": "Demonstre sua anuência ou sua discordância com o uso de analytics de dados.  Você também pode atualizar essa opção nas configurações.",
@@ -43,15 +43,15 @@
     "warning_text_1": "Sua carteira e suas contas serão",
     "warning_text_2": "removidas",
     "warning_text_3": "se você continuar.",
-    "warning_text_4": "Você SÓ consegue recuperá-las com a Frase de Recuperação Secreta da sua carteira. O NxtWallet não pode lhe ajudar nessa recuperação.",
+    "warning_text_4": "Você SÓ consegue recuperá-las com a Frase de Recuperação Secreta da sua carteira. O NXTWallet não pode lhe ajudar nessa recuperação.",
     "warning_proceed": "Remover carteira e continuar",
     "warning_cancel": "Cancelar",
     "step1": "Configuração da carteira",
     "step2": "Criar senha",
     "step3": "Proteger carteira",
     "already_have": "Já tem uma carteira?",
-    "sync_existing": "Sincronize a carteira NxtWallet existente pela extensão do navegador ou importe-a manualmente.",
-    "scan_title": "Etapas para sincronizar com a extensão do NxtWallet",
+    "sync_existing": "Sincronize a carteira NXTWallet existente pela extensão do navegador ou importe-a manualmente.",
+    "scan_title": "Etapas para sincronizar com a extensão do NXTWallet",
     "scan": "Ler",
     "scan_step_1": "Abrir a extensão na área de trabalho",
     "scan_step_2": "Vá para Configurações > Avançadas",
@@ -62,12 +62,12 @@
     "delete_current": "Apagando a carteira atual"
   },
   "onboarding_carousel": {
-    "title1": "Bem-vindo(a) ao NxtWallet",
+    "title1": "Bem-vindo(a) ao NXTWallet",
     "title2": "Gerencie os ativos digitais",
     "title3": "Seu portal para a web3",
-    "subtitle1": "Com a confiança de milhões de usuários, o NxtWallet é uma carteira segura que abre as portas da web3 para todos.",
+    "subtitle1": "Com a confiança de milhões de usuários, o NXTWallet é uma carteira segura que abre as portas da web3 para todos.",
     "subtitle2": "Armazene, gaste e envie ativos digitais, como tokens, ethereum, colecionáveis exclusivos.",
-    "subtitle3": "Acesse via NxtWallet e faça transações para investir, lucrar, jogar, vender e muito mais!",
+    "subtitle3": "Acesse via NXTWallet e faça transações para investir, lucrar, jogar, vender e muito mais!",
     "get_started": "Comece agora"
   },
   "onboarding_wizard": {
@@ -98,7 +98,7 @@
       "title": "Navegação principal",
       "content1": "Toque aqui",
       "content2": "para acessar a carteira, o navegador e o histórico de transações.",
-      "content3": "Você pode realizar outras ações com suas contas e acessar as configurações do NxtWallet."
+      "content3": "Você pode realizar outras ações com suas contas e acessar as configurações do NXTWallet."
     },
     "step5": {
       "title": "Explore o navegador",
@@ -114,14 +114,14 @@
     "subtitle": "Não deve demorar"
   },
   "import_wallet": {
-    "title": "Já usa o NxtWallet?",
+    "title": "Já usa o NXTWallet?",
     "sub_title": "Sincronizar com a extensão",
     "sync_help": "Sincronizar sua carteira com a extensão",
     "sync_help_step_one": "1. Abra a extensão",
     "sync_help_step_two": "2. Vá para Configurações > Avançadas",
     "sync_help_step_three": "3. Clique em \"Sincronizar com dispositivo móvel\"",
     "sync_help_step_four": "4. Leia o código QR para iniciar a sincronização",
-    "sync_from_browser_extension_button": "Sincronizar com a extensão do NxtWallet",
+    "sync_from_browser_extension_button": "Sincronizar com a extensão do NXTWallet",
     "or": "OU",
     "import_from_seed_button": "Importar usando a Frase de Recuperação Secreta"
   },
@@ -141,9 +141,9 @@
     "this_action": "Esta ação não poderá ser desfeita.",
     "you_can_only": "Você SÓ consegue recuperar esta carteira com sua ",
     "recovery_phrase": "Frase de recuperação secreta ",
-    "metamask_does_not": "O NxtWallet não possui sua Frase de Recuperação Secreta.",
+    "metamask_does_not": "O NXTWallet não possui sua Frase de Recuperação Secreta.",
     "i_understand": "Eu entendo. Continuar",
-    "clean_vault_error": "O NxtWallet encontrou um erro devido ao alcance de um limite de armazenamento. Os dados locais foram corrompidos. Reinstale o NxtWallet e restaure com sua Frase de Recuperação Secreta."
+    "clean_vault_error": "O NXTWallet encontrou um erro devido ao alcance de um limite de armazenamento. Os dados locais foram corrompidos. Reinstale o NXTWallet e restaure com sua Frase de Recuperação Secreta."
   },
   "enter_password": {
     "title": "Informe sua senha",
@@ -154,7 +154,7 @@
   },
   "choose_password": {
     "title": "Criar senha",
-    "subtitle": "Esta senha desbloqueará sua carteira do NxtWallet somente neste dispositivo.",
+    "subtitle": "Esta senha desbloqueará sua carteira do NXTWallet somente neste dispositivo.",
     "password": "Nova senha",
     "confirm_password": "Confirmar a senha",
     "create_button": "Criar senha",
@@ -172,14 +172,14 @@
     "remember_me": "Lembrar de mim",
     "security_alert_title": "Alerta de segurança",
     "security_alert_message": "Para continuar, você precisa ativar a senha ou qualquer método de autenticação biométrica compatível com seu dispositivo (FaceID, TouchID ou impressão digital)",
-    "i_understand": "Eu entendo que o NxtWallet não consegue recuperar essa senha por mim.",
+    "i_understand": "Eu entendo que o NXTWallet não consegue recuperar essa senha por mim.",
     "learn_more": "Saiba mais.",
     "secure": "Proteger carteira",
     "confirm": "Confirmar Frase de Recuperação Secreta"
   },
   "reset_password": {
     "title": "Alterar a senha",
-    "subtitle": "Esta senha desbloqueará sua carteira do NxtWallet somente neste dispositivo.",
+    "subtitle": "Esta senha desbloqueará sua carteira do NXTWallet somente neste dispositivo.",
     "password": "Nova senha",
     "confirm_password": "Confirmar a senha",
     "reset_button": "Redefinir a senha",
@@ -197,7 +197,7 @@
     "remember_me": "Lembrar de mim",
     "security_alert_title": "Alerta de segurança",
     "security_alert_message": "Para continuar, você precisa ativar a senha ou qualquer método de autenticação biométrica compatível com seu dispositivo (FaceID, TouchID ou impressão digital)",
-    "i_understand": "Eu entendo que o NxtWallet não consegue recuperar essa senha por mim.",
+    "i_understand": "Eu entendo que o NXTWallet não consegue recuperar essa senha por mim.",
     "learn_more": "Saiba mais.",
     "secure": "Proteger carteira",
     "confirm": "Confirmar Frase de Recuperação Secreta",
@@ -247,7 +247,7 @@
     "lock_ok": "SIM",
     "lock_cancel": "NÃO",
     "feedback": "Feedback",
-    "metamask_support": "Suporte do NxtWallet",
+    "metamask_support": "Suporte do NXTWallet",
     "public_address": "Endereço público"
   },
   "send": {
@@ -327,9 +327,9 @@
     "here": "aqui",
     "agree": "Concordo",
     "decline": "Não, agradeço",
-    "description_title": "Ajude-nos a melhorar o NxtWallet",
-    "description_content_1": "O NxtWallet gostaria de reunir dados básicos de uso para entender melhor como nossos usuários interagem com o app para dispositivos móveis. Esses dados serão usados para aperfeiçoar continuamente a usabilidade e a experiência do usuário com nosso produto.",
-    "description_content_2": "O NxtWallet...",
+    "description_title": "Ajude-nos a melhorar o NXTWallet",
+    "description_content_1": "O NXTWallet gostaria de reunir dados básicos de uso para entender melhor como nossos usuários interagem com o app para dispositivos móveis. Esses dados serão usados para aperfeiçoar continuamente a usabilidade e a experiência do usuário com nosso produto.",
+    "description_content_2": "O NXTWallet...",
     "action_description_1": "Sempre permitirá que você cancele o envio dos dados, via Configurações",
     "action_description_2": "Enviará eventos anonimizados de cliques e visualização de página",
     "action_description_3": "Entre com os dados de país, estado, cidade (não o local específico)",
@@ -397,7 +397,7 @@
     "state_logs": "Logs de estado",
     "auto_lock": "Bloqueio automático",
     "auto_lock_desc": "Selecione o tempo que demora até o aplicativo ser bloqueado automaticamente.",
-    "state_logs_desc": "Isso ajudará o NxtWallet a depurar qualquer problema encontrado. Favor enviá-lo ao suporte do NxtWallet pelo ícone do hambúrguer > Enviar Feedback, ou responder ao seu tíquete existente, se houver.",
+    "state_logs_desc": "Isso ajudará o NXTWallet a depurar qualquer problema encontrado. Favor enviá-lo ao suporte do NXTWallet pelo ícone do hambúrguer > Enviar Feedback, ou responder ao seu tíquete existente, se houver.",
     "autolock_immediately": "Imediatamente",
     "autolock_never": "Nunca",
     "autolock_after": "Depois de {{time}} segundos",
@@ -420,7 +420,7 @@
     "save_rpc_url": "SALVAR",
     "invalid_rpc_prefix": "Os URIs precisam do prefixo HTTPS adequado",
     "invalid_rpc_url": "URL inválido da RPC",
-    "sync_with_extension": "Sincronizar com a extensão do NxtWallet",
+    "sync_with_extension": "Sincronizar com a extensão do NXTWallet",
     "sync_with_extension_desc": "Isso importará todas as contas de extensão a este dispositivo.",
     "sync": "SINCRONIZAR",
     "clear_approved_dapps": "LIMPAR DAPPS APROVADOS",
@@ -476,7 +476,7 @@
     "remove_network_title": "Deseja remover esta rede?",
     "remove_network": "Remover",
     "cancel_remove_network": "Cancelar",
-    "info_title": "Sobre o NxtWallet",
+    "info_title": "Sobre o NXTWallet",
     "experimental_title": "Experimental",
     "experimental_desc": "WalletConnect e mais...",
     "legal_title": "Legal",
@@ -496,7 +496,7 @@
     "clear_history_desc": "Escolha esta opção para limpar o histórico inteiro de navegação.",
     "clear_cookies_desc": "Escolha esta opção para limpar os cookies do navegador.",
     "metametrics_title": "Participe do MetaMetrics",
-    "metametrics_description": "Participe do MetaMetrics para nos ajudar a deixar o NxtWallet ainda melhor.",
+    "metametrics_description": "Participe do MetaMetrics para nos ajudar a deixar o NXTWallet ainda melhor.",
     "third_party_title": "Obter transações recebidas",
     "third_party_description": "São usadas APIs (Etherscan) de terceiros para mostrar as transações recebidas no histórico. Desative a opção se você não quiser que peguemos dados desses serviços.",
     "metametrics_opt_out": "Opt-out do MetaMetrics",
@@ -551,7 +551,7 @@
   },
   "password_reset": {
     "password_title": "Senha",
-    "password_desc": "Escolha uma senha forte para desbloquear o app NxtWallet no seu dispositivo. Se você perder essa senha, precisará da Frase de Recuperação Secreta para reimportar a carteira.",
+    "password_desc": "Escolha uma senha forte para desbloquear o app NXTWallet no seu dispositivo. Se você perder essa senha, precisará da Frase de Recuperação Secreta para reimportar a carteira.",
     "password_learn_more": "Saiba mais.",
     "change_password": "Alterar a senha"
   },
@@ -588,7 +588,7 @@
     "cancel": "Cancelar",
     "error": "Erro",
     "attempting_to_scan_with_wallet_locked": "Parece que você está tentando escanear um código QR. Você deve destravar sua carteira para conseguir usá-la.",
-    "attempting_sync_from_wallet_error": "Parece que você está tentando sincronizar com uma extensão. Para fazê-lo, você precisará excluir sua carteira atual. \n\nApós ter excluído ou reinstalado uma versão mais recente do app, selecione a opção para \"Sincronizar com a Extensão NxtWallet\". Importante! Antes de excluir a sua carteira, certifique-se de ter feito uma cópia de segurança da sua Frase de Recuperação Secreta."
+    "attempting_sync_from_wallet_error": "Parece que você está tentando sincronizar com uma extensão. Para fazê-lo, você precisará excluir sua carteira atual. \n\nApós ter excluído ou reinstalado uma versão mais recente do app, selecione a opção para \"Sincronizar com a Extensão NXTWallet\". Importante! Antes de excluir a sua carteira, certifique-se de ter feito uma cópia de segurança da sua Frase de Recuperação Secreta."
   },
   "action_view": {
     "cancel": "Cancelar",
@@ -686,7 +686,7 @@
     "gas_education_1": "As taxas de gas são pagas aos mineradores de criptomoedas que processam as transações na ",
     "gas_education_2_ethereum": "rede do Ethereum.",
     "gas_education_2": "rede.",
-    "gas_education_3": "O NxtWallet não lucra com taxas de gas.",
+    "gas_education_3": "O NXTWallet não lucra com taxas de gas.",
     "gas_education_4": "As taxas de gas flutuam com base no tráfego da rede e na complexidade das transações.",
     "gas_education_learn_more": "Saiba mais sobre as taxas de gas",
     "confusable_title": "Confira o endereço do destinatário",
@@ -702,7 +702,7 @@
     "save": "Salvar",
     "warning_gas_limit": "O limite de gas deve ser maior que 20999 e menor que 7920027",
     "warning_gas_limit_estimated": "O limite estimado de gas é {{gas}}, use-o como valor mínimo",
-    "cost_explanation": "A taxa de gas cobre o custo de processamento da sua transação na rede do Ethereum. O NxtWallet não lucra com essa taxa. Quanto mais alta a taxa, melhores as chances da sua transação ser processada."
+    "cost_explanation": "A taxa de gas cobre o custo de processamento da sua transação na rede do Ethereum. O NXTWallet não lucra com essa taxa. Quanto mais alta a taxa, melhores as chances da sua transação ser processada."
   },
   "spend_limit_edition": {
     "save": "Salvar",
@@ -761,7 +761,7 @@
     "change_url": "Alterar URL",
     "switch_network": "Trocar de rede",
     "dapp_browser": "NAVEGADOR DO DAPP",
-    "dapp_browser_message": "O NxtWallet é sua carteira e seu navegador para a web descentralizada. Olhe à sua volta!",
+    "dapp_browser_message": "O NXTWallet é sua carteira e seu navegador para a web descentralizada. Olhe à sua volta!",
     "featured_dapps": "DAPPS EM DESTAQUE",
     "my_favorites": "MEUS FAVORITOS",
     "search": "Buscar ou digitar URL",
@@ -881,7 +881,7 @@
   "sync_with_extension": {
     "title": "Sincronizar dados da extensão",
     "short_title": "Sincronizar com a extensão",
-    "label": "Abrir a extensão do NxtWallet no seu navegador da área de trabalho e ir para \"Configurações\" > \"Avançadas\", clicar em \"Sincronizar com Dispositivo Móvel\" e informar sua senha para ver o Código QR",
+    "label": "Abrir a extensão do NXTWallet no seu navegador da área de trabalho e ir para \"Configurações\" > \"Avançadas\", clicar em \"Sincronizar com Dispositivo Móvel\" e informar sua senha para ver o Código QR",
     "button_continue": "Continuar",
     "please_wait": "Aguarde enquanto sincronizamos seus dados...",
     "error_title": "Puxa vida!",
@@ -897,11 +897,11 @@
     "something_wrong": "Ops! Deu algo errado...",
     "something_wrong_desc": "Estamos tendo problemas ao tentar sincronizar a sua carteira. Tente novamente mais tarde ou importe a carteira usando a sua Frase de Recuperação Secreta",
     "allow_biometrics_title": "Deseja habilitar {{biometrics}}?",
-    "allow_biometrics_desc": "Você pode usar {{biometrics}} para autenticar o NxtWallet"
+    "allow_biometrics_desc": "Você pode usar {{biometrics}} para autenticar o NXTWallet"
   },
   "sync_with_extension_success": {
     "title": "Carteira importada",
-    "sync_complete_1": "Lembre-se: o NxtWallet não consegue recuperar a sua Frase de Recuperação Secreta caso você a perca. A Frase de Recuperação Secreta pode ser encontrada em",
+    "sync_complete_1": "Lembre-se: o NXTWallet não consegue recuperar a sua Frase de Recuperação Secreta caso você a perca. A Frase de Recuperação Secreta pode ser encontrada em",
     "sync_complete_2": "Configurações > Segurança & privacidade",
     "button_continue": "Concluído",
     "password_tip": "A senha para desbloquear a carteira móvel é a mesma definida para a extensão.",
@@ -966,9 +966,9 @@
   },
   "authentication": {
     "auth_prompt_title": "Autenticação obrigatória",
-    "auth_prompt_desc": "Autentique para usar o NxtWallet",
+    "auth_prompt_desc": "Autentique para usar o NXTWallet",
     "fingerprint_prompt_title": "Autenticação obrigatória",
-    "fingerprint_prompt_desc": "Use sua digital para desbloquear o NxtWallet",
+    "fingerprint_prompt_desc": "Use sua digital para desbloquear o NXTWallet",
     "fingerprint_prompt_cancel": "Cancelar"
   },
   "accountApproval": {
@@ -985,7 +985,7 @@
   },
   "import_private_key": {
     "title": "Importar conta",
-    "description_one": "As contas importadas podem ser vistas na sua carteira, mas não podem ser recuperadas com a Frase de Recuperação Secreta do NxtWallet.",
+    "description_one": "As contas importadas podem ser vistas na sua carteira, mas não podem ser recuperadas com a Frase de Recuperação Secreta do NXTWallet.",
     "learn_more_here": "Saiba mais sobre as contas importadas aqui.",
     "subtitle": "Cole a string da sua chave privada",
     "cta_text": "IMPORTAR",
@@ -997,7 +997,7 @@
   },
   "import_private_key_success": {
     "title": "Conta importada!",
-    "description_one": "Você poderá ver sua conta no NxtWallet."
+    "description_one": "Você poderá ver sua conta no NXTWallet."
   },
   "first_incoming_transaction": {
     "title": "{{asset}} foi depositado(a) na sua conta",
@@ -1012,7 +1012,7 @@
     "step_1_description": "Criar senha",
     "step_2": "Etapa 2:",
     "step_2_description": "Salve a Frase de Recuperação Secreta da carteira",
-    "info_text_1": "Reserve alguns momentos para finalizar a configuração da sua carteira do NxtWallet.",
+    "info_text_1": "Reserve alguns momentos para finalizar a configuração da sua carteira do NXTWallet.",
     "info_text_2": "Com isso, só você poderá acessar seus fundos e, caso perca o dispositivo, poderá recuperar sua carteira",
     "cta_text": "Criar senha",
     "creating_password": "Criando senha..."
@@ -1034,7 +1034,7 @@
     "what_is_seedphrase_title": "O que é uma “Frase de Recuperação Secreta”",
     "what_is_seedphrase_text_1": "A Frase de Recuperação Secreta é um conjunto de doze palavras que contém todas as informações sobre a sua carteira, inclusive sobre os seus fundos. É como um código secreto usado para acessar sua carteira toda.",
     "what_is_seedphrase_text_2": "Você precisa manter o sigilo e proteger a sua Frase de Recuperação Secreta. Se alguém conseguir a sua Frase de Recuperação Secreta, essa pessoa ganhará controle sobre as suas contas.",
-    "what_is_seedphrase_text_3": "Salve-a em um local onde só você tenha acesso. Se você perdê-la, nem mesmo o NxtWallet conseguirá ajudar você a recuperá-la."
+    "what_is_seedphrase_text_3": "Salve-a em um local onde só você tenha acesso. Se você perdê-la, nem mesmo o NXTWallet conseguirá ajudar você a recuperá-la."
   },
   "account_backup_step_1B": {
     "title": "Proteger sua carteira",
@@ -1107,7 +1107,7 @@
   },
   "account_backup_step_6": {
     "title": "Dicas de segurança",
-    "info_text": "O NxtWallet não poderá recuperar a sua Frase de Recuperação Secreta caso você a perca",
+    "info_text": "O NXTWallet não poderá recuperar a sua Frase de Recuperação Secreta caso você a perca",
     "tip_1": "Mantenha várias cópias de segurança da sua Frase de Recuperação Secreta",
     "tip_2": "Guarde a frase em um gerenciador de senhas de confiança e em cópias de segurança em papel, guardadas em um local seguro",
     "tip_3": "Nunca compartilhe essa frase com ninguém",
@@ -1145,7 +1145,7 @@
     "congratulations": "Parabéns",
     "success": "Você conseguiu proteger sua carteira. Lembre-se de manter protegida a sua Frase de Recuperação Secreta. É sua responsabilidade!",
     "hint": "Quer deixar uma dica?",
-    "recover": "O NxtWallet não poderá recuperar a sua carteira caso você a perca. A sua Frase de Recuperação Secreta poderá ser encontrada em Configurações > Segurança & Privacidade.",
+    "recover": "O NXTWallet não poderá recuperar a sua carteira caso você a perca. A sua Frase de Recuperação Secreta poderá ser encontrada em Configurações > Segurança & Privacidade.",
     "learn": "Saiba mais",
     "done": "Concluído",
     "recovery_hint": "Dica de recuperação",
@@ -1158,7 +1158,7 @@
   "phishing": {
     "ethereum_phishing_detection": "Detecção de phishing do Ethereum",
     "ethereum_phishing_detector": "O detector de phishing do Ethereum",
-    "intro": " atualmente está na lista de advertência do domínio do NxtWallet. Isso significa que, conforme as informações que foram a nós disponibilizadas, o NxtWallet acredita que este domínio poderia colocar em risco sua segurança e, como forma adicional de precaução, o NxtWallet restringiu o acesso ao site. Para contornar essa questão, leia o restante deste aviso e veja instruções sobre como continuar, assumindo o risco sozinho.",
+    "intro": " atualmente está na lista de advertência do domínio do NXTWallet. Isso significa que, conforme as informações que foram a nós disponibilizadas, o NXTWallet acredita que este domínio poderia colocar em risco sua segurança e, como forma adicional de precaução, o NXTWallet restringiu o acesso ao site. Para contornar essa questão, leia o restante deste aviso e veja instruções sobre como continuar, assumindo o risco sozinho.",
     "reasons": "Os sites podem figurar na nossa lista de advertência por motivos diversos, e a lista de advertência é compilada com base em outras listas amplamente usadas no setor. Esses motivos podem incluir riscos conhecidos de fraude ou segurança, como domínios com resultado positivo em ",
     "list_content": "Os domínios que figuram nessas listas de advertência podem incluir websites abertamente mal-intencionados e websites legítimos que tenham sido comprometidos por pessoas mal-intencionadas.",
     "to_read_more": "Para saber mais sobre este site, ",
@@ -1193,7 +1193,7 @@
     "received_message": "Toque para exibir essa transação",
     "received_payment_message": "Você recebeu {{amount}} DAI",
     "prompt_title": "Habilitar notificações por push",
-    "prompt_desc": "Habilite as notificações para que o NxtWallet avise quando você receber ETH ou quando suas transações forem confirmadas.",
+    "prompt_desc": "Habilite as notificações para que o NXTWallet avise quando você receber ETH ou quando suas transações forem confirmadas.",
     "prompt_ok": "Sim",
     "prompt_cancel": "Não, agradeço",
     "wc_connected_title": "Conectado a {{title}}",
@@ -1353,7 +1353,7 @@
     "wyre_minimum_deposit": "O depósito mínimo é de {{amount}}",
     "wyre_maximum_deposit": "O depósito máximo é de {{amount}}",
     "wyre_purchase": "Compra de {{currency}}",
-    "wyre_total_label": "Wyre (via NxtWallet)",
+    "wyre_total_label": "Wyre (via NXTWallet)",
     "buy_with": "Comprar com",
     "plus_fee": "Mais uma taxa de {{fee}}",
     "notifications": {
@@ -1380,12 +1380,12 @@
         "average_gas_fee": "Taxa de gas média atual:",
         "subtitle_1": "Se você pretende fazer swap ou transferir o seu {{ticker}}, adquira um valor adicional para cobrir as taxas de gas.",
         "subtitle_2": "As taxas de gas para transações são separadas do custo de aquisição de {{ticker}}.",
-        "subtitle_3": "O NxtWallet não lucra com taxas de gas."
+        "subtitle_3": "O NXTWallet não lucra com taxas de gas."
       },
       "step_2": {
         "title": "O que são as taxas de gas?",
         "subtitle_1": "Gas movimenta as transações na rede do Ethereum. É uma taxa paga em {{ticker}} aos mineradores de criptomoedas que processam as suas transações.",
-        "subtitle_2": "O NxtWallet não lucra com taxas de gas.",
+        "subtitle_2": "O NXTWallet não lucra com taxas de gas.",
         "learn_more": "Saiba mais sobre as taxas de gas"
       },
       "step_3": {
@@ -1410,13 +1410,13 @@
       "best_swap": "o melhor swap",
       "across": "de todos...",
       "want_to_learn_more": "Quer saber mais?",
-      "learn_more": "Saiba mais sobre o NxtWallet Swaps",
+      "learn_more": "Saiba mais sobre o NXTWallet Swaps",
       "what_are": "O que são token para swaps?",
       "review_audits": "Confira nossa auditoria oficial de contratos",
       "start_swapping": "Iniciar swap"
     },
     "feature_off_title": "Temporariamente indisponível",
-    "feature_off_body": "O NxtWallet Swaps está em manutenção. Verifique novamente mais tarde.",
+    "feature_off_body": "O NXTWallet Swaps está em manutenção. Verifique novamente mais tarde.",
     "wrong_network_title": "Swaps indisponíveis",
     "wrong_network_body": "Você só pode fazer swap dos tokens na Rede Principal do Ethereum.",
     "unallowed_asset_title": "Não é possível fazer swap deste token",
@@ -1474,19 +1474,19 @@
     "estimated_gas_fee": "Taxa estimada de gas",
     "max_gas_fee": "Taxa máxima de gas",
     "edit": "Editar",
-    "quotes_include_fee": "As cotações incluem uma taxa NxtWallet de {{fee}}%",
+    "quotes_include_fee": "As cotações incluem uma taxa NXTWallet de {{fee}}%",
     "tap_to_swap": "Toque para fazer o Swap",
     "swipe_to_swap": "Deslize para fazer o swap",
     "swipe_to": "Deslize para",
     "swap": "swap",
     "completed_swap": "Swap!",
-    "metamask_swap_fee": "Taxa de Swap do NxtWallet",
+    "metamask_swap_fee": "Taxa de Swap do NXTWallet",
     "fee_text": {
       "get_the": "Obtenha o",
       "best_price": "melhor preço",
       "from_the": "das",
       "top_liquidity": "principais fontes de liquidez todas as vezes.",
-      "fee_is_applied": "Uma taxa de {{fee}} é automaticamente levada em conta em cada cotação, o que é compatível com o desenvolvimento contínuo para deixar o NxtWallet ainda melhor."
+      "fee_is_applied": "Uma taxa de {{fee}} é automaticamente levada em conta em cada cotação, o que é compatível com o desenvolvimento contínuo para deixar o NXTWallet ainda melhor."
     },
     "enable": {
       "this_will": "Isto vai",
@@ -1571,7 +1571,7 @@
   "whats_new": {
     "title": "Confira as novidades",
     "feature_security_settings_title": "Configurações de segurança aperfeiçoadas",
-    "feature_security_settings_text": "Agora, você poderá alterar a sua senha do app NxtWallet & ver como fazer uma cópia de segurança da Frase de Recuperação Secreta da sua carteira em Configurações > Segurança & Privacidade.",
+    "feature_security_settings_text": "Agora, você poderá alterar a sua senha do app NXTWallet & ver como fazer uma cópia de segurança da Frase de Recuperação Secreta da sua carteira em Configurações > Segurança & Privacidade.",
     "feature_security_settings_button": "Exibir em Configurações"
   },
   "invalid_network": {
@@ -1584,15 +1584,15 @@
   "switch_custom_network": {
     "title_existing_network": "Este site gostaria de mudar de rede",
     "title_new_network": "Nova rede adicionada",
-    "switch_warning": "Isto irá mudar a rede selecionada com o NxtWallet para uma rede adicionada anteriormente:",
+    "switch_warning": "Isto irá mudar a rede selecionada com o NXTWallet para uma rede adicionada anteriormente:",
     "available": "está disponível agora no seletor de rede.",
     "cancel": "Cancelar",
     "switch": "Trocar de Rede"
   },
   "add_custom_network": {
     "title": "Permitir que este site adicione uma rede?",
-    "warning": "Isso permite esta rede ser usada dentro do NxtWallet.",
-    "warning_subtext_1": "O NxtWallet não verifica redes personalizadas ou sua segurança.",
+    "warning": "Isso permite esta rede ser usada dentro do NXTWallet.",
+    "warning_subtext_1": "O NXTWallet não verifica redes personalizadas ou sua segurança.",
     "warning_subtext_2": "Saiba mais sobre",
     "warning_subtext_3": "fraudes e riscos de segurança da rede",
     "display_name": "Exibir nome",
@@ -1615,6 +1615,6 @@
   "secret_phrase_video_subtitle": {
     "title": "PT BR CC",
     "language": "pt-br",
-    "uri": "https://github.com/NxtWallet/metamask-mobile/blob/main/app/videos/subtitles/secretPhrase/subtitles-pt-br.vtt?raw=true"
+    "uri": "https://github.com/NXTWallet/metamask-mobile/blob/main/app/videos/subtitles/secretPhrase/subtitles-pt-br.vtt?raw=true"
   }
 }

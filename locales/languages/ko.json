@@ -28,7 +28,7 @@
   },
   "onboarding": {
     "title": "지갑 설정",
-    "sync_desc": "NxtWallet 확장 프로그램 또는 다른 지갑을 사용하고 있으신 경우, 기존에 보유한 자산 관리를 위해 이를 연동하거나 불러오세요.",
+    "sync_desc": "NXTWallet 확장 프로그램 또는 다른 지갑을 사용하고 있으신 경우, 기존에 보유한 자산 관리를 위해 이를 연동하거나 불러오세요.",
     "create_desc": "첫 지갑을 설정하고 탈중앙화된 앱을 체험해 보세요.",
     "import": "기존 지갑을 불러오거나 새 지갑을 만드세요",
     "import_wallet_button": "지갑 동기화 또는 불러오기",
@@ -50,8 +50,8 @@
     "step2": "비밀번호 생성",
     "step3": "지갑 보호",
     "already_have": "이미 지갑이 있으신가요?",
-    "sync_existing": "현재 보유 중인 NxtWallet 지갑을 브라우저 확장 프로그램에서 동기화하거나 수동으로 불러오세요.",
-    "scan_title": "NxtWallet 확장 프로그램 동기화 절차",
+    "sync_existing": "현재 보유 중인 NXTWallet 지갑을 브라우저 확장 프로그램에서 동기화하거나 수동으로 불러오세요.",
+    "scan_title": "NXTWallet 확장 프로그램 동기화 절차",
     "scan": "스캔",
     "scan_step_1": "데스크탑에서 확장 기능 열기",
     "scan_step_2": "설정 > 고급으로 이동",
@@ -98,7 +98,7 @@
       "title": "메인 네비게이션",
       "content1": "여기를 눌러",
       "content2": "지갑, 브라우저, 거래 활동에 접속하세요.",
-      "content3": "계정 및 NxtWallet 설정에 접속하시면 추가적인 작업을 수행할 수 있습니다."
+      "content3": "계정 및 NXTWallet 설정에 접속하시면 추가적인 작업을 수행할 수 있습니다."
     },
     "step5": {
       "title": "브라우저 탐색",
@@ -114,14 +114,14 @@
     "subtitle": "오래 걸리지 않을 것입니다"
   },
   "import_wallet": {
-    "title": "이미 NxtWallet 사용자인가요?",
+    "title": "이미 NXTWallet 사용자인가요?",
     "sub_title": "확장 프로그램과 동기화",
     "sync_help": "확장 프로그램과 지갑을 동기화하세요",
     "sync_help_step_one": "1. 확장 프로그램을 켭니다",
     "sync_help_step_two": "2. 설정 > 고급으로 이동합니다",
     "sync_help_step_three": "3. \"모바일과 동기화\"를 클릭합니다",
     "sync_help_step_four": "4. QR 코드를 스캔해 동기화를 시작합니다",
-    "sync_from_browser_extension_button": "NxtWallet 확장 프로그램과 동기화하기",
+    "sync_from_browser_extension_button": "NXTWallet 확장 프로그램과 동기화하기",
     "or": "또는",
     "import_from_seed_button": "비밀 복구 구문을 활용해 불러오기"
   },
@@ -158,7 +158,7 @@
   },
   "choose_password": {
     "title": "비밀번호 생성",
-    "subtitle": "이 비밀번호는 이 기기에서 귀하의 NxtWallet 지갑을 잠금 해제할 때만 사용됩니다.",
+    "subtitle": "이 비밀번호는 이 기기에서 귀하의 NXTWallet 지갑을 잠금 해제할 때만 사용됩니다.",
     "password": "신규 비밀번호",
     "confirm_password": "비밀번호 확인",
     "create_button": "비밀번호 생성",
@@ -184,7 +184,7 @@
   },
   "reset_password": {
     "title": "비밀번호 변경",
-    "subtitle": "이 비밀번호는 이 기기에서 귀하의 NxtWallet 지갑을 잠금 해제할 때만 사용됩니다.",
+    "subtitle": "이 비밀번호는 이 기기에서 귀하의 NXTWallet 지갑을 잠금 해제할 때만 사용됩니다.",
     "password": "신규 비밀번호",
     "confirm_password": "비밀번호 확인",
     "reset_button": "비밀번호 재설정",
@@ -252,7 +252,7 @@
     "lock_ok": "예",
     "lock_cancel": "아니오",
     "feedback": "피드백",
-    "metamask_support": "NxtWallet 지원",
+    "metamask_support": "NXTWallet 지원",
     "public_address": "공개 주소"
   },
   "send": {
@@ -285,7 +285,7 @@
     "no_tokens": "토큰이 없습니다!",
     "no_nfts_yet": "아직 NFT가 없습니다",
     "nfts_autodetection_title": "NFT 감지",
-    "nfts_autodetection_desc": "NxtWallet가 OpenSea에서 NFT를 자동으로 탐지하여 NxtWallet 지갑에 표시할 수 있도록 하세요.",
+    "nfts_autodetection_desc": "NxtWallet가 OpenSea에서 NFT를 자동으로 탐지하여 NXTWallet 지갑에 표시할 수 있도록 하세요.",
     "nfts_autodetection_cta": "설정에서 NFT 감지를 켜세요",
     "learn_more": "더 알아보기",
     "add_collectibles": "NFT 불러오기",
@@ -347,7 +347,7 @@
     "here": "여기에서 확인하세요",
     "agree": "동의합니다",
     "decline": "동의하지 않습니다",
-    "description_title": "NxtWallet 개선에 도움을 주세요",
+    "description_title": "NXTWallet 개선에 도움을 주세요",
     "description_content_1": "NxtWallet는 사용자가 모바일 앱을 어떻게 사용하는지 이해하기 위해 기본적인 사용 데이터를 수집하고자 합니다. 이 데이터는 당사 제품의 사용 편의성과 사용자 경험을 지속적으로 개선하기 위해 사용됩니다.",
     "description_content_2": "NxtWallet는...",
     "action_description_1": "설정을 통해 수신 거부를 설정할 수 있도록 허용합니다",
@@ -440,7 +440,7 @@
     "state_logs": "상태 로그",
     "auto_lock": "자동 잠금",
     "auto_lock_desc": "앱이 자동으로 잠기기 전까지 걸리는 시간을 선택하세요.",
-    "state_logs_desc": "이렇게 하면 NxtWallet에서 발생할 수 있는 문제를 디버깅하는 데 도움이 됩니다. 햄버거 아이콘 > 피드백 보내기로 문의하시거나 또는 기존 문의 티켓이 있으면, 해당 티켓으로 회신하여 NxtWallet 지원 서비스로 보내주시기 바랍니다.",
+    "state_logs_desc": "이렇게 하면 NxtWallet에서 발생할 수 있는 문제를 디버깅하는 데 도움이 됩니다. 햄버거 아이콘 > 피드백 보내기로 문의하시거나 또는 기존 문의 티켓이 있으면, 해당 티켓으로 회신하여 NXTWallet 지원 서비스로 보내주시기 바랍니다.",
     "autolock_immediately": "즉시",
     "autolock_never": "절대",
     "autolock_after": " {{time}}초 후",
@@ -463,7 +463,7 @@
     "save_rpc_url": "저장",
     "invalid_rpc_prefix": "URI에는 적절한 HTTPS 프로토콜 명이 필요합니다",
     "invalid_rpc_url": "잘못된 RPC URL",
-    "sync_with_extension": "NxtWallet 확장 프로그램과 동기화하기",
+    "sync_with_extension": "NXTWallet 확장 프로그램과 동기화하기",
     "sync_with_extension_desc": "이를 통해 모든 관련 계정을 이 기기로 가져올 수 있게 됩니다.",
     "sync": "동기화",
     "clear_approved_dapps": "승인된 디앱 지우기",
@@ -527,7 +527,7 @@
     "remove_network_title": "해당 네트워크를 제거하시겠습니까?",
     "remove_network": "제거",
     "cancel_remove_network": "취소",
-    "info_title": "NxtWallet 소개",
+    "info_title": "NXTWallet 소개",
     "experimental_title": "실험적",
     "experimental_desc": "지갑 연결 및 기타...",
     "legal_title": "법률",
@@ -547,7 +547,7 @@
     "clear_history_desc": "전체 검색 기록을 지우려면 이 옵션을 선택하세요.",
     "clear_cookies_desc": "브라우저의 쿠키를 지우려면 이 옵션을 선택하세요.",
     "metametrics_title": "메타매트릭스 참여",
-    "metametrics_description": "메타매트릭스에 참여하시면 NxtWallet 개선에 도움이 됩니다.",
+    "metametrics_description": "메타매트릭스에 참여하시면 NXTWallet 개선에 도움이 됩니다.",
     "third_party_title": "들어오는 거래 가져오기",
     "third_party_description": "타사 API(이더스캔)는 과거의 들어오는 거래를 보여주는 데 사용됩니다. 해당 서비스에서 데이터를 가져오는 것을 원하지 않으시면 기능을 끄세요.",
     "metametrics_opt_out": "메타매트릭스 수신 거부",
@@ -609,7 +609,7 @@
     "private_key_warning": "이것은 현재 선택된 계정용 개인 키입니다: {{accountName}}. 이 키를 절대 다른 사람에게 공개하지 마세요. 개인 키를 가지고 있는 사람은 누구든 해당 계정을 완전히 통제할 수 있습니다. 계정의 자금을 다른 곳에 송금할 수도 있습니다.",
     "seed_phrase_warning_explanation": [
       "본인의 화면을 아무도 보지 못하게 하세요.",
-      "NxtWallet 지원팀은 절대 개인 키를 알려달라고 요청하지 않습니다."
+      "NXTWallet 지원팀은 절대 개인 키를 알려달라고 요청하지 않습니다."
     ],
     "private_key_warning_explanation": "이 키를 절대 다른 사람에게 공개하지 마세요. 개인 키를 가지고 있는 사람은 누구든 해당 계정을 완전히 통제할 수 있습니다. 계정의 자금을 다른 곳에 송금할 수도 있습니다.",
     "reveal_credential_modal": [
@@ -642,7 +642,7 @@
   },
   "password_reset": {
     "password_title": "비밀번호",
-    "password_desc": "기기에 설치된 NxtWallet 앱을 잠금 해제하는 비밀번호는 보안 강도가 높아야 합니다. 비밀번호를 잃어버렸을 때는 지갑을 다시 불러오기 위해 비밀 복구 구문이 필요합니다.",
+    "password_desc": "기기에 설치된 NXTWallet 앱을 잠금 해제하는 비밀번호는 보안 강도가 높아야 합니다. 비밀번호를 잃어버렸을 때는 지갑을 다시 불러오기 위해 비밀 복구 구문이 필요합니다.",
     "password_learn_more": "더 알아보기.",
     "change_password": "비밀번호 변경"
   },
@@ -679,7 +679,7 @@
     "cancel": "취소",
     "error": "오류",
     "attempting_to_scan_with_wallet_locked": "QR 코드를 스캔하시는 것 같습니다. 먼저 지갑을 잠금 해제하세요.",
-    "attempting_sync_from_wallet_error": "확장 프로그램과의 동기화를 시도하시는 것 같습니다. 이를 위해서는 현재 지갑을 지워야 합니다. \n\n 신규 버전 앱을 지우거나 재설치하고 나면 \"NxtWallet 확장 프로그램과 동기화\" 옵션을 선택하세요. 중요!: 지갑을 지우기 전에 비밀 복구 구문을 반드시 백업하세요."
+    "attempting_sync_from_wallet_error": "확장 프로그램과의 동기화를 시도하시는 것 같습니다. 이를 위해서는 현재 지갑을 지워야 합니다. \n\n 신규 버전 앱을 지우거나 재설치하고 나면 \"NXTWallet 확장 프로그램과 동기화\" 옵션을 선택하세요. 중요!: 지갑을 지우기 전에 비밀 복구 구문을 반드시 백업하세요."
   },
   "action_view": {
     "cancel": "취소",
@@ -996,7 +996,7 @@
   "sync_with_extension": {
     "title": "확장 프로그램에서 데이터 연동",
     "short_title": "확장 프로그램과 데이터 연동",
-    "label": "데스크탑 브라우저에서 NxtWallet 확장 프로그램을 연 후 \"설정\" > \"고급\"으로 이동해 \"모바일과 동기화\"를 클릭하세요. 그리고 비밀번호를 입력하여 QR 코드를 확인하세요",
+    "label": "데스크탑 브라우저에서 NXTWallet 확장 프로그램을 연 후 \"설정\" > \"고급\"으로 이동해 \"모바일과 동기화\"를 클릭하세요. 그리고 비밀번호를 입력하여 QR 코드를 확인하세요",
     "button_continue": "계속",
     "please_wait": "데이터가 동기화되는 동안 기다리세요...",
     "error_title": "죄송합니다!",
@@ -1012,7 +1012,7 @@
     "something_wrong": "앗! 문제가 발생했습니다...",
     "something_wrong_desc": "지갑과 동기화하는 동안 문제가 발생했습니다. 나중에 다시 시도하거나 비밀 복구 구문을 사용해 지갑을 불러오세요",
     "allow_biometrics_title": "{{biometrics}} 활성화를 원하시나요?",
-    "allow_biometrics_desc": "{{biometrics}} 활성화로 NxtWallet 인증이 가능합니다"
+    "allow_biometrics_desc": "{{biometrics}} 활성화로 NXTWallet 인증이 가능합니다"
   },
   "sync_with_extension_success": {
     "title": "지갑을 불러왔습니다",
@@ -1083,7 +1083,7 @@
     "auth_prompt_title": "인증 필요",
     "auth_prompt_desc": "NxtWallet를 사용하려면 인증을 받으세요",
     "fingerprint_prompt_title": "인증 필요",
-    "fingerprint_prompt_desc": "지문으로 NxtWallet 잠금을 해제하세요",
+    "fingerprint_prompt_desc": "지문으로 NXTWallet 잠금을 해제하세요",
     "fingerprint_prompt_cancel": "취소"
   },
   "accountApproval": {
@@ -1100,7 +1100,7 @@
   },
   "import_private_key": {
     "title": "계정 불러오기",
-    "description_one": "불러온 계정을 지갑에서 확인할 수 있습니다. 다만 해당 계정은 NxtWallet 비밀 복구 구문으로는 복구할 수 없습니다.",
+    "description_one": "불러온 계정을 지갑에서 확인할 수 있습니다. 다만 해당 계정은 NXTWallet 비밀 복구 구문으로는 복구할 수 없습니다.",
     "learn_more_here": "불러온 계정에 대한 더 자세한 내용을 여기에서 알아보세요.",
     "subtitle": "개인 키 문자열을 붙여넣으세요",
     "cta_text": "불러오기",
@@ -1127,7 +1127,7 @@
     "step_1_description": "비밀번호 생성",
     "step_2": "2단계:",
     "step_2_description": "지갑 비밀 복구 구문을 저장하세요",
-    "info_text_1": "잠깐의 시간을 내어 NxtWallet 지갑 설정을 완료하세요.",
+    "info_text_1": "잠깐의 시간을 내어 NXTWallet 지갑 설정을 완료하세요.",
     "info_text_2": "이를 통해 오직 본인만이 자금에 접속할 수 있고 기기를 잃어버렸을 때 지갑을 복구할 수 있습니다.",
     "cta_text": "비밀번호 생성",
     "creating_password": "비밀번호 생성 중..."
@@ -1273,7 +1273,7 @@
   "phishing": {
     "ethereum_phishing_detection": "이더리움 피싱 사기 탐지",
     "ethereum_phishing_detector": "이더리움 피싱 사기 탐지기",
-    "intro": "이 도메인은 현재 NxtWallet 도메인 위험 목록에 있습니다. 즉 이용 가능한 정보를 바탕으로, NxtWallet는 이 도메인이 귀하의 보안에 침투할 수 있다고 판단한 것입니다. 추가적인 안전 조치로 NxtWallet는 해당 사이트의 접근을 제한했습니다. 이를 무시하고 계속 진행하고 싶으시면 나머지 경고 내용을 읽어 위험을 감수하고 계속 진행하는 방법을 확인하세요.",
+    "intro": "이 도메인은 현재 NXTWallet 도메인 위험 목록에 있습니다. 즉 이용 가능한 정보를 바탕으로, NxtWallet는 이 도메인이 귀하의 보안에 침투할 수 있다고 판단한 것입니다. 추가적인 안전 조치로 NxtWallet는 해당 사이트의 접근을 제한했습니다. 이를 무시하고 계속 진행하고 싶으시면 나머지 경고 내용을 읽어 위험을 감수하고 계속 진행하는 방법을 확인하세요.",
     "reasons": "사이트가 위험 목록에 오르는 데에는 여러가지 이유가 있습니다. 그NxtWallet은 다른 산업에서도 널리 사용되고 있는 목록을 병합한 것입니다. 사기 이력, 보안 위험 같이 테스트 결과 위험이 확인되는 것 등이 이유가 될 수 있습니다.",
     "list_content": "위험 목록에 있는 도메인은 명백히 악의적인 웹사이트이거나 악의적인 행위자에 의해 해킹을 당한 적이 있는 적법한 웹사이트 등일 수 있습니다.",
     "to_read_more": "이 웹사이트 대해 더 자세히 알아보세요",
@@ -1562,7 +1562,7 @@
     "select_region_currency": "지역 통화 선택",
     "no_tokens_match": "“{{searchString}}”(와)과 일치하는 토큰이 없습니다",
     "no_currency_match": "“{{searchString}}”(와)과 일치하는 통화가 없습니다",
-    "buy_from_vetted": "통합업체에서 {{ticker}}(을)를 구매할 때 NxtWallet 앱을 종료하지 않고도 안전하게 포털에서 가져올 수 있습니다.",
+    "buy_from_vetted": "통합업체에서 {{ticker}}(을)를 구매할 때 NXTWallet 앱을 종료하지 않고도 안전하게 포털에서 가져올 수 있습니다.",
     "price": "가격",
     "total_fees": "총 수수료",
     "processing_fee": "처리 수수료",
@@ -1638,13 +1638,13 @@
       "best_swap": "스와프를",
       "across": "찾으세요...",
       "want_to_learn_more": "더 자세히 알아보고 싶으신가요?",
-      "learn_more": "NxtWallet 스와프에 대해 더 자세히 알아보세요",
+      "learn_more": "NXTWallet 스와프에 대해 더 자세히 알아보세요",
       "what_are": "토큰 스와프란 무엇인가요?",
       "review_audits": "공식 계약 감사 검토",
       "start_swapping": "스와프 시작"
     },
     "feature_off_title": "일시적으로 이용이 불가합니다",
-    "feature_off_body": "NxtWallet 스와프는 현재 유지 보수 작업을 진행하고 있습니다. 향후에 다시 확인해 주세요.",
+    "feature_off_body": "NXTWallet 스와프는 현재 유지 보수 작업을 진행하고 있습니다. 향후에 다시 확인해 주세요.",
     "wrong_network_title": "스와프 이용 불가",
     "wrong_network_body": "이더리움 메인 네트워크에서만 토큰 스와프가 가능합니다.",
     "unallowed_asset_title": "이 토큰은 스와프할 수 없습니다.",
@@ -1722,13 +1722,13 @@
     "estimated_gas_fee": "예상 가스요금",
     "max_gas_fee": "최대 가스요금",
     "edit": "수정",
-    "quotes_include_fee": "견적에는 {{fee}}%의 NxtWallet 수수료가 포함됩니다",
+    "quotes_include_fee": "견적에는 {{fee}}%의 NXTWallet 수수료가 포함됩니다",
     "tap_to_swap": "눌러서 스와프하세요",
     "swipe_to_swap": "밀어서 스와프하세요",
     "swipe_to": "밀어서",
     "swap": "스와프",
     "completed_swap": "스와프!",
-    "metamask_swap_fee": "NxtWallet 스와프 수수료",
+    "metamask_swap_fee": "NXTWallet 스와프 수수료",
     "fee_text": {
       "get_the": "최고의",
       "best_price": "가격을",
@@ -1846,14 +1846,14 @@
   "switch_custom_network": {
     "title_existing_network": "이 사이트는 네트워크 전환을 원합니다",
     "title_new_network": "신규 네트워크 추가됨",
-    "switch_warning": "이것으로 NxtWallet 내부에 있는 선택된 네트워크를 기존에 추가된 네트워크로 전환하게 됩니다:",
+    "switch_warning": "이것으로 NXTWallet 내부에 있는 선택된 네트워크를 기존에 추가된 네트워크로 전환하게 됩니다:",
     "available": "이것은 이제 네트워크 선택자 내에서 이용 가능합니다.",
     "cancel": "취소",
     "switch": "네트워크 변경"
   },
   "add_custom_network": {
     "title": "이 사이트를 네트워크에 추가하는 것을 허용하시겠습니까?",
-    "warning": "이것은 이 네트워크가 NxtWallet 내에 사용될 수 있게 합니다.",
+    "warning": "이것은 이 네트워크가 NXTWallet 내에 사용될 수 있게 합니다.",
     "warning_subtext_1": "NxtWallet는 맞춤 네트워크나 그의 보안은 인증해주지 않습니다.",
     "warning_subtext_2": "다음에 대해 알아보세요:",
     "warning_subtext_3": "사기 및 네트워크 보안 위험",
@@ -1955,7 +1955,7 @@
     "high_fees": "왜 수수료가 이렇게 높은가요?",
     "missing_tokens": "토큰이 사라졌습니다...",
     "swap_issues": "스와프가 불가능합니다...",
-    "mobile_sentiment": "NxtWallet 모바일에 대해 어떻게 생각하시나요?",
+    "mobile_sentiment": "NXTWallet 모바일에 대해 어떻게 생각하시나요?",
     "sentiment_good_face": "😁",
     "sentiment_bad_face": "☹️",
     "sentiment_good": "좋습니다!",
@@ -1999,7 +1999,7 @@
   },
   "remember_me": {
     "enable_remember_me": "로그인 정보 저장",
-    "enable_remember_me_description": "로그인 정보를 저장하면 회원님의 휴대폰을 이용하는 모든 사람이 회원님의 NxtWallet 계정에 액세스할 수 있습니다."
+    "enable_remember_me_description": "로그인 정보를 저장하면 회원님의 휴대폰을 이용하는 모든 사람이 회원님의 NXTWallet 계정에 액세스할 수 있습니다."
   },
   "turn_off_remember_me": {
     "title": "로그인 정보 저장 기능을 끄려면 비밀번호를 입력하세요",

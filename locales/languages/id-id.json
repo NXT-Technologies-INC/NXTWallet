@@ -28,14 +28,14 @@
   },
   "onboarding": {
     "title": "Penyiapan dompet",
-    "sync_desc": "Jika Anda sudah memiliki ekstensi NxtWallet atau dompet lain, sinkronkan atau impor untuk mengelola aset Anda yang ada.",
+    "sync_desc": "Jika Anda sudah memiliki ekstensi NXTWallet atau dompet lain, sinkronkan atau impor untuk mengelola aset Anda yang ada.",
     "create_desc": "Siapkan dompet Anda terlebih dulu dan mulai mengeksplorasi aplikasi terdesentralisasi.",
     "import": "Impor dompet yang ada atau buat yang baru",
     "import_wallet_button": "Sinkronkan atau impor dompet",
     "new_to_crypto": "Baru menggunakan kripto?",
     "start_exploring_now": "Buat dompet baru",
     "unlock": "Masuk",
-    "new_to_metamask": "Baru menggunakan NxtWallet?",
+    "new_to_metamask": "Baru menggunakan NXTWallet?",
     "already_have_wallet": "Sudah punya dompet?",
     "optin_back_title": "Perhatian!",
     "optin_back_desc": "Harap setujui atau tidak setujui dengan penggunaan analitik data.  Anda juga dapat memperbarui opsi ini di pengaturan.",
@@ -43,15 +43,15 @@
     "warning_text_1": "Akun dan dompet Anda saat ini akan",
     "warning_text_2": "dihapus",
     "warning_text_3": "jika Anda melanjutkan.",
-    "warning_text_4": "Anda HANYA dapat memulihkannya dengan Frasa Pemulihan Rahasia dompet Anda. NxtWallet tidak dapat membantu Anda memulihkannya.",
+    "warning_text_4": "Anda HANYA dapat memulihkannya dengan Frasa Pemulihan Rahasia dompet Anda. NXTWallet tidak dapat membantu Anda memulihkannya.",
     "warning_proceed": "Hapus dompet & lanjutkan",
     "warning_cancel": "Batal",
     "step1": "Penyiapan dompet",
     "step2": "Buat kata sandi",
     "step3": "Amankan dompet",
     "already_have": "Sudah punya dompet?",
-    "sync_existing": "Sinkronkan dompet NxtWallet Anda yang ada dari ekstensi browser atau impor secara manual.",
-    "scan_title": "Langkah-langkah untuk menyinkronkan dengan ekstensi NxtWallet",
+    "sync_existing": "Sinkronkan dompet NXTWallet Anda yang ada dari ekstensi browser atau impor secara manual.",
+    "scan_title": "Langkah-langkah untuk menyinkronkan dengan ekstensi NXTWallet",
     "scan": "Pindai",
     "scan_step_1": "Buka ekstensi di desktop",
     "scan_step_2": "Buka Pengaturan > Tingkat Lanjut",
@@ -62,12 +62,12 @@
     "delete_current": "Menghapus dompet saat ini"
   },
   "onboarding_carousel": {
-    "title1": "Selamat datang di NxtWallet",
+    "title1": "Selamat datang di NXTWallet",
     "title2": "Kelola aset digital Anda",
     "title3": "Gateway Anda ke web3",
-    "subtitle1": "Dipercayai oleh jutaan, NxtWallet adalah dompet yang aman menjadikan dunia web3 dapat diakses oleh semua.",
+    "subtitle1": "Dipercayai oleh jutaan, NXTWallet adalah dompet yang aman menjadikan dunia web3 dapat diakses oleh semua.",
     "subtitle2": "Simpan, gunakan, dan kirim aset digital seperti token, ethereum, barang koleksi unik.",
-    "subtitle3": "Login dengan NxtWallet dan buat transaksi untuk berinvestasi, menghasilkan, main game, menjual, dan banyak lagi!",
+    "subtitle3": "Login dengan NXTWallet dan buat transaksi untuk berinvestasi, menghasilkan, main game, menjual, dan banyak lagi!",
     "get_started": "Persiapan"
   },
   "onboarding_wizard": {
@@ -98,7 +98,7 @@
       "title": "Navigasi Utama",
       "content1": "Ketuk di sini",
       "content2": "untuk mengakses Dompet, Browser, dan riwayat Transaksi.",
-      "content3": "Anda dapat mengambil lebih banyak tindakan dengan akun Anda & mengakses pengaturan NxtWallet."
+      "content3": "Anda dapat mengambil lebih banyak tindakan dengan akun Anda & mengakses pengaturan NXTWallet."
     },
     "step5": {
       "title": "Jelajahi Browser",
@@ -114,14 +114,14 @@
     "subtitle": "Ini semestinya tidak lama"
   },
   "import_wallet": {
-    "title": "Sudah menjadi pengguna NxtWallet?",
+    "title": "Sudah menjadi pengguna NXTWallet?",
     "sub_title": "Sinkronkan dengan ekstensinya",
     "sync_help": "Sinkronkan dompet Anda dengan ekstensinya",
     "sync_help_step_one": "1. Buka ekstensi",
     "sync_help_step_two": "2. Buka Pengaturan > Tingkat Lanjut",
     "sync_help_step_three": "3. Klik \"Sinkronkan dengan Seluler\"",
     "sync_help_step_four": "4. Pindai Kode QR untuk mulai menyinkronkan",
-    "sync_from_browser_extension_button": "Sinkronkan dengan ekstensi NxtWallet",
+    "sync_from_browser_extension_button": "Sinkronkan dengan ekstensi NXTWallet",
     "or": "ATAU",
     "import_from_seed_button": "Impor menggunakan Frasa Pemulihan Rahasia"
   },
@@ -141,9 +141,9 @@
     "this_action": "Tindakan ini tidak dapat dibatalkan.",
     "you_can_only": "Anda HANYA dapat memulihkan dompet ini dengan ",
     "recovery_phrase": "Frasa Pemulihan Rahasia ",
-    "metamask_does_not": "NxtWallet tidak memiliki Frasa Pemulihan Rahasia Anda.",
+    "metamask_does_not": "NXTWallet tidak memiliki Frasa Pemulihan Rahasia Anda.",
     "i_understand": "Saya paham, lanjutkan",
-    "clean_vault_error": "NxtWallet mengalami kesalahan karena mencapai batas penyimpanan. Data lokal sudah rusak. Instal ulang NxtWallet dan pulihkan dengan Frasa Pemulihan Rahasia Anda."
+    "clean_vault_error": "NXTWallet mengalami kesalahan karena mencapai batas penyimpanan. Data lokal sudah rusak. Instal ulang NXTWallet dan pulihkan dengan Frasa Pemulihan Rahasia Anda."
   },
   "enter_password": {
     "title": "Masukkan kata sandi Anda",
@@ -154,7 +154,7 @@
   },
   "choose_password": {
     "title": "Buat kata sandi",
-    "subtitle": "Kata sandi ini akan membuka dompet NxtWallet Anda hanya di perangkat ini.",
+    "subtitle": "Kata sandi ini akan membuka dompet NXTWallet Anda hanya di perangkat ini.",
     "password": "Kata Sandi Baru",
     "confirm_password": "Konfirmasikan kata sandi",
     "create_button": "Buat kata sandi",
@@ -172,14 +172,14 @@
     "remember_me": "Ingat saya",
     "security_alert_title": "Peringatan Keamanan",
     "security_alert_message": "Untuk melanjutkan, Anda harus mengaktifkan Kode masuk atau metode autentikasi biometrik yang didukung di perangkat Anda (FaceID, TouchID, atau Sidik Jari)",
-    "i_understand": "Saya mengerti bahwa NxtWallet tidak dapat memulihkan kata sandi ini untuk saya.",
+    "i_understand": "Saya mengerti bahwa NXTWallet tidak dapat memulihkan kata sandi ini untuk saya.",
     "learn_more": "Pelajari selengkapnya.",
     "secure": "Amankan dompet",
     "confirm": "Konfirmasikan Frasa Pemulihan Rahasia"
   },
   "reset_password": {
     "title": "Ubah kata sandi",
-    "subtitle": "Kata sandi ini akan membuka dompet NxtWallet Anda hanya di perangkat ini.",
+    "subtitle": "Kata sandi ini akan membuka dompet NXTWallet Anda hanya di perangkat ini.",
     "password": "Kata Sandi Baru",
     "confirm_password": "Konfirmasikan kata sandi",
     "reset_button": "Atur ulang kata sandi",
@@ -197,7 +197,7 @@
     "remember_me": "Ingat saya",
     "security_alert_title": "Peringatan Keamanan",
     "security_alert_message": "Untuk melanjutkan, Anda harus mengaktifkan Kode masuk atau metode autentikasi biometrik yang didukung di perangkat Anda (FaceID, TouchID, atau Sidik Jari)",
-    "i_understand": "Saya mengerti bahwa NxtWallet tidak dapat memulihkan kata sandi ini untuk saya.",
+    "i_understand": "Saya mengerti bahwa NXTWallet tidak dapat memulihkan kata sandi ini untuk saya.",
     "learn_more": "Pelajari selengkapnya.",
     "secure": "Amankan dompet",
     "confirm": "Konfirmasikan Frasa Pemulihan Rahasia",
@@ -247,7 +247,7 @@
     "lock_ok": "YA",
     "lock_cancel": "TIDAK",
     "feedback": "Umpan Balik",
-    "metamask_support": "Dukungan NxtWallet",
+    "metamask_support": "Dukungan NXTWallet",
     "public_address": "Alamat Publik"
   },
   "send": {
@@ -327,9 +327,9 @@
     "here": "di sini",
     "agree": "Saya Setuju",
     "decline": "Tidak, Terima Kasih",
-    "description_title": "Bantu kami menyempurnakan NxtWallet",
-    "description_content_1": "NxtWallet ingin mengumpulkan data penggunaan dasar untuk lebih memahami cara pengguna kami berinteraksi dengan aplikasi seluler. Data ini akan digunakan untuk secara kontinu memperbaiki kegunaan dan pengalaman pengguna atas produk kami.",
-    "description_content_2": "NxtWallet akan...",
+    "description_title": "Bantu kami menyempurnakan NXTWallet",
+    "description_content_1": "NXTWallet ingin mengumpulkan data penggunaan dasar untuk lebih memahami cara pengguna kami berinteraksi dengan aplikasi seluler. Data ini akan digunakan untuk secara kontinu memperbaiki kegunaan dan pengalaman pengguna atas produk kami.",
+    "description_content_2": "NXTWallet akan...",
     "action_description_1": "Selalu izinkan Anda untuk menyisih melalui Pengaturan",
     "action_description_2": "Kirim kejadian pageview & klik anonim",
     "action_description_3": "Kirim data negara, wilayah, kota (bukan lokasi spesifik)",
@@ -397,7 +397,7 @@
     "state_logs": "Log Status",
     "auto_lock": "Kunci otomatis",
     "auto_lock_desc": "Pilih durasi sebelum aplikasi secara otomatis mengunci.",
-    "state_logs_desc": "Ini akan membantu NxtWallet melakukan debug masalah apa pun yang Anda alami. Kirim ke dukungan NxtWallet melalui ikon hamburger > Kirim Umpan Balik, atau balas tiket yang ada jika Anda memilikinya.",
+    "state_logs_desc": "Ini akan membantu NXTWallet melakukan debug masalah apa pun yang Anda alami. Kirim ke dukungan NXTWallet melalui ikon hamburger > Kirim Umpan Balik, atau balas tiket yang ada jika Anda memilikinya.",
     "autolock_immediately": "Segera",
     "autolock_never": "Jangan",
     "autolock_after": "Setelah {{time}} detik",
@@ -420,7 +420,7 @@
     "save_rpc_url": "SIMPAN",
     "invalid_rpc_prefix": "URL memerlukan awalan HTTPS yang sesuai",
     "invalid_rpc_url": "URL RPC Tidak Valid",
-    "sync_with_extension": "Sinkronkan dengan Ekstensi NxtWallet",
+    "sync_with_extension": "Sinkronkan dengan Ekstensi NXTWallet",
     "sync_with_extension_desc": "Ini akan mengimpor semua akun ekstensi ke perangkat ini.",
     "sync": "SINKRONKAN",
     "clear_approved_dapps": "KOSONGKAN DAPP YANG DISETUJUI",
@@ -476,7 +476,7 @@
     "remove_network_title": "Anda ingin menghapus jaringan ini?",
     "remove_network": "Hapus",
     "cancel_remove_network": "Batal",
-    "info_title": "Tentang NxtWallet",
+    "info_title": "Tentang NXTWallet",
     "experimental_title": "Eksperimental",
     "experimental_desc": "WalletConnect & banyak lagi...",
     "legal_title": "Legal",
@@ -496,7 +496,7 @@
     "clear_history_desc": "Pilih opsi ini untuk mengosongkan seluruh riwayat penelusuran Anda.",
     "clear_cookies_desc": "Pilih opsi ini untuk mengosongkan cookie browser Anda.",
     "metametrics_title": "Ikut serta dalam MetaMetric",
-    "metametrics_description": "Ikut serta dalam MetaMetric untuk membantu kami membuat NxtWallet lebih baik.",
+    "metametrics_description": "Ikut serta dalam MetaMetric untuk membantu kami membuat NXTWallet lebih baik.",
     "third_party_title": "Dapatkan transaksi yang masuk",
     "third_party_description": "API pihak ketiga (Etherscan) digunakan untuk menampilkan transaksi Anda yang masuk dalam riwayat. Nonaktifkan jika Anda tidak ingin kami menarik data dari layanan tersebut.",
     "metametrics_opt_out": "Penyisihan dari MetaMetric",
@@ -551,7 +551,7 @@
   },
   "password_reset": {
     "password_title": "Kata sandi",
-    "password_desc": "Pilih kata sandi yang kuat untuk membuka aplikasi NxtWallet di perangkat Anda. Jika kata sandi ini hilang, Anda akan memerlukan Frasa Pemulihan Rahasia untuk mengimpor kembali dompet Anda.",
+    "password_desc": "Pilih kata sandi yang kuat untuk membuka aplikasi NXTWallet di perangkat Anda. Jika kata sandi ini hilang, Anda akan memerlukan Frasa Pemulihan Rahasia untuk mengimpor kembali dompet Anda.",
     "password_learn_more": "Pelajari selengkapnya.",
     "change_password": "Ubah kata sandi"
   },
@@ -588,7 +588,7 @@
     "cancel": "Batal",
     "error": "Kesalahan",
     "attempting_to_scan_with_wallet_locked": "Sepertinya Anda mencoba memindai kode QR, Anda perlu membuka dompet agar dapat menggunakannya.",
-    "attempting_sync_from_wallet_error": "Sepertinya Anda mencoba menyinkronkan dengan ekstensi. Untuk melakukannya, Anda akan perlu menghapus dompet Anda saat ini. \n\nSetelah Anda menghapus atau menginstal ulang versi baru aplikasi, pilih opsi untuk \"Menyinkronkan dengan Ekstensi NxtWallet\". Penting! Sebelum menghapus dompet, pastikan Anda telah mencadangkan Frasa Pemulihan Rahasia."
+    "attempting_sync_from_wallet_error": "Sepertinya Anda mencoba menyinkronkan dengan ekstensi. Untuk melakukannya, Anda akan perlu menghapus dompet Anda saat ini. \n\nSetelah Anda menghapus atau menginstal ulang versi baru aplikasi, pilih opsi untuk \"Menyinkronkan dengan Ekstensi NXTWallet\". Penting! Sebelum menghapus dompet, pastikan Anda telah mencadangkan Frasa Pemulihan Rahasia."
   },
   "action_view": {
     "cancel": "Batal",
@@ -686,7 +686,7 @@
     "gas_education_1": "Biaya jaringan dibayarkan kepada penambang kripto yang memproses transaksi di ",
     "gas_education_2_ethereum": "Jaringan Ethereum.",
     "gas_education_2": "jaringan.",
-    "gas_education_3": "NxtWallet tidak mendapatkan keuntungan dari biaya jaringan.",
+    "gas_education_3": "NXTWallet tidak mendapatkan keuntungan dari biaya jaringan.",
     "gas_education_4": "Biaya jaringan berfluktuasi berdasarkan lalu lintas jaringan dan kompleksitas transaksi.",
     "gas_education_learn_more": "Pelajari selengkapnya tentang biaya jaringan",
     "confusable_title": "Periksa alamat penerima",
@@ -702,7 +702,7 @@
     "save": "Simpan",
     "warning_gas_limit": "Batas biaya jaringan harus lebih besar dari 20999 dan kurang dari 7920027",
     "warning_gas_limit_estimated": "Perkiraan batas biaya jaringan adalah {{gas}}, gunakan sebagai nilai minimum",
-    "cost_explanation": "Biaya jaringan mencakup biaya pemrosesan transaksi Anda di jaringan Ethereum. NxtWallet tidak mendapatkan keuntungan dari biaya ini. Semakin tinggi biayanya, semakin baik kesempatan transaksi Anda diproses."
+    "cost_explanation": "Biaya jaringan mencakup biaya pemrosesan transaksi Anda di jaringan Ethereum. NXTWallet tidak mendapatkan keuntungan dari biaya ini. Semakin tinggi biayanya, semakin baik kesempatan transaksi Anda diproses."
   },
   "spend_limit_edition": {
     "save": "Simpan",
@@ -761,7 +761,7 @@
     "change_url": "Ubah url",
     "switch_network": "Beralih jaringan",
     "dapp_browser": "BROWSER DAPP",
-    "dapp_browser_message": "NxtWallet adalah dompet Anda dan browser untuk web terdesentralisasi. Silakan lihat-lihat!",
+    "dapp_browser_message": "NXTWallet adalah dompet Anda dan browser untuk web terdesentralisasi. Silakan lihat-lihat!",
     "featured_dapps": "DAPP UNGGULAN",
     "my_favorites": "FAVORIT SAYA",
     "search": "Cari atau ketikkan URL",
@@ -881,7 +881,7 @@
   "sync_with_extension": {
     "title": "Sinkronkan data dari Ekstensi",
     "short_title": "Sinkronkan dengan Ekstensi",
-    "label": "Buka ekstensi NxtWallet di browser desktop Anda, lalu buka \"Pengaturan\" > \"Lanjutan\", klik di \"Sinkronkan dengan Perangkat Seluler\", lalu masukkan kata sandi Anda untuk melihat Kode QR",
+    "label": "Buka ekstensi NXTWallet di browser desktop Anda, lalu buka \"Pengaturan\" > \"Lanjutan\", klik di \"Sinkronkan dengan Perangkat Seluler\", lalu masukkan kata sandi Anda untuk melihat Kode QR",
     "button_continue": "Lanjutkan",
     "please_wait": "Harap tunggu sewaktu kami menyinkronkan data Anda...",
     "error_title": "Menyebalkan!",
@@ -897,11 +897,11 @@
     "something_wrong": "Ups! Ada yang salah...",
     "something_wrong_desc": "Kami menghadapi masalah sewaktu mencoba menyinkronkan dompet Anda. Silakan coba lagi nanti atau impor dompet menggunakan Frasa Pemulihan Rahasia Anda",
     "allow_biometrics_title": "Anda ingin mengaktifkan {{biometrics}}?",
-    "allow_biometrics_desc": "Anda dapat menggunakan {{biometrics}} untuk mengautentikasi di NxtWallet"
+    "allow_biometrics_desc": "Anda dapat menggunakan {{biometrics}} untuk mengautentikasi di NXTWallet"
   },
   "sync_with_extension_success": {
     "title": "Dompet diimpor",
-    "sync_complete_1": "Ingat, NxtWallet tidak dapat memulihkan Frasa Pemulihan Rahasia jika Anda menghilangkannya. Anda dapat menemukan Frasa Pemulihan Rahasia di",
+    "sync_complete_1": "Ingat, NXTWallet tidak dapat memulihkan Frasa Pemulihan Rahasia jika Anda menghilangkannya. Anda dapat menemukan Frasa Pemulihan Rahasia di",
     "sync_complete_2": "Pengaturan > Keamanan & Privasi",
     "button_continue": "Selesai",
     "password_tip": "Kata sandi untuk membuka dompet seluler Anda adalah kata sandi yang sama yang Anda tetapkan untuk ekstensinya.",
@@ -966,9 +966,9 @@
   },
   "authentication": {
     "auth_prompt_title": "Autentikasi diperlukan",
-    "auth_prompt_desc": "Harap autentikasikan untuk menggunakan NxtWallet",
+    "auth_prompt_desc": "Harap autentikasikan untuk menggunakan NXTWallet",
     "fingerprint_prompt_title": "Autentikasi diperlukan",
-    "fingerprint_prompt_desc": "Gunakan sidik jari Anda untuk membuka NxtWallet",
+    "fingerprint_prompt_desc": "Gunakan sidik jari Anda untuk membuka NXTWallet",
     "fingerprint_prompt_cancel": "Batal"
   },
   "accountApproval": {
@@ -985,7 +985,7 @@
   },
   "import_private_key": {
     "title": "Impor Akun",
-    "description_one": "Akun yang diimpor dapat dilihat di dompet Anda, namun tidak dapat dipulihkan dengan Frasa Pemulihan Rahasia NxtWallet Anda.",
+    "description_one": "Akun yang diimpor dapat dilihat di dompet Anda, namun tidak dapat dipulihkan dengan Frasa Pemulihan Rahasia NXTWallet Anda.",
     "learn_more_here": "Pelajari selengkapnya tentang akun yang diimpor di sini.",
     "subtitle": "Tempel string kunci privat Anda",
     "cta_text": "IMPOR",
@@ -997,7 +997,7 @@
   },
   "import_private_key_success": {
     "title": "Akun berhasil diimpor!",
-    "description_one": "Anda sekarang dapat melihat akun Anda di NxtWallet."
+    "description_one": "Anda sekarang dapat melihat akun Anda di NXTWallet."
   },
   "first_incoming_transaction": {
     "title": "{{asset}} didepositkan di akun Anda",
@@ -1012,7 +1012,7 @@
     "step_1_description": "Buat kata sandi",
     "step_2": "Langkah 2:",
     "step_2_description": "Menyimpan Frasa Pemulihan Rahasia dompet",
-    "info_text_1": "Luangkan beberapa saat untuk menyelesaikan penyiapan dompet NxtWallet Anda.",
+    "info_text_1": "Luangkan beberapa saat untuk menyelesaikan penyiapan dompet NXTWallet Anda.",
     "info_text_2": "Ini akan memastikan hanya Anda yang dapat mengakses dana dan memungkinkan Anda memulihkan dompet jika perangkat Anda hilang",
     "cta_text": "Buat Kata Sandi",
     "creating_password": "Membuat kata sandi..."
@@ -1034,7 +1034,7 @@
     "what_is_seedphrase_title": "Apa yang dimaksud dengan 'Frasa Pemulihan Rahasia'",
     "what_is_seedphrase_text_1": "Frasa Pemulihan Rahasia adalah satu set dua belas kata yang berisi semua informasi tentang dompet, termasuk dana Anda. Seperti kode rahasia yang digunakan untuk mengakses seluruh dompet Anda.",
     "what_is_seedphrase_text_2": "Anda harus menjaga Frasa Pemulihan Rahasia tetap aman dan rahasia. Jika seseorang mendapatkan Frasa Pemulihan Rahasia Anda, mereka akan mendapatkan kontrol atas akun Anda.",
-    "what_is_seedphrase_text_3": "Simpan di tempat yang hanya Anda dapat mengaksesnya. Jika hilang, NxtWallet pun tidak dapat membantu Anda memulihkannya."
+    "what_is_seedphrase_text_3": "Simpan di tempat yang hanya Anda dapat mengaksesnya. Jika hilang, NXTWallet pun tidak dapat membantu Anda memulihkannya."
   },
   "account_backup_step_1B": {
     "title": "Amankan dompet Anda",
@@ -1107,7 +1107,7 @@
   },
   "account_backup_step_6": {
     "title": "Kiat Keamanan",
-    "info_text": "NxtWallet tidak dapat memulihkan Frasa Pemulihan Rahasia jika Anda menghilangkannya",
+    "info_text": "NXTWallet tidak dapat memulihkan Frasa Pemulihan Rahasia jika Anda menghilangkannya",
     "tip_1": "Simpan beberapa cadangan Frasa Pemulihan Rahasia Anda",
     "tip_2": "Simpan frasa di pengelola kata sandi tepercaya dan kertas cadangan di tempat yang aman",
     "tip_3": "Jangan bagikan frasa ini kepada siapa pun",
@@ -1145,7 +1145,7 @@
     "congratulations": "Selamat",
     "success": "Anda berhasil melindungi dompet Anda. Ingatlah untuk menjaga Frasa Pemulihan Rahasia Anda tetap aman, ini tanggung jawab Anda!",
     "hint": "Tinggalkan petunjuk untuk Anda?",
-    "recover": "NxtWallet tidak dapat memulihkan dompet jika Anda menghilangkannya. Anda dapat menemukan Frasa Pemulihan Rahasia Anda di Pengaturan > Keamanan & Privasi.",
+    "recover": "NXTWallet tidak dapat memulihkan dompet jika Anda menghilangkannya. Anda dapat menemukan Frasa Pemulihan Rahasia Anda di Pengaturan > Keamanan & Privasi.",
     "learn": "Pelajari selengkapnya",
     "done": "Selesai",
     "recovery_hint": "Petunjuk pemulihan",
@@ -1158,7 +1158,7 @@
   "phishing": {
     "ethereum_phishing_detection": "Deteksi Phishing Ethereum",
     "ethereum_phishing_detector": "Detektor Phishing Ethereum",
-    "intro": " saat ini ada di daftar peringatan domain NxtWallet. Artinya, berdasarkan informasi yang tersedia untuk kami, NxtWallet memercayai domain ini saat ini dapat membahayakan keamanan Anda, dan sebagai fitur keamanan yang ditambahkan, NxtWallet memiliki akses terbatas ke situs ini. Untuk menimpanya, silakan baca seluruh peringatan ini untuk petunjuk tentang cara melanjutkan dengan risiko Anda sendiri.",
+    "intro": " saat ini ada di daftar peringatan domain NXTWallet. Artinya, berdasarkan informasi yang tersedia untuk kami, NXTWallet memercayai domain ini saat ini dapat membahayakan keamanan Anda, dan sebagai fitur keamanan yang ditambahkan, NXTWallet memiliki akses terbatas ke situs ini. Untuk menimpanya, silakan baca seluruh peringatan ini untuk petunjuk tentang cara melanjutkan dengan risiko Anda sendiri.",
     "reasons": "Ada banyak alasan situs dapat muncul di daftar peringatan kami, dan daftar peringatan kami disusun dari daftar lain yang secara luas digunakan industri. Alasan tersebut dapat mencakup risiko keamanan atau penipuan yang diketahui, seperti domain yang dinyatakan positif di ",
     "list_content": "Domain pada daftar peringatan ini dapat mencakup situs web berbahaya langsung dan situs web resmi yang telah disusupi oleh pelaku jahat.",
     "to_read_more": "Untuk membaca selengkapnya tentang situs ini ",
@@ -1193,7 +1193,7 @@
     "received_message": "Ketuk untuk melihat transaksi ini",
     "received_payment_message": "Anda menerima {{amount}} DAI",
     "prompt_title": "Mengaktifkan Pemberitahuan Push",
-    "prompt_desc": "Aktifkan pemberitahuan agar NxtWallet dapat memungkinkan Anda mengetahui saat Anda menerima ETH atau saat transaksi Anda telah dikonfirmasi.",
+    "prompt_desc": "Aktifkan pemberitahuan agar NXTWallet dapat memungkinkan Anda mengetahui saat Anda menerima ETH atau saat transaksi Anda telah dikonfirmasi.",
     "prompt_ok": "Ya",
     "prompt_cancel": "Tidak, terima kasih",
     "wc_connected_title": "Terhubung ke {{title}}",
@@ -1353,7 +1353,7 @@
     "wyre_minimum_deposit": "Minimum deposit {{amount}}",
     "wyre_maximum_deposit": "Maksimum deposit {{amount}}",
     "wyre_purchase": "Pembelian {{currency}}",
-    "wyre_total_label": "Wyre (melalui NxtWallet)",
+    "wyre_total_label": "Wyre (melalui NXTWallet)",
     "buy_with": "Beli dengan",
     "plus_fee": "Plus biaya {{fee}}",
     "notifications": {
@@ -1380,12 +1380,12 @@
         "average_gas_fee": "Biaya jaringan rata-rata saat ini:",
         "subtitle_1": "Jika Anda berencana untuk menukar atau mentransfer {{ticker}} Anda, beli ekstra untuk menutupi biaya jaringan.",
         "subtitle_2": "Biaya jaringan untuk transaksi terpisah dari biaya pembelian {{ticker}}.",
-        "subtitle_3": "NxtWallet tidak mendapatkan keuntungan dari biaya jaringan."
+        "subtitle_3": "NXTWallet tidak mendapatkan keuntungan dari biaya jaringan."
       },
       "step_2": {
         "title": "Apa itu biaya jaringan?",
         "subtitle_1": "Biaya jaringan mendukung transaksi di jaringan Ethereum. Ini adalah biaya yang dibayarkan dalam {{ticker}} kepada penambang kripto yang memproses transaksi Anda.",
-        "subtitle_2": "NxtWallet tidak mendapatkan keuntungan dari biaya jaringan.",
+        "subtitle_2": "NXTWallet tidak mendapatkan keuntungan dari biaya jaringan.",
         "learn_more": "Pelajari selengkapnya tentang biaya jaringan"
       },
       "step_3": {
@@ -1410,13 +1410,13 @@
       "best_swap": "penukaran terbaik",
       "across": "di...",
       "want_to_learn_more": "Ingin mempelajari selengkapnya?",
-      "learn_more": "Pelajari selengkapnya tentang Penukaran NxtWallet",
+      "learn_more": "Pelajari selengkapnya tentang Penukaran NXTWallet",
       "what_are": "Apa yang dimaksud dengan penukaran token?",
       "review_audits": "Tinjau audit kontrak resmi kami",
       "start_swapping": "Mulai menukar"
     },
     "feature_off_title": "Tidak tersedia untuk sementara",
-    "feature_off_body": "NxtWallet Swap sedang dalam pemeliharaan. Silakan periksa kembali nanti.",
+    "feature_off_body": "NXTWallet Swap sedang dalam pemeliharaan. Silakan periksa kembali nanti.",
     "wrong_network_title": "Penukaran tidak tersedia",
     "wrong_network_body": "Anda tidak dapat menukar token di Jaringan Utama Ethereum.",
     "unallowed_asset_title": "Tidak dapat menukar token ini",
@@ -1474,19 +1474,19 @@
     "estimated_gas_fee": "Biaya jaringan yang diperkirakan",
     "max_gas_fee": "Biaya jaringan maksimum",
     "edit": "Edit",
-    "quotes_include_fee": "Kuota mencakup biaya NxtWallet {{fee}}%",
+    "quotes_include_fee": "Kuota mencakup biaya NXTWallet {{fee}}%",
     "tap_to_swap": "Ketuk untuk Menukar",
     "swipe_to_swap": "Geser untuk menukar",
     "swipe_to": "Geser untuk",
     "swap": "menukar",
     "completed_swap": "Tukar!",
-    "metamask_swap_fee": "Biaya Penukaran NxtWallet",
+    "metamask_swap_fee": "Biaya Penukaran NXTWallet",
     "fee_text": {
       "get_the": "Dapatkan",
       "best_price": "harga terbaik",
       "from_the": "dari",
       "top_liquidity": "sumber likuiditas teratas setiap saat.",
-      "fee_is_applied": "Biaya sebesar {{fee}} secara otomatis diperhitungkan ke dalam setiap kuota, yang mendukung pengembangan berkelanjutan untuk membuat NxtWallet lebih baik lagi."
+      "fee_is_applied": "Biaya sebesar {{fee}} secara otomatis diperhitungkan ke dalam setiap kuota, yang mendukung pengembangan berkelanjutan untuk membuat NXTWallet lebih baik lagi."
     },
     "enable": {
       "this_will": "Ini akan",
@@ -1571,7 +1571,7 @@
   "whats_new": {
     "title": "Lihat apa yang baru",
     "feature_security_settings_title": "Pengaturan keamanan ditingkatkan",
-    "feature_security_settings_text": "Sekarang Anda dapat mengubah kata sandi aplikasi NxtWallet & meninjau cara mencadangkan Frasa Pemulihan Rahasia dompet Anda dari Pengaturan > Keamanan & Privasi.",
+    "feature_security_settings_text": "Sekarang Anda dapat mengubah kata sandi aplikasi NXTWallet & meninjau cara mencadangkan Frasa Pemulihan Rahasia dompet Anda dari Pengaturan > Keamanan & Privasi.",
     "feature_security_settings_button": "Lihat di Pengaturan"
   },
   "invalid_network": {
@@ -1584,15 +1584,15 @@
   "switch_custom_network": {
     "title_existing_network": "Situs ini ingin mengalihkan jaringan",
     "title_new_network": "Jaringan baru ditambahkan",
-    "switch_warning": "Ini akan mengalihkan jaringan yang dipilih dalam NxtWallet ke jaringan yang ditambahkan sebelumnya:",
+    "switch_warning": "Ini akan mengalihkan jaringan yang dipilih dalam NXTWallet ke jaringan yang ditambahkan sebelumnya:",
     "available": "sekarang tersedia di pemilih jaringan.",
     "cancel": "Batal",
     "switch": "Beralih Jaringan"
   },
   "add_custom_network": {
     "title": "Izinkan situs ini untuk menambahkan jaringan?",
-    "warning": "Ini memungkinkan jaringan ini digunakan dengan NxtWallet.",
-    "warning_subtext_1": "NxtWallet tidak memverifikasi jaringan kustom atau keamanannya.",
+    "warning": "Ini memungkinkan jaringan ini digunakan dengan NXTWallet.",
+    "warning_subtext_1": "NXTWallet tidak memverifikasi jaringan kustom atau keamanannya.",
     "warning_subtext_2": "Pelajari tentang",
     "warning_subtext_3": "risiko keamanan jaringan dan scam",
     "display_name": "Nama Tampilan",
@@ -1615,6 +1615,6 @@
   "secret_phrase_video_subtitle": {
     "title": "ID ID CC",
     "language": "id-id",
-    "uri": "https://github.com/NxtWallet/metamask-mobile/blob/main/app/videos/subtitles/secretPhrase/subtitles-id-id.vtt?raw=true"
+    "uri": "https://github.com/NXTWallet/metamask-mobile/blob/main/app/videos/subtitles/secretPhrase/subtitles-id-id.vtt?raw=true"
   }
 }

@@ -56,7 +56,7 @@ export const NETWORKS_CHAIN_ID = {
 };
 
 export const NETWORKS_NAMES = {
-  [NETWORKS_CHAIN_ID.NXT]: 'NextChain',
+  [NETWORKS_CHAIN_ID.NXT]: 'NXTChain',
   [NETWORKS_CHAIN_ID.MAINNET]: 'Ethereum',
   [NETWORKS_CHAIN_ID.OPTIMISM]: 'Optimism',
   [NETWORKS_CHAIN_ID.KOVAN]: 'Kovan',
@@ -70,7 +70,7 @@ export const NETWORKS_NAMES = {
 };
 
 export const FORMATTED_NETWORK_NAMES = {
-  [NETWORKS_CHAIN_ID.NXT]: 'NextChain Network',
+  [NETWORKS_CHAIN_ID.NXT]: 'NXTChain Network',
   [NETWORKS_CHAIN_ID.MAINNET]: 'Ethereum Mainnet',
   [NETWORKS_CHAIN_ID.BSC]: 'Binance Smart Chain',
   [NETWORKS_CHAIN_ID.POLYGON]: 'Polygon',
@@ -80,7 +80,7 @@ export const FORMATTED_NETWORK_NAMES = {
 };
 
 const TRANSAK_NETWORK_NAMES = {
-  [NETWORKS_CHAIN_ID.NXT]: 'nextchain',
+  [NETWORKS_CHAIN_ID.NXT]: 'nxtchain',
   [NETWORKS_CHAIN_ID.MAINNET]: 'ethereum',
   [NETWORKS_CHAIN_ID.BSC]: 'bsc',
   [NETWORKS_CHAIN_ID.POLYGON]: 'polygon',

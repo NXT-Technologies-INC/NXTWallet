@@ -476,7 +476,7 @@
     "protect_title": "ウォレットを保護",
     "video_failed": "動画を読み込めませんでした。",
     "protect_desc": "紙やパスワードマネージャー、クラウドなど、さまざまな場所に秘密のリカバリーフレーズを保管して、ウォレットを守りましょう。",
-    "protect_desc_no_backup": "これはウォレットの 12  の単語からなるフレーズです。このフレーズはウォレットの資金の送金を含む、現在と未来のすべてのアカウントのコントロールに使用できます。このフレーズを安全に保管し、他人に絶対に教えないでください。NxtWallet  はこのキーの復元をお手伝いできません。",
+    "protect_desc_no_backup": "これはウォレットの 12  の単語からなるフレーズです。このフレーズはウォレットの資金の送金を含む、現在と未来のすべてのアカウントのコントロールに使用できます。このフレーズを安全に保管し、他人に絶対に教えないでください。NXTWallet  はこのキーの復元をお手伝いできません。",
     "learn_more": "詳細。",
     "seedphrase_not_backed_up": "重要！秘密のリカバリーフレーズがバックアップされていません",
     "seedphrase_backed_up": "秘密のリカバリーフレーズのバックアップ",
@@ -616,7 +616,7 @@
       "{{credentialName}}があれば、",
       "アカウントと資金に完全にアクセスできます。\n\n誰にも教えないでください。",
       "ウォレットと資金に完全にアクセスできます。\n\n誰にも教えないでください。",
-      "NxtWallet サポートがこの情報を尋ねることはなく、",
+      "NXTWallet サポートがこの情報を尋ねることはなく、",
       "もし尋ねられた場合はフィッシング詐欺の可能性があります。"
     ],
     "seed_phrase": "秘密のリカバリーフレーズ",
@@ -797,7 +797,7 @@
     "invalid_qr_code_sync": "QRコードが無効です。ハードウェアの同期QR コードをスキャンしてください。",
     "no_camera_permission": "カメラが承認されていません。パーミッションを付与して再度お試しください",
     "invalid_qr_code_sign": "無効な QR コードです。ハードウェアを確認して再度お試しください。",
-    "no_camera_permission_android": "続けるには、NxtWallet によるカメラへのアクセスを許可する必要があります。また、システム設定の変更が必要な場合もあります。",
+    "no_camera_permission_android": "続けるには、NXTWallet によるカメラへのアクセスを許可する必要があります。また、システム設定の変更が必要な場合もあります。",
     "mismatched_qr_request_id": "トランザクションデータが一致していません。Keystone で下の QR コードに署名して、[署名を取得] をタップしてください。"
   },
   "custom_gas": {
@@ -1562,7 +1562,7 @@
     "select_region_currency": "地域の通貨を選択",
     "no_tokens_match": "「{{searchString}}」に一致するトークンがありません",
     "no_currency_match": "「{{searchString}}」に一致する通貨がありません",
-    "buy_from_vetted": "提携プロバイダーから {{ticker}} を購入するため、NxtWallet アプリから直接提携プロバイダーのポータルに安全に転送されます",
+    "buy_from_vetted": "提携プロバイダーから {{ticker}} を購入するため、NXTWallet アプリから直接提携プロバイダーのポータルに安全に転送されます",
     "price": "価格",
     "total_fees": "手数料合計",
     "processing_fee": "処理手数料",
@@ -1638,13 +1638,13 @@
       "best_swap": "スワップを",
       "across": "検索...",
       "want_to_learn_more": "さらに詳しく知りたい場合",
-      "learn_more": "NxtWallet Swapsの詳細",
+      "learn_more": "NXTWallet Swapsの詳細",
       "what_are": "トークンスワップとは",
       "review_audits": "公式コントラクト監査をご覧ください",
       "start_swapping": "スワップを開始"
     },
     "feature_off_title": "一時的に利用できません",
-    "feature_off_body": "NxtWallet Swapsはメンテナンス中です。後ほどご確認ください。",
+    "feature_off_body": "NXTWallet Swapsはメンテナンス中です。後ほどご確認ください。",
     "wrong_network_title": "Swapsが利用できません",
     "wrong_network_body": "トークンのスワップはEthereum Main Networkでのみ可能です。",
     "unallowed_asset_title": "このトークンはスワップできません",
@@ -1999,12 +1999,12 @@
   },
   "remember_me": {
     "enable_remember_me": "認証情報の保存を有効にする",
-    "enable_remember_me_description": "認証情報の保存を有効にすると、携帯にアクセスできる人は誰でも NxtWallet アカウントにアクセスできるようになります。"
+    "enable_remember_me_description": "認証情報の保存を有効にすると、携帯にアクセスできる人は誰でも NXTWallet アカウントにアクセスできるようになります。"
   },
   "turn_off_remember_me": {
     "title": "認証情報の保存を無効にするには、パスワードを入力してください",
     "placeholder": "パスワード",
-    "description": "このオプションを無効にすると、今後 NxtWallet のロックを解除するのにパスワードが必要になります。",
+    "description": "このオプションを無効にすると、今後 NXTWallet のロックを解除するのにパスワードが必要になります。",
     "action": "認証情報の保存を無効にする"
   }
 }
