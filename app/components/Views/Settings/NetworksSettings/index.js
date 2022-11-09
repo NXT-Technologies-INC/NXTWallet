@@ -54,12 +54,14 @@ const createStyles = (colors) =>
       fontSize: 16,
       color: colors.text.default,
       ...fontStyles.normal,
+      fontFamily: "Poppins-Regular"
     },
     sectionLabel: {
       fontSize: 14,
       paddingVertical: 12,
       color: colors.text.default,
       ...fontStyles.bold,
+      fontFamily: "Poppins-SemiBold"
     },
     inputWrapper: {
       flexDirection: 'row',

@@ -37,10 +37,12 @@ const createStyles = (colors) =>
       padding: 16,
       ...fontStyles.normal,
       color: colors.text.default,
+      fontFamily: "Poppins-Regular"
     },
     inputLabel: {
       ...fontStyles.normal,
       color: colors.text.default,
+      fontFamily: "Poppins-SemiBold"
     },
     warningText: {
       ...fontStyles.normal,

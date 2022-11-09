@@ -85,6 +85,7 @@ const createStyles = (colors) =>
       lineHeight: 20,
       paddingTop: 4,
       marginTop: -4,
+      fontFamily: "Poppins-SemiBold"
     },
     bump: {
       marginBottom: 10,
@@ -100,6 +101,7 @@ const createStyles = (colors) =>
       fontSize: 14,
       lineHeight: 20,
       marginTop: 12,
+      fontFamily: "Poppins-Regular"
     },
     learnMore: {
       ...fontStyles.normal,
@@ -171,7 +173,8 @@ const createStyles = (colors) =>
       color: colors.text.default,
     },
     warningTextGreen: {
-      color: colors.text.default,
+      color: "#000000",
+      fontFamily: "Poppins-SemiBold"
     },
     warningBold: {
       ...fontStyles.bold,

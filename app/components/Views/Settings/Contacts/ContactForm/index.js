@@ -52,6 +52,7 @@ const createStyles = (colors) =>
       flexDirection: 'row',
       alignItems: 'center',
       color: colors.text.default,
+      fontFamily: "Poppins-Regular"
     },
     resolvedInput: {
       ...fontStyles.normal,
@@ -67,6 +68,7 @@ const createStyles = (colors) =>
       paddingVertical: 12,
       color: colors.text.default,
       ...fontStyles.bold,
+      fontFamily: "Poppins-SemiBold"
     },
     buttonsWrapper: {
       marginVertical: 12,

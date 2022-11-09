@@ -38,6 +38,7 @@ const createStyles = (colors) =>
       marginBottom: 20,
       ...fontStyles.normal,
       color: colors.text.default,
+      fontFamily: "Poppins-SemiBold"
     },
     link: {
       fontSize: 18,
@@ -45,6 +46,7 @@ const createStyles = (colors) =>
       marginBottom: 20,
       ...fontStyles.normal,
       color: colors.primary.default,
+      fontFamily: "Poppins-Regular"
     },
     division: {
       borderBottomColor: colors.border.muted,
@@ -71,6 +73,7 @@ const createStyles = (colors) =>
       marginBottom: 20,
       color: colors.text.alternative,
       ...fontStyles.normal,
+      fontFamily: "Poppins-Bold"
     },
   });
 

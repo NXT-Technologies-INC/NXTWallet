@@ -31,10 +31,10 @@ const createStyles = (colors) =>
       backgroundColor: colors.error.muted,
     },
     normal: {
-      backgroundColor: colors.background.alternative,
+      backgroundColor: "#ffffff",
     },
     check: {
-      color: colors.success.default,
+      color: "#000000",
     },
   });
 

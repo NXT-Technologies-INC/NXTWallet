@@ -353,7 +353,7 @@
     "title": "Import tokens",
     "title_nft": "Import NFT",
     "search_token": "SEARCH",
-    "custom_token": "CUSTOM TOKEN",
+    "custom_token": "Custom Token",
     "tokens": {
       "cancel_add_token": "CANCEL",
       "add_token": "IMPORT"

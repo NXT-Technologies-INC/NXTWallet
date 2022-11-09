@@ -37,6 +37,7 @@ const createStyles = (colors) =>
       paddingTop: 10,
       paddingBottom: 10,
       ...fontStyles.normal,
+      fontFamily: "Poppins-Regular"
     },
     accesoryBar: {
       width: '100%',

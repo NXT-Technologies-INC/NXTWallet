@@ -25,6 +25,7 @@ const createStyles = (colors) =>
       color: colors.text.default,
       fontSize: 20,
       marginBottom: 8,
+      fontFamily: "Poppins-SemiBold"
     },
     description: {
       ...fontStyles.normal,
@@ -32,6 +33,7 @@ const createStyles = (colors) =>
       fontSize: 14,
       lineHeight: 20,
       paddingRight: 8,
+      fontFamily: "Poppins-Regular"
     },
     action: {
       flex: 0,

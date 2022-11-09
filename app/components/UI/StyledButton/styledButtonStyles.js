@@ -12,6 +12,7 @@ const createStyles = (colors) =>
       fontSize: 14,
       textAlign: 'center',
       ...fontStyles.bold,
+      fontFamily: "Poppins-SemiBold"
     },
     blue: {
       backgroundColor: colors.primary.default,
@@ -34,7 +35,7 @@ const createStyles = (colors) =>
       minHeight: 50,
     },
     confirmText: {
-      color: colors.primary.inverse,
+      color: '#24292E',
     },
     roundedNormal: {
       backgroundColor: colors.background.default,

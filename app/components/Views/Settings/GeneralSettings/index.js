@@ -64,6 +64,7 @@ const createStyles = (colors) =>
     },
     title: {
       ...fontStyles.normal,
+      fontFamily: "Poppins-SemiBold",
       color: colors.text.default,
       fontSize: 20,
       lineHeight: 20,
