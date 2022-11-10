@@ -103,6 +103,10 @@ const createStyles = (colors) =>
       marginTop: 12,
       fontFamily: "Poppins-Regular"
     },
+    desc_bold: {
+      color: colors.text.alternative,
+      fontFamily: "Poppins-Bold"
+    },
     learnMore: {
       ...fontStyles.normal,
       color: colors.primary.default,
@@ -854,11 +858,19 @@ class Settings extends PureComponent {
             accountName: account.name,
           })}
         </Text>
+
         <Text style={styles.desc}>
-          {strings('reveal_credential.private_key_warning', {
-            accountName: account.name,
-          })}
+        <Text>
+          {strings('reveal_credential.private_key_warning_one')}
+        </Text>{' '}
+        <Text style={styles.desc_bold}>
+          {account.name}
+        </Text>{' '}
+        <Text>
+          {strings('reveal_credential.private_key_warning_two')}
         </Text>
+        </Text>
+
         <StyledButton
           type="normal"
           onPress={this.goToExportPrivateKey}

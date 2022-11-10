@@ -606,7 +606,8 @@
       "Anda merupakan satu-satunya pemilik FPR."
     ],
     "private_key_explanation": "Simpan di tempat yang aman dan rahasia.",
-    "private_key_warning": "Ini merupakan kunci pribadi untuk akun yang dipilih saat ini: {{accountName}}. Jangan pernah mengungkapkan kunci ini. Siapa pun yang memiliki kunci pribadi Anda dapat mengontrol akun Anda sepenuhnya, termasuk mentransfer semua dana Anda.",
+    "private_key_warning_one": "Ini merupakan kunci pribadi untuk akun yang dipilih saat ini:",
+    "private_key_warning_two": "Jangan pernah mengungkapkan kunci ini. Siapa pun yang memiliki kunci pribadi Anda dapat mengontrol akun Anda sepenuhnya, termasuk mentransfer semua dana Anda.",
     "seed_phrase_warning_explanation": [
       "Pastikan tidak ada yang melihat layar Anda.",
       "Dukungan NXTWallet tidak akan pernah memintanya."

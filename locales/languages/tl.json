@@ -606,7 +606,8 @@
       "ikaw ang may ari ng SRP mo."
     ],
     "private_key_explanation": "I-save ito sa isang ligtas at sikretong lugar.",
-    "private_key_warning": "Ito ang pribadong key para sa kasalukuyang napiling account: {{accountName}}. Huwag ipaalam ang key na ito. Ang sinumang nakakalaam ng iyong pribadong key ay ganap na makokontrol ang iyong account, pati na ang pag-transfer ng alinman sa iyong mga pondo.",
+    "private_key_warning_one": "Ito ang pribadong key para sa kasalukuyang napiling account:",
+    "private_key_warning_two": "Huwag ipaalam ang key na ito. Ang sinumang nakakalaam ng iyong pribadong key ay ganap na makokontrol ang iyong account, pati na ang pag-transfer ng alinman sa iyong mga pondo.",
     "seed_phrase_warning_explanation": [
       "Tiyaking walang tumitingin sa iyong screen. ",
       "Ang Suporta ng NXTWallet ay hindi kailanman hihiling nito."

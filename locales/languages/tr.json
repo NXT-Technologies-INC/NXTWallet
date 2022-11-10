@@ -606,7 +606,8 @@
       "GKİ'niz size aittir."
     ],
     "private_key_explanation": "Güvenli ve gizli bir yere kaydedin.",
-    "private_key_warning": "Bu, halihazırda seçili hesabın özel anahtarıdır: {{accountName}}. Bu anahtarı hiçbir zaman ifşa etmeyin. Özel anahtara sahip olan herkes, paranızın tamamını transfer etmek de dahil olmak üzere hesabınızı tam olarak kontrol edebilir.",
+    "private_key_warning_one": "Bu, halihazırda seçili hesabın özel anahtarıdır:",
+    "private_key_warning_two": "Bu anahtarı hiçbir zaman ifşa etmeyin. Özel anahtara sahip olan herkes, paranızın tamamını transfer etmek de dahil olmak üzere hesabınızı tam olarak kontrol edebilir.",
     "seed_phrase_warning_explanation": [
       "Hiç kimsenin ekranınıza bakmadığından emin olun.",
       "NXTWallet Destek bölümü bunu asla talep etmez."

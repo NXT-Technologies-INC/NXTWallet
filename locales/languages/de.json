@@ -606,7 +606,8 @@
       "dass Sie der Besitzer Ihrer SRP sind."
     ],
     "private_key_explanation": "Speichern Sie diese an einem sicheren und geheimen Ort.",
-    "private_key_warning": "Dies ist der private Key für das aktuell ausgewählte Konto: {{accountName}}. Geben Sie diesen Key niemals weiter. Jeder, der über Ihren privaten Key verfügt, kann Ihr Konto vollständig kontrollieren, einschließlich der Überweisung von Geldern.",
+    "private_key_warning_one": "Dies ist der private Key für das aktuell ausgewählte Konto:",
+    "private_key_warning_two": "Geben Sie diesen Key niemals weiter. Jeder, der über Ihren privaten Key verfügt, kann Ihr Konto vollständig kontrollieren, einschließlich der Überweisung von Geldern.",
     "seed_phrase_warning_explanation": [
       "Stellen Sie sicher, dass niemand auf Ihren Bildschirm schaut.",
       "Der NXTWallet Support wird Sie nie danach fragen."

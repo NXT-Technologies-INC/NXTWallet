@@ -606,7 +606,8 @@
       "您是您的 SRP 所有人。"
     ],
     "private_key_explanation": "将它保存在安全、秘密的地方。",
-    "private_key_warning": "这是当前选定账户的私钥：{{accountName}}。请勿泄露此密钥。任何得到您的私钥的人都可以完全控制您的账户，包括转走所有资金。",
+    "private_key_warning_one": "这是当前选定账户的私钥",
+    "private_key_warning_two": "请勿泄露此密钥。任何得到您的私钥的人都可以完全控制您的账户，包括转走所有资金。",
     "seed_phrase_warning_explanation": [
       "确保没有人在看您的屏幕。",
       "NXTWallet 支持部门绝对不会要求您提供这个。"

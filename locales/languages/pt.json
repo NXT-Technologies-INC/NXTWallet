@@ -606,7 +606,8 @@
       "você é o responsável pela sua FSR."
     ],
     "private_key_explanation": "Guarde-a em um lugar seguro e secreto.",
-    "private_key_warning": "Esta é a chave privada da conta atual selecionada: {{accountName}}. Nunca divulgue esta chave. Qualquer pessoa que tiver a chave privada poderá controlar totalmente a sua conta, inclusive retirar seus fundos.",
+    "private_key_warning_one": "Esta é a chave privada da conta atual selecionada:",
+    "private_key_warning_two": "Nunca divulgue esta chave. Qualquer pessoa que tiver a chave privada poderá controlar totalmente a sua conta, inclusive retirar seus fundos.",
     "seed_phrase_warning_explanation": [
       "Certifique-se de que não há ninguém olhando para a sua tela. ",
       "O suporte da NXTWallet nunca pedirá essa informação."

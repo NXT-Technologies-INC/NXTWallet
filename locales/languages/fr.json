@@ -606,7 +606,8 @@
       "vous êtes le responsable exclusif de votre PSR."
     ],
     "private_key_explanation": "Conservez-la dans un endroit sûr et secret.",
-    "private_key_warning": "Il s’agit de la clé privée du compte actuellement sélectionné : {{accountName}}. Ne divulguez jamais cette clé. Quiconque est en sa possession peut exercer un contrôle total sur votre compte, y compris le transfert de vos fonds.",
+    "private_key_warning_one": "Il s’agit de la clé privée du compte actuellement sélectionné :",
+    "private_key_warning_two": "Ne divulguez jamais cette clé. Quiconque est en sa possession peut exercer un contrôle total sur votre compte, y compris le transfert de vos fonds.",
     "seed_phrase_warning_explanation": [
       "Assurez-vous que personne ne regarde votre écran.",
       "Le service d’assistance NXTWallet ne vous la demandera jamais."

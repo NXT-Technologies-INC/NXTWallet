@@ -606,7 +606,8 @@
       "bạn là chủ sở hữu SRP của bạn."
     ],
     "private_key_explanation": "Hãy cất giữ nó ở một nơi an toàn và bí mật.",
-    "private_key_warning": "Đây là khóa cá nhân cho tài khoản đang được chọn: {{accountName}}. Đừng bao giờ tiết lộ khóa này. Bất kỳ ai có khóa cá nhân của bạn đều có toàn quyền kiểm soát tài khoản của bạn, bao gồm cả quyền chuyển bất kỳ khoản tiền nào của bạn đi.",
+    "private_key_warning_one": "Đây là khóa cá nhân cho tài khoản đang được chọn:",
+    "private_key_warning_two": "Đừng bao giờ tiết lộ khóa này. Bất kỳ ai có khóa cá nhân của bạn đều có toàn quyền kiểm soát tài khoản của bạn, bao gồm cả quyền chuyển bất kỳ khoản tiền nào của bạn đi.",
     "seed_phrase_warning_explanation": [
       "Đảm bảo không có ai đang nhìn vào màn hình của bạn. ",
       "Bộ phận Hỗ trợ NXTWallet sẽ không bao giờ yêu cầu điều này."

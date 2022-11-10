@@ -668,7 +668,8 @@
       "you are the owner of your SRP."
     ],
     "private_key_explanation": "Save it somewhere safe and secret.",
-    "private_key_warning": "This is the private key for the current selected account: {{accountName}}. Never disclose this key. Anyone with your private key can fully control your account, including transferring away any of your funds.",
+    "private_key_warning_one": "This is the private key for the current selected account:", 
+    "private_key_warning_two": "Never disclose this key. Anyone with your private key can fully control your account, including transferring away any of your funds.",
     "seed_phrase_warning_explanation": [
       "Make sure nobody is looking at your screen. ",
       "NXTWallet Support will never request this."
