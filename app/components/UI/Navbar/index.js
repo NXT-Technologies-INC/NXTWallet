@@ -838,6 +838,10 @@ export function getClosableNavigationOptions(
   navigation,
   themeColors,
 ) {
+
+  const width_text = '100%';
+  const width_icon = '20%';
+
   const innerStyles = StyleSheet.create({
     headerButtonText: {
       color: themeColors.primary.default,
@@ -846,6 +850,7 @@ export function getClosableNavigationOptions(
     },
     headerIcon: {
       color: themeColors.primary.default,
+      width: width_icon
     },
     headerStyle: {
       backgroundColor: themeColors.background.default,
@@ -856,6 +861,9 @@ export function getClosableNavigationOptions(
       fontSize: 20,
       ...fontStyles.normal,
       color: themeColors.text.default,
+      fontFamily: "Poppins-Bold",
+      textAlign: 'center',
+      width: width_text,
     },
   });
   function navigationPop() {
@@ -864,6 +872,7 @@ export function getClosableNavigationOptions(
   return {
     title,
     headerTitleStyle: innerStyles.headerTitleStyle,
+    /*
     headerLeft: () =>
       Device.isIos() ? (
         <TouchableOpacity
@@ -876,7 +885,7 @@ export function getClosableNavigationOptions(
       ) : (
         <TouchableOpacity
           onPress={navigationPop}
-          style={styles.backButton}
+          style={innerStyles.headerIcon}
           testID={'nav-android-back'}
         >
           <IonicIcon
@@ -885,7 +894,7 @@ export function getClosableNavigationOptions(
             style={innerStyles.headerIcon}
           />
         </TouchableOpacity>
-      ),
+      ),*/
     headerStyle: innerStyles.headerStyle,
     headerTintColor: themeColors.primary.default,
   };
