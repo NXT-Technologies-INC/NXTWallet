@@ -59,6 +59,7 @@ const createStyles = (colors) =>
       lineHeight: 20,
       paddingTop: 4,
       marginTop: -4,
+      fontFamily: "Poppins-SemiBold"
     },
     desc: {
       ...fontStyles.normal,
@@ -66,6 +67,7 @@ const createStyles = (colors) =>
       fontSize: 14,
       lineHeight: 20,
       marginTop: 12,
+      fontFamily: "Poppins-Regular"
     },
     marginTop: {
       marginTop: 18,
