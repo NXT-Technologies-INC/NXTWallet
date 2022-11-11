@@ -85,6 +85,7 @@ const createStyles = (colors) =>
       textAlign: 'center',
       ...fontStyles.normal,
       color: colors.text.default,
+      fontFamily: "Poppins-Bold"
     },
     labelInput: {
       marginBottom: Device.isAndroid() ? -10 : 0,
@@ -111,10 +112,10 @@ const createStyles = (colors) =>
       color: colors.text.default,
     },
     addressWrapper: {
-      backgroundColor: "#222222",
+      backgroundColor: "#505050",
       borderWidth: 1.5,
       borderRadius: 40,
-      marginTop: 20,
+      marginTop: 15,
       marginBottom: 20,
       paddingVertical: 7,
       paddingHorizontal: 15,
@@ -130,18 +131,21 @@ const createStyles = (colors) =>
       fontSize: 24,
       color: "white",
       ...fontStyles.normal,
+      fontFamily: "Poppins-Bold"
     },
     symbolETH: {
       fontSize: 24,
       color: "white",
       ...fontStyles.bold,
+      fontFamily: "Poppins-Bold"
     },
     amountFiat: {
       fontSize: 14,
       color: "white",
       ...fontStyles.normal,
       flexDirection: "row",
-      textAlign: "center"
+      textAlign: "center",
+      fontFamily: "Poppins-Bold"
     },
     identiconBorder: {
       borderRadius: 80,
@@ -546,7 +550,7 @@ class AccountOverview extends PureComponent {
                 testID={'token-send-button'}
                 icon="send"
                 onPress={this.onSend}
-                label={strings('asset_overview.send_button')}
+                label="Browser"
               />
               {AppConstants.SWAPS.ACTIVE && (
                 <AssetSwapButton

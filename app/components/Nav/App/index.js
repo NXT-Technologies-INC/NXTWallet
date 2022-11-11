@@ -360,8 +360,10 @@ const App = ({ userLoggedIn }) => {
         name={Routes.MODAL.TURN_OFF_REMEMBER_ME}
         component={TurnOffRememberMeModal}
       />
+
     </Stack.Navigator>
   );
+  
 
   return (
     // do not render unless a route is defined

@@ -1,4 +1,4 @@
-import React, { useRef } from 'react';
+import React, { useRef, useState } from 'react';
 import { Image, StyleSheet } from 'react-native';
 import { createStackNavigator } from '@react-navigation/stack';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
@@ -72,6 +72,7 @@ import Routes from '../../../constants/navigation/Routes';
 import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
 import IonicIcon from 'react-native-vector-icons/Ionicons';
 import ReceiveRequest from '../../../components/UI/ReceiveRequest';
+import {useRoute} from '@react-navigation/native';
 
 const Stack = createStackNavigator();
 const Tab = createBottomTabNavigator();
@@ -87,7 +88,11 @@ const styles = StyleSheet.create({
   tabbar: {
     height: 75,
     backgroundColor: 'transparent',
-    color: 'transparent'
+    borderTopWidth: 0,
+    position: "absolute",
+  },
+  tabbar2: {
+    height: 75,
   }
 });
 
@@ -232,19 +237,23 @@ const TransactionsHome = () => (
   </Stack.Navigator>
 );
 
+
+
 export const DrawerContext = React.createContext({ drawerRef: null });
 
-const HomeTabs = () => {
+  const HomeTabs = () => {
   const drawerRef = useRef(null);
+  const [route_name, setCurrentTabName] = useState(0);
 
+  console.log(route_name);
   return (
     <DrawerContext.Provider value={{ drawerRef }}>
       <Drawer ref={drawerRef}>
         <Tab.Navigator 
           initialRouteName={'WalletTabHome'}
           backBehavior='none'
-          tabBarOptions={{ style: styles.tabbar, showLabel: false,  tabStyle:{  backgroundColor: 'transparent',
-          color: 'transparent',flex: 1, flexDirection: "row", alignSelf: "center", alignContent: "center", justifyContent: "center", marginBottom: 25 }}}
+          tabBarOptions={{ style: route_name == "WalletTabHome" ? styles.tabbar : styles.tabbar2, showLabel: false,  tabStyle:{flex: 1, flexDirection: "row", 
+          alignSelf: "center", alignContent: "center", justifyContent: "center", marginBottom: 25 }}}
           screenOptions={({ route }) => ({
             
             tabBarIcon: ({ focused, color, size, display }) => {
@@ -271,39 +280,56 @@ const HomeTabs = () => {
                   iconName = focused ? 'md-settings' : 'ios-settings';
                   return <Image source={require("../../../images/settings.png")} style={{ width: size, height: size }}/>;
                 }
-                
+              
             },
             tabBarActiveTintColor: 'tomato',
             tabBarInactiveTintColor: 'gray',
           })}
         >
-          <Tab.Screen
-            name={Routes.BROWSER_TAB_HOME}
-            component={BrowserFlow}
-            options={{
-              headerShown: false,
-              tabBarStyle: { display: "none" }
-            }}
-          />
           <Tab.Screen 
             name="ExplorerView" 
             component={SendFlowView} 
+            listeners={({ route }) => ({
+              focus: () => {
+                setCurrentTabName(route.name);
+              },
+            })}
           />
           <Tab.Screen
             name="Receive"
             component={ReceiveFlow}
+            listeners={({ route }) => ({
+              focus: () => {
+                setCurrentTabName(route.name);
+              },
+            })}
           />
           <Tab.Screen
             name="WalletTabHome"
             component={WalletTabModalFlow}
+            listeners={({ route }) => ({
+              focus: () => {
+                setCurrentTabName(route.name);
+              },
+            })}
           />
           <Tab.Screen
             name="TransactionsHome"
             component={TransactionsHome}
+            listeners={({ route }) => ({
+              focus: () => {
+                setCurrentTabName(route.name);
+              },
+            })}
           />
           <Tab.Screen 
             name="SettingsView" 
-            component={SettingsModalStack} 
+            component={SettingsModalStack}
+            listeners={({ route }) => ({
+              focus: () => {
+                setCurrentTabName(route.name);
+              },
+            })}
           />
         </Tab.Navigator>
       </Drawer>
@@ -667,7 +693,6 @@ const MainNavigator = () => (
       component={CollectiblesDetails}
       options={{
         //Refer to - https://reactnavigation.org/docs/stack-navigator/#animations
-        cardStyle: { backgroundColor: importedColors.transparent },
         cardStyleInterpolator: () => ({
           overlayStyle: {
             opacity: 0,
@@ -696,6 +721,10 @@ const MainNavigator = () => (
     <Stack.Screen
       name={Routes.FIAT_ON_RAMP_AGGREGATOR.ID}
       component={FiatOnRampAggregator}
+    />
+    <Stack.Screen 
+      name={Routes.BROWSER_TAB_HOME}
+      component={BrowserFlow} 
     />
     <Stack.Screen name="Swaps" component={Swaps} />
     <Stack.Screen
