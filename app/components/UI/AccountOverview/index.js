@@ -77,6 +77,8 @@ const createStyles = (colors) =>
     data: {
       textAlign: 'center',
       paddingTop: 7,
+      marginTop: 8,
+      marginBottom: 5 
     },
     label: {
       fontSize: 24,
@@ -136,8 +138,10 @@ const createStyles = (colors) =>
     },
     amountFiat: {
       fontSize: 14,
-      color: colors.primary.default,
+      color: "white",
       ...fontStyles.normal,
+      flexDirection: "row",
+      textAlign: "center"
     },
     identiconBorder: {
       borderRadius: 80,
@@ -442,6 +446,13 @@ class AccountOverview extends PureComponent {
             */}
             {/*          */}
 
+            <View style={{flex: 3, alignContent: "flex-start", marginTop: 15}}>
+                <NetworkMainAssetLogo
+                  big
+                  style={styles.ethLogo}
+                  testID={'eth-logo'}
+                />
+            </View>
             <View
               ref={this.editableLabelRef}
               style={styles.data}
@@ -502,19 +513,11 @@ class AccountOverview extends PureComponent {
               )}
             </View>
 
-            {/*          */}
-            <View style={styles.accountRounded}>
-              <View style={{flex:1, flexDirection: "row", marginHorizontal: "10%", alignItems: "center"}}>
-                <View style={{flex: 3, alignContent: "flex-start"}}>
+            <View style={{flex: 3, alignContent: "flex-start"}}>
                   <View style={{flexDirection: "row"}}><Text style={styles.amountETH}>{this.props.ethAsset[0].balance}</Text><Text style={styles.symbolETH}>  {this.props.ethAsset[0].symbol}</Text></View>
                   <Text style={styles.amountFiat}>{"≈" +fiatBalance}</Text>
                 </View>
-                <NetworkMainAssetLogo
-                  big
-                  style={styles.ethLogo}
-                  testID={'eth-logo'}
-                />
-                </View>
+
                 <TouchableOpacity
                   style={styles.addressWrapper}
                   onPress={this.copyAccountToClipboard}
@@ -525,8 +528,7 @@ class AccountOverview extends PureComponent {
                     type={'short'}
                   />
                 </TouchableOpacity>
-              
-            </View>
+            {/*          */}
             <View style={styles.actions}>
               {
                 <AssetActionButton
