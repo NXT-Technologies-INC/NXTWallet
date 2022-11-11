@@ -246,11 +246,13 @@ const HomeTabs = () => {
           tabBarOptions={{ style: styles.tabbar, showLabel: false,  tabStyle:{  backgroundColor: 'transparent',
           color: 'transparent',flex: 1, flexDirection: "row", alignSelf: "center", alignContent: "center", justifyContent: "center", marginBottom: 25 }}}
           screenOptions={({ route }) => ({
-            tabBarIcon: ({ focused, color, size }) => {
+            
+            tabBarIcon: ({ focused, color, size, display }) => {
               let iconName; color = "white"; size = 32;
               switch(route.name){
                 case Routes.BROWSER_TAB_HOME:
-                  break;
+                  //return <Icon name={iconName} size={size} color={color} />;
+                  return <Image source={require("../../../images/send.png")} style={{ width: size, height: size }}/>;
                 case 'ExplorerView':
                   iconName = focused ? 'eye' : 'eye-outline';
                   //return <Icon name={iconName} size={size} color={color} />;
@@ -278,6 +280,10 @@ const HomeTabs = () => {
           <Tab.Screen
             name={Routes.BROWSER_TAB_HOME}
             component={BrowserFlow}
+            options={{
+              headerShown: false,
+              tabBarStyle: { display: "none" }
+            }}
           />
           <Tab.Screen 
             name="ExplorerView" 

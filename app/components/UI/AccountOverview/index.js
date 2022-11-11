@@ -8,6 +8,7 @@ import {
   View,
   TouchableOpacity,
   InteractionManager,
+  ImageBackground,
 } from 'react-native';
 import { swapsUtils } from '@metamask/swaps-controller';
 import { connect } from 'react-redux';
@@ -52,7 +53,7 @@ import NetworkMainAssetLogo from '../NetworkMainAssetLogo';
 const createStyles = (colors) =>
   StyleSheet.create({
     scrollView: {
-      backgroundColor: colors.background.default,
+
     },
     wrapper: {
       paddingTop: 20,
@@ -68,7 +69,6 @@ const createStyles = (colors) =>
     },
     accountRounded: {
       alignItems: 'center',
-      backgroundColor: "#222222",
       borderRadius: 25,
       paddingTop: "5%",
       marginBottom: "5%",
@@ -109,8 +109,7 @@ const createStyles = (colors) =>
       color: colors.text.default,
     },
     addressWrapper: {
-      backgroundColor: colors.primary.muted,
-      borderColor: colors.primary.default,
+      backgroundColor: "#222222",
       borderWidth: 1.5,
       borderRadius: 40,
       marginTop: 20,
@@ -120,7 +119,7 @@ const createStyles = (colors) =>
     },
     address: {
       fontSize: 10,
-      color: colors.primary.default,
+      color: "#FFFFFF",
       ...fontStyles.thin,
       letterSpacing: 2,
       marginRight: 10

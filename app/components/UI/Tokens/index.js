@@ -32,12 +32,10 @@ import { getDecimalChainId, isTestNet } from '../../../util/networks';
 const createStyles = (colors) =>
   StyleSheet.create({
     wrapper: {
-      backgroundColor: colors.background.default,
       flex: 1,
       minHeight: 500,
     },
     emptyView: {
-      backgroundColor: colors.background.default,
       justifyContent: 'center',
       alignItems: 'center',
       marginTop: 50,

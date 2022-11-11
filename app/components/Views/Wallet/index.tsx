@@ -12,6 +12,7 @@ import {
   ActivityIndicator,
   StyleSheet,
   View,
+  ImageBackground
 } from 'react-native';
 import { useSelector } from 'react-redux';
 import ScrollableTabView from 'react-native-scrollable-tab-view';
@@ -39,12 +40,10 @@ const createStyles = (colors: any) =>
   StyleSheet.create({
     wrapper: {
       flex: 1,
-      backgroundColor: colors.background.default,
     },
     tabUnderlineStyle: {
       height: "10%",
       width: "8%",
-      backgroundColor: colors.primary.default,
       borderColor: colors.primary.default, 
       borderWidth: 2, 
       borderRadius: 2,
@@ -54,7 +53,6 @@ const createStyles = (colors: any) =>
       paddingBottom: 0,
     },
     tabBar: {
-      borderColor: colors.background.default,
       height: 30,
       marginTop: 30,
       borderWidth: 0,
@@ -217,7 +215,6 @@ const Wallet = ({ navigation }: any) => {
         underlineStyle={styles.tabUnderlineStyle}
         activeTextColor={colors.primary.default}
         inactiveTextColor={colors.text.alternative}
-        backgroundColor={colors.background.default}
         tabStyle={styles.tabStyle}
         textStyle={styles.textStyle}
         style={styles.tabBar}
@@ -338,6 +335,16 @@ const Wallet = ({ navigation }: any) => {
   return (
     <ErrorBoundary view="Wallet">
       <View style={baseStyles.flexGrow} testID={'wallet-screen'}>
+
+
+      <ImageBackground 
+          source={require("../../../images/BACKGROUND.png")}
+          style={{ flex: 1,
+            width: null,
+            height: null,
+            }}
+          >
+
         <ScrollView
           style={styles.wrapper}
           refreshControl={
@@ -352,6 +359,7 @@ const Wallet = ({ navigation }: any) => {
           {selectedAddress ? renderContent() : renderLoader()}
         </ScrollView>
         {renderOnboardingWizard()}
+        </ImageBackground>
       </View>
     </ErrorBoundary>
   );
