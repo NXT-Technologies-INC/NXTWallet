@@ -353,9 +353,11 @@ class AccountOverview extends PureComponent {
   onReceive = () => this.props.toggleReceiveModal();
 
   onSend = () => {
-    const { newAssetTransaction, navigation, ticker } = this.props;
-    newAssetTransaction(getEther(ticker));
-    navigation.navigate('SendFlowView');
+    //const { newAssetTransaction, navigation, ticker } = this.props;
+    //newAssetTransaction(getEther(ticker));
+    //navigation.navigate('SendFlowView');
+
+    this.props.navigation.navigate(Routes.BROWSER_TAB_HOME);
   };
 
   onBuy = () => {
@@ -527,6 +529,13 @@ class AccountOverview extends PureComponent {
               
             </View>
             <View style={styles.actions}>
+              {
+                <AssetActionButton
+                  icon="stake"
+                  onPress={this.onBuy}
+                  label={strings('asset_overview.stake_button')}
+                />
+              }
               <AssetActionButton
                 icon="receive"
                 onPress={this.onReceive}
@@ -546,13 +555,7 @@ class AccountOverview extends PureComponent {
                   isAssetAllowed
                 />
               )}
-              {
-                <AssetActionButton
-                  icon="stake"
-                  onPress={this.onBuy}
-                  label={strings('asset_overview.stake_button')}
-                />
-              }
+              
             </View>
           </View>
         </ScrollView>

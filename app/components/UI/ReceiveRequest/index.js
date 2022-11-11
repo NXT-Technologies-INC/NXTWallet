@@ -1,4 +1,4 @@
-import React, { PureComponent } from 'react';
+import React, { PureComponent, useEffect } from 'react';
 import PropTypes from 'prop-types';
 import {
   InteractionManager,
@@ -244,6 +244,7 @@ class ReceiveRequest extends PureComponent {
       );
     });
   };
+
 
   render() {
     const colors = this.context.colors || mockTheme.colors;

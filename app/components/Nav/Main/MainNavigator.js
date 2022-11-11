@@ -71,6 +71,7 @@ import BrowserUrlModal from '../../Views/BrowserUrlModal';
 import Routes from '../../../constants/navigation/Routes';
 import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
 import IonicIcon from 'react-native-vector-icons/Ionicons';
+import ReceiveRequest from '../../../components/UI/ReceiveRequest';
 
 const Stack = createStackNavigator();
 const Tab = createBottomTabNavigator();
@@ -248,46 +249,55 @@ const HomeTabs = () => {
             tabBarIcon: ({ focused, color, size }) => {
               let iconName; color = "white"; size = 32;
               switch(route.name){
-                case 'TransactionsHome':
-                  iconName = 'format-list-bulleted';
-                  break;
                 case Routes.BROWSER_TAB_HOME:
-                  iconName = 'google-chrome';
                   break;
-                case 'WalletTabHome':
-                  iconName = focused ? 'home' : 'home-outline';
-                  break;
-                case 'SettingsView':
-                  iconName = focused ? 'md-settings' : 'ios-settings';
-                  return <IonicIcon name={iconName} size={size} color={color} />;
                 case 'ExplorerView':
                   iconName = focused ? 'eye' : 'eye-outline';
+                  //return <Icon name={iconName} size={size} color={color} />;
+                  return <Image source={require("../../../images/send.png")} style={{ width: size, height: size }}/>;
+                case 'Receive':
+                  iconName = 'google-chrome';
+                  //return <Icon name={iconName} size={size} color={color} />;
+                  return <Image source={require("../../../images/receive.png")} style={{ width: size, height: size }}/>;
+                case 'WalletTabHome':
+                  iconName = focused ? 'home' : 'home-outline';
+                  return <Image source={require("../../../images/home.png")} style={{ width: size, height: size }}/>;
+                case 'TransactionsHome':
+                  iconName = 'format-list-bulleted';
+                  return <Image source={require("../../../images/history.png")} style={{ width: size, height: size }}/>;
+                case 'SettingsView':
+                  iconName = focused ? 'md-settings' : 'ios-settings';
+                  return <Image source={require("../../../images/settings.png")} style={{ width: size, height: size }}/>;
                 }
-                return <Icon name={iconName} size={size} color={color} />;
+                
             },
             tabBarActiveTintColor: 'tomato',
             tabBarInactiveTintColor: 'gray',
           })}
         >
           <Tab.Screen
-            name="TransactionsHome"
-            component={TransactionsHome}
-          />
-          <Tab.Screen
             name={Routes.BROWSER_TAB_HOME}
             component={BrowserFlow}
+          />
+          <Tab.Screen 
+            name="ExplorerView" 
+            component={SendFlowView} 
+          />
+          <Tab.Screen
+            name="Receive"
+            component={ReceiveFlow}
           />
           <Tab.Screen
             name="WalletTabHome"
             component={WalletTabModalFlow}
           />
+          <Tab.Screen
+            name="TransactionsHome"
+            component={TransactionsHome}
+          />
           <Tab.Screen 
             name="SettingsView" 
             component={SettingsModalStack} 
-          />
-          <Tab.Screen 
-            name="ExplorerView" 
-            component={AboutFlow} 
           />
         </Tab.Navigator>
       </Drawer>
@@ -295,9 +305,9 @@ const HomeTabs = () => {
   );
 };
 
-const AboutFlow = () => (
+const ReceiveFlow = () => (
   <Stack.Navigator mode="modal">
-    <Stack.Screen name="AboutView" component={AppInformation} mode={'modal'}/>
+    <Stack.Screen name="ReceiveView" component={ReceiveRequest} mode={'modal'}/>
   </Stack.Navigator>
 );
 

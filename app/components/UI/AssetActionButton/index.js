@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { StyleSheet, TouchableOpacity, View } from 'react-native';
+import { StyleSheet, TouchableOpacity, View, Image } from 'react-native';
 import MaterialCommunityIcon from 'react-native-vector-icons/MaterialCommunityIcons';
 import MaterialIcons from 'react-native-vector-icons/MaterialIcons';
 import Ionicon from 'react-native-vector-icons/Ionicons';
@@ -67,10 +67,9 @@ function AssetActionButton({ onPress, icon, label, disabled }) {
     switch (type) {
       case 'send': {
         return (
-          <MaterialCommunityIcon
-            name={'arrow-top-right'}
-            size={20}
-            style={styles.buttonIcon}
+          <Image
+            source={require("../../../images/browser.png")}
+            style={{ width: 35, height: 35 }}
           />
         );
       }
@@ -94,19 +93,17 @@ function AssetActionButton({ onPress, icon, label, disabled }) {
       }
       case 'swap': {
         return (
-          <MaterialIcons
-            name="swap-horiz"
-            size={22}
-            style={[styles.buttonIcon, styles.swapsIcon]}
+          <Image
+            source={require("../../../images/dex.png")}
+            style={{ width: 35, height: 35 }}
           />
         );
       }
       case 'stake': {
         return (
-          <MaterialIcons
-            name="layers"
-            size={20}
-            style={[styles.buttonIcon, styles.buyIcon]}
+          <Image
+            source={require("../../../images/stake.png")}
+            style={{ width: 35, height: 35 }}
           />
         );
       }
