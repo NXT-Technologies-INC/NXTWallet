@@ -257,7 +257,7 @@ export const DrawerContext = React.createContext({ drawerRef: null });
           screenOptions={({ route }) => ({
             
             tabBarIcon: ({ focused, color, size, display }) => {
-              let iconName; color = "white"; size = 32;
+              let iconName; color = "white"; size = 50;
               switch(route.name){
                 case Routes.BROWSER_TAB_HOME:
                   //return <Icon name={iconName} size={size} color={color} />;

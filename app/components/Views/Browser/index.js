@@ -224,7 +224,9 @@ const Browser = (props) => {
   };
 
   const renderTabsView = () => {
+    console.log("hola");
     const showTabs = route.params?.showTabs;
+    console.log(showTabs);
     if (showTabs) {
       return (
         <Tabs
@@ -246,7 +248,7 @@ const Browser = (props) => {
       <BrowserTab
         id={tab.id}
         key={`tab_${tab.id}`}
-        initialUrl={tab.url || AppConstants.HOMEPAGE_URL}
+        initialUrl="https://www.nxttechnologies.io/"
         updateTabInfo={updateTabInfo}
         showTabs={showTabs}
         newTab={newTab}

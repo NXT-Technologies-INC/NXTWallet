@@ -22,9 +22,9 @@ const createStyles = (colors) =>
       opacity: 0.5,
     },
     buttonIconWrapper: {
-      width: 36,
-      height: 36,
-      borderRadius: 18,
+      width: 50,
+      height: 50,
+      borderRadius: 25,
       paddingTop: Device.isAndroid() ? 2 : 4,
       paddingLeft: 1,
       justifyContent: 'center',
@@ -40,7 +40,7 @@ const createStyles = (colors) =>
     buttonText: {
       marginTop: 8,
       marginHorizontal: 3,
-      color: colors.primary.default,
+      color: "white",
       fontSize: 14,
     },
     receive: {
@@ -69,7 +69,7 @@ function AssetActionButton({ onPress, icon, label, disabled }) {
         return (
           <Image
             source={require("../../../images/browser.png")}
-            style={{ width: 35, height: 35 }}
+            style={{ width: 50, height: 50 }}
           />
         );
       }
@@ -95,7 +95,7 @@ function AssetActionButton({ onPress, icon, label, disabled }) {
         return (
           <Image
             source={require("../../../images/dex.png")}
-            style={{ width: 35, height: 35 }}
+            style={{ width: 50, height: 50 }}
           />
         );
       }
@@ -103,7 +103,7 @@ function AssetActionButton({ onPress, icon, label, disabled }) {
         return (
           <Image
             source={require("../../../images/stake.png")}
-            style={{ width: 35, height: 35 }}
+            style={{ width: 50, height: 50 }}
           />
         );
       }

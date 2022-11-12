@@ -47,7 +47,7 @@ function AssetSwapButton({
       <View style={isDisabled && styles.disabledButton}>
         <AssetActionButton
           icon="swap"
-          label={strings('asset_overview.swap')}
+          label="DEX"
           onPress={isDisabled ? showModal : onPress}
         />
       </View>

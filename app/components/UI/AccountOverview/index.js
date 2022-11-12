@@ -538,19 +538,22 @@ class AccountOverview extends PureComponent {
                 <AssetActionButton
                   icon="stake"
                   onPress={this.onBuy}
-                  label={strings('asset_overview.stake_button')}
+                  label="STAKE"
                 />
               }
+              {/*
               <AssetActionButton
                 icon="receive"
                 onPress={this.onReceive}
                 label={strings('asset_overview.receive_button')}
               />
+              */}
+              
               <AssetActionButton
                 testID={'token-send-button'}
                 icon="send"
                 onPress={this.onSend}
-                label="Browser"
+                label="BROWSER"
               />
               {AppConstants.SWAPS.ACTIVE && (
                 <AssetSwapButton
