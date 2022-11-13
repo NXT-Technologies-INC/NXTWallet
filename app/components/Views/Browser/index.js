@@ -248,7 +248,7 @@ const Browser = (props) => {
       <BrowserTab
         id={tab.id}
         key={`tab_${tab.id}`}
-        initialUrl="https://www.nxttechnologies.io/"
+        initialUrl={tab.url || AppConstants.HOMEPAGE_URL}
         updateTabInfo={updateTabInfo}
         showTabs={showTabs}
         newTab={newTab}
