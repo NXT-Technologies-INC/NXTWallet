@@ -16,7 +16,7 @@ import {
 } from 'react-native';
 import { useSelector } from 'react-redux';
 import ScrollableTabView from 'react-native-scrollable-tab-view';
-import TabBar from './TabBar';
+import DefaultTabBar from 'react-native-scrollable-tab-view/DefaultTabBar';
 import { fontStyles, baseStyles, colors } from '../../../styles/common';
 import AccountOverview from '../../UI/AccountOverview';
 import Tokens from '../../UI/Tokens';
@@ -42,29 +42,20 @@ const createStyles = (colors: any) =>
       flex: 1,
     },
     tabUnderlineStyle: {
-      height: "10%",
-      width: "8%",
-      borderColor: colors.primary.default, 
-      borderWidth: 2, 
-      borderRadius: 2,
-      marginHorizontal: "13%"
+      height: 2,
     },
     tabStyle: {
       paddingBottom: 0,
     },
     tabBar: {
-      height: 30,
-      marginTop: 30,
-      borderWidth: 0,
+      borderColor: colors.border.muted,
     },
     textStyle: {
-      fontSize: 11,
-      letterSpacing: 1,
-      color: colors.primary.default,
-      ...(fontStyles.light as any),
+      fontSize: 12,
+      letterSpacing: 0.5,
+      ...(fontStyles.bold as any),
     },
     loader: {
-      backgroundColor: colors.background.default,
       flex: 1,
       justifyContent: 'center',
       alignItems: 'center',
@@ -211,7 +202,7 @@ const Wallet = ({ navigation }: any) => {
 
   const renderTabBar = useCallback(
     () => (
-      <TabBar 
+      <DefaultTabBar accessibilityComponentType={undefined} accessibilityTraits={undefined}
         underlineStyle={styles.tabUnderlineStyle}
         activeTextColor={colors.primary.default}
         inactiveTextColor={colors.text.alternative}
@@ -275,7 +266,7 @@ const Wallet = ({ navigation }: any) => {
           onRef={onRef}
           ethAsset={asset}
         />
-        <ScrollableTabView
+        <ScrollableTabView accessibilityComponentType={undefined} accessibilityTraits={undefined}
           renderTabBar={renderTabBar}
           // eslint-disable-next-line react/jsx-no-bind
           onChangeTab={onChangeTab}
@@ -335,8 +326,6 @@ const Wallet = ({ navigation }: any) => {
   return (
     <ErrorBoundary view="Wallet">
       <View style={baseStyles.flexGrow} testID={'wallet-screen'}>
-
-
       <ImageBackground 
           source={require("../../../images/BACKGROUND.png")}
           style={{ flex: 1,

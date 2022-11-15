@@ -73,15 +73,13 @@ const createStyles = (colors) =>
       marginTop: 24,
     },
     balances: {
-      flex: .5,
+      flex: 1,
       justifyContent: 'center',
-      alignItems: "flex-end",
-      alignContent: "flex-end"
     },
     balance: {
-      fontSize: 18,
+      fontSize: 16,
       color: colors.text.default,
-      ...fontStyles.bold,
+      ...fontStyles.normal,
       textTransform: 'uppercase',
     },
     testNetBalance: {
@@ -208,7 +206,17 @@ class Tokens extends PureComponent {
 
     return (
       <View style={styles.footer} key={'tokens-footer'}>
-        
+        <Text style={styles.emptyText}>
+          {strings('wallet.no_available_tokens')}
+        </Text>
+        <TouchableOpacity
+          style={styles.add}
+          onPress={this.goToAddToken}
+          disabled={!this.state.isAddTokenEnabled}
+          testID={'add-token-button'}
+        >
+          <Text style={styles.addText}>{strings('wallet.add_tokens')}</Text>
+        </TouchableOpacity>
       </View>
     );
   };
@@ -236,10 +244,10 @@ class Tokens extends PureComponent {
       (itemAddress in tokenBalances
         ? renderFromTokenMinimalUnit(tokenBalances[itemAddress], asset.decimals)
         : 0);
-    const balanceFiat = "≈" + (
+    const balanceFiat =
       asset.balanceFiat ||
-      balanceToFiat(balance, conversionRate, exchangeRate, currentCurrency));
-    const balanceValue = `${balance}`;
+      balanceToFiat(balance, conversionRate, exchangeRate, currentCurrency);
+    const balanceValue = `${balance} ${asset.symbol}`;
 
     // render balances according to primary currency
     let mainBalance, secondaryBalance;
@@ -252,12 +260,11 @@ class Tokens extends PureComponent {
     }
 
     if (asset?.balanceError) {
-      mainBalance = "";
+      mainBalance = asset.symbol;
       secondaryBalance = strings('wallet.unable_to_load');
     }
 
     asset = { logo, ...asset, balance, balanceFiat };
-    if(asset.isETH) return null;
     return (
       <AssetElement
         key={itemAddress || '0x'}
@@ -275,26 +282,24 @@ class Tokens extends PureComponent {
         ) : (
           <TokenImage asset={asset} containerStyle={styles.ethLogo} />
         )}
-        <View style={{flex:1, flexDirection: "row", alignItems: "center"}}>
-          <Text style={{justifyContent: "center" , flex: .5, alignItems: "center", alignContent: "center", ...isTestNet(chainId) ? styles.testNetBalance : styles.balance}}>{asset.symbol}</Text>
-          <View style={styles.balances} testID={'balance'}>
+
+        <View style={styles.balances} testID={'balance'}>
+          <Text
+            style={isTestNet(chainId) ? styles.testNetBalance : styles.balance}
+          >
+            {mainBalance}
+          </Text>
+          {secondaryBalance ? (
             <Text
-              style={isTestNet(chainId) ? styles.testNetBalance : styles.balance}
+              style={[
+                styles.balanceFiat,
+                asset?.balanceError && styles.balanceFiatTokenError,
+              ]}
             >
-              {mainBalance}
+              {secondaryBalance}
             </Text>
-            {secondaryBalance ? (
-              <Text
-                style={[
-                  styles.balanceFiat,
-                  asset?.balanceError && styles.balanceFiatTokenError,
-                ]}
-              >
-                {secondaryBalance}
-              </Text>
-            ) : null}
-            </View>
-          </View>
+          ) : null}
+        </View>
       </AssetElement>
     );
   };
@@ -375,6 +380,24 @@ class Tokens extends PureComponent {
       </View>
     );
   }
+
+  goToAddToken = () => {
+    const { NetworkController } = Engine.context;
+    this.setState({ isAddTokenEnabled: false });
+    this.props.navigation.push('AddAsset', { assetType: 'token' });
+    InteractionManager.runAfterInteractions(() => {
+      AnalyticsV2.trackEvent(
+        AnalyticsV2.ANALYTICS_EVENTS.TOKEN_IMPORT_CLICKED,
+        {
+          source: 'manual',
+          chain_id: getDecimalChainId(
+            NetworkController?.state?.provider?.chainId,
+          ),
+        },
+      );
+      this.setState({ isAddTokenEnabled: true });
+    });
+  };
 
   showRemoveMenu = (token) => {
     this.tokenToRemove = token;
