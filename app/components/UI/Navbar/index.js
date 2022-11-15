@@ -13,9 +13,11 @@ import {
   Image,
   Keyboard,
   InteractionManager,
+  Platform,
 } from 'react-native';
 import { fontStyles, colors as importedColors } from '../../../styles/common';
 import IonicIcon from 'react-native-vector-icons/Ionicons';
+import AntIcon from 'react-native-vector-icons/AntDesign';
 import EvilIcons from 'react-native-vector-icons/EvilIcons';
 import MaterialCommunityIcon from 'react-native-vector-icons/MaterialCommunityIcons';
 import URL from 'url-parse';
@@ -29,7 +31,12 @@ import Device from '../../../util/device';
 import { isGatewayUrl } from '../../../lib/ens-ipfs/resolver';
 import { getHost } from '../../../util/browser';
 import { BACK_ARROW_BUTTON_ID } from '../../../constants/test-ids';
-
+import generateTestId from '../../../../wdio/utils/generateTestId';
+import { WALLET_VIEW_BURGER_ICON_ID } from '../../../../wdio/features/testIDs/Screens/WalletView.testIds';
+import {
+  NAV_ANDROID_BACK_BUTTON,
+  NETWORK_BACK_ARROW_BUTTON_ID,
+} from '../../../../wdio/features/testIDs/Screens/NetworksScreen.testids';
 const { HOMEPAGE_URL } = AppConstants;
 
 const trackEvent = (event) => {
@@ -128,7 +135,7 @@ export default function getNavbarOptions(
       elevation: 0,
     },
     headerIcon: {
-      color: "white",
+      color: themeColors.primary.default,
     },
   });
 
@@ -140,20 +147,20 @@ export default function getNavbarOptions(
 
   return {
     headerTitle: () => (
-      <></>
+      <NavbarTitle title={title} disableNetwork={disableNetwork} />
     ),
-    headerLeft: () => (<NavbarTitle title={title} disableNetwork={disableNetwork} />/*
+    headerLeft: () => (
       <TouchableOpacity onPress={onPress} style={styles.backButton}>
         <IonicIcon
           name={Device.isAndroid() ? 'md-menu' : 'ios-menu'}
           size={Device.isAndroid() ? 24 : 28}
           style={innerStyles.headerIcon}
         />
-      </TouchableOpacity>*/
+      </TouchableOpacity>
     ),
     headerRight: () => <AccountRightButton />,
     headerStyle: innerStyles.headerStyle,
-    headerTintColor: importedColors.primary.default,
+    headerTintColor: themeColors.primary.default,
   };
 }
 
@@ -172,25 +179,14 @@ export function getNavigationOptionsTitle(
   themeColors,
   navigationPopEvent,
 ) {
-
-  let width_proportion = '80%';
-  const width_proportion_icon = '20%';
-
   const innerStyles = StyleSheet.create({
     headerTitleStyle: {
       fontSize: 20,
-      color: themeColors.primary.default,
+      color: themeColors.text.default,
       ...fontStyles.normal,
-      fontFamily: "Poppins-Bold",
-      textAlign: 'center',
-      width: width_proportion,
-      color: "#fff",
-      marginTop: 8
     },
     headerIcon: {
       color: themeColors.primary.default,
-      width: width_proportion_icon,
-      color: "#fff"
     },
     headerStyle: {
       backgroundColor: themeColors.background.default,
@@ -220,17 +216,17 @@ export function getNavigationOptionsTitle(
         <TouchableOpacity
           onPress={navigationPop}
           style={styles.backButton}
-          testID={BACK_ARROW_BUTTON_ID}
+          {...generateTestId(Platform, NETWORK_BACK_ARROW_BUTTON_ID)}
         >
           <IonicIcon
-            name={Device.isAndroid() ? 'ios-arrow-dropleft' : 'ios-arrow-dropleft'}
+            name={Device.isAndroid() ? 'md-arrow-back' : 'ios-arrow-back'}
             size={Device.isAndroid() ? 24 : 28}
             style={innerStyles.headerIcon}
           />
         </TouchableOpacity>
       ),
     headerStyle: innerStyles.headerStyle,
-    headerTintColor: importedColors.primary.default,
+    headerTintColor: themeColors.primary.default,
   };
 }
 
@@ -622,7 +618,7 @@ export function getBrowserViewNavbarOptions(
 
   return {
     gestureEnabled: false,
-    headerLeft: () => (<></>/*
+    headerLeft: () => (
       <TouchableOpacity
         onPress={onPress}
         style={styles.hamburgerButton}
@@ -633,7 +629,7 @@ export function getBrowserViewNavbarOptions(
           size={Device.isAndroid() ? 24 : 28}
           style={innerStyles.headerIcon}
         />
-      </TouchableOpacity>*/
+      </TouchableOpacity>
     ),
     headerTitle: () => (
       <NavbarBrowserTitle
@@ -838,10 +834,6 @@ export function getClosableNavigationOptions(
   navigation,
   themeColors,
 ) {
-
-  const width_text = '100%';
-  const width_icon = '20%';
-
   const innerStyles = StyleSheet.create({
     headerButtonText: {
       color: themeColors.primary.default,
@@ -850,7 +842,6 @@ export function getClosableNavigationOptions(
     },
     headerIcon: {
       color: themeColors.primary.default,
-      width: width_icon
     },
     headerStyle: {
       backgroundColor: themeColors.background.default,
@@ -861,9 +852,6 @@ export function getClosableNavigationOptions(
       fontSize: 20,
       ...fontStyles.normal,
       color: themeColors.text.default,
-      fontFamily: "Poppins-Bold",
-      textAlign: 'center',
-      width: width_text,
     },
   });
   function navigationPop() {
@@ -872,7 +860,6 @@ export function getClosableNavigationOptions(
   return {
     title,
     headerTitleStyle: innerStyles.headerTitleStyle,
-    /*
     headerLeft: () =>
       Device.isIos() ? (
         <TouchableOpacity
@@ -885,8 +872,8 @@ export function getClosableNavigationOptions(
       ) : (
         <TouchableOpacity
           onPress={navigationPop}
-          style={innerStyles.headerIcon}
-          testID={'nav-android-back'}
+          style={styles.backButton}
+          {...generateTestId(Platform, NAV_ANDROID_BACK_BUTTON)}
         >
           <IonicIcon
             name={'md-arrow-back'}
@@ -894,7 +881,7 @@ export function getClosableNavigationOptions(
             style={innerStyles.headerIcon}
           />
         </TouchableOpacity>
-      ),*/
+      ),
     headerStyle: innerStyles.headerStyle,
     headerTintColor: themeColors.primary.default,
   };
@@ -931,7 +918,7 @@ export function getWalletNavbarOptions(
       elevation: 0,
     },
     headerIcon: {
-      color: "white",
+      color: themeColors.primary.default,
     },
   });
 
@@ -992,19 +979,20 @@ export function getWalletNavbarOptions(
   }
 
   return {
-    headerTitle: () => <></>,
-    headerLeft: () => (<NavbarTitle title={title} />
-      /*<TouchableOpacity
+    headerTitle: () => <NavbarTitle title={title} />,
+    headerLeft: () => (
+      <TouchableOpacity
         onPress={openDrawer}
         style={styles.backButton}
         testID={'hamburger-menu-button-wallet'}
       >
         <IonicIcon
+          {...generateTestId(Platform, WALLET_VIEW_BURGER_ICON_ID)}
           name={Device.isAndroid() ? 'md-menu' : 'ios-menu'}
           size={Device.isAndroid() ? 24 : 28}
           style={innerStyles.headerIcon}
         />
-      </TouchableOpacity>*/
+      </TouchableOpacity>
     ),
     headerRight: () => (
       <TouchableOpacity
@@ -1012,7 +1000,7 @@ export function getWalletNavbarOptions(
         // eslint-disable-next-line
         onPress={openQRScanner}
       >
-      <IonicIcon name={'ios-qr-scanner'} size={28} style={innerStyles.headerIcon} />
+        <AntIcon name="scan1" size={28} style={innerStyles.headerIcon} />
       </TouchableOpacity>
     ),
     headerStyle: innerStyles.headerStyle,
