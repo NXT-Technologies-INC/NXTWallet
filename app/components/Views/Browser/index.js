@@ -224,9 +224,7 @@ const Browser = (props) => {
   };
 
   const renderTabsView = () => {
-    console.log("hola");
     const showTabs = route.params?.showTabs;
-    console.log(showTabs);
     if (showTabs) {
       return (
         <Tabs
