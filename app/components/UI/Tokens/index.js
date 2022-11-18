@@ -52,7 +52,8 @@ const createStyles = (colors) =>
     },
     addText: {
       fontSize: 14,
-      color: colors.primary.default,
+      color: 'white',
+      textTransform: 'uppercase',
       ...fontStyles.normal,
     },
     tokensDetectedButton: {
@@ -206,16 +207,13 @@ class Tokens extends PureComponent {
 
     return (
       <View style={styles.footer} key={'tokens-footer'}>
-        <Text style={styles.emptyText}>
-          {strings('wallet.no_available_tokens')}
-        </Text>
         <TouchableOpacity
           style={styles.add}
           onPress={this.goToAddToken}
           disabled={!this.state.isAddTokenEnabled}
           testID={'add-token-button'}
         >
-          <Text style={styles.addText}>{strings('wallet.add_tokens')}</Text>
+          <Text style={styles.addText}>+ {strings('wallet.add_tokens')}</Text>
         </TouchableOpacity>
       </View>
     );

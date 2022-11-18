@@ -122,7 +122,7 @@ const createStyles = (colors) =>
     },
   });
 
-const nxt_black_logo = require('../../../images/nxt_black_logo.png'); // eslint-disable-line
+const nxt_black_logo = require('../../../images/nxtblacklogo.png'); // eslint-disable-line
 
 /**
  * View that is displayed to first time (new) users

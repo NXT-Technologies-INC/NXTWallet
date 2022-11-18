@@ -12,22 +12,27 @@ import { ThemeContext, mockTheme } from '../../../util/theme';
 const createStyles = (colors) =>
   StyleSheet.create({
     wrapper: {
-      alignItems: 'flex-start',
+      alignItems: 'center',
       flex: 1,
       marginLeft: 20,
       marginTop: 6
     },
     network: {
       flexDirection: 'row',
+      textAlign: 'center'
     },
     networkName: {
       fontSize: 13,
-      color: colors.text.alternative,
+      color: colors.primary.default,
       ...fontStyles.normal,
+      textAlign: 'center',
+      fontFamily: 'Poppins-Regular',
+      letterSpacing: 4,
+      textTransform: 'uppercase'
     },
     networkIcon: {
-      width: 5,
-      height: 5,
+      width: 9,
+      height: 9,
       borderRadius: 100,
       marginRight: 5,
       marginTop: Device.isIos() ? 4 : 5,
@@ -36,6 +41,9 @@ const createStyles = (colors) =>
       fontSize: 18,
       ...fontStyles.normal,
       color: colors.text.default,
+      textAlign: 'center',
+      fontFamily: 'Poppins-Bold',
+      lineHeight: 19,
     },
     otherNetworkIcon: {
       backgroundColor: importedColors.transparent,

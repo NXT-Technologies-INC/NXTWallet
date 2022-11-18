@@ -912,12 +912,12 @@ export function getWalletNavbarOptions(
 ) {
   const innerStyles = StyleSheet.create({
     headerStyle: {
-      backgroundColor: themeColors.background.default,
+      backgroundColor: 'black',
       shadowColor: importedColors.transparent,
       elevation: 0,
     },
     headerIcon: {
-      color: themeColors.primary.default,
+      color: "white",
     },
   });
 

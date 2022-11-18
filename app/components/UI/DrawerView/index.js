@@ -1019,6 +1019,7 @@ class DrawerView extends PureComponent {
           warning: strings('drawer.settings_warning_short'),
           action: this.showSettings,
         },
+        /*
         {
           name: strings('drawer.help'),
           icon: this.getIcon('comments'),
@@ -1028,7 +1029,7 @@ class DrawerView extends PureComponent {
           name: strings('drawer.request_feature'),
           icon: this.getFeatherIcon('message-square'),
           action: this.submitFeedback,
-        },
+        },*/
         {
           name: strings('drawer.lock'),
           icon: this.getFeatherIcon('log-out'),

@@ -324,15 +324,17 @@ const Wallet = ({ navigation }: any) => {
   );
 
   return (
-    <ErrorBoundary view="Wallet">
-      <View style={baseStyles.flexGrow} testID={'wallet-screen'}>
-      <ImageBackground 
-          source={require("../../../images/BACKGROUND.png")}
+    <ImageBackground 
+          source={require("../../../images/BACKGROUND.jpg")}
           style={{ flex: 1,
             width: null,
             height: null,
             }}
           >
+    <ErrorBoundary view="Wallet">
+      
+      <View style={baseStyles.flexGrow} testID={'wallet-screen'}>
+      
 
         <ScrollView
           style={styles.wrapper}
@@ -348,9 +350,11 @@ const Wallet = ({ navigation }: any) => {
           {selectedAddress ? renderContent() : renderLoader()}
         </ScrollView>
         {renderOnboardingWizard()}
-        </ImageBackground>
+        
       </View>
     </ErrorBoundary>
+    </ImageBackground>
+
   );
 };
 

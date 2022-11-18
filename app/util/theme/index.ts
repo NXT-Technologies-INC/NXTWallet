@@ -66,13 +66,13 @@ export const useAppTheme = (): Theme => {
   const setDarkStatusBar = () => {
     StatusBar.setBarStyle('light-content', true);
     Device.isAndroid() &&
-      StatusBar.setBackgroundColor(darkTheme.colors.background.default);
+      StatusBar.setBackgroundColor(lightTheme.colors.background.default);
   };
 
   const setLightStatusBar = () => {
     StatusBar.setBarStyle('dark-content', true);
     Device.isAndroid() &&
-      StatusBar.setBackgroundColor(darkTheme.colors.background.default);
+      StatusBar.setBackgroundColor(lightTheme.colors.background.default);
   };
 
   switch (appTheme) {

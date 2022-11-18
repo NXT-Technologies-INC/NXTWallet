@@ -86,13 +86,16 @@ const styles = StyleSheet.create({
     opacity: 0,
   },
   tabbar: {
-    height: 75,
-    backgroundColor: 'transparent',
+    height: 65,
     borderTopWidth: 0,
     position: "absolute",
+    backgroundColor: 'transparent',
+    padding: 5
   },
   tabbar2: {
-    height: 75,
+    height: 65,
+    backgroundColor: '#202020',
+    padding: 5
   }
 });
 
@@ -252,33 +255,40 @@ export const DrawerContext = React.createContext({ drawerRef: null });
         <Tab.Navigator 
           initialRouteName={'WalletTabHome'}
           backBehavior='none'
-          tabBarOptions={{ style: route_name == "WalletTabHome" ? styles.tabbar : styles.tabbar2, showLabel: false,  tabStyle:{flex: 1, flexDirection: "row", 
+          tabBarOptions={{ style: route_name == "WalletTabHome" ? styles.tabbar : styles.tabbar2,
+          showLabel: false,  
+          tabStyle:{flex: 1, flexDirection: "row", 
           alignSelf: "center", alignContent: "center", justifyContent: "center", marginBottom: 25 }}}
           screenOptions={({ route }) => ({
-            
+          
             tabBarIcon: ({ focused, color, size, display }) => {
-              let iconName; color = "white"; size = 50;
+              let iconName; color = "white"; size = 55;
+
+              let style_image = { width: size, height: size, marginBottom: 20 }
+              let focused_style = {width: size, height: size, marginBottom: 25}
+
               switch(route.name){
                 case Routes.BROWSER_TAB_HOME:
                   //return <Icon name={iconName} size={size} color={color} />;
-                  return <Image source={require("../../../images/send.png")} style={{ width: size, height: size }}/>;
+                  
+                  return <Image source={require("../../../images/send.png")} style={focused ? focused_style : style_image}/>;
                 case 'ExplorerView':
                   iconName = focused ? 'eye' : 'eye-outline';
                   //return <Icon name={iconName} size={size} color={color} />;
-                  return <Image source={require("../../../images/send.png")} style={{ width: size, height: size }}/>;
+                  return <Image source={require("../../../images/send.png")} style={focused ? focused_style : style_image}/>;
                 case 'Receive':
                   iconName = 'google-chrome';
                   //return <Icon name={iconName} size={size} color={color} />;
-                  return <Image source={require("../../../images/receive.png")} style={{ width: size, height: size }}/>;
+                  return <Image source={require("../../../images/receive.png")} style={focused ? focused_style : style_image}/>;
                 case 'WalletTabHome':
                   iconName = focused ? 'home' : 'home-outline';
-                  return <Image source={require("../../../images/home.png")} style={{ width: size, height: size }}/>;
+                  return <Image source={require("../../../images/home.png")} style={focused ? focused_style : style_image}/>;
                 case 'TransactionsHome':
                   iconName = 'format-list-bulleted';
-                  return <Image source={require("../../../images/history.png")} style={{ width: size, height: size }}/>;
+                  return <Image source={require("../../../images/history.png")} style={focused ? focused_style : style_image}/>;
                 case 'SettingsView':
                   iconName = focused ? 'md-settings' : 'ios-settings';
-                  return <Image source={require("../../../images/settings.png")} style={{ width: size, height: size }}/>;
+                  return <Image source={require("../../../images/settings.png")} style={focused ? focused_style : style_image}/>;
                 }
               
             },
