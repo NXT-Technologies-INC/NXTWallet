@@ -57,7 +57,6 @@ const createStyles = (colors) =>
     },
     wrapper: {
       paddingTop: 20,
-      paddingHorizontal: 20,
       paddingBottom: 0,
       alignItems: 'center',
     },
@@ -65,7 +64,8 @@ const createStyles = (colors) =>
       justifyContent: 'center',
       alignItems: 'center',
       textAlign: 'center',
-      width: "100%"
+      width: "60%",
+      backgroundColor: 'black'
     },
     accountRounded: {
       alignItems: 'center',
@@ -78,19 +78,23 @@ const createStyles = (colors) =>
       textAlign: 'center',
       paddingTop: 7,
       marginTop: 8,
-      marginBottom: 5 
+      marginBottom: 5 ,
+      backgroundColor: 'black'
     },
     label: {
       fontSize: 24,
       textAlign: 'center',
       ...fontStyles.normal,
       color: colors.text.default,
-      fontFamily: "Poppins-Bold"
+      fontFamily: "Poppins-Bold",
+      backgroundColor: 'black'
     },
     labelInput: {
+      backgroundColor: 'black',
       marginBottom: Device.isAndroid() ? -10 : 0,
     },
     labelWrapper: {
+      backgroundColor: 'black',
       flexDirection: 'row',
     },
     tag: {
@@ -103,6 +107,7 @@ const createStyles = (colors) =>
       borderColor: colors.text.default,
       height: 28,
       borderRadius: 14,
+      backgroundColor: 'black',
     },
     tagText: {
       fontSize: 12,
@@ -110,6 +115,7 @@ const createStyles = (colors) =>
       minWidth: 32,
       textAlign: 'center',
       color: colors.text.default,
+      backgroundColor: 'black',
     },
     addressWrapper: {
       backgroundColor: "#505050",
@@ -131,7 +137,8 @@ const createStyles = (colors) =>
       fontSize: 24,
       color: "white",
       ...fontStyles.normal,
-      fontFamily: "Poppins-Bold"
+      fontFamily: "Poppins-Bold",
+      backgroundColor: 'black',
     },
     symbolETH: {
       fontSize: 24,
@@ -145,7 +152,8 @@ const createStyles = (colors) =>
       ...fontStyles.normal,
       flexDirection: "row",
       textAlign: "center",
-      fontFamily: "Poppins-Bold"
+      fontFamily: "Poppins-Bold",
+      backgroundColor: 'black',
     },
     identiconBorder: {
       borderRadius: 80,
@@ -165,7 +173,8 @@ const createStyles = (colors) =>
       justifyContent: 'space-evenly',
       alignItems: 'flex-start',
       flexDirection: 'row',
-      width: "100%"
+      width: "100%",
+      backgroundColor: 'black'
     },
     ethLogo: {
       marginTop: -15,
@@ -434,6 +443,14 @@ class AccountOverview extends PureComponent {
           contentContainerStyle={styles.wrapper}
           testID={'account-overview'}
         >
+
+            <View style={{flex: 3, alignContent: "flex-start", marginTop: 15}}>
+                <NetworkMainAssetLogo
+                  big
+                  style={styles.ethLogo}
+                  testID={'eth-logo'}
+                />
+            </View>
           <View style={styles.info} ref={this.mainView}>
             {/*
             <TouchableOpacity
@@ -451,13 +468,7 @@ class AccountOverview extends PureComponent {
             */}
             {/*          */}
 
-            <View style={{flex: 3, alignContent: "flex-start", marginTop: 15}}>
-                <NetworkMainAssetLogo
-                  big
-                  style={styles.ethLogo}
-                  testID={'eth-logo'}
-                />
-            </View>
+            
             <View
               ref={this.editableLabelRef}
               style={styles.data}
@@ -534,7 +545,9 @@ class AccountOverview extends PureComponent {
                   />
                 </TouchableOpacity>
             {/*          */}
-            <View style={styles.actions}>
+            
+          </View>
+          <View style={styles.actions}>
               {
                 <AssetActionButton
                   icon="stake"
@@ -566,7 +579,6 @@ class AccountOverview extends PureComponent {
               )}
               
             </View>
-          </View>
         </ScrollView>
       </View>
     );

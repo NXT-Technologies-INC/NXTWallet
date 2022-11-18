@@ -1,5 +1,9 @@
 import React, { useRef, useState } from 'react';
 import { Image, StyleSheet } from 'react-native';
+import Svg, {
+  Use,
+  Image as SvgImage,
+} from 'react-native-svg';
 import { createStackNavigator } from '@react-navigation/stack';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import Browser from '../../Views/Browser';
@@ -262,10 +266,10 @@ export const DrawerContext = React.createContext({ drawerRef: null });
           screenOptions={({ route }) => ({
           
             tabBarIcon: ({ focused, color, size, display }) => {
-              let iconName; color = "white"; size = 55;
+              let iconName; color = "white"; size = 50;
 
-              let style_image = { width: size, height: size, marginBottom: 20 }
-              let focused_style = {width: size, height: size, marginBottom: 25}
+              let style_image = { width: size, height: size, marginBottom: 20, tintColor: "white" }
+              let focused_style = {width: size, height: size, marginBottom: 25, tintColor: importedColors.primary.default}
 
               switch(route.name){
                 case Routes.BROWSER_TAB_HOME:

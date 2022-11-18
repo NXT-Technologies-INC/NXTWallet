@@ -7,6 +7,7 @@ import {
   StyleSheet,
   Text,
   InteractionManager,
+  ImageBackground
 } from 'react-native';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
@@ -81,12 +82,10 @@ const createStyles = (colors) =>
     wrapper: {
       flex: 1,
       width: 315,
-      backgroundColor: colors.background.default,
     },
     header: {
       paddingTop: Device.isIphoneX() ? 60 : 24,
-      backgroundColor: colors.background.alternative,
-      height: Device.isIphoneX() ? 110 : 74,
+      height: Device.isIphoneX() ? 85 : 85,
       flexDirection: 'column',
       paddingBottom: 0,
     },
@@ -98,8 +97,8 @@ const createStyles = (colors) =>
       paddingTop: Device.isAndroid() ? 10 : 0,
     },
     metamaskFox: {
-      height: 27,
-      width: 27,
+      height: 50,
+      width: 50,
       marginRight: 15,
     },
     metamaskName: {
@@ -110,7 +109,6 @@ const createStyles = (colors) =>
     },
     account: {
       flex: 1,
-      backgroundColor: colors.background.alternative,
     },
     accountBgOverlay: {
       borderBottomColor: colors.border.muted,
@@ -133,11 +131,12 @@ const createStyles = (colors) =>
       paddingRight: 17,
     },
     accountName: {
-      fontSize: 20,
+      fontSize: 16,
       lineHeight: 24,
       marginBottom: 5,
       color: colors.text.default,
       ...fontStyles.normal,
+      fontFamily: "Poppins-Bold"
     },
     caretDown: {
       textAlign: 'right',
@@ -147,11 +146,23 @@ const createStyles = (colors) =>
       color: colors.icon.alternative,
     },
     accountBalance: {
-      fontSize: 14,
-      lineHeight: 17,
+      fontSize: 22,
+      lineHeight: 24,
       marginBottom: 5,
       color: colors.text.default,
       ...fontStyles.normal,
+      fontFamily: "Poppins-SemiBold"
+    },
+    addressWrapper: {
+      lineHeight: 17,
+      backgroundColor: "#505050",
+      borderWidth: 1.5,
+      borderRadius: 40,
+      marginTop: 5,
+      marginBottom: 5,
+      paddingVertical: 7,
+      paddingHorizontal: 15,
+      width: 120
     },
     accountAddress: {
       fontSize: 12,
@@ -229,6 +240,7 @@ const createStyles = (colors) =>
       fontSize: 16,
       color: colors.text.alternative,
       ...fontStyles.normal,
+      fontFamily: "Poppins-Bold"
     },
     menuItemWarningText: {
       color: colors.text.default,
@@ -996,8 +1008,6 @@ class DrawerView extends PureComponent {
           action: this.goToTransactionHistory,
           routeNames: ['TransactionsView'],
         },
-      ],
-      [
         {
           name: strings('drawer.share_address'),
           icon: this.getMaterialIcon('share-variant'),
@@ -1011,8 +1021,6 @@ class DrawerView extends PureComponent {
           icon: this.getIcon('eye'),
           action: this.viewInEtherscan,
         },
-      ],
-      [
         {
           name: strings('drawer.settings'),
           icon: this.getFeatherIcon('settings'),
@@ -1216,6 +1224,13 @@ class DrawerView extends PureComponent {
 
     return (
       <View style={styles.wrapper} testID={'drawer-screen'}>
+        <ImageBackground 
+          source={require("../../../images/BACKGROUND.jpg")}
+          style={{ flex: 1,
+            width: null,
+            height: null,
+            }}
+          >
         <ScrollView>
           <View style={styles.header}>
             <View style={styles.metamaskLogo}>
@@ -1224,24 +1239,17 @@ class DrawerView extends PureComponent {
                 style={styles.metamaskFox}
                 resizeMethod={'auto'}
               />
+              {/* 
               <Image
                 source={metamask_name}
                 style={styles.metamaskName}
                 resizeMethod={'auto'}
               />
+              */}
             </View>
           </View>
           <View style={styles.account}>
             <View style={styles.accountBgOverlay}>
-              <TouchableOpacity
-                style={styles.identiconWrapper}
-                onPress={this.toggleAccountsModal}
-                testID={'navbar-account-identicon'}
-              >
-                <View style={styles.identiconBorder}>
-                  <Identicon diameter={48} address={selectedAddress} />
-                </View>
-              </TouchableOpacity>
               <TouchableOpacity
                 style={styles.accountInfo}
                 onPress={this.toggleAccountsModal}
@@ -1253,14 +1261,20 @@ class DrawerView extends PureComponent {
                   </Text>
                   <Icon name="caret-down" size={24} style={styles.caretDown} />
                 </View>
+                </TouchableOpacity>
                 <Text style={styles.accountBalance}>{fiatBalanceStr}</Text>
+                <TouchableOpacity
+                  style={styles.addressWrapper}
+                  onPress={this.copyAccountToClipboard}
+                >
                 <EthereumAddress
                   address={account.address}
                   style={styles.accountAddress}
                   type={'short'}
                 />
+                </TouchableOpacity>
                 {this.renderTag()}
-              </TouchableOpacity>
+              
             </View>
           </View>
           <View style={styles.buttons}>
@@ -1458,6 +1472,7 @@ class DrawerView extends PureComponent {
           />
         </Modal>
         {this.renderProtectModal()}
+        </ImageBackground>
       </View>
     );
   }
