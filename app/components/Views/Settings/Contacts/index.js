@@ -1,5 +1,5 @@
 import React, { PureComponent } from 'react';
-import { SafeAreaView, StyleSheet } from 'react-native';
+import { SafeAreaView, StyleSheet, Text } from 'react-native';
 import PropTypes from 'prop-types';
 import { strings } from '../../../../../locales/i18n';
 import { getNavigationOptionsTitle } from '../../../UI/Navbar';
@@ -19,6 +19,7 @@ const createStyles = (colors) =>
     addContact: {
       marginHorizontal: 24,
       marginBottom: 16,
+      textAlign: 'center'
     },
   });
 
@@ -137,7 +138,7 @@ class Contacts extends PureComponent {
           onPress={this.goToAddContact}
           testID={'add-contact-button'}
         >
-          {strings('address_book.add_contact')}
+          <Text style={{textTransform: 'capitalize', textAlign: 'center', fontFamily: 'Poppins-Bold'}}>{strings('address_book.add_contact')}</Text>
         </StyledButton>
         <ActionSheet
           ref={this.createActionSheetRef}

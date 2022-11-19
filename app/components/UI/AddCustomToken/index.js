@@ -28,13 +28,14 @@ const createStyles = (colors) =>
       flex: 1,
     },
     rowWrapper: {
-      padding: 20,
+      paddingHorizontal: 20,
     },
     textInput: {
       borderWidth: 1,
       borderRadius: 4,
       borderColor: colors.border.default,
-      padding: 16,
+      paddingVertical: 5,
+      paddingHorizontal: 15,
       ...fontStyles.normal,
       color: colors.text.default,
       fontFamily: "Poppins-Regular"

@@ -7,7 +7,7 @@ import {
   StyleSheet,
   Text,
   InteractionManager,
-  ImageBackground
+  ImageBackground,
 } from 'react-native';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
@@ -111,8 +111,6 @@ const createStyles = (colors) =>
       flex: 1,
     },
     accountBgOverlay: {
-      borderBottomColor: colors.border.muted,
-      borderBottomWidth: 1,
       padding: 17,
     },
     identiconWrapper: {
@@ -133,7 +131,8 @@ const createStyles = (colors) =>
     accountName: {
       fontSize: 16,
       lineHeight: 24,
-      marginBottom: 5,
+      marginBottom: 15,
+      marginTop: -5,
       color: colors.text.default,
       ...fontStyles.normal,
       fontFamily: "Poppins-Bold"
@@ -141,7 +140,7 @@ const createStyles = (colors) =>
     caretDown: {
       textAlign: 'right',
       marginLeft: 7,
-      marginTop: 3,
+      marginTop: -4,
       fontSize: 18,
       color: colors.icon.alternative,
     },
@@ -154,15 +153,17 @@ const createStyles = (colors) =>
       fontFamily: "Poppins-SemiBold"
     },
     addressWrapper: {
-      lineHeight: 17,
       backgroundColor: "#505050",
       borderWidth: 1.5,
-      borderRadius: 40,
-      marginTop: 5,
-      marginBottom: 5,
-      paddingVertical: 7,
+      borderRadius: 30,
+      marginTop: 0,
+      marginBottom: 0,
+      paddingVertical: 3,
       paddingHorizontal: 15,
-      width: 120
+      width: 200,
+      textAlign: 'center',
+      alignItems: 'center',
+      justifyContent: 'center'
     },
     accountAddress: {
       fontSize: 12,
@@ -173,30 +174,33 @@ const createStyles = (colors) =>
     buttons: {
       flexDirection: 'row',
       alignItems: 'center',
-      justifyContent: 'center',
-      borderBottomColor: colors.border.muted,
-      borderBottomWidth: 1,
-      padding: 15,
+      paddingVertical: 5,
+      paddingHorizontal: 15
     },
     button: {
-      flex: 1,
       flexDirection: 'row',
       alignItems: 'center',
       justifyContent: 'center',
       borderRadius: 30,
       borderWidth: 1.5,
+      paddingHorizontal: 8,
+      paddingVertical: 0,
+      paddingLeft: 20,
+      paddingRight: 20,
     },
     leftButton: {
-      marginRight: 5,
+      marginRight: 3,
     },
     rightButton: {
-      marginLeft: 5,
+      marginLeft: 3,
     },
     buttonText: {
-      paddingLeft: 8,
-      fontSize: 15,
-      color: colors.primary.default,
+      paddingTop: 3,
+      fontSize: 18,
+      color: "black",
       ...fontStyles.normal,
+      textTransform: 'uppercase',
+      fontFamily: "Poppins-Regular"
     },
     buttonContent: {
       flexDirection: 'row',
@@ -225,10 +229,7 @@ const createStyles = (colors) =>
       paddingLeft: 17,
     },
     selectedRoute: {
-      backgroundColor: colors.primary.muted,
-      marginRight: 10,
-      borderTopRightRadius: 20,
-      borderBottomRightRadius: 20,
+      backgroundColor: "rgba(255,255,255, .3)",
     },
     selectedName: {
       color: colors.primary.default,
@@ -236,7 +237,7 @@ const createStyles = (colors) =>
     menuItemName: {
       flex: 1,
       paddingHorizontal: 15,
-      paddingTop: 2,
+      paddingTop: 8,
       fontSize: 16,
       color: colors.text.alternative,
       ...fontStyles.normal,
@@ -979,19 +980,21 @@ class DrawerView extends PureComponent {
       blockExplorer = findBlockExplorerForRpc(rpcTarget, frequentRpcList);
       blockExplorerName = getBlockExplorerName(blockExplorer);
     }
+    const iconSize = 40;
+    const iconStyle = {width: iconSize, height: iconSize}
     return [
       [
         {
           name: strings('drawer.browser'),
-          icon: this.getIcon('globe'),
-          selectedIcon: this.getSelectedIcon('globe'),
+          icon: <Image source={require("../../../images/browser_menu.png")} style={iconStyle}/>,
+          selectedIcon: <Image source={require("../../../images/browser_menu.png")} style={iconStyle}/>,
           action: this.goToBrowser,
           routeNames: ['BrowserView', 'AddBookmark'],
         },
         {
           name: strings('drawer.wallet'),
-          icon: this.getImageIcon('wallet'),
-          selectedIcon: this.getSelectedImageIcon('wallet'),
+          icon: <Image source={require("../../../images/wallet_menu.png")} style={iconStyle}/>,
+          selectedIcon: <Image source={require("../../../images/wallet_menu.png")} style={iconStyle}/>,
           action: this.showWallet,
           routeNames: [
             'Wallet',
@@ -1003,14 +1006,14 @@ class DrawerView extends PureComponent {
         },
         {
           name: strings('drawer.transaction_activity'),
-          icon: this.getFeatherIcon('list'),
-          selectedIcon: this.getSelectedFeatherIcon('list'),
+          icon: <Image source={require("../../../images/activity_menu.png")} style={iconStyle}/>,
+          selectedIcon: <Image source={require("../../../images/activity_menu.png")} style={iconStyle}/>,
           action: this.goToTransactionHistory,
           routeNames: ['TransactionsView'],
         },
         {
           name: strings('drawer.share_address'),
-          icon: this.getMaterialIcon('share-variant'),
+          icon: <Image source={require("../../../images/share_menu.png")} style={iconStyle}/>,
           action: this.onShare,
         },
         {
@@ -1018,12 +1021,12 @@ class DrawerView extends PureComponent {
             (blockExplorer &&
               `${strings('drawer.view_in')} ${blockExplorerName}`) ||
             strings('drawer.view_in_etherscan'),
-          icon: this.getIcon('eye'),
+          icon: <Image source={require("../../../images/view_menu.png")} style={iconStyle}/>,
           action: this.viewInEtherscan,
         },
         {
           name: strings('drawer.settings'),
-          icon: this.getFeatherIcon('settings'),
+          icon: <Image source={require("../../../images/settings_menu.png")} style={iconStyle}/>,
           warning: strings('drawer.settings_warning_short'),
           action: this.showSettings,
         },
@@ -1040,7 +1043,7 @@ class DrawerView extends PureComponent {
         },*/
         {
           name: strings('drawer.lock'),
-          icon: this.getFeatherIcon('log-out'),
+          icon: <Image source={require("../../../images/lock_menu.png")} style={iconStyle}/>,
           action: this.logout,
         },
       ],
@@ -1279,39 +1282,40 @@ class DrawerView extends PureComponent {
           </View>
           <View style={styles.buttons}>
             <StyledButton
-              type={'rounded-normal'}
+              type="confirm"
               onPress={this.onSend}
               containerStyle={[styles.button, styles.leftButton]}
               testID={'drawer-send-button'}
             >
               <View style={styles.buttonContent}>
-                <MaterialIcon
-                  name={'arrow-top-right'}
-                  size={22}
-                  color={colors.primary.default}
-                  style={styles.buttonIcon}
-                />
                 <Text style={styles.buttonText}>
                   {strings('drawer.send_button')}
                 </Text>
+                <MaterialIcon
+                  name={'arrow-top-right'}
+                  size={22}
+                  color={"black"}
+                  style={styles.buttonIcon}
+                />
               </View>
             </StyledButton>
             <StyledButton
-              type={'rounded-normal'}
+              type="confirm"
               onPress={this.onReceive}
               containerStyle={[styles.button, styles.rightButton]}
               testID={'drawer-receive-button'}
             >
               <View style={styles.buttonContent}>
-                <MaterialIcon
-                  name={'keyboard-tab'}
-                  size={22}
-                  color={colors.primary.default}
-                  style={[styles.buttonIcon, styles.buttonReceive]}
-                />
+                
                 <Text style={styles.buttonText}>
                   {strings('drawer.receive_button')}
                 </Text>
+                <MaterialIcon
+                  name={'keyboard-tab'}
+                  size={22}
+                  color={"black"}
+                  style={[styles.buttonIcon, styles.buttonReceive]}
+                />
               </View>
             </StyledButton>
           </View>

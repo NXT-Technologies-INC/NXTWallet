@@ -87,7 +87,8 @@ const createStyles = (colors) =>
       ...fontStyles.normal,
       color: colors.text.default,
       fontFamily: "Poppins-Bold",
-      backgroundColor: 'black'
+      backgroundColor: 'black',
+      lineHeight: 26
     },
     labelInput: {
       backgroundColor: 'black',
@@ -120,11 +121,15 @@ const createStyles = (colors) =>
     addressWrapper: {
       backgroundColor: "#505050",
       borderWidth: 1.5,
-      borderRadius: 40,
+      borderRadius: 10,
       marginTop: 15,
       marginBottom: 20,
-      paddingVertical: 7,
+      paddingVertical: 3,
       paddingHorizontal: 15,
+      width: 200,
+      textAlign: 'center',
+      alignItems: 'center',
+      justifyContent: 'center'
     },
     address: {
       fontSize: 10,
@@ -168,12 +173,21 @@ const createStyles = (colors) =>
       paddingHorizontal: Device.isIos() ? 5 : 5,
       top: Device.isIos() ? 0 : -2,
     },
-    actions: {
+    actionsContainer:{
+      paddingTop: 30,
       flex: 1,
       justifyContent: 'space-evenly',
       alignItems: 'flex-start',
       flexDirection: 'row',
       width: "100%",
+      backgroundColor: 'black',
+      paddingBottom: 30
+    },
+    actions: {
+      justifyContent: 'space-evenly',
+      alignItems: 'flex-start',
+      flexDirection: 'row',
+      width: 250,
       backgroundColor: 'black'
     },
     ethLogo: {
@@ -508,8 +522,8 @@ class AccountOverview extends PureComponent {
                         styles.onboardingWizardLabel,
                         {
                           borderColor: onboardingWizard
-                            ? colors.primary.default
-                            : colors.background.default,
+                            ? 'black'
+                            : 'black',
                         },
                       ]}
                       numberOfLines={1}
@@ -529,7 +543,7 @@ class AccountOverview extends PureComponent {
               )}
             </View>
 
-            <View style={{flex: 3, alignContent: "flex-start"}}>
+            <View style={{flex: 3, alignContent: "flex-start", marginTop: -5}}>
                   <View style={{flexDirection: "row"}}><Text style={styles.amountETH}>{this.props.ethAsset[0].balance}</Text><Text style={styles.symbolETH}>  {this.props.ethAsset[0].symbol}</Text></View>
                   <Text style={styles.amountFiat}>{"≈" +fiatBalance}</Text>
                 </View>
@@ -547,6 +561,7 @@ class AccountOverview extends PureComponent {
             {/*          */}
             
           </View>
+          <View style={styles.actionsContainer}>
           <View style={styles.actions}>
               {
                 <AssetActionButton
@@ -578,6 +593,7 @@ class AccountOverview extends PureComponent {
                 />
               )}
               
+            </View>
             </View>
         </ScrollView>
       </View>

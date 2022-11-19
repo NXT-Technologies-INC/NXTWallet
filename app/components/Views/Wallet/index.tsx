@@ -39,21 +39,28 @@ import Routes from '../../../constants/navigation/Routes';
 const createStyles = (colors: any) =>
   StyleSheet.create({
     wrapper: {
-      flex: 1,
+      flex: 1
     },
     tabUnderlineStyle: {
-      height: 2,
+      height: 3,
+      marginBottom: 10,
+      backgroundColor: colors.primary.default
+    },
+    scrollableTabView:{
+      
     },
     tabStyle: {
       paddingBottom: 0,
+      backgroundColor: "black",
     },
     tabBar: {
-      borderColor: colors.border.muted,
+      borderColor: 'transparent',
     },
     textStyle: {
-      fontSize: 12,
+      fontSize: 16,
       letterSpacing: 0.5,
       ...(fontStyles.bold as any),
+      fontFamily: "Poppins-Regular"
     },
     loader: {
       flex: 1,
@@ -265,11 +272,13 @@ const Wallet = ({ navigation }: any) => {
           navigation={navigation}
           onRef={onRef}
           ethAsset={asset}
+          
         />
         <ScrollableTabView accessibilityComponentType={undefined} accessibilityTraits={undefined}
           renderTabBar={renderTabBar}
           // eslint-disable-next-line react/jsx-no-bind
           onChangeTab={onChangeTab}
+          style={styles.scrollableTabView}
         >
           <Tokens
             tabLabel={strings('wallet.tokens')}

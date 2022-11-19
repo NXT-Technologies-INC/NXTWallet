@@ -7,6 +7,7 @@ import {
   View,
   ActivityIndicator,
   TouchableWithoutFeedback,
+  Text
 } from 'react-native';
 import { baseStyles } from '../../../styles/common';
 import { strings } from '../../../../locales/i18n';
@@ -22,6 +23,8 @@ const styles = StyleSheet.create({
   },
   button: {
     flex: 1,
+    paddingVertical: 5,
+    height: 40
   },
   cancel: {
     marginRight: 8,
@@ -77,7 +80,7 @@ export default function ActionView({
           {showCancelButton && (
             <StyledButton
               testID={cancelTestID}
-              type={confirmButtonMode === 'sign' ? 'signingCancel' : 'cancel'}
+              type={confirmButtonMode}
               onPress={onCancelPress}
               containerStyle={[styles.button, styles.cancel]}
               disabled={confirmed}
@@ -90,9 +93,10 @@ export default function ActionView({
               testID={confirmTestID}
               type={confirmButtonMode}
               onPress={onConfirmPress}
-              containerStyle={[styles.button, styles.confirm]}
+              containerStyle={[styles.button, styles.confirm, {backgroundColor: colors.primary.default, color:'black'}]}
               disabled={confirmed || confirmDisabled}
             >
+              <Text style={{color: 'black', fontFamily: "Poppins-SemiBold", fontSize: 16, textAlign: 'center', paddingTop: 1}}>
               {confirmed ? (
                 <ActivityIndicator
                   size="small"
@@ -101,6 +105,7 @@ export default function ActionView({
               ) : (
                 confirmText
               )}
+              </Text>
             </StyledButton>
           )}
         </View>

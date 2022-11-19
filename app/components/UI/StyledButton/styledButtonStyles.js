@@ -4,7 +4,9 @@ import { colors as importedColors, fontStyles } from '../../../styles/common';
 const createStyles = (colors) =>
   StyleSheet.create({
     container: {
-      padding: 15,
+      
+      paddingVertical: 5,
+      paddingHorizontal: 15,
       borderRadius: 100,
       justifyContent: 'center',
     },

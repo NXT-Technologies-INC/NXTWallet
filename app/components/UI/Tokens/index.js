@@ -78,21 +78,24 @@ const createStyles = (colors) =>
       justifyContent: 'center',
     },
     balance: {
-      fontSize: 16,
+      fontSize: 18,
       color: colors.text.default,
       ...fontStyles.normal,
       textTransform: 'uppercase',
+      fontFamily: "Poppins-Bold"
     },
     testNetBalance: {
-      fontSize: 16,
+      fontSize: 18,
       color: colors.text.default,
       ...fontStyles.normal,
+      fontFamily: "Poppins-Bold"
     },
     balanceFiat: {
-      fontSize: 12,
+      fontSize: 18,
       color: colors.text.alternative,
       ...fontStyles.normal,
       textTransform: 'uppercase',
+      fontFamily: "Poppins-Regular"
     },
     balanceFiatTokenError: {
       textTransform: 'capitalize',
@@ -108,6 +111,12 @@ const createStyles = (colors) =>
       color: colors.text.alternative,
       marginBottom: 8,
       fontSize: 14,
+    },
+    arrow: {
+      position: 'absolute',
+      right: 15,
+      top: 10,
+      fontSize: 26
     },
   });
 
@@ -285,19 +294,21 @@ class Tokens extends PureComponent {
           <Text
             style={isTestNet(chainId) ? styles.testNetBalance : styles.balance}
           >
-            {mainBalance}
-          </Text>
-          {secondaryBalance ? (
+            {mainBalance}{" "}
+            {secondaryBalance ? (
             <Text
               style={[
                 styles.balanceFiat,
                 asset?.balanceError && styles.balanceFiatTokenError,
               ]}
             >
-              {secondaryBalance}
+              | {secondaryBalance}
             </Text>
           ) : null}
+          </Text>
+          
         </View>
+        <Text style={styles.arrow}>{">"}</Text>
       </AssetElement>
     );
   };
@@ -372,7 +383,9 @@ class Tokens extends PureComponent {
 
     return (
       <View>
+        <View style={{backgroundColor: "black"}}>
         {tokensToDisplay.map((item) => this.renderItem(item))}
+        </View>
         {this.renderTokensDetectedSection()}
         {this.renderFooter()}
       </View>

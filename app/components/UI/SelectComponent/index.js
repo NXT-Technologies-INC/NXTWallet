@@ -31,7 +31,7 @@ const createStyles = (colors) =>
     selectedOption: {
       flex: 1,
       alignSelf: 'flex-start',
-      color: colors.text.default,
+      color: colors.primary.default,
       fontSize: 14,
       paddingHorizontal: 15,
       paddingTop: 10,
@@ -181,7 +181,7 @@ export default class SelectComponent extends PureComponent {
             <Icon
               name={'arrow-drop-down'}
               size={24}
-              color={colors.icon.default}
+              color={colors.primary.default}
               style={styles.iconDropdown}
             />
           </View>

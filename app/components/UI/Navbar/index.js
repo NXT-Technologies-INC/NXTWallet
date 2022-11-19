@@ -178,14 +178,24 @@ export function getNavigationOptionsTitle(
   themeColors,
   navigationPopEvent,
 ) {
+
+  let width_proportion = '80%';
+  const width_proportion_icon = '20%';
+
   const innerStyles = StyleSheet.create({
     headerTitleStyle: {
       fontSize: 20,
       color: themeColors.text.default,
       ...fontStyles.normal,
+      fontFamily: "Poppins-Bold",
+      textAlign: 'center',
+      width: width_proportion,
+      color: "#fff",
+      marginTop: 8
     },
     headerIcon: {
-      color: themeColors.primary.default,
+      color: '#fff',
+      width: width_proportion_icon,
     },
     headerStyle: {
       backgroundColor: themeColors.background.default,
@@ -218,7 +228,7 @@ export function getNavigationOptionsTitle(
           {...generateTestId(Platform, NETWORK_BACK_ARROW_BUTTON_ID)}
         >
           <IonicIcon
-            name={Device.isAndroid() ? 'md-arrow-back' : 'ios-arrow-back'}
+            name={Device.isAndroid() ? 'ios-arrow-dropleft' : 'ios-arrow-dropleft'}
             size={Device.isAndroid() ? 24 : 28}
             style={innerStyles.headerIcon}
           />
@@ -833,6 +843,8 @@ export function getClosableNavigationOptions(
   navigation,
   themeColors,
 ) {
+  const width_text = '100%';
+  const width_icon = '0%';
   const innerStyles = StyleSheet.create({
     headerButtonText: {
       color: themeColors.primary.default,
@@ -841,6 +853,7 @@ export function getClosableNavigationOptions(
     },
     headerIcon: {
       color: themeColors.primary.default,
+      width: width_icon,
     },
     headerStyle: {
       backgroundColor: themeColors.background.default,
@@ -851,6 +864,9 @@ export function getClosableNavigationOptions(
       fontSize: 20,
       ...fontStyles.normal,
       color: themeColors.text.default,
+      fontFamily: "Poppins-Bold",
+      textAlign: 'center',
+      width: width_text,
     },
   });
   function navigationPop() {
@@ -859,6 +875,7 @@ export function getClosableNavigationOptions(
   return {
     title,
     headerTitleStyle: innerStyles.headerTitleStyle,
+    /*
     headerLeft: () =>
       Device.isIos() ? (
         <TouchableOpacity
@@ -880,7 +897,7 @@ export function getClosableNavigationOptions(
             style={innerStyles.headerIcon}
           />
         </TouchableOpacity>
-      ),
+      ),*/
     headerStyle: innerStyles.headerStyle,
     headerTintColor: themeColors.primary.default,
   };

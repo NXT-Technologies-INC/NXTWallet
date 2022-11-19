@@ -94,12 +94,14 @@ const styles = StyleSheet.create({
     borderTopWidth: 0,
     position: "absolute",
     backgroundColor: 'transparent',
-    padding: 5
+    padding: 5,
+    zIndex: 1
   },
   tabbar2: {
     height: 65,
     backgroundColor: '#202020',
-    padding: 5
+    padding: 5,
+    zIndex: 1
   }
 });
 

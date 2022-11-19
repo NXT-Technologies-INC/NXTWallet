@@ -41,7 +41,7 @@ const createStyles = (colors) =>
       marginTop: 8,
       marginHorizontal: 3,
       color: "white",
-      fontSize: 14,
+      fontSize: 11,
     },
     receive: {
       right: Device.isIos() ? 1 : 0,
