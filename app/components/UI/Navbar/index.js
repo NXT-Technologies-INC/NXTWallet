@@ -129,12 +129,10 @@ export default function getNavbarOptions(
 ) {
   const innerStyles = StyleSheet.create({
     headerStyle: {
-      backgroundColor: themeColors.background.default,
-      shadowColor: importedColors.transparent,
-      elevation: 0,
+      backgroundColor: 'transparent',
     },
     headerIcon: {
-      color: themeColors.primary.default,
+      color: "white",
     },
   });
 
@@ -198,7 +196,7 @@ export function getNavigationOptionsTitle(
       width: width_proportion_icon,
     },
     headerStyle: {
-      backgroundColor: themeColors.background.default,
+      backgroundColor: 'transparent',
       shadowColor: importedColors.transparent,
       elevation: 0,
     },
@@ -263,7 +261,7 @@ export function getEditableOptions(title, navigation, route, themeColors) {
       ...fontStyles.normal,
     },
     headerStyle: {
-      backgroundColor: themeColors.background.default,
+      backgroundColor: 'transparent',
       shadowColor: importedColors.transparent,
       elevation: 0,
     },
@@ -332,7 +330,7 @@ export function getPaymentRequestOptionsTitle(
       color: themeColors.primary.default,
     },
     headerStyle: {
-      backgroundColor: themeColors.background.default,
+      backgroundColor: 'transparent',
       shadowColor: importedColors.transparent,
       elevation: 0,
     },
@@ -385,7 +383,7 @@ export function getPaymentRequestOptionsTitle(
 export function getPaymentRequestSuccessOptionsTitle(navigation, themeColors) {
   const innerStyles = StyleSheet.create({
     headerStyle: {
-      backgroundColor: themeColors.background.default,
+      backgroundColor: 'transparent',
       shadowColor: importedColors.transparent,
       elevation: 0,
     },
@@ -431,7 +429,7 @@ export function getTransactionOptionsTitle(
 ) {
   const innerStyles = StyleSheet.create({
     headerStyle: {
-      backgroundColor: themeColors.background.default,
+      backgroundColor: 'transparent',
       shadowColor: importedColors.transparent,
       elevation: 0,
     },
@@ -519,7 +517,7 @@ export function getSendFlowTitle(title, navigation, route, themeColors) {
       ...fontStyles.normal,
     },
     headerStyle: {
-      backgroundColor: themeColors.background.default,
+      backgroundColor: 'transparent',
       shadowColor: importedColors.transparent,
       elevation: 0,
     },
@@ -584,7 +582,7 @@ export function getBrowserViewNavbarOptions(
 ) {
   const innerStyles = StyleSheet.create({
     headerStyle: {
-      backgroundColor: themeColors.background.default,
+      backgroundColor: 'transparent',
       shadowColor: importedColors.transparent,
       elevation: 0,
     },
@@ -688,7 +686,7 @@ export function getOnboardingNavbarOptions(
   const headerLeftHide = headerLeft || route.params?.headerLeft;
   const innerStyles = StyleSheet.create({
     headerStyle: {
-      backgroundColor: themeColors.background.default,
+      backgroundColor: 'transparent',
       shadowColor: importedColors.transparent,
       elevation: 0,
     },
@@ -725,7 +723,7 @@ export function getOnboardingNavbarOptions(
 export function getTransparentOnboardingNavbarOptions(themeColors) {
   const innerStyles = StyleSheet.create({
     headerStyle: {
-      backgroundColor: themeColors.background.default,
+      backgroundColor: 'transparent',
       shadowColor: importedColors.transparent,
       elevation: 0,
     },
@@ -759,7 +757,7 @@ export function getTransparentOnboardingNavbarOptions(themeColors) {
 export function getTransparentBackOnboardingNavbarOptions(themeColors) {
   const innerStyles = StyleSheet.create({
     headerStyle: {
-      backgroundColor: themeColors.background.default,
+      backgroundColor: 'transparent',
       shadowColor: importedColors.transparent,
       elevation: 0,
     },
@@ -795,7 +793,7 @@ export function getTransparentBackOnboardingNavbarOptions(themeColors) {
 export function getOptinMetricsNavbarOptions(themeColors) {
   const innerStyles = StyleSheet.create({
     headerStyle: {
-      backgroundColor: themeColors.background.default,
+      backgroundColor: 'transparent',
       shadowColor: importedColors.transparent,
       elevation: 0,
       height: 100,
@@ -856,7 +854,7 @@ export function getClosableNavigationOptions(
       width: width_icon,
     },
     headerStyle: {
-      backgroundColor: themeColors.background.default,
+      backgroundColor: 'transparent',
       shadowColor: importedColors.transparent,
       elevation: 0,
     },
@@ -929,7 +927,7 @@ export function getWalletNavbarOptions(
 ) {
   const innerStyles = StyleSheet.create({
     headerStyle: {
-      backgroundColor: 'black',
+      backgroundColor: 'transparent',
       shadowColor: importedColors.transparent,
       elevation: 0,
     },
@@ -1045,7 +1043,7 @@ export function getNetworkNavbarOptions(
 ) {
   const innerStyles = StyleSheet.create({
     headerStyle: {
-      backgroundColor: themeColors.background.default,
+      backgroundColor: 'transparent',
       shadowColor: importedColors.transparent,
       elevation: 0,
     },
@@ -1106,7 +1104,7 @@ export function getWebviewNavbar(navigation, route, themeColors) {
       alignItems: 'center',
     },
     headerStyle: {
-      backgroundColor: themeColors.background.default,
+      backgroundColor: 'transparent',
       shadowColor: importedColors.transparent,
       elevation: 0,
     },
@@ -1182,7 +1180,7 @@ export function getPaymentSelectorMethodNavbar(navigation, onPop, themeColors) {
       alignItems: 'center',
     },
     headerStyle: {
-      backgroundColor: themeColors.background.default,
+      backgroundColor: 'transparent',
       shadowColor: importedColors.transparent,
       elevation: 0,
     },
@@ -1225,7 +1223,7 @@ export function getPaymentMethodApplePayNavbar(
       ...fontStyles.normal,
     },
     headerStyle: {
-      backgroundColor: themeColors.background.default,
+      backgroundColor: 'transparent',
       shadowColor: importedColors.transparent,
       elevation: 0,
     },
@@ -1295,7 +1293,7 @@ export function getTransakWebviewNavbar(navigation, route, onPop, themeColors) {
       ...fontStyles.normal,
     },
     headerStyle: {
-      backgroundColor: themeColors.background.default,
+      backgroundColor: 'transparent',
       shadowColor: importedColors.transparent,
       elevation: 0,
     },
@@ -1353,7 +1351,7 @@ export function getSwapsAmountNavbar(navigation, route, themeColors) {
       ...fontStyles.normal,
     },
     headerStyle: {
-      backgroundColor: themeColors.background.default,
+      backgroundColor: 'transparent',
       shadowColor: importedColors.transparent,
       elevation: 0,
     },
@@ -1389,7 +1387,7 @@ export function getSwapsQuotesNavbar(navigation, route, themeColors) {
       color: themeColors.primary.default,
     },
     headerStyle: {
-      backgroundColor: themeColors.background.default,
+      backgroundColor: 'transparent',
       shadowColor: importedColors.transparent,
       elevation: 0,
     },
@@ -1478,7 +1476,7 @@ export function getFiatOnRampAggNavbar(
       ...fontStyles.normal,
     },
     headerStyle: {
-      backgroundColor: themeColors.background.default,
+      backgroundColor: 'transparent',
       shadowColor: importedColors.transparent,
       elevation: 0,
     },

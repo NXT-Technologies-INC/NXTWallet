@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
 import React, { PureComponent } from 'react';
-import { StyleSheet, ScrollView, InteractionManager } from 'react-native';
+import { StyleSheet, ScrollView, InteractionManager, ImageBackground } from 'react-native';
 import SettingsDrawer from '../../UI/SettingsDrawer';
 import { getClosableNavigationOptions } from '../../UI/Navbar';
 import { strings } from '../../../../locales/i18n';
@@ -12,7 +12,6 @@ import { ThemeContext, mockTheme } from '../../../util/theme';
 const createStyles = (colors) =>
   StyleSheet.create({
     wrapper: {
-      backgroundColor: colors.background.default,
       flex: 1,
       paddingLeft: 18,
       zIndex: 99999999999999,
@@ -105,6 +104,16 @@ class Settings extends PureComponent {
     const styles = createStyles(colors);
 
     return (
+      <ImageBackground 
+          source={require("../../../images/BACKGROUND.jpg")}
+          style={{ flex: 1,
+            width: null,
+            height: null,
+            paddingBottom: 70,
+            paddingTop: 100,
+            marginTop: -100
+            }}
+          >
       <ScrollView style={styles.wrapper}>
         <SettingsDrawer
           description={strings('app_settings.general_desc')}
@@ -142,6 +151,7 @@ class Settings extends PureComponent {
           onPress={this.onPressInfo}
         />
       </ScrollView>
+      </ImageBackground>
     );
   };
 }

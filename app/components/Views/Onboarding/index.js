@@ -10,6 +10,7 @@ import {
   Alert,
   Image,
   InteractionManager,
+  ImageBackground
 } from 'react-native';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import StyledButton from '../../UI/StyledButton';
@@ -128,7 +129,6 @@ const createStyles = (colors) =>
       paddingBottom: Device.isIphoneX() ? 20 : 10,
       left: 0,
       right: 0,
-      backgroundColor: importedColors.transparent,
     },
     notificationContainer: {
       flex: 0.1,
@@ -484,12 +484,25 @@ class Onboarding extends PureComponent {
     const { existingUser } = this.state;
     const colors = this.context.colors || mockTheme.colors;
     const styles = createStyles(colors);
+    const removeBackground = {
+      backgroundColor: 'transparent'
+    }
 
     return (
-      <View style={baseStyles.flexGrow} testID={'onboarding-screen'}>
+
+      <ImageBackground 
+          source={require("../../../images/BACKGROUND.jpg")}
+          style={{ flex: 1,
+            width: null,
+            height: null,
+            paddingTop: 100,
+            marginTop: -100
+            }}
+          >
+      <View style={[baseStyles.flexGrow, removeBackground]} testID={'onboarding-screen'}>
         <OnboardingScreenWithBg screen={'c'}>
           <ScrollView
-            style={baseStyles.flexGrow}
+            style={[baseStyles.flexGrow, removeBackground]}
             contentContainerStyle={styles.scroll}
           >
             <View style={styles.wrapper}>
@@ -531,6 +544,7 @@ class Onboarding extends PureComponent {
           onConfirmPress={this.toggleWarningModal}
         />
       </View>
+      </ImageBackground>
     );
   }
 }

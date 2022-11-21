@@ -7,6 +7,7 @@ import {
   TouchableOpacity,
   View,
   TextInput,
+  ImageBackground
 } from 'react-native';
 import { connect } from 'react-redux';
 import Icon from 'react-native-vector-icons/Ionicons';
@@ -27,7 +28,6 @@ import ImageIcons from '../../../UI/ImageIcon';
 const createStyles = (colors) =>
   StyleSheet.create({
     wrapper: {
-      backgroundColor: colors.background.default,
       flex: 1,
       paddingVertical: 12,
       paddingHorizontal: 24,
@@ -349,6 +349,16 @@ class NetworksSettings extends PureComponent {
     const styles = createStyles(colors);
 
     return (
+      <ImageBackground 
+          source={require("../../../../images/BACKGROUND.jpg")}
+          style={{ flex: 1,
+            width: null,
+            height: null,
+            paddingBottom: 70,
+            paddingTop: 100,
+            marginTop: -100
+            }}
+          >
       <View style={styles.wrapper} testID={'networks-screen'}>
         <View style={styles.inputWrapper}>
           <Icon name="ios-search" size={20} color={colors.icon.default} />
@@ -386,7 +396,7 @@ class NetworksSettings extends PureComponent {
           )}
         </ScrollView>
         <StyledButton
-          type="confirm"
+          type="blue"
           onPress={this.onAddNetwork}
           containerStyle={styles.syncConfirm}
           testID={'add-network-button'}
@@ -406,6 +416,7 @@ class NetworksSettings extends PureComponent {
           theme={themeAppearance}
         />
       </View>
+      </ImageBackground>
     );
   }
 }

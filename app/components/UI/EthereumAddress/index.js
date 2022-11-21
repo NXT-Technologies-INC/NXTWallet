@@ -55,7 +55,7 @@ class EthereumAddress extends PureComponent {
   render() {
     return (
       <View style={{flexDirection: "row"}}>
-        <Text style={this.props.style} numberOfLines={1}>
+        <Text style={{color: "white"}} numberOfLines={1}>
           {this.state.address}
         </Text>
         <Feather name={"copy"}

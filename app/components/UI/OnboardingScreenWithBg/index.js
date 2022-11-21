@@ -7,7 +7,6 @@ const createStyles = (colors) =>
   StyleSheet.create({
     flex: {
       flex: 1,
-      backgroundColor: colors.background.default,
     },
     wrapper: {
       top: 0,

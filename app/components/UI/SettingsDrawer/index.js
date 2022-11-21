@@ -10,7 +10,6 @@ import { useTheme } from '../../../util/theme';
 const createStyles = (colors) =>
   StyleSheet.create({
     root: {
-      backgroundColor: colors.background.default,
       borderBottomColor: colors.border.muted,
       borderBottomWidth: 1,
       flexDirection: 'row',

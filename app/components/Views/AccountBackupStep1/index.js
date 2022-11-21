@@ -8,6 +8,7 @@ import {
   StyleSheet,
   BackHandler,
   InteractionManager,
+  ImageBackground
 } from 'react-native';
 import PropTypes from 'prop-types';
 import { fontStyles } from '../../../styles/common';
@@ -33,7 +34,7 @@ import { useTheme } from '../../../util/theme';
 const createStyles = (colors) =>
   StyleSheet.create({
     mainWrapper: {
-      backgroundColor: colors.background.default,
+      paddingTop: 10,
       flex: 1,
     },
     scrollviewWrapper: {
@@ -211,6 +212,15 @@ const AccountBackupStep1 = (props) => {
   const hideWhatIsSeedphrase = () => setWhatIsSeedphraseModal(false);
 
   return (
+    <ImageBackground 
+          source={require("../../../images/BACKGROUND.jpg")}
+          style={{ flex: 1,
+            width: null,
+            height: null,
+            paddingTop: 100,
+            marginTop: -100
+            }}
+          >
     <SafeAreaView style={styles.mainWrapper}>
       <ScrollView
         contentContainerStyle={styles.scrollviewWrapper}
@@ -258,7 +268,7 @@ const AccountBackupStep1 = (props) => {
             <View style={styles.ctaContainer}>
               <StyledButton
                 containerStyle={styles.button}
-                type={'confirm'}
+                type={'blue'}
                 onPress={goNext}
                 testID={'submit-button'}
               >
@@ -287,6 +297,7 @@ const AccountBackupStep1 = (props) => {
         hideWhatIsSeedphrase={hideWhatIsSeedphrase}
       />
     </SafeAreaView>
+    </ImageBackground>
   );
 };
 

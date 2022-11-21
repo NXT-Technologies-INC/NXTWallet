@@ -1,5 +1,5 @@
 import React, { PureComponent } from 'react';
-import { SafeAreaView, StyleSheet, Text } from 'react-native';
+import { SafeAreaView, StyleSheet, Text, ImageBackground } from 'react-native';
 import PropTypes from 'prop-types';
 import { strings } from '../../../../../locales/i18n';
 import { getNavigationOptionsTitle } from '../../../UI/Navbar';
@@ -13,7 +13,6 @@ import { ThemeContext, mockTheme } from '../../../../util/theme';
 const createStyles = (colors) =>
   StyleSheet.create({
     wrapper: {
-      backgroundColor: colors.background.default,
       flex: 1,
     },
     addContact: {
@@ -125,6 +124,16 @@ class Contacts extends PureComponent {
     const styles = createStyles(colors);
 
     return (
+      <ImageBackground 
+          source={require("../../../../images/BACKGROUND.jpg")}
+          style={{ flex: 1,
+            width: null,
+            height: null,
+            paddingBottom: 70,
+            paddingTop: 100,
+            marginTop: -100
+            }}
+          >
       <SafeAreaView style={styles.wrapper} testID={'contacts-screen'}>
         <AddressList
           onlyRenderAddressBook
@@ -133,7 +142,7 @@ class Contacts extends PureComponent {
           onAccountLongPress={this.onAddressLongPress}
         />
         <StyledButton
-          type={'confirm'}
+          type={'blue'}
           containerStyle={styles.addContact}
           onPress={this.goToAddContact}
           testID={'add-contact-button'}
@@ -154,6 +163,7 @@ class Contacts extends PureComponent {
           theme={themeAppearance}
         />
       </SafeAreaView>
+      </ImageBackground>
     );
   };
 }

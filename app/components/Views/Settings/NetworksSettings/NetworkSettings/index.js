@@ -8,6 +8,7 @@ import {
   SafeAreaView,
   Linking,
   TouchableOpacity,
+  ImageBackground
 } from 'react-native';
 import { connect } from 'react-redux';
 import { fontStyles } from '../../../../../styles/common';
@@ -57,7 +58,6 @@ import { themeAppearanceLight } from '../../../../../constants/storage';
 const createStyles = (colors) =>
   StyleSheet.create({
     wrapper: {
-      backgroundColor: colors.background.default,
       flex: 1,
       flexDirection: 'column',
     },
@@ -725,6 +725,16 @@ class NetworkSettings extends PureComponent {
     };
 
     return (
+      <ImageBackground 
+          source={require("../../../../../images/BACKGROUND.jpg")}
+          style={{ flex: 1,
+            width: null,
+            height: null,
+            paddingBottom: 150,
+            paddingTop: 100,
+            marginTop: -100
+            }}
+          >
       <SafeAreaView style={styles.wrapper} testID={RPC_VIEW_CONTAINER_ID}>
         <KeyboardAwareScrollView style={styles.informationCustomWrapper}>
           {!network ? (
@@ -885,6 +895,7 @@ class NetworkSettings extends PureComponent {
           )}
         </KeyboardAwareScrollView>
       </SafeAreaView>
+      </ImageBackground>
     );
   };
 

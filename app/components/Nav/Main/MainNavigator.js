@@ -261,7 +261,7 @@ export const DrawerContext = React.createContext({ drawerRef: null });
         <Tab.Navigator 
           initialRouteName={'WalletTabHome'}
           backBehavior='none'
-          tabBarOptions={{ style: route_name == "WalletTabHome" ? styles.tabbar : styles.tabbar2,
+          tabBarOptions={{ style: styles.tabbar,
           showLabel: false,  
           tabStyle:{flex: 1, flexDirection: "row", 
           alignSelf: "center", alignContent: "center", justifyContent: "center", marginBottom: 25 }}}

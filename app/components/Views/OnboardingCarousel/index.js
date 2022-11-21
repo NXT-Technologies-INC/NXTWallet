@@ -198,6 +198,8 @@ class OnboardingCarousel extends PureComponent {
           style={{ flex: 1,
             width: null,
             height: null,
+            paddingTop: 100,
+            marginTop: -100
             }}
           >
             <View style={styles.wrapper}>

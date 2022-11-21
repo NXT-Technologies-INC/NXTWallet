@@ -8,6 +8,7 @@ import {
   StyleSheet,
   View,
   Alert,
+  ImageBackground
 } from 'react-native';
 import Modal from 'react-native-modal';
 import Share from 'react-native-share';
@@ -39,11 +40,11 @@ import StyledButton from '../StyledButton';
 import ClipboardManager from '../../../core/ClipboardManager';
 import { ThemeContext, mockTheme } from '../../../util/theme';
 import Routes from '../../../constants/navigation/Routes';
+import { Image } from 'react-native-svg';
 
 const createStyles = (colors) =>
   StyleSheet.create({
     wrapper: {
-      backgroundColor: colors.background.default,
       borderTopLeftRadius: 10,
       borderTopRightRadius: 10,
     },
@@ -62,7 +63,6 @@ const createStyles = (colors) =>
       margin: 15,
       padding: 9,
       paddingHorizontal: 15,
-      backgroundColor: colors.background.alternative,
       borderRadius: 30,
     },
     copyButton: {
@@ -251,6 +251,16 @@ class ReceiveRequest extends PureComponent {
     const styles = createStyles(colors);
 
     return (
+      <ImageBackground 
+          source={require("../../../images/BACKGROUND.jpg")}
+          style={{ flex: 1,
+            width: null,
+            height: null,
+            paddingBottom: 70,
+            paddingTop: 100,
+            marginTop: -100
+            }}
+          >
       <SafeAreaView style={styles.wrapper}>
         <ModalDragger />
         <View style={styles.titleWrapper}>
@@ -344,9 +354,9 @@ class ReceiveRequest extends PureComponent {
             </StyledButton>
           </View>
         </View>
-
         <GlobalAlert />
       </SafeAreaView>
+      </ImageBackground>
     );
   }
 }

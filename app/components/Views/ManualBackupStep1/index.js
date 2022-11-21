@@ -9,6 +9,7 @@ import {
   TextInput,
   KeyboardAvoidingView,
   Appearance,
+  ImageBackground
 } from 'react-native';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
@@ -40,7 +41,7 @@ import { ThemeContext, mockTheme } from '../../../util/theme';
 const createStyles = (colors) =>
   StyleSheet.create({
     mainWrapper: {
-      backgroundColor: colors.background.default,
+      paddingTop: 10,
       flex: 1,
     },
     wrapper: {
@@ -51,7 +52,6 @@ const createStyles = (colors) =>
       paddingHorizontal: 20,
     },
     loader: {
-      backgroundColor: colors.background.default,
       flex: 1,
       minHeight: 300,
       justifyContent: 'center',
@@ -426,7 +426,7 @@ class ManualBackupStep1 extends PureComponent {
             <View style={styles.buttonWrapper}>
               <StyledButton
                 containerStyle={styles.button}
-                type={'confirm'}
+                type={'blue'}
                 onPress={this.tryUnlock}
                 testID={'submit-button'}
               >
@@ -500,6 +500,16 @@ class ManualBackupStep1 extends PureComponent {
 
     if (!ready) return this.renderLoader();
     return (
+
+      <ImageBackground 
+          source={require("../../../images/BACKGROUND.jpg")}
+          style={{ flex: 1,
+            width: null,
+            height: null,
+            paddingTop: 100,
+            marginTop: -100
+            }}
+          >
       <SafeAreaView style={styles.mainWrapper}>
         <View style={styles.onBoardingWrapper}>
           <OnboardingProgress currentStep={currentStep} steps={this.steps} />
@@ -508,6 +518,7 @@ class ManualBackupStep1 extends PureComponent {
           ? this.renderSeedphraseView()
           : this.renderConfirmPassword()}
       </SafeAreaView>
+      </ImageBackground>
     );
   }
 }

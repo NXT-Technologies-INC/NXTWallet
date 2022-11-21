@@ -1,5 +1,5 @@
 import React, { useCallback, useEffect } from 'react';
-import { StyleSheet, Text, ScrollView, View } from 'react-native';
+import { StyleSheet, Text, ScrollView, View, ImageBackground } from 'react-native';
 import StyledButton from '../../../UI/StyledButton';
 import { fontStyles } from '../../../../styles/common';
 import { getNavigationOptionsTitle } from '../../../UI/Navbar';
@@ -9,7 +9,6 @@ import { useTheme } from '../../../../util/theme';
 const createStyles = (colors: any) =>
   StyleSheet.create({
     wrapper: {
-      backgroundColor: colors.background.default,
       flex: 1,
       padding: 24,
       paddingBottom: 48,
@@ -76,6 +75,16 @@ const ExperimentalSettings = ({ navigation, route }: Props) => {
   }, [navigation]);
 
   return (
+    <ImageBackground 
+          source={require("../../../../images/BACKGROUND.jpg")}
+          style={{ flex: 1,
+            width: null,
+            height: null,
+            paddingBottom: 70,
+            paddingTop: 100,
+            marginTop: -100
+            }}
+          >
     <ScrollView style={styles.wrapper}>
       <View style={styles.setting}>
         <View>
@@ -95,6 +104,7 @@ const ExperimentalSettings = ({ navigation, route }: Props) => {
         </View>
       </View>
     </ScrollView>
+    </ImageBackground>
   );
 };
 

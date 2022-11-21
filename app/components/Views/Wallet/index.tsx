@@ -338,6 +338,9 @@ const Wallet = ({ navigation }: any) => {
           style={{ flex: 1,
             width: null,
             height: null,
+            paddingBottom: 70,
+            paddingTop: 100,
+            marginTop: -100,
             }}
           >
     <ErrorBoundary view="Wallet">

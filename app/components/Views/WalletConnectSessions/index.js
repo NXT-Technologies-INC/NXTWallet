@@ -7,6 +7,7 @@ import {
   View,
   Text,
   TouchableOpacity,
+  ImageBackground
 } from 'react-native';
 import { fontStyles } from '../../../styles/common';
 import { strings } from '../../../../locales/i18n';
@@ -23,7 +24,6 @@ import PropTypes from 'prop-types';
 const createStyles = (colors) =>
   StyleSheet.create({
     wrapper: {
-      backgroundColor: colors.background.default,
       flex: 1,
     },
     scrollviewContent: {
@@ -196,6 +196,16 @@ export default class WalletConnectSessions extends PureComponent {
     const styles = createStyles(colors);
 
     return (
+    <ImageBackground 
+    source={require("../../../images/BACKGROUND.jpg")}
+    style={{ flex: 1,
+      width: null,
+      height: null,
+      paddingBottom: 70,
+      paddingTop: 100,
+      marginTop: -100
+      }}
+    >
       <SafeAreaView
         style={styles.wrapper}
         testID={'wallet-connect-sessions-screen'}
@@ -219,6 +229,7 @@ export default class WalletConnectSessions extends PureComponent {
           theme={themeAppearance}
         />
       </SafeAreaView>
+      </ImageBackground>
     );
   };
 }

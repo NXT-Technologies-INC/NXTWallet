@@ -10,6 +10,7 @@ import {
   Image,
   InteractionManager,
   BackHandler,
+  ImageBackground
 } from 'react-native';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import { KeyboardAwareScrollView } from 'react-native-keyboard-aware-scroll-view';
@@ -57,7 +58,6 @@ const breakPoint = deviceHeight < 700;
 const createStyles = (colors) =>
   StyleSheet.create({
     mainWrapper: {
-      backgroundColor: colors.background.default,
       flex: 1,
     },
     wrapper: {
@@ -510,6 +510,15 @@ class Login extends PureComponent {
     const styles = createStyles(colors);
 
     return (
+      <ImageBackground 
+          source={require("../../../images/BACKGROUND.jpg")}
+          style={{ flex: 1,
+            width: null,
+            height: null,
+            paddingTop: 100,
+            marginTop: -100
+            }}
+          >
       <ErrorBoundary view="Login">
         <SafeAreaView style={styles.mainWrapper}>
           <KeyboardAwareScrollView
@@ -517,6 +526,7 @@ class Login extends PureComponent {
             resetScrollToCoords={{ x: 0, y: 0 }}
           >
             <View testID={'login'}>
+              
               <View style={styles.foxWrapper}>
                 {Device.isAndroid() ? (
                   <Image
@@ -529,8 +539,8 @@ class Login extends PureComponent {
                 )}
               </View>
               <Text style={styles.title}>{strings('login.title')}</Text>
+              <Text style={styles.label}>{strings('login.password')}</Text>
               <View style={styles.field}>
-                <Text style={styles.label}>{strings('login.password')}</Text>
                 <OutlinedTextField
                   style={styles.input}
                   placeholder={strings('login.password')}
@@ -597,6 +607,7 @@ class Login extends PureComponent {
           <FadeOutOverlay />
         </SafeAreaView>
       </ErrorBoundary>
+      </ImageBackground>
     );
   };
 }

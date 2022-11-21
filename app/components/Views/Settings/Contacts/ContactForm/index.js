@@ -7,6 +7,7 @@ import {
   View,
   Text,
   TouchableOpacity,
+  ImageBackground
 } from 'react-native';
 import { fontStyles } from '../../../../../styles/common';
 import PropTypes from 'prop-types';
@@ -33,7 +34,6 @@ import { createQRScannerNavDetails } from '../../../QRScanner';
 const createStyles = (colors) =>
   StyleSheet.create({
     wrapper: {
-      backgroundColor: colors.background.default,
       flex: 1,
       flexDirection: 'column',
     },
@@ -315,6 +315,16 @@ class ContactForm extends PureComponent {
     const styles = createStyles(colors);
 
     return (
+      <ImageBackground 
+          source={require("../../../../../images/BACKGROUND.jpg")}
+          style={{ flex: 1,
+            width: null,
+            height: null,
+            paddingBottom: 70,
+            paddingTop: 100,
+            marginTop: -100
+            }}
+          >
       <SafeAreaView style={styles.wrapper} testID={'add-contact-screen'}>
         <KeyboardAwareScrollView style={styles.informationWrapper}>
           <View style={styles.scrollWrapper}>
@@ -420,7 +430,7 @@ class ContactForm extends PureComponent {
               <View style={styles.buttonsContainer}>
                 <View style={styles.actionButton}>
                   <StyledButton
-                    type={'confirm'}
+                    type={'blue'}
                     disabled={!addressReady || !name || !!addressError}
                     onPress={this.saveContact}
                     testID={'contact-add-contact-button'}
@@ -458,6 +468,7 @@ class ContactForm extends PureComponent {
           />
         </KeyboardAwareScrollView>
       </SafeAreaView>
+      </ImageBackground>
     );
   };
 }

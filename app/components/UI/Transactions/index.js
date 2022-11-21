@@ -12,6 +12,7 @@ import {
   Dimensions,
   InteractionManager,
   TouchableOpacity,
+  ImageBackground
 } from 'react-native';
 import {
   getNetworkTypeById,
@@ -49,7 +50,6 @@ import withQRHardwareAwareness from '../QRHardware/withQRHardwareAwareness';
 const createStyles = (colors) =>
   StyleSheet.create({
     wrapper: {
-      backgroundColor: colors.background.default,
       flex: 1,
     },
     bottomModal: {
@@ -60,7 +60,6 @@ const createStyles = (colors) =>
       flex: 1,
       justifyContent: 'center',
       alignItems: 'center',
-      backgroundColor: colors.background.default,
       minHeight: Dimensions.get('window').height / 2,
     },
     keyboardAwareWrapper: {
@@ -72,8 +71,9 @@ const createStyles = (colors) =>
     },
     text: {
       fontSize: 20,
-      color: colors.text.muted,
+      color: colors.primary.default,
       ...fontStyles.normal,
+      fontFamily: "Poppins-SemiBold"
     },
     viewMoreBody: {
       marginBottom: 36,

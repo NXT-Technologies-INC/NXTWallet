@@ -8,6 +8,7 @@ import {
   View,
   Image,
   TouchableOpacity,
+  ImageBackground
 } from 'react-native';
 import { connect } from 'react-redux';
 
@@ -57,7 +58,6 @@ const infuraCurrencyOptions = sortedCurrencies.map(
 const createStyles = (colors) =>
   StyleSheet.create({
     wrapper: {
-      backgroundColor: colors.background.default,
       flex: 1,
       padding: 24,
       zIndex: 99999999999999,
@@ -310,6 +310,16 @@ class Settings extends PureComponent {
     const styles = createStyles(colors);
 
     return (
+      <ImageBackground 
+          source={require("../../../../images/BACKGROUND.jpg")}
+          style={{ flex: 1,
+            width: null,
+            height: null,
+            paddingBottom: 70,
+            paddingTop: 100,
+            marginTop: -100
+            }}
+          >
       <ScrollView style={styles.wrapper}>
         <View style={styles.inner}>
           <View style={[styles.setting, styles.firstSetting]}>
@@ -461,6 +471,7 @@ class Settings extends PureComponent {
           {/* {this.renderThemeSettingsSection()} */}
         </View>
       </ScrollView>
+      </ImageBackground>
     );
   }
 }

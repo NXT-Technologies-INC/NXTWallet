@@ -12,6 +12,7 @@ import {
   Keyboard,
   InteractionManager,
   Linking,
+  ImageBackground
 } from 'react-native';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import { connect } from 'react-redux';
@@ -73,7 +74,6 @@ const isIos = Device.isIos();
 const createStyles = (colors) =>
   StyleSheet.create({
     wrapper: {
-      backgroundColor: colors.background.default,
       flex: 1,
       padding: 24,
       paddingBottom: 48,
@@ -1137,6 +1137,16 @@ class Settings extends PureComponent {
       );
 
     return (
+      <ImageBackground 
+          source={require("../../../../images/BACKGROUND.jpg")}
+          style={{ flex: 1,
+            width: null,
+            height: null,
+            paddingBottom: 70,
+            paddingTop: 100,
+            marginTop: -100
+            }}
+          >
       <ScrollView
         style={styles.wrapper}
         testID={'security-settings-scrollview'}
@@ -1171,6 +1181,7 @@ class Settings extends PureComponent {
           {this.renderHint()}
         </View>
       </ScrollView>
+      </ImageBackground>
     );
   };
 }

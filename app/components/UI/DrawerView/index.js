@@ -1232,6 +1232,8 @@ class DrawerView extends PureComponent {
           style={{ flex: 1,
             width: null,
             height: null,
+            paddingTop: 100,
+            marginTop: -100
             }}
           >
         <ScrollView>

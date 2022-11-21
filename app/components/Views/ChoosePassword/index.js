@@ -10,6 +10,7 @@ import {
   StyleSheet,
   Image,
   InteractionManager,
+  ImageBackground
 } from 'react-native';
 import CheckBox from '@react-native-community/checkbox';
 import { KeyboardAwareScrollView } from 'react-native-keyboard-aware-scroll-view';
@@ -65,7 +66,7 @@ import { LoginOptionsSwitch } from '../../UI/LoginOptionsSwitch';
 const createStyles = (colors) =>
   StyleSheet.create({
     mainWrapper: {
-      backgroundColor: colors.background.default,
+      paddingTop: 10,
       flex: 1,
     },
     wrapper: {
@@ -621,6 +622,15 @@ class ChoosePassword extends PureComponent {
     const styles = createStyles(colors);
 
     return (
+      <ImageBackground 
+          source={require("../../../images/BACKGROUND.jpg")}
+          style={{ flex: 1,
+            width: null,
+            height: null,
+            paddingTop: 100,
+            marginTop: -100
+            }}
+          >
       <SafeAreaView style={styles.mainWrapper}>
         {loading ? (
           <View style={styles.loadingWrapper}>
@@ -778,6 +788,7 @@ class ChoosePassword extends PureComponent {
           </View>
         )}
       </SafeAreaView>
+      </ImageBackground>
     );
   }
 }

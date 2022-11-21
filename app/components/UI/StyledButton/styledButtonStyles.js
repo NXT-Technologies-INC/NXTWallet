@@ -22,6 +22,9 @@ const createStyles = (colors) =>
     blueText: {
       color: colors.primary.inverse,
     },
+    blackText: {
+      color: "black",
+    },
     orange: {
       borderColor: colors.secondary.default,
       borderWidth: 1,
@@ -152,7 +155,7 @@ function getStyles(type, colors) {
       containerStyle = styles.orange;
       break;
     case 'blue':
-      fontStyle = styles.blueText;
+      fontStyle = styles.blackText;
       containerStyle = styles.blue;
       break;
     case 'confirm':

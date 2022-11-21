@@ -10,6 +10,7 @@ import {
   TextInput,
   InteractionManager,
   ScrollView,
+  ImageBackground
 } from 'react-native';
 import { AddressFrom, AddressTo } from './../AddressInputs';
 import Modal from 'react-native-modal';
@@ -59,7 +60,6 @@ const createStyles = (colors) =>
   StyleSheet.create({
     wrapper: {
       flex: 1,
-      backgroundColor: colors.background.default,
     },
     imputWrapper: {
       flex: 0,
@@ -83,6 +83,7 @@ const createStyles = (colors) =>
     addToAddressBookRoot: {
       flex: 1,
       padding: 24,
+      fontFamily: "Poppins-Regular"
     },
     addToAddressBookWrapper: {
       flexDirection: 'row',
@@ -781,6 +782,16 @@ class SendFlow extends PureComponent {
       getConfusablesExplanations(confusableCollection);
 
     return (
+      <ImageBackground 
+          source={require("../../../../images/BACKGROUND.jpg")}
+          style={{ flex: 1,
+            width: null,
+            height: null,
+            paddingBottom: 70,
+            paddingTop: 100,
+            marginTop: -100
+            }}
+          >
       <SafeAreaView
         edges={['bottom']}
         style={styles.wrapper}
@@ -911,7 +922,7 @@ class SendFlow extends PureComponent {
             {!errorContinue && (
               <View style={styles.buttonNextWrapper}>
                 <StyledButton
-                  type={'confirm'}
+                  type={'blue'}
                   containerStyle={styles.buttonNext}
                   onPress={this.onTransactionDirectionSet}
                   testID={'address-book-next-button'}
@@ -927,6 +938,7 @@ class SendFlow extends PureComponent {
         {this.renderFromAccountModal()}
         {this.renderAddToAddressBookModal()}
       </SafeAreaView>
+      </ImageBackground>
     );
   };
 }

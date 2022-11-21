@@ -7,6 +7,7 @@ import {
   Switch,
   Text,
   View,
+  ImageBackground
 } from 'react-native';
 import { connect } from 'react-redux';
 import { KeyboardAwareScrollView } from 'react-native-keyboard-aware-scroll-view';
@@ -47,7 +48,6 @@ const HASH_STRING = 'Hello from IPFS Gateway Checker';
 const createStyles = (colors) =>
   StyleSheet.create({
     wrapper: {
-      backgroundColor: colors.background.default,
       flex: 1,
       padding: 24,
       paddingBottom: 48,
@@ -357,6 +357,16 @@ class AdvancedSettings extends PureComponent {
     const { styles, colors } = this.getStyles();
 
     return (
+      <ImageBackground 
+          source={require("../../../../images/BACKGROUND.jpg")}
+          style={{ flex: 1,
+            width: null,
+            height: null,
+            paddingBottom: 70,
+            paddingTop: 100,
+            marginTop: -100
+            }}
+          >
       <SafeAreaView style={baseStyles.flexGrow}>
         <KeyboardAwareScrollView
           style={styles.wrapper}
@@ -480,6 +490,7 @@ class AdvancedSettings extends PureComponent {
           </View>
         </KeyboardAwareScrollView>
       </SafeAreaView>
+      </ImageBackground>
     );
   };
 }

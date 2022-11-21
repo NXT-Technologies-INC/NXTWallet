@@ -9,6 +9,7 @@ import {
   Image,
   Dimensions,
   InteractionManager,
+  ImageBackground,
 } from 'react-native';
 import PropTypes from 'prop-types';
 import Icon from 'react-native-vector-icons/FontAwesome';
@@ -34,7 +35,7 @@ const IMG_PADDING = Device.isIphoneX() ? 100 : Device.isIphone5S() ? 180 : 220;
 const createStyles = (colors) =>
   StyleSheet.create({
     mainWrapper: {
-      backgroundColor: colors.background.default,
+      paddingTop: 10,
       flex: 1,
     },
     scrollviewWrapper: {
@@ -236,6 +237,15 @@ const AccountBackupStep1B = (props) => {
   const hideWhatIsSeedphrase = () => setWhatIsSeedphraseModal(false);
 
   return (
+    <ImageBackground 
+          source={require("../../../images/BACKGROUND.jpg")}
+          style={{ flex: 1,
+            width: null,
+            height: null,
+            paddingTop: 100,
+            marginTop: -100
+            }}
+          >
     <SafeAreaView style={styles.mainWrapper}>
       <ScrollView
         contentContainerStyle={styles.scrollviewWrapper}
@@ -316,7 +326,7 @@ const AccountBackupStep1B = (props) => {
 
             <StyledButton
               containerStyle={styles.button}
-              type={'confirm'}
+              type={'blue'}
               onPress={goNext}
               testID={'submit-button'}
             >
@@ -377,6 +387,7 @@ const AccountBackupStep1B = (props) => {
         hideWhatIsSeedphrase={hideWhatIsSeedphrase}
       />
     </SafeAreaView>
+    </ImageBackground>
   );
 };
 

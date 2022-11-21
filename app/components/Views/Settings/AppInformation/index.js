@@ -8,6 +8,7 @@ import {
   View,
   ScrollView,
   TouchableOpacity,
+  ImageBackground
 } from 'react-native';
 import {
   getApplicationName,
@@ -24,7 +25,6 @@ import { ThemeContext, mockTheme } from '../../../../util/theme';
 const createStyles = (colors) =>
   StyleSheet.create({
     wrapper: {
-      backgroundColor: colors.background.default,
       flex: 1,
     },
     wrapperContent: {
@@ -60,7 +60,6 @@ const createStyles = (colors) =>
     },
     logoWrapper: {
       flex: 1,
-      backgroundColor: colors.background.default,
       alignItems: 'center',
       justifyContent: 'center',
       top: 20,
@@ -167,6 +166,16 @@ export default class AppInformation extends PureComponent {
     const styles = createStyles(colors);
 
     return (
+      <ImageBackground 
+      source={require("../../../../images/BACKGROUND.jpg")}
+      style={{ flex: 1,
+        width: null,
+        height: null,
+        paddingBottom: 70,
+        paddingTop: 100,
+        marginTop: -100
+        }}
+      >
       <SafeAreaView style={styles.wrapper} testID={'app-settings-screen'}>
         <ScrollView contentContainerStyle={styles.wrapperContent}>
           <View style={styles.logoWrapper}>
@@ -215,6 +224,7 @@ export default class AppInformation extends PureComponent {
           </View>
         </ScrollView>
       </SafeAreaView>
+      </ImageBackground>
     );
   };
 }

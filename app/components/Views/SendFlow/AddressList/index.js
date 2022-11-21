@@ -20,7 +20,6 @@ const createStyles = (colors) =>
   StyleSheet.create({
     root: {
       flex: 1,
-      backgroundColor: colors.background.default,
     },
     messageText: {
       ...fontStyles.normal,

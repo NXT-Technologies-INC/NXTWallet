@@ -9,6 +9,7 @@ import {
   BackHandler,
   Alert,
   InteractionManager,
+  ImageBackground
 } from 'react-native';
 import PropTypes from 'prop-types';
 import { baseStyles, fontStyles } from '../../../styles/common';
@@ -35,7 +36,6 @@ const createStyles = (colors) =>
   StyleSheet.create({
     root: {
       ...baseStyles.flexGrow,
-      backgroundColor: colors.background.default,
     },
     checkIcon: {
       color: colors.success.default,
@@ -298,6 +298,15 @@ class OptinMetrics extends PureComponent {
     const styles = createStyles(colors);
 
     return (
+      <ImageBackground 
+          source={require("../../../images/BACKGROUND.jpg")}
+          style={{ flex: 1,
+            width: null,
+            height: null,
+            paddingTop: 100,
+            marginTop: -100
+            }}
+          >
       <SafeAreaView style={styles.root} testID={'metaMetrics-OptIn'}>
         <ScrollView style={styles.root}>
           <View style={styles.wrapper}>
@@ -317,7 +326,7 @@ class OptinMetrics extends PureComponent {
           <View style={styles.actionContainer}>
             <StyledButton
               containerStyle={[styles.button, styles.cancel]}
-              type={'cancel'}
+              type={'normal'}
               onPress={this.onCancel}
               testID={'cancel-button'}
             >
@@ -325,7 +334,7 @@ class OptinMetrics extends PureComponent {
             </StyledButton>
             <StyledButton
               containerStyle={[styles.button, styles.confirm]}
-              type={'confirm'}
+              type={'blue'}
               onPress={this.onConfirm}
               testID={'agree-button'}
             >
@@ -334,6 +343,7 @@ class OptinMetrics extends PureComponent {
           </View>
         </ScrollView>
       </SafeAreaView>
+      </ImageBackground>
     );
   }
 }

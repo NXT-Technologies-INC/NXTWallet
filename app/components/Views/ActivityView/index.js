@@ -1,6 +1,6 @@
 import React, { useEffect, useContext } from 'react';
 import PropTypes from 'prop-types';
-import { View, StyleSheet } from 'react-native';
+import { View, StyleSheet, ImageBackground } from 'react-native';
 import ScrollableTabView from 'react-native-scrollable-tab-view';
 import { connect } from 'react-redux';
 import { useNavigation } from '@react-navigation/native';
@@ -38,6 +38,17 @@ function ActivityView({ hasOrders }) {
   const renderTabBar = () => (hasOrders ? <TabBar /> : <View />);
 
   return (
+
+    <ImageBackground 
+    source={require("../../../images/BACKGROUND.jpg")}
+    style={{ flex: 1,
+      width: null,
+      height: null,
+      paddingBottom: 70,
+      paddingTop: 100,
+      marginTop: -100
+      }}
+    >
     <ErrorBoundary view="ActivityView">
       <View style={styles.wrapper}>
         <ScrollableTabView
@@ -52,6 +63,7 @@ function ActivityView({ hasOrders }) {
         </ScrollableTabView>
       </View>
     </ErrorBoundary>
+    </ImageBackground>
   );
 }
 
