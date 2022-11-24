@@ -12,6 +12,7 @@ import {
   Text,
   View,
   SafeAreaView,
+  ImageBackground
 } from 'react-native';
 import { fontStyles } from '../../../styles/common';
 import Device from '../../../util/device';
@@ -29,7 +30,6 @@ import { ThemeContext, mockTheme } from '../../../util/theme';
 const createStyles = (colors) =>
   StyleSheet.create({
     wrapper: {
-      backgroundColor: colors.background.default,
       borderTopLeftRadius: 10,
       borderTopRightRadius: 10,
       minHeight: 450,
@@ -404,7 +404,15 @@ class AccountList extends PureComponent {
     const styles = createStyles(colors);
 
     return (
+      
       <SafeAreaView style={styles.wrapper} testID={'account-list'}>
+        <ImageBackground 
+          source={require("../../../images/BACKGROUND.jpg")}
+          style={{ flex: 1,
+            width: null,
+            height: null,
+            }}
+          >
         <View style={styles.titleWrapper}>
           <View style={styles.dragger} testID={'account-list-dragger'} />
         </View>
@@ -459,7 +467,9 @@ class AccountList extends PureComponent {
             </TouchableOpacity>
           </View>
         )}
+        </ImageBackground>
       </SafeAreaView>
+      
     );
   }
 }
