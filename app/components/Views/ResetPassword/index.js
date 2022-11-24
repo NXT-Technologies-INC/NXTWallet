@@ -12,6 +12,7 @@ import {
   ScrollView,
   Image,
   InteractionManager,
+  ImageBackground
 } from 'react-native';
 import CheckBox from '@react-native-community/checkbox';
 import { KeyboardAwareScrollView } from 'react-native-keyboard-aware-scroll-view';
@@ -61,7 +62,6 @@ import { LoginOptionsSwitch } from '../../UI/LoginOptionsSwitch';
 const createStyles = (colors) =>
   StyleSheet.create({
     mainWrapper: {
-      backgroundColor: colors.background.default,
       flex: 1,
     },
     scrollviewWrapper: {
@@ -659,7 +659,7 @@ class ResetPassword extends PureComponent {
             <View style={styles.buttonWrapper}>
               <StyledButton
                 containerStyle={styles.button}
-                type={'confirm'}
+                type={'blue'}
                 onPress={this.tryUnlock}
                 testID={'submit-button'}
               >
@@ -857,6 +857,15 @@ class ResetPassword extends PureComponent {
 
     if (!ready) return this.renderLoader();
     return (
+      <ImageBackground 
+          source={require("../../../images/BACKGROUND.jpg")}
+          style={{ flex: 1,
+            width: null,
+            height: null,
+            paddingTop: 100,
+            marginTop: -100
+            }}
+          >
       <SafeAreaView style={styles.mainWrapper}>
         <ScrollView
           contentContainerStyle={styles.scrollviewWrapper}
@@ -868,6 +877,7 @@ class ResetPassword extends PureComponent {
             : this.renderConfirmPassword()}
         </ScrollView>
       </SafeAreaView>
+      </ImageBackground>
     );
   }
 }

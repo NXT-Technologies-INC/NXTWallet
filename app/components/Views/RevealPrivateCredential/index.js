@@ -11,6 +11,7 @@ import {
   InteractionManager,
   Linking,
   Platform,
+  ImageBackground
 } from 'react-native';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import PropTypes from 'prop-types';
@@ -47,7 +48,6 @@ import AppConstants from '../../../core/AppConstants';
 const createStyles = (colors) =>
   StyleSheet.create({
     wrapper: {
-      backgroundColor: colors.background.default,
       flex: 1,
     },
     normalText: {
@@ -707,6 +707,15 @@ class RevealPrivateCredential extends PureComponent {
     const isPrivateKeyReveal = this.isPrivateKey();
 
     return (
+      <ImageBackground 
+          source={require("../../../images/BACKGROUND.jpg")}
+          style={{ flex: 1,
+            width: null,
+            height: null,
+            paddingTop: 100,
+            marginTop: -100
+            }}
+          >
       <SafeAreaView
         style={styles.wrapper}
         testID={'reveal-private-credential-screen'}
@@ -745,6 +754,7 @@ class RevealPrivateCredential extends PureComponent {
         </ActionView>
         {this.renderModal(isPrivateKeyReveal, privateCredentialName)}
       </SafeAreaView>
+      </ImageBackground>
     );
   };
 }
