@@ -11,6 +11,7 @@ import {
   StyleSheet,
   InteractionManager,
   Platform,
+  ImageBackground
 } from 'react-native';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import { KeyboardAwareScrollView } from 'react-native-keyboard-aware-scroll-view';
@@ -68,7 +69,6 @@ const MINIMUM_SUPPORTED_CLIPBOARD_VERSION = 9;
 const createStyles = (colors) =>
   StyleSheet.create({
     mainWrapper: {
-      backgroundColor: colors.background.default,
       flex: 1,
     },
     wrapper: {
@@ -519,6 +519,15 @@ class ImportFromSeed extends PureComponent {
     const passwordStrengthWord = getPasswordStrengthWord(passwordStrength);
 
     return (
+      <ImageBackground 
+          source={require("../../../images/BACKGROUND.jpg")}
+          style={{ flex: 1,
+            width: null,
+            height: null,
+            paddingTop: 100,
+            marginTop: -100
+            }}
+          >
       <SafeAreaView style={styles.mainWrapper}>
         <KeyboardAwareScrollView
           style={styles.wrapper}
@@ -725,6 +734,7 @@ class ImportFromSeed extends PureComponent {
           />
         </View>
       </SafeAreaView>
+      </ImageBackground>
     );
   }
 }
