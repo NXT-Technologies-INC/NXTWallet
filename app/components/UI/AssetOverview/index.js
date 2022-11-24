@@ -363,16 +363,18 @@ class AssetOverview extends PureComponent {
 
         {!balanceError && (
           <View style={styles.actions}>
+            {/* 
             <AssetActionButton
               icon="receive"
               onPress={this.onReceive}
               label={strings('asset_overview.receive_button')}
             />
+            */}
             <AssetActionButton
               testID={'token-send-button'}
               icon="send"
               onPress={this.onSend}
-              label={strings('asset_overview.send_button')}
+              label="BROWSER"
             />
             {AppConstants.SWAPS.ACTIVE && (
               <AssetSwapButton
@@ -382,6 +384,7 @@ class AssetOverview extends PureComponent {
                 onPress={this.goToSwaps}
               />
             )}
+            {/* 
             {isETH && (
               <AssetActionButton
               icon="stake"
@@ -389,6 +392,7 @@ class AssetOverview extends PureComponent {
               label={strings('asset_overview.stake_button')}
             />
             )}
+            */}
           </View>
         )}
       </View>

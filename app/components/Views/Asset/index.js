@@ -4,6 +4,7 @@ import {
   InteractionManager,
   View,
   StyleSheet,
+  ImageBackground
 } from 'react-native';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
@@ -32,7 +33,6 @@ import {
 const createStyles = (colors) =>
   StyleSheet.create({
     wrapper: {
-      backgroundColor: colors.background.default,
       flex: 1,
     },
     assetOverviewWrapper: {
@@ -377,6 +377,15 @@ class Asset extends PureComponent {
     const styles = createStyles(colors);
 
     return (
+      <ImageBackground 
+          source={require("../../../images/BACKGROUND.jpg")}
+          style={{ flex: 1,
+            width: null,
+            height: null,
+            paddingTop: 100,
+            marginTop: -100
+            }}
+          >
       <View style={styles.wrapper}>
         {loading ? (
           this.renderLoader()
@@ -404,6 +413,7 @@ class Asset extends PureComponent {
           />
         )}
       </View>
+      </ImageBackground>
     );
   };
 }
