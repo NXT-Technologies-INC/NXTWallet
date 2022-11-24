@@ -8,6 +8,7 @@ import {
   TouchableOpacity,
   KeyboardAvoidingView,
   InteractionManager,
+  ImageBackground
 } from 'react-native';
 import { connect } from 'react-redux';
 import { fontStyles, baseStyles } from '../../../styles/common';
@@ -53,7 +54,6 @@ const KEYBOARD_OFFSET = 120;
 const createStyles = (colors) =>
   StyleSheet.create({
     wrapper: {
-      backgroundColor: colors.background.default,
       flex: 1,
     },
     title: {
@@ -847,6 +847,15 @@ class PaymentRequest extends PureComponent {
     const styles = createStyles(colors);
 
     return (
+      <ImageBackground 
+          source={require("../../../images/BACKGROUND.jpg")}
+          style={{ flex: 1,
+            width: null,
+            height: null,
+            paddingTop: 100,
+            marginTop: -100
+            }}
+          >
       <SafeAreaView style={styles.wrapper}>
         <KeyboardAwareScrollView
           contentContainerStyle={styles.scrollViewContainer}
@@ -857,6 +866,7 @@ class PaymentRequest extends PureComponent {
             : this.renderEnterAmount()}
         </KeyboardAwareScrollView>
       </SafeAreaView>
+      </ImageBackground>
     );
   }
 }
