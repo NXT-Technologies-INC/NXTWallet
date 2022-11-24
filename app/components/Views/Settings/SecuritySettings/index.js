@@ -12,7 +12,8 @@ import {
   Keyboard,
   InteractionManager,
   Linking,
-  ImageBackground
+  ImageBackground,
+  Image
 } from 'react-native';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import { connect } from 'react-redux';
@@ -681,7 +682,12 @@ class Settings extends PureComponent {
           </Text>
         </Text>
 
+        <View style={{height: 100, width: '100%', alignContent: 'center', alignItems: 'center', }}>
+        <Image source={require("../../../../images/nxt.png")} style={{height: 100, width: 100, alignContent: 'center', alignItems: 'center', }}/>
+        </View>
+        {/* 
         <SeedPhraseVideo onClose={this.onBack} />
+        */}
 
         <Text style={styles.desc}>
           {strings(

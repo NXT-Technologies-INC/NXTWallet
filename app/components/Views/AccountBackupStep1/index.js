@@ -8,7 +8,8 @@ import {
   StyleSheet,
   BackHandler,
   InteractionManager,
-  ImageBackground
+  ImageBackground,
+  Image
 } from 'react-native';
 import PropTypes from 'prop-types';
 import { fontStyles } from '../../../styles/common';
@@ -232,8 +233,14 @@ const AccountBackupStep1 = (props) => {
           <View style={styles.content}>
             <Text style={styles.title}>
               {strings('account_backup_step_1.title')}
-            </Text>
+            </Text> 
+            
+            <View style={{height: 100, width: '100%', alignContent: 'center', alignItems: 'center', }}>
+            <Image source={require("../../../images/nxt.png")} style={{height: 100, width: 100, alignContent: 'center', alignItems: 'center', }}/>
+            </View>
+            {/* 
             <SeedPhraseVideo onClose={skip} />
+            */}
             <View style={styles.text}>
               <Text style={styles.label}>
                 {strings('account_backup_step_1.info_text_1_1')}{' '}
