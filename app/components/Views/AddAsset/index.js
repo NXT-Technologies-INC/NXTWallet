@@ -1,5 +1,5 @@
 import React, { PureComponent } from 'react';
-import { SafeAreaView, View, StyleSheet } from 'react-native';
+import { SafeAreaView, View, StyleSheet, ImageBackground } from 'react-native';
 import { fontStyles } from '../../../styles/common';
 import { connect } from 'react-redux';
 import DefaultTabBar from 'react-native-scrollable-tab-view/DefaultTabBar';
@@ -19,7 +19,6 @@ const createStyles = (colors) =>
   StyleSheet.create({
     wrapper: {
       flex: 1,
-      backgroundColor: colors.background.default,
     },
     infoWrapper: {
       alignItems: 'center',
@@ -39,6 +38,8 @@ const createStyles = (colors) =>
       fontSize: 16,
       letterSpacing: 0.5,
       ...fontStyles.bold,
+      fontFamily: "Poppins-Bold",
+      color: "white"
     },
   });
 
@@ -104,7 +105,6 @@ class AddAsset extends PureComponent {
         underlineStyle={styles.tabUnderlineStyle}
         activeTextColor={colors.primary.default}
         inactiveTextColor={colors.text.alternative}
-        backgroundColor={colors.background.default}
         tabStyle={styles.tabStyle}
         textStyle={styles.textStyle}
         style={styles.tabBar}
@@ -132,6 +132,16 @@ class AddAsset extends PureComponent {
     const styles = createStyles(colors);
 
     return (
+      <ImageBackground 
+          source={require("../../../images/BACKGROUND.jpg")}
+          style={{ flex: 1,
+            width: null,
+            height: null,
+            paddingBottom: 70,
+            paddingTop: 100,
+            marginTop: -100
+            }}
+          >
       <SafeAreaView style={styles.wrapper} testID={`add-${assetType}-screen`}>
         {isMainNet(chainId) &&
           assetType !== 'token' &&
@@ -171,6 +181,7 @@ class AddAsset extends PureComponent {
           />
         )}
       </SafeAreaView>
+      </ImageBackground>
     );
   };
 }

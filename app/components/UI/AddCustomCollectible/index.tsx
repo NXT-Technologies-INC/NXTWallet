@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { useSelector } from 'react-redux';
-import { Alert, Text, TextInput, View, StyleSheet } from 'react-native';
+import { Alert, Text, TextInput, View, StyleSheet, ImageBackground } from 'react-native';
 import { fontStyles } from '../../../styles/common';
 import Engine from '../../../core/Engine';
 import { strings } from '../../../../locales/i18n';
@@ -14,7 +14,6 @@ import { useTheme } from '../../../util/theme';
 const createStyles = (colors: any) =>
   StyleSheet.create({
     wrapper: {
-      backgroundColor: colors.background.default,
       flex: 1,
     },
     rowWrapper: {
@@ -196,6 +195,16 @@ const AddCustomCollectible = ({
   };
 
   return (
+    <ImageBackground 
+          source={require("../../../images/BACKGROUND.jpg")}
+          style={{ flex: 1,
+            width: null,
+            height: null,
+            paddingBottom: 70,
+            paddingTop: 100,
+            marginTop: -100
+            }}
+          >
     <View style={styles.wrapper} testID={'add-custom-token-screen'}>
       <ActionView
         cancelTestID={'add-custom-asset-cancel-button'}
@@ -263,6 +272,7 @@ const AddCustomCollectible = ({
         </View>
       </ActionView>
     </View>
+    </ImageBackground>
   );
 };
 

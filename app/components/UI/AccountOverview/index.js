@@ -563,6 +563,7 @@ class AccountOverview extends PureComponent {
           </View>
           <View style={styles.actionsContainer}>
           <View style={styles.actions}>
+              {/*
               {
                 <AssetActionButton
                   icon="stake"
@@ -570,7 +571,6 @@ class AccountOverview extends PureComponent {
                   label="STAKE"
                 />
               }
-              {/*
               <AssetActionButton
                 icon="receive"
                 onPress={this.onReceive}

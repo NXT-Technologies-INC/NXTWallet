@@ -24,7 +24,6 @@ import { ThemeContext, mockTheme } from '../../../util/theme';
 const createStyles = (colors) =>
   StyleSheet.create({
     wrapper: {
-      backgroundColor: colors.background.default,
       flex: 1,
     },
     rowWrapper: {
