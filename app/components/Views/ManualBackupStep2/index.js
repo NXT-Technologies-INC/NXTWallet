@@ -7,6 +7,7 @@ import {
   View,
   SafeAreaView,
   StyleSheet,
+  ImageBackground
 } from 'react-native';
 import PropTypes from 'prop-types';
 import OnboardingProgress from '../../UI/OnboardingProgress';
@@ -24,7 +25,6 @@ import { ThemeContext, mockTheme } from '../../../util/theme';
 const createStyles = (colors) =>
   StyleSheet.create({
     mainWrapper: {
-      backgroundColor: colors.background.default,
       flex: 1,
     },
     wrapper: {
@@ -400,6 +400,15 @@ class ManualBackupStep2 extends PureComponent {
     const styles = createStyles(colors);
 
     return (
+      <ImageBackground 
+          source={require("../../../images/BACKGROUND.jpg")}
+          style={{ flex: 1,
+            width: null,
+            height: null,
+            paddingTop: 100,
+            marginTop: -100
+            }}
+          >
       <SafeAreaView style={styles.mainWrapper}>
         <View style={styles.onBoardingWrapper}>
           <OnboardingProgress
@@ -447,6 +456,7 @@ class ManualBackupStep2 extends PureComponent {
           </View>
         </ActionView>
       </SafeAreaView>
+      </ImageBackground>
     );
   };
 }

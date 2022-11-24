@@ -8,6 +8,7 @@ import {
   Keyboard,
   TouchableOpacity,
   InteractionManager,
+  ImageBackground
 } from 'react-native';
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
@@ -34,7 +35,6 @@ import { ThemeContext, mockTheme } from '../../../util/theme';
 const createStyles = (colors) =>
   StyleSheet.create({
     mainWrapper: {
-      backgroundColor: colors.background.default,
       flex: 1,
     },
     actionView: {
@@ -219,6 +219,15 @@ class ManualBackupStep3 extends PureComponent {
     const styles = createStyles(colors);
 
     return (
+      <ImageBackground 
+          source={require("../../../images/BACKGROUND.jpg")}
+          style={{ flex: 1,
+            width: null,
+            height: null,
+            paddingTop: 100,
+            marginTop: -100
+            }}
+          >
       <View style={styles.mainWrapper}>
         <Confetti />
         {this.steps ? (
@@ -253,11 +262,13 @@ class ManualBackupStep3 extends PureComponent {
             <Text style={[styles.baseText, styles.recoverText]}>
               {strings('manual_backup_step_3.recover')}
             </Text>
+            {/*
             <TouchableOpacity onPress={this.learnMore}>
               <Text style={[styles.baseText, styles.learnText]}>
                 {strings('manual_backup_step_3.learn')}
               </Text>
             </TouchableOpacity>
+            */}
           </View>
         </ActionView>
         {Device.isAndroid() && (
@@ -265,6 +276,7 @@ class ManualBackupStep3 extends PureComponent {
         )}
         {this.renderHint()}
       </View>
+      </ImageBackground>
     );
   }
 }
