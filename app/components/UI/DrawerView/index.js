@@ -802,7 +802,7 @@ class DrawerView extends PureComponent {
       const blockExplorer = findBlockExplorerForRpc(rpcTarget, frequentRpcList);
       const url = `${blockExplorer}/address/${selectedAddress}`;
       const title = new URL(blockExplorer).hostname;
-      this.goToBrowserUrl(url, title);
+      //this.goToBrowserUrl(url, title);
     } else {
       const url = getEtherscanAddressUrl(
         network.provider.type,
@@ -812,7 +812,7 @@ class DrawerView extends PureComponent {
         'https://',
         '',
       );
-      this.goToBrowserUrl(url, etherscan_url);
+      //this.goToBrowserUrl(url, etherscan_url);
     }
     this.trackEvent(ANALYTICS_EVENT_OPTS.NAVIGATION_TAPS_VIEW_ETHERSCAN);
   };
@@ -1019,7 +1019,7 @@ class DrawerView extends PureComponent {
         {
           name:
             (blockExplorer &&
-              `${strings('drawer.view_in')} ${blockExplorerName}`) ||
+              `${strings('drawer.view_in')} ${'NXTScan'}`) ||
             strings('drawer.view_in_etherscan'),
           icon: <Image source={require("../../../images/view_menu.png")} style={iconStyle}/>,
           action: this.viewInEtherscan,
