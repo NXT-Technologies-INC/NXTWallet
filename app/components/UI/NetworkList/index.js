@@ -423,9 +423,12 @@ export class NetworkList extends PureComponent {
         </View>
         <ScrollView style={styles.networksWrapper} testID={NETWORK_SCROLL_ID}>
           {this.renderRpcNetworks()}
+          {/*
           {this.renderMainnet()}
           {this.renderOtherNetworks()}
+          */}
         </ScrollView>
+        {/* 
         <View style={styles.footer}>
           <StyledButton
             type="confirm"
@@ -436,6 +439,7 @@ export class NetworkList extends PureComponent {
             {strings('app_settings.add_network_title')}
           </StyledButton>
         </View>
+        */}
       </SafeAreaView>
     );
   };
