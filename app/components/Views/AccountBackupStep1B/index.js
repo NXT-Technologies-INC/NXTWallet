@@ -267,6 +267,7 @@ const AccountBackupStep1B = (props) => {
                 </Text>
               </Text>
             </View>
+            {/** 
             <TouchableOpacity
               onPress={showWhySecureWallet}
               style={styles.centerContent}
@@ -280,6 +281,7 @@ const AccountBackupStep1B = (props) => {
                 {strings('account_backup_step_1B.why_important')}
               </Text>
             </TouchableOpacity>
+            */}
           </View>
           <View style={styles.card}>
             <Text style={styles.manualTitle}>
