@@ -8,7 +8,6 @@
 
 #import "RCTAnalytics.h"
 #import <Mixpanel/Mixpanel.h>
-#import <Mixpanel/MPTweakInline.h>
 #import <Mixpanel/MixpanelPeople.h>
 
 @implementation RCTAnalytics
@@ -62,13 +61,13 @@ RCT_REMAP_METHOD(getRemoteVariables,
                  getRemoteVariableWithResolver:(RCTPromiseResolveBlock)resolve
                  rejecter:(RCTPromiseRejectBlock)reject)
 {
-  NSString *val = MPTweakValue(@"remoteVariables", @"{}");
-
+  //NSString *val = MPTweakValue(@"remoteVariables", @"{}");
+/*
   if (val) {
     resolve(val);
   } else {
     resolve(@"{}");
-  }
+  }*/
 }
 
 - (NSString *)getCategory:(NSDictionary *)event{

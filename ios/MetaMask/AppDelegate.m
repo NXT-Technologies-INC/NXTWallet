@@ -28,7 +28,7 @@
   
   if(foxCodeFromBundle != nil){
     foxCode = foxCodeFromBundle;
-    [Mixpanel sharedInstanceWithToken:mixPanelTokenFromBundle];
+    //[Mixpanel sharedInstanceWithToken: mixPanelTokenFromBundle];
   } else {
     foxCode = @"debug";
   }
