@@ -3,9 +3,9 @@ const infuraProjectId = InfuraKey === 'null' ? '' : InfuraKey;
 
 const PopularList = [
   {
-    chainId: '27',
+    chainId: '5727',
     nickname: 'NXTChain Network',
-    rpcUrl: 'https://api.avax.network/ext/bc/C/rpc',
+    rpcUrl: 'https://rpc.nxttechnologies.io/',
     ticker: 'NXT',
     rpcPrefs: {
       blockExplorerUrl: 'https://snowtrace.io',

@@ -128,7 +128,7 @@ class Engine {
         },
       }, { // Default NXT Network
         network: 'loading',
-        isCustomNetwork: false,
+        isCustomNetwork: true,
         provider: { type: Networks.rpc.networkType, chainId: Networks.rpc.chainId.toString() },
         properties: { isEIP1559Compatible: false },
     });

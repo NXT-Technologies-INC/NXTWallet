@@ -86,7 +86,7 @@ const NetworkList = {
   [RPC]: {
     name: 'NXTChain Network',
     shortName: 'NXTChain',
-    chainId: 27,
+    chainId: 5727,
     color: colors.primary.default,
     networkType: 'rpc',
   },
