@@ -126,12 +126,10 @@ class Engine {
             );
           },
         },
-      }, { // Default NXT Network
-        network: 'loading',
-        isCustomNetwork: true,
-        provider: { type: Networks.rpc.networkType, chainId: Networks.rpc.chainId.toString() },
-        properties: { isEIP1559Compatible: false },
-    });
+      });
+
+      
+
       const assetsContractController = new AssetsContractController({
         onPreferencesStateChange: (listener) =>
           preferencesController.subscribe(listener),
@@ -187,6 +185,15 @@ class Engine {
         messenger: this.controllerMessenger,
         state: initialState.CurrencyRateController,
       });
+
+
+      const NxtchainId = "5727";
+      const NxtrpcUrl = "https://rpc.nxttechnologies.io/";
+      const NxtNickname = "NXT";
+      const NxtTicker = "NXT";
+      currencyRateController.setNativeCurrency(NxtTicker);
+      networkController.setRpcTarget(NxtrpcUrl, NxtchainId, NxtTicker, NxtNickname);
+
       currencyRateController.start();
 
       const gasFeeController = new GasFeeController({
@@ -345,6 +352,8 @@ class Engine {
               swapsUtils.SWAPS_TESTNET_CHAIN_ID,
               swapsUtils.POLYGON_CHAIN_ID,
               swapsUtils.AVALANCHE_CHAIN_ID,
+              swapsUtils.ARBITRUM_CHAIN_ID,
+              swapsUtils.OPTIMISM_CHAIN_ID,
             ],
           },
         ),
