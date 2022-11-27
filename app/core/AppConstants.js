@@ -78,7 +78,7 @@ export default {
   },
   MAX_SAFE_CHAIN_ID: 4503599627370476,
   URLS: {
-    TERMS_AND_CONDITIONS: 'https://consensys.net/terms-of-use/',
+    TERMS_AND_CONDITIONS: 'https://www.nxttechnologies.io/terms-of-use',
     PRIVACY_POLICY: 'https://consensys.net/privacy-policy/',
     CONNECTIVITY_ISSUES:
       'https://metamask.zendesk.com/hc/en-us/articles/360059386712',
