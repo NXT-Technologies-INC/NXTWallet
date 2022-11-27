@@ -456,6 +456,7 @@ class AccountList extends PureComponent {
                 {strings('accounts.import_account')}
               </Text>
             </TouchableOpacity>
+            {/* 
             <TouchableOpacity
               onPress={this.connectHardware}
               style={styles.footerButton}
@@ -465,6 +466,7 @@ class AccountList extends PureComponent {
                 {strings('accounts.connect_hardware')}
               </Text>
             </TouchableOpacity>
+            */}
           </View>
         )}
         </ImageBackground>

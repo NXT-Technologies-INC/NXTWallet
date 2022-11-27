@@ -210,7 +210,7 @@ const NetworkInfo = (props: NetworkInfoProps) => {
           />
           <Description
             description={strings('network_information.second_description')}
-            clickableText={strings('network_information.learn_more')}
+            clickableText={""}
             number={2}
           />
           <Description

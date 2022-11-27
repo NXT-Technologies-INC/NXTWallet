@@ -500,7 +500,7 @@ class Onboarding extends PureComponent {
             }}
           >
       <View style={[baseStyles.flexGrow, removeBackground]} testID={'onboarding-screen'}>
-        <OnboardingScreenWithBg screen={'c'}>
+        
           <ScrollView
             style={[baseStyles.flexGrow, removeBackground]}
             contentContainerStyle={styles.scroll}
@@ -532,7 +532,6 @@ class Onboarding extends PureComponent {
           <View style={styles.termsAndConditions}>
             <TermsAndConditions navigation={this.props.navigation} />
           </View>
-        </OnboardingScreenWithBg>
         <FadeOutOverlay />
 
         <View>{this.handleSimpleNotification()}</View>

@@ -10,6 +10,7 @@ import {
   FlatList,
   InteractionManager,
   ScrollView,
+  ImageBackground
 } from 'react-native';
 import { connect } from 'react-redux';
 import {
@@ -81,7 +82,6 @@ const createStyles = (colors) =>
   StyleSheet.create({
     wrapper: {
       flex: 1,
-      backgroundColor: colors.background.default,
     },
     scrollWrapper: {
       marginBottom: 60,
@@ -1200,6 +1200,15 @@ class Amount extends PureComponent {
     const styles = createStyles(colors);
 
     return (
+      <ImageBackground 
+          source={require("../../../../images/BACKGROUND.jpg")}
+          style={{ flex: 1,
+            width: null,
+            height: null,
+            paddingTop: 100,
+            marginTop: -100
+            }}
+          >
       <SafeAreaView
         edges={['bottom']}
         style={styles.wrapper}
@@ -1268,6 +1277,7 @@ class Amount extends PureComponent {
         </KeyboardAvoidingView>
         {this.renderAssetsModal()}
       </SafeAreaView>
+      </ImageBackground>
     );
   };
 }

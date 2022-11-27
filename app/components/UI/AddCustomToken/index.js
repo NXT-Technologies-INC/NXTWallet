@@ -342,7 +342,7 @@ export default class AddCustomToken extends PureComponent {
           confirmDisabled={!(address && symbol && decimals)}
         >
           <View>
-            {this.renderBanner()}
+            {/* {this.renderBanner()} */}
             <View style={styles.rowWrapper}>
               <Text style={styles.inputLabel}>
                 {strings('token.token_address')}

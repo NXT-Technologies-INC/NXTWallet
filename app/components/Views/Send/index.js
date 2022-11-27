@@ -6,6 +6,7 @@ import {
   Alert,
   StyleSheet,
   View,
+  ImageBackground
 } from 'react-native';
 import Engine from '../../../core/Engine';
 import EditAmount from '../../Views/SendFlow/Amount';
@@ -54,7 +55,6 @@ const SEND = 'Send';
 const createStyles = (colors) =>
   StyleSheet.create({
     wrapper: {
-      backgroundColor: colors.background.default,
       flex: 1,
     },
     loader: {

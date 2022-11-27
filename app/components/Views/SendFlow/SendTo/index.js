@@ -907,7 +907,7 @@ class SendFlow extends PureComponent {
                           ticker: getTicker(ticker),
                         })}
 
-                        {this.renderBuyEth()}
+                        {/*{this.renderBuyEth()}*/}
                       </>
                     }
                   />

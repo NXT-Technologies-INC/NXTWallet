@@ -765,9 +765,11 @@ class ChoosePassword extends PureComponent {
                     testID={ANDROID_I_UNDERSTAND_BUTTON_ID}
                   >
                     {strings('choose_password.i_understand')}{' '}
+                    {/* 
                     <Text onPress={this.learnMore} style={styles.learnMore}>
                       {strings('choose_password.learn_more')}
                     </Text>
+                    */}
                   </Text>
                 </View>
 

@@ -610,6 +610,7 @@ class RevealPrivateCredential extends PureComponent {
                   : strings('reveal_credential.reveal_credential_modal')[2]}
               </Text>
               {strings('reveal_credential.reveal_credential_modal')[3]}
+              {/* 
               <TouchableOpacity
                 onPress={() => Linking.openURL(KEEP_SRP_SAFE_URL)}
               >
@@ -617,6 +618,9 @@ class RevealPrivateCredential extends PureComponent {
                   {strings('reveal_credential.reveal_credential_modal')[4]}
                 </Text>
               </TouchableOpacity>
+              */}
+              {strings('reveal_credential.reveal_credential_modal')[4]}
+                
             </Text>
 
             <ButtonReveal
@@ -638,9 +642,14 @@ class RevealPrivateCredential extends PureComponent {
     return (
       <Text style={styles.normalText}>
         {strings('reveal_credential.seed_phrase_explanation')[0]}{' '}
+        {/* 
         <Text
           style={[styles.blueText, styles.link]}
           onPress={() => Linking.openURL(SRP_URL)}
+        >
+        */}
+        <Text
+          style={styles.normalText}
         >
           {strings('reveal_credential.seed_phrase_explanation')[1]}
         </Text>{' '}
@@ -649,10 +658,14 @@ class RevealPrivateCredential extends PureComponent {
           {strings('reveal_credential.seed_phrase_explanation')[3]}
         </Text>
         {strings('reveal_credential.seed_phrase_explanation')[4]}{' '}
+        {/* 
         <Text
           style={[styles.blueText, styles.link]}
           onPress={() => Linking.openURL(NON_CUSTODIAL_WALLET_URL)}
-        >
+        >*/}
+          <Text
+          style={styles.normalText}
+          >
           {strings('reveal_credential.seed_phrase_explanation')[5]}{' '}
         </Text>
         {strings('reveal_credential.seed_phrase_explanation')[6]}{' '}
