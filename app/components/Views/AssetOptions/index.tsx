@@ -1,5 +1,5 @@
 import React, { useRef } from 'react';
-import { StyleSheet, View, Text, TouchableOpacity } from 'react-native';
+import { StyleSheet, View, Text, TouchableOpacity, ImageBackground } from 'react-native';
 import ReusableModal, { ReusableModalRef } from '../../UI/ReusableModal';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import { fontStyles } from '../../../styles/common';
@@ -13,7 +13,6 @@ const createStyles = (colors: any) =>
   StyleSheet.create({
     screen: { justifyContent: 'flex-end' },
     sheet: {
-      backgroundColor: colors.background.default,
       borderTopLeftRadius: 20,
       borderTopRightRadius: 20,
     },
@@ -34,6 +33,7 @@ const createStyles = (colors: any) =>
       height: 60,
       alignItems: 'center',
       justifyContent: 'center',
+      marginBottom: 100
     },
     optionLabel: {
       ...(fontStyles.normal as any),
@@ -134,11 +134,17 @@ const AssetOptions = (props: Props) => {
 
   return (
     <ReusableModal ref={modalRef} style={styles.screen}>
+      <ImageBackground 
+          source={require("../../../images/BACKGROUND.jpg")}
+          
+          >
       <View style={[styles.sheet, { paddingBottom: safeAreaInsets.bottom }]}>
         <View style={styles.notch} />
         {renderOptions()}
       </View>
+      </ImageBackground>
     </ReusableModal>
+    
   );
 };
 
