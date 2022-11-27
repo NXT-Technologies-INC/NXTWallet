@@ -132,12 +132,12 @@ export default class AppInformation extends PureComponent {
 
   onPrivacyPolicy = () => {
     const url = AppConstants.URLS.PRIVACY_POLICY;
-    //this.goTo(url, strings('app_information.privacy_policy'));
+    this.goTo(url, strings('app_information.privacy_policy'));
   };
 
   onTermsOfUse = () => {
     const url = AppConstants.URLS.TERMS_AND_CONDITIONS;
-    //this.goTo(url, strings('app_information.terms_of_use'));
+    this.goTo(url, strings('app_information.terms_of_use'));
   };
 
   onAttributions = () => {
@@ -152,13 +152,13 @@ export default class AppInformation extends PureComponent {
   };
 
   onWebSite = () => {
-    const url = 'https://metamask.io/';
-    //this.goTo(url, 'metamask.io');
+    const url = 'https://www.nxttechnologies.io/';
+    this.goTo(url, 'nxttechnologies.io');
   };
 
   onContactUs = () => {
-    const url = 'https://metamask.zendesk.com/hc/en-us';
-    //this.goTo(url, strings('drawer.metamask_support'));
+    const url = 'https://www.nxttechnologies.io/';
+    this.goTo(url, 'nxttechnologies.io');
   };
 
   render = () => {
@@ -198,11 +198,13 @@ export default class AppInformation extends PureComponent {
                 {strings('app_information.terms_of_use')}
               </Text>
             </TouchableOpacity>
+            {/* 
             <TouchableOpacity onPress={this.onAttributions}>
               <Text style={styles.link}>
                 {strings('app_information.attributions')}
               </Text>
             </TouchableOpacity>
+            */}
           </View>
           <View style={styles.division} />
           <View style={styles.links}>
