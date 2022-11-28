@@ -20,7 +20,7 @@ import ClipboardManager from '../../../core/ClipboardManager';
 import { useTheme } from '../../../util/theme';
 
 // eslint-disable-next-line import/no-commonjs
-const metamaskErrorImage = require('../../../images/metamask-error.png');
+const metamaskErrorImage = require('../../../images/nxt.png');
 
 const createStyles = (colors) =>
   StyleSheet.create({
@@ -151,15 +151,15 @@ const Fallback = (props) => {
               <Icon name="send-o" size={14} />
               {'  '}
               {strings('error_screen.submit_ticket_5')}{' '}
-              <Text onPress={props.openTicket} style={styles.link}>
-                {strings('error_screen.submit_ticket_6')}
+              <Text style={styles.text}>
+                {'to support@nxttechnologies.io'}
               </Text>{' '}
               {strings('error_screen.submit_ticket_7')}
             </Text>
           </View>
           <Text style={styles.text}>
             {strings('error_screen.save_seedphrase_1')}{' '}
-            <Text onPress={props.showExportSeedphrase} style={styles.link}>
+            <Text style={styles.text}>
               {strings('error_screen.save_seedphrase_2')}
             </Text>{' '}
             {strings('error_screen.save_seedphrase_3')}
