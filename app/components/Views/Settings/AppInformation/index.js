@@ -147,8 +147,8 @@ export default class AppInformation extends PureComponent {
   };
 
   onSupportCenter = () => {
-    const url = 'https://metamask.zendesk.com/hc/en-us';
-    //this.goTo(url, strings('drawer.metamask_support'));
+    const url = 'https://www.nxttechnologies.io/partnerships';
+    this.goTo(url, 'nxttechnologies.io');
   };
 
   onWebSite = () => {

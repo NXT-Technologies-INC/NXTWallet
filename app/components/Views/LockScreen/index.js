@@ -7,6 +7,7 @@ import {
   View,
   AppState,
   Appearance,
+  Image,
 } from 'react-native';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
@@ -28,7 +29,7 @@ const LOGO_SIZE = 175;
 const createStyles = (colors) =>
   StyleSheet.create({
     container: {
-      backgroundColor: colors.background.default,
+      backgroundColor: "#000",
       flex: 1,
     },
     metamaskName: {
@@ -245,12 +246,13 @@ class LockScreen extends PureComponent {
 
   render() {
     const styles = this.getStyles();
-
     return (
       <View style={[baseStyles.flexGrow, styles.container]}>
-        <Animated.View style={[styles.logoWrapper, { opacity: this.opacity }]}>
-          <View style={styles.fox}>{this.renderAnimations()}</View>
-        </Animated.View>
+        <View style={[styles.logoWrapper, { opacity: this.opacity }]}>
+          <View style={styles.fox}>
+            <Image style={styles.animation} source={require('../../../images/nxt.png')}/>
+          </View>
+        </View>
       </View>
     );
   }

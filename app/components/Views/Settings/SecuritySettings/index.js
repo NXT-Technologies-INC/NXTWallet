@@ -1176,8 +1176,10 @@ class Settings extends PureComponent {
           {this.renderClearBrowserHistorySection()}
           <ClearCookiesSection />
           {this.renderPrivacyModeSection()}
+          {/* 
           {this.renderMetaMetricsSection()}
           <DeleteMetaMetricsData />
+          */}
           <DeleteWalletData />
           {this.renderThirdPartySection()}
           {this.renderApprovalModal()}
