@@ -160,7 +160,7 @@
   },
   "choose_password": {
     "title": "Create password",
-    "subtitle": "This password will unlock your NXTWallet wallet only on this device.",
+    "subtitle": "This password will unlock your NXTWallet only on this device.",
     "password": "New Password",
     "confirm_password": "Confirm password",
     "create_button": "Create password",
@@ -186,7 +186,7 @@
   },
   "reset_password": {
     "title": "Change password",
-    "subtitle": "This password will unlock your NXTWallet wallet only on this device.",
+    "subtitle": "This password will unlock your NXTWallet only on this device.",
     "password": "New Password",
     "confirm_password": "Confirm password",
     "reset_button": "Reset password",
