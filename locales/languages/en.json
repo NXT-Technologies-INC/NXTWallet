@@ -1781,7 +1781,7 @@
     "feature_off_title": "Temporarily unavailable",
     "feature_off_body": "NXTWallet Swaps is undergoing maintenance. Please check back later.",
     "wrong_network_title": "Swaps not available",
-    "wrong_network_body": "You’re only able to swap tokens on the Ethereum Main Network.",
+    "wrong_network_body": "NXTDEX coming soon",
     "unallowed_asset_title": "Can’t swap this token",
     "unallowed_asset_body": "Some tokens with unique mechanics are currently not supported for swapping.",
     "convert_from": "Convert from",

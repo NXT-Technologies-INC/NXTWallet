@@ -697,6 +697,7 @@ class Settings extends PureComponent {
           )}
         </Text>
 
+        {/* 
         {!seedphraseBackedUp && (
           <TouchableOpacity onPress={() => Linking.openURL(LEARN_MORE_URL)}>
             <Text style={styles.learnMore}>
@@ -704,6 +705,7 @@ class Settings extends PureComponent {
             </Text>
           </TouchableOpacity>
         )}
+        */}
 
         <SettingsNotification isWarning={!seedphraseBackedUp}>
           <Text
