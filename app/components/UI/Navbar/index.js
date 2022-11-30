@@ -587,7 +587,7 @@ export function getBrowserViewNavbarOptions(
       elevation: 0,
     },
     headerIcon: {
-      color: themeColors.primary.default,
+      color: 'white',
     },
   });
 
@@ -622,22 +622,34 @@ export function getBrowserViewNavbarOptions(
     drawerRef.current?.showDrawer?.();
     trackEvent(ANALYTICS_EVENT_OPTS.COMMON_TAPS_HAMBURGER_MENU);
   }
+  function navigationPop() {
+    navigation.pop();
+  }
 
   return {
     gestureEnabled: false,
-    headerLeft: () => (
-      <TouchableOpacity
-        onPress={onPress}
-        style={styles.hamburgerButton}
-        testID={'hamburger-menu-button-browser'}
-      >
-        <IonicIcon
-          name={Device.isAndroid() ? 'md-menu' : 'ios-menu'}
-          size={Device.isAndroid() ? 24 : 28}
-          style={innerStyles.headerIcon}
-        />
-      </TouchableOpacity>
-    ),
+    headerLeft: () =>
+      Device.isIos() ? (
+        <TouchableOpacity
+          onPress={navigationPop}
+          style={styles.closeButton}
+          testID={'nav-ios-back'}
+        >
+          <Text style={innerStyles.headerButtonText}>{backButtonText}</Text>
+        </TouchableOpacity>
+      ) : (
+        <TouchableOpacity
+          onPress={navigationPop}
+          style={styles.backButton}
+          {...generateTestId(Platform, NAV_ANDROID_BACK_BUTTON)}
+        >
+          <IonicIcon
+            name={'md-arrow-back'}
+            size={24}
+            style={innerStyles.headerIcon}
+          />
+        </TouchableOpacity>
+      ),
     headerTitle: () => (
       <NavbarBrowserTitle
         error={!!error}
