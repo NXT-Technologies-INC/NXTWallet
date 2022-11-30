@@ -85,6 +85,7 @@ const AssetOptions = (props: Props) => {
   };
 
   const openOnBlockExplorer = () => {
+    {/* 
     let url = '';
     const title = new URL(explorer.baseUrl).hostname;
     if (isNativeCurrency) {
@@ -95,6 +96,7 @@ const AssetOptions = (props: Props) => {
       url = explorer.token(address);
     }
     goToBrowserUrl(url, title);
+    */}
   };
 
   const openTokenDetails = () => {

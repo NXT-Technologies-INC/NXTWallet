@@ -339,7 +339,7 @@
     "lists": "Token Lists",
     "hide_cta": "Hide token",
     "options": {
-      "view_on_block": "View on block explorer",
+      "view_on_block": "View on NXTSCAN",
       "token_details": "Token details"
     }
   },
