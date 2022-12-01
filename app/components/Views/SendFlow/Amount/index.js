@@ -90,6 +90,7 @@ const createStyles = (colors) =>
       flex: 1,
       flexDirection: 'row',
       alignItems: 'flex-end',
+      marginBottom: 80
     },
     buttonNext: {
       flex: 1,

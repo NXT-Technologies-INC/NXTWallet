@@ -8,7 +8,7 @@ const PopularList = [
     rpcUrl: 'https://rpc.nxttechnologies.io/',
     ticker: 'NXT',
     rpcPrefs: {
-      blockExplorerUrl: 'https://snowtrace.io',
+      blockExplorerUrl: 'https://nxtscan.io',
       imageUrl: 'NXT',
     },
   },

@@ -392,7 +392,6 @@ class Transactions extends PureComponent {
     return (
       <View style={styles.viewMoreBody}>
         <TouchableOpacity
-          onPress={this.viewOnBlockExplore}
           style={styles.touchableViewOnEtherscan}
         >
           <Text reset style={styles.viewOnEtherscan}>
