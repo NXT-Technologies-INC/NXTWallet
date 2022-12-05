@@ -9,6 +9,7 @@ import imageIcons from '../../../../images/image-icons';
 
 /* eslint-disable import/no-commonjs */
 const ethLogo = require('../../../../images/nxt-logo.png');
+const ethereumLogo = require('../../../../images/ethereum.png');
 /* eslint-enable import/no-commonjs */
 
 const REGULAR_SIZE = 24;
@@ -97,6 +98,10 @@ function TokenIcon({ symbol, icon, medium, big, biggest, style }) {
   const getSource = useCallback(() => {
     if (symbol === 'NXT') {
       return ethLogo;
+    }
+
+    if (symbol === 'ETHEREUM') {
+      return ethereumLogo;
     }
 
     if (Object.keys(imageIcons).includes(symbol)) {

@@ -5,9 +5,14 @@ import { connect } from 'react-redux';
 import TokenIcon from '../Swaps/components/TokenIcon';
 
 function NetworkMainAssetLogo({ chainId, ticker, style, big, biggest }) {
-  if (chainId === NetworksChainId.rpc) {
+  if (ticker === 'nxt') {
     return (
       <TokenIcon big={big} biggest={biggest} symbol={'NXT'} style={style} />
+    );
+  }
+  if (ticker === 'eth') {
+    return (
+      <TokenIcon big={big} biggest={biggest} symbol={'ETHEREUM'} style={style} />
     );
   }
   return (

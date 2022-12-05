@@ -90,6 +90,20 @@ const NetworkList = {
     color: colors.primary.default,
     networkType: 'rpc',
   },
+  [RPC]: {
+    name: 'BNB Smart Chain',
+    shortName: 'BNB',
+    chainId: 56,
+    color: colors.primary.default,
+    networkType: 'rpc',
+  },
+  [RPC]: {
+    name: 'Ethereum',
+    shortName: 'ETH',
+    chainId: 1,
+    color: colors.primary.default,
+    networkType: 'rpc',
+  },
 };
 
 const NetworkListKeys = Object.keys(NetworkList);

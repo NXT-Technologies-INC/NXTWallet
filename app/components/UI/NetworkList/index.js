@@ -184,7 +184,26 @@ export class NetworkList extends PureComponent {
         NxtChain.nickname,
         NxtChain.rpcPrefs
       );
-    }  
+
+      const BNBChain = PopularList[1];
+      PreferencesController.addToFrequentRpcList(
+        BNBChain.rpcUrl,
+        BNBChain.chainId,
+        BNBChain.ticker,
+        BNBChain.nickname,
+        BNBChain.rpcPrefs
+      );
+
+      const EthChain = PopularList[2];
+      PreferencesController.addToFrequentRpcList(
+        EthChain.rpcUrl,
+        EthChain.chainId,
+        EthChain.ticker,
+        EthChain.nickname,
+        EthChain.rpcPrefs
+      );
+    }
+    
   };
   constructor(props) {
     super(props);
