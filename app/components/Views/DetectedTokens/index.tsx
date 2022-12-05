@@ -48,6 +48,7 @@ const createStyles = (colors: any) =>
     buttonsContainer: {
       padding: 16,
       flexDirection: 'row',
+      marginBottom: 70
     },
     buttonDivider: {
       width: 8,

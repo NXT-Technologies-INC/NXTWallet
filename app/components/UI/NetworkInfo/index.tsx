@@ -220,9 +220,7 @@ const NetworkInfo = (props: NetworkInfoProps) => {
                 : strings('network_information.third_description')
             }
             clickableText={
-              isTokenDetectionEnabledForNetwork
-                ? strings('network_information.token_detection_mainnet_link')
-                : strings('network_information.add_token_manually')
+              ''
             }
             number={3}
             isTokenDetectionLinkEnabled={
