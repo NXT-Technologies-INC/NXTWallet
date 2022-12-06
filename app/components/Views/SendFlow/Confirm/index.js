@@ -141,7 +141,7 @@ const createStyles = (colors) =>
     buttonNextWrapper: {
       flexDirection: 'row',
       alignItems: 'flex-end',
-      marginBottom: 16,
+      marginBottom: 70,
     },
     actionTouchable: {
       padding: 12,
