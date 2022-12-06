@@ -100,7 +100,7 @@ function TokenIcon({ symbol, icon, medium, big, biggest, style }) {
       return ethLogo;
     }
 
-    if (symbol === 'ETHEREUM') {
+    if (symbol === 'ETH') {
       return ethereumLogo;
     }
 
