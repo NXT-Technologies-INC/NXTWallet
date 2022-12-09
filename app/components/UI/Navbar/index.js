@@ -628,16 +628,7 @@ export function getBrowserViewNavbarOptions(
 
   return {
     gestureEnabled: false,
-    headerLeft: () =>
-      Device.isIos() ? (
-        <TouchableOpacity
-          onPress={navigationPop}
-          style={styles.closeButton}
-          testID={'nav-ios-back'}
-        >
-          <Text style={innerStyles.headerButtonText}>{backButtonText}</Text>
-        </TouchableOpacity>
-      ) : (
+    headerLeft: () => (
         <TouchableOpacity
           onPress={navigationPop}
           style={styles.backButton}
@@ -649,7 +640,7 @@ export function getBrowserViewNavbarOptions(
             style={innerStyles.headerIcon}
           />
         </TouchableOpacity>
-      ),
+    ),
     headerTitle: () => (
       <NavbarBrowserTitle
         error={!!error}
