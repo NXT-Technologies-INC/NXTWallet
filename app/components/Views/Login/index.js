@@ -528,15 +528,19 @@ class Login extends PureComponent {
             <View testID={'login'}>
               
               <View style={styles.foxWrapper}>
+                {/* 
                 {Device.isAndroid() ? (
+                  */}
                   <Image
                     source={require('../../../images/fox.png')}
                     style={styles.image}
                     resizeMethod={'auto'}
                   />
+                  {/* 
                 ) : (
                   <AnimatedFox bgColor={colors.background.default} />
                 )}
+                */}
               </View>
               <Text style={styles.title}>{strings('login.title')}</Text>
               <Text style={styles.label}>{strings('login.password')}</Text>
