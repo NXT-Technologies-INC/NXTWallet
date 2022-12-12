@@ -85,17 +85,12 @@ const createStyles = (colors) =>
     },
     header: {
       paddingTop: Device.isIphoneX() ? 60 : 24,
-      height: Device.isIphoneX() ? 85 : 85,
+      height: 110,
       flexDirection: 'column',
       paddingBottom: 0,
-    },
-    metamaskLogo: {
-      flexDirection: 'row',
-      flex: 1,
-      marginTop: Device.isAndroid() ? 0 : 12,
       marginLeft: 15,
-      paddingTop: Device.isAndroid() ? 10 : 0,
     },
+
     metamaskFox: {
       height: 50,
       width: 50,
@@ -1238,7 +1233,6 @@ class DrawerView extends PureComponent {
           >
         <ScrollView>
           <View style={styles.header}>
-            <View style={styles.metamaskLogo}>
               <Image
                 source={metamask_fox}
                 style={styles.metamaskFox}
@@ -1251,7 +1245,6 @@ class DrawerView extends PureComponent {
                 resizeMethod={'auto'}
               />
               */}
-            </View>
           </View>
           <View style={styles.account}>
             <View style={styles.accountBgOverlay}>
