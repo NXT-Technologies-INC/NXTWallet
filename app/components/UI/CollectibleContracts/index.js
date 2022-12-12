@@ -235,12 +235,13 @@ const CollectibleContracts = ({
   const renderEmpty = () => (
     <View style={styles.emptyView}>
       <View style={styles.emptyContainer}>
+        {/**
         <Image
           style={styles.emptyImageContainer}
           source={require('../../../images/no-nfts-placeholder.png')}
           resizeMode={'contain'}
         />
-        {/** 
+         
         <Text center style={styles.emptyTitleText} bold>
           {strings('wallet.no_nfts_yet')}
         </Text>
