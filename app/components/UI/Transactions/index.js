@@ -342,7 +342,7 @@ class Transactions extends PureComponent {
       let url;
       let title;
       if (type === RPC) {
-        url = `${rpcBlockExplorer}/address/${selectedAddress}`;
+        url = `${rpcBlockExplorer}/account/${selectedAddress}`;
         title = new URL(rpcBlockExplorer).hostname;
       } else {
         const networkResult = getNetworkTypeById(network);
@@ -392,6 +392,7 @@ class Transactions extends PureComponent {
     return (
       <View style={styles.viewMoreBody}>
         <TouchableOpacity
+          onPress={this.viewOnBlockExplore}
           style={styles.touchableViewOnEtherscan}
         >
           <Text reset style={styles.viewOnEtherscan}>
