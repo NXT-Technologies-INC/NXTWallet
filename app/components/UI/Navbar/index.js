@@ -528,8 +528,12 @@ export function getSendFlowTitle(title, navigation, route, themeColors) {
       view: title.split('.')[1],
       network: providerType,
     });
+    console.log(route.name)
     navigation.dangerouslyGetParent()?.pop();
   };
+
+  const isSendToHome = route.name == "SendToHome" ? true : false; 
+
   const leftAction = () => navigation.pop();
 
   const canGoBack =
@@ -539,7 +543,7 @@ export function getSendFlowTitle(title, navigation, route, themeColors) {
 
   return {
     headerTitle: () => <NavbarTitle title={titleToRender} disableNetwork />,
-    headerRight: () => (
+    headerRight: () => !isSendToHome ? (
       // eslint-disable-next-line react/jsx-no-bind
       <TouchableOpacity
         onPress={rightAction}
@@ -550,6 +554,8 @@ export function getSendFlowTitle(title, navigation, route, themeColors) {
           {strings('transaction.cancel')}
         </Text>
       </TouchableOpacity>
+    ) : (
+      <View />
     ),
     headerLeft: () =>
       canGoBack ? (

@@ -795,9 +795,9 @@ class DrawerView extends PureComponent {
     } = this.props;
     if (network.provider.type === RPC) {
       const blockExplorer = findBlockExplorerForRpc(rpcTarget, frequentRpcList);
-      const url = `${blockExplorer}/address/${selectedAddress}`;
+      const url = `${blockExplorer}/account/${selectedAddress}`;
       const title = new URL(blockExplorer).hostname;
-      //this.goToBrowserUrl(url, title);
+      this.goToBrowserUrl(url, title);
     } else {
       const url = getEtherscanAddressUrl(
         network.provider.type,
@@ -807,7 +807,7 @@ class DrawerView extends PureComponent {
         'https://',
         '',
       );
-      //this.goToBrowserUrl(url, etherscan_url);
+      this.goToBrowserUrl(url, etherscan_url);
     }
     this.trackEvent(ANALYTICS_EVENT_OPTS.NAVIGATION_TAPS_VIEW_ETHERSCAN);
   };

@@ -304,7 +304,7 @@ export const DrawerContext = React.createContext({ drawerRef: null });
         >
           <Tab.Screen 
             name="ExplorerView" 
-            component={SendFlowView} 
+            component={SendFlowViewHome} 
             listeners={({ route }) => ({
               focus: () => {
                 setCurrentTabName(route.name);
@@ -499,6 +499,26 @@ const SendView = () => (
       name="Send"
       component={Send}
       options={Send.navigationOptions}
+    />
+  </Stack.Navigator>
+);
+
+const SendFlowViewHome = () => (
+  <Stack.Navigator>
+    <Stack.Screen
+      name="SendToHome"
+      component={SendTo}
+      options={SendTo.navigationOptions}
+    />
+    <Stack.Screen
+      name="Amount"
+      component={Amount}
+      options={Amount.navigationOptions}
+    />
+    <Stack.Screen
+      name="Confirm"
+      component={Confirm}
+      options={Confirm.navigationOptions}
     />
   </Stack.Navigator>
 );
