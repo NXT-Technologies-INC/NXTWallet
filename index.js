@@ -69,4 +69,5 @@ LogBox.ignoreLogs([
  * Application entry point responsible for registering root component
  */
 AppRegistry.registerComponent('MetaMask', () => Root);
+AppRegistry.registerComponent('NxtWallet', () => Root);
 AppRegistry.registerComponent(name, () => Root);
