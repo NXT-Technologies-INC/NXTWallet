@@ -1,0 +1,31 @@
+diff --git a/node_modules/@metamask/controllers/dist/apis/crypto-compare.js b/node_modules/@metamask/controllers/dist/apis/crypto-compare.js
+index 2dd7fca..bad87e6 100644
+--- a/node_modules/@metamask/controllers/dist/apis/crypto-compare.js
++++ b/node_modules/@metamask/controllers/dist/apis/crypto-compare.js
+@@ -23,9 +23,11 @@ const util_1 = require("../util");
+  * @returns The API URL for getting the conversion rate.
+  */
+ function getPricingURL(currentCurrency, nativeCurrency, includeUSDRate) {
+-    return (`https://min-api.cryptocompare.com/data/price?fsym=` +
++    /*return (`https://min-api.cryptocompare.com/data/price?fsym=` +
+         `${nativeCurrency.toUpperCase()}&tsyms=${currentCurrency.toUpperCase()}` +
+-        `${includeUSDRate && currentCurrency.toUpperCase() !== 'USD' ? ',USD' : ''}`);
++        `${includeUSDRate && currentCurrency.toUpperCase() !== 'USD' ? ',USD' : ''}`);*/
++
++    return ('https://sapi.xt.com/v4/public/ticker?symbol='+nativeCurrency+'_usdt');
+ }
+ /**
+  * Fetches the exchange rate for a given currency.
+@@ -49,8 +51,10 @@ function fetchExchangeRate(currency, nativeCurrency, includeUSDRate) {
+         if (json.Response === 'Error') {
+             throw new Error(json.Message);
+         }
+-        const conversionRate = Number(json[currency.toUpperCase()]);
+-        const usdConversionRate = Number(json.USD);
++        const conversionRate = Number(json.result[0].c);
++        const usdConversionRate = Number(json.result[0].c);
++        console.log(conversionRate);
++        console.log(usdConversionRate);
+         if (!Number.isFinite(conversionRate)) {
+             throw new Error(`Invalid response for ${currency.toUpperCase()}: ${json[currency.toUpperCase()]}`);
+         }
