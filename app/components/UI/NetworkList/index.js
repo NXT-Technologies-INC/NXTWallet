@@ -272,11 +272,7 @@ export class NetworkList extends PureComponent {
       return;
     }
 
-    if(ticker != 'NXT'){
-      CurrencyRateController.setNativeCurrency(ticker);
-    }else{
-      CurrencyRateController.setNativeCurrency(0);
-    }
+    CurrencyRateController.setNativeCurrency(ticker);
     
     NetworkController.setRpcTarget(rpcUrl, chainId, ticker, nickname);
 

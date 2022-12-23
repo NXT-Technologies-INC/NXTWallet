@@ -191,7 +191,7 @@ class Engine {
       const NxtrpcUrl = "https://rpc.nxttechnologies.io/";
       const NxtNickname = "NXTChain Network";
       const NxtTicker = "NXT";
-      currencyRateController.setNativeCurrency(0);
+      currencyRateController.setNativeCurrency(NxtTicker);
       networkController.setRpcTarget(NxtrpcUrl, NxtchainId, NxtTicker, NxtNickname);
       //End Default set
 

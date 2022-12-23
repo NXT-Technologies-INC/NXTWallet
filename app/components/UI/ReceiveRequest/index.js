@@ -333,6 +333,7 @@ class ReceiveRequest extends PureComponent {
             </TouchableOpacity>
           </TouchableOpacity>
           <View style={styles.actionRow}>
+            {/* 
             {allowedToBuy(this.props.network) && (
               <StyledButton
                 type={'blue'}
@@ -344,6 +345,7 @@ class ReceiveRequest extends PureComponent {
                 })}
               </StyledButton>
             )}
+            */}
             <StyledButton
               type={'normal'}
               onPress={this.onReceive}
