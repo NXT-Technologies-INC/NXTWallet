@@ -73,6 +73,14 @@ function AssetActionButton({ onPress, icon, label, disabled }) {
           />
         );
       }
+      case 'send2': {
+        return (
+          <Image
+            source={require("../../../images/send_menu.png")}
+            style={{ width: 50, height: 50 }}
+          />
+        );
+      }
       case 'receive': {
         return (
           <MaterialCommunityIcon

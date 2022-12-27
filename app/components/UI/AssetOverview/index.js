@@ -372,9 +372,9 @@ class AssetOverview extends PureComponent {
             */}
             <AssetActionButton
               testID={'token-send-button'}
-              icon="send"
+              icon="send2"
               onPress={this.onSend}
-              label="BROWSER"
+              label="SEND"
             />
             {AppConstants.SWAPS.ACTIVE && (
               <AssetSwapButton
