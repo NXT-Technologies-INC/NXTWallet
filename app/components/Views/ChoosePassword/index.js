@@ -635,15 +635,15 @@ class ChoosePassword extends PureComponent {
         {loading ? (
           <View style={styles.loadingWrapper}>
             <View style={styles.foxWrapper}>
-              {Device.isAndroid() ? (
+              {/*{Device.isAndroid() ? (*/}
                 <Image
                   source={require('../../../images/fox.png')}
                   style={styles.image}
                   resizeMethod={'auto'}
                 />
-              ) : (
+              {/* ) : (
                 <AnimatedFox bgColor={colors.background.default} />
-              )}
+              )}*/}
             </View>
             <ActivityIndicator size="large" color={colors.text.default} />
             <Text style={styles.title}>
