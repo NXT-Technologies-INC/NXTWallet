@@ -123,7 +123,7 @@ const createStyles = (colors) =>
     textDropdown: {
       ...fontStyles.normal,
       fontSize: 14,
-      color: colors.primary.inverse,
+      color: 'black',
       paddingVertical: 2,
     },
     iconDropdown: {
@@ -1226,13 +1226,13 @@ class Amount extends PureComponent {
                   onPress={this.toggleAssetsModal}
                 >
                   <Text style={styles.textDropdown}>
-                    {selectedAsset.symbol || strings('wallet.collectible')}
+                    {selectedAsset.symbol || 'Token'}
                   </Text>
                   <View styles={styles.arrow}>
                     <Ionicons
                       name="ios-arrow-down"
                       size={16}
-                      color={colors.primary.inverse}
+                      color="black"
                       style={styles.iconDropdown}
                     />
                   </View>
