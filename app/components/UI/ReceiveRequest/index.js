@@ -345,7 +345,6 @@ class ReceiveRequest extends PureComponent {
                 })}
               </StyledButton>
             )}
-            */}
             <StyledButton
               type={'normal'}
               onPress={this.onReceive}
@@ -354,6 +353,7 @@ class ReceiveRequest extends PureComponent {
             >
               {strings('receive_request.request_payment')}
             </StyledButton>
+            */}
           </View>
         </View>
         <GlobalAlert />
