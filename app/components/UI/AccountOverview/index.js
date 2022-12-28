@@ -49,6 +49,11 @@ import { ThemeContext, mockTheme } from '../../../util/theme';
 import Routes from '../../../constants/navigation/Routes';
 import { getCrypto } from '@walletconnect/utils';
 import NetworkMainAssetLogo from '../NetworkMainAssetLogo';
+import {
+  hasBlockExplorer,
+  findBlockExplorerForRpc,
+  getBlockExplorerName,
+} from '../../../util/networks';
 
 const createStyles = (colors) =>
   StyleSheet.create({
@@ -391,6 +396,26 @@ class AccountOverview extends PureComponent {
     this.props.navigation.navigate(Routes.BROWSER_TAB_HOME);
   };
 
+  onSymbol = () => {
+    if(this.props.ethAsset[0].symbol == "NXT"){
+      this.goToBrowserUrl("https://nxtscan.com", "NXTScan")
+    }if(this.props.ethAsset[0].symbol == "ETH"){
+      this.goToBrowserUrl("https://etherscan.io", "EtherScan")
+    }if(this.props.ethAsset[0].symbol == "BNB"){
+      this.goToBrowserUrl("https://bscscan.com", "BNBScan")
+    }
+  }
+
+  goToBrowserUrl(url, title) {
+    this.props.navigation.navigate('Webview', {
+      screen: 'SimpleWebview',
+      params: {
+        url,
+        title,
+      },
+    });
+  }
+
   onBuy = () => {
     this.props.navigation.navigate(Routes.FIAT_ON_RAMP_AGGREGATOR.ID);
     InteractionManager.runAfterInteractions(() => {
@@ -584,6 +609,7 @@ class AccountOverview extends PureComponent {
                 onPress={this.onSend}
                 label="BROWSER"
               />
+              {/* 
               {AppConstants.SWAPS.ACTIVE && (
                 <AssetSwapButton
                   isFeatureLive={swapsIsLive}
@@ -592,6 +618,13 @@ class AccountOverview extends PureComponent {
                   isAssetAllowed
                 />
               )}
+              */}
+              <AssetActionButton
+                testID={'token-send-button'}
+                icon="swap"
+                onPress={this.onSymbol}
+                label={this.props.ethAsset[0].symbol}
+              />
               
             </View>
             </View>

@@ -232,6 +232,20 @@ class AssetOverview extends PureComponent {
     });
   }
 
+  onSymbol = () => {
+    const {
+      asset: { symbol },
+    } = this.props;
+    if(symbol == "NXT"){
+      this.goToBrowserUrl("https://nxtscan.com")
+    }if(symbol == "ETH"){
+      this.goToBrowserUrl("https://etherscan.io")
+    }if(symbol == "BNB"){
+      this.goToBrowserUrl("https://bscscan.com")
+    }
+  }
+
+
   renderLogo = () => {
     const { tokenList, asset } = this.props;
     const colors = this.context.colors || mockTheme.colors;
@@ -376,6 +390,7 @@ class AssetOverview extends PureComponent {
               onPress={this.onSend}
               label="SEND"
             />
+            {/* 
             {AppConstants.SWAPS.ACTIVE && (
               <AssetSwapButton
                 isFeatureLive={swapsIsLive}
@@ -384,7 +399,6 @@ class AssetOverview extends PureComponent {
                 onPress={this.goToSwaps}
               />
             )}
-            {/* 
             {isETH && (
               <AssetActionButton
               icon="stake"
@@ -393,6 +407,12 @@ class AssetOverview extends PureComponent {
             />
             )}
             */}
+            <AssetActionButton
+                testID={'token-send-button'}
+                icon="swap"
+                onPress={this.onSymbol}
+                label={symbol}
+              />
           </View>
         )}
       </View>
