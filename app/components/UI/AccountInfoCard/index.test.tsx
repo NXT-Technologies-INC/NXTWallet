@@ -24,6 +24,7 @@ const initialState = {
       },
       CurrencyRateController: {
         conversionRate: 10,
+        conversionRateNXT: 10,
         currentCurrency: 'inr',
       },
       NetworkController: {

@@ -142,6 +142,7 @@ class Tokens extends PureComponent {
      * ETH to current currency conversion rate
      */
     conversionRate: PropTypes.number,
+    conversionRateNXT: PropTypes.number,
     /**
      * Currency code of the currently-active currency
      */
@@ -231,6 +232,7 @@ class Tokens extends PureComponent {
   renderItem = (asset) => {
     const {
       conversionRate,
+      conversionRateNXT,
       currentCurrency,
       tokenBalances,
       tokenExchangeRates,
@@ -239,6 +241,16 @@ class Tokens extends PureComponent {
       chainId,
     } = this.props;
     const styles = this.getStyles();
+
+    let conversionrate_temp = conversionRate;
+    if(asset.symbol == "pNXT"){
+      conversionrate_temp = conversionRateNXT;
+    }else{
+      conversionrate_temp = conversionRate;
+    }
+
+    console.log(asset.symbol);
+    console.log(conversionrate_temp);
 
     const itemAddress = safeToChecksumAddress(asset.address);
     const logo = tokenList?.[itemAddress?.toLowerCase?.()]?.iconUrl;
@@ -253,7 +265,7 @@ class Tokens extends PureComponent {
         : 0);
     const balanceFiat =
       asset.balanceFiat ||
-      balanceToFiat(balance, conversionRate, exchangeRate, currentCurrency);
+      balanceToFiat(balance, conversionrate_temp, exchangeRate, currentCurrency);
     const balanceValue = `${balance} ${asset.symbol}`;
 
     // render balances according to primary currency
@@ -265,6 +277,15 @@ class Tokens extends PureComponent {
       mainBalance = !balanceFiat ? balanceValue : balanceFiat;
       secondaryBalance = !balanceFiat ? balanceFiat : balanceValue;
     }
+
+    
+    if(asset.symbol == "pNXT"){
+      mainBalance = balanceValue;
+      secondaryBalance = `$${Number(balance) * Number(conversionrate_temp)}`;
+      
+    }
+
+    console.log(secondaryBalance);
 
     if (asset?.balanceError) {
       mainBalance = asset.symbol;
@@ -479,6 +500,8 @@ const mapStateToProps = (state) => ({
     state.engine.backgroundState.CurrencyRateController.currentCurrency,
   conversionRate:
     state.engine.backgroundState.CurrencyRateController.conversionRate,
+  conversionRateNXT:
+    state.engine.backgroundState.CurrencyRateController.conversionRateNXT,
   primaryCurrency: state.settings.primaryCurrency,
   tokenBalances:
     state.engine.backgroundState.TokenBalancesController.contractBalances,

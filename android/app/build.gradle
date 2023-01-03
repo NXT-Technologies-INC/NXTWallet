@@ -160,8 +160,8 @@ android {
 		applicationId "io.nxtwallet"
 		minSdkVersion rootProject.ext.minSdkVersion
 		targetSdkVersion rootProject.ext.targetSdkVersion
-		versionCode 954
-		versionName "1.0.4"
+		versionCode 955
+		versionName "1.0.5"
 		multiDexEnabled true
 		testBuildType System.getProperty('testBuildType', 'debug')
 		missingDimensionStrategy "minReactNative", "minReactNative46"
