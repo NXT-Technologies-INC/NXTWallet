@@ -120,7 +120,7 @@ class AccountElement extends PureComponent {
   };
 
   render() {
-    const { disabled, updatedBalanceFromStore, ticker } = this.props;
+    const { disabled, updatedBalanceFromStore, ticker, conversionRate } = this.props;
     const {
       address,
       name,
@@ -166,7 +166,7 @@ class AccountElement extends PureComponent {
               </Text>
               <View style={styles.accountBalanceWrapper}>
                 <Text style={styles.accountBalance}>
-                  {renderFromWei(updatedBalanceFromStore)} {getTicker(ticker)}
+                  {renderFromWei(updatedBalanceFromStore)} {getTicker(ticker)} | ${renderFromWei(updatedBalanceFromStore)*conversionRate} 
                 </Text>
                 {!!balanceError && (
                   <Text
@@ -186,10 +186,12 @@ class AccountElement extends PureComponent {
   }
 }
 
+
+
 const mapStateToProps = (
   {
     engine: {
-      backgroundState: { PreferencesController, AccountTrackerController },
+      backgroundState: { PreferencesController, AccountTrackerController, CurrencyRateController },
     },
   },
   { item: { balance, address } },
@@ -197,6 +199,7 @@ const mapStateToProps = (
   const { selectedAddress } = PreferencesController;
   const { accounts } = AccountTrackerController;
   const selectedAccount = accounts[selectedAddress];
+  const {conversionRate} = CurrencyRateController
   const selectedAccountHasBalance =
     selectedAccount &&
     Object.prototype.hasOwnProperty.call(selectedAccount, BALANCE_KEY);
@@ -209,6 +212,7 @@ const mapStateToProps = (
       : balance;
   return {
     updatedBalanceFromStore,
+    conversionRate,
   };
 };
 

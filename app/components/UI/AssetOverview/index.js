@@ -308,6 +308,7 @@ class AssetOverview extends PureComponent {
       tokenExchangeRates,
       tokenBalances,
       conversionRate,
+      conversionRateNXT,
       currentCurrency,
       chainId,
       swapsIsLive,
@@ -352,6 +353,11 @@ class AssetOverview extends PureComponent {
       mainBalance = !balanceFiat ? `${balance} ${symbol}` : balanceFiat;
       secondaryBalance = !balanceFiat ? balanceFiat : `${balance} ${symbol}`;
     }
+
+    if(symbol == 'pNXT'){
+      secondaryBalance = '$ '+(conversionRateNXT * balance);
+    }
+
     return (
       <View style={styles.wrapper} testID={'token-asset-overview'}>
         <View style={styles.assetLogo}>{this.renderLogo()}</View>
@@ -424,6 +430,8 @@ const mapStateToProps = (state) => ({
   accounts: state.engine.backgroundState.AccountTrackerController.accounts,
   conversionRate:
     state.engine.backgroundState.CurrencyRateController.conversionRate,
+  conversionRateNXT:
+    state.engine.backgroundState.CurrencyRateController.conversionRateNXT,
   currentCurrency:
     state.engine.backgroundState.CurrencyRateController.currentCurrency,
   primaryCurrency: state.settings.primaryCurrency,
