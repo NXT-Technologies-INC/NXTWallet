@@ -708,8 +708,10 @@ class DrawerView extends PureComponent {
   };
 
   onReceive = () => {
-    this.toggleReceiveModal();
-    this.trackEvent(ANALYTICS_EVENT_OPTS.NAVIGATION_TAPS_RECEIVE);
+    this.props.navigation.navigate(Routes.NETWORKNODEFINDER_TAB_HOME);
+    this.hideDrawer();
+    //this.trackOpenBrowserEvent();
+    //this.trackEvent(ANALYTICS_EVENT_OPTS.NAVIGATION_TAPS_BROWSER);
   };
 
   onSend = async () => {
@@ -1303,7 +1305,7 @@ class DrawerView extends PureComponent {
               <View style={styles.buttonContent}>
                 
                 <Text style={styles.buttonText}>
-                  {strings('drawer.receive_button')}
+                  {'Add Node'}
                 </Text>
                 <MaterialIcon
                   name={'keyboard-tab'}

@@ -580,6 +580,101 @@ export function getSendFlowTitle(title, navigation, route, themeColors) {
  * @param {Object} navigation - Navigation object required to push new views
  * @returns {Object} - Corresponding navbar options containing headerTitle, headerLeft and headerRight
  */
+export function getNodeFinderViewNavbarOptions(
+  navigation,
+  route,
+  drawerRef,
+  themeColors,
+) {
+  const innerStyles = StyleSheet.create({
+    headerStyle: {
+      backgroundColor: 'transparent',
+      shadowColor: importedColors.transparent,
+      elevation: 0,
+    },
+    headerIcon: {
+      color: 'white',
+    },
+  });
+
+  const url = route.params?.url ?? '';
+  let host = null;
+  let isHttps = false;
+
+  const isHomepage = (url) => getHost(url) === getHost(HOMEPAGE_URL);
+  const error = route.params?.error ?? '';
+  const icon = route.params?.icon;
+
+  if (url && !isHomepage(url)) {
+    isHttps = url && url.toLowerCase().substr(0, 6) === 'https:';
+    const urlObj = new URL(url);
+    //Using host so the port number will be displayed on the address bar
+    host = urlObj.host.toLowerCase().replace(/^www\./, '');
+    if (
+      isGatewayUrl(urlObj) &&
+      url.search(`${AppConstants.IPFS_OVERRIDE_PARAM}=false`) === -1
+    ) {
+      const ensUrl = route.params?.currentEnsName ?? '';
+      if (ensUrl) {
+        host = ensUrl.toLowerCase().replace(/^www\./, '');
+      }
+    }
+  } else {
+    host = "Node Finder";
+  }
+
+  function onPress() {
+    Keyboard.dismiss();
+    drawerRef.current?.showDrawer?.();
+    trackEvent(ANALYTICS_EVENT_OPTS.COMMON_TAPS_HAMBURGER_MENU);
+  }
+  function navigationPop() {
+    navigation.pop();
+  }
+
+  return {
+    gestureEnabled: false,
+    headerLeft: () => (
+        <TouchableOpacity
+          onPress={navigationPop}
+          style={styles.backButton}
+          {...generateTestId(Platform, NAV_ANDROID_BACK_BUTTON)}
+        >
+          <IonicIcon
+            name={'md-arrow-back'}
+            size={24}
+            style={innerStyles.headerIcon}
+          />
+        </TouchableOpacity>
+    ),
+    headerTitle: () => (
+      <NavbarBrowserTitle
+        error={!!error}
+        icon={url && !isHomepage(url) ? icon : null}
+        navigation={navigation}
+        route={route}
+        url={url}
+        hostname={host}
+        https={isHttps}
+      />
+    ),
+    headerRight: () => (
+      <View style={styles.browserRightButton}>
+        <AccountRightButton />
+      </View>
+    ),
+    headerStyle: innerStyles.headerStyle,
+  };
+}
+
+/**
+ * Function that returns the navigation options
+ * This is used by views that will show our custom navbar
+ * which contains accounts icon, Title or MetaMask Logo and current network, and settings icon
+ *
+ * @param {Object} navigation - Navigation object required to push new views
+ * @returns {Object} - Corresponding navbar options containing headerTitle, headerLeft and headerRight
+ */
 export function getBrowserViewNavbarOptions(
   navigation,
   route,
