@@ -15,40 +15,13 @@ const createStyles = (colors: any) =>
   StyleSheet.create({
     main: {
       ...StyleSheet.absoluteFillObject,
-      backgroundColor: colors.background.default,
-    },
-    metamaskName: {
-      marginTop: 10,
-      height: 25,
-      width: 170,
-      alignSelf: 'center',
-      alignItems: 'center',
-      justifyContent: 'center',
-    },
-    logoWrapper: {
-      paddingTop: 50,
-      marginTop:
-        Dimensions.get('window').height / 2 - LOGO_SIZE / 2 - LOGO_PADDING,
-      height: LOGO_SIZE + LOGO_PADDING * 2,
-    },
-    foxAndName: {
-      alignSelf: 'center',
-      alignItems: 'center',
-      justifyContent: 'center',
+      backgroundColor: 'black',
+      flex: 1
     },
     animation: {
-      width: 110,
-      height: 110,
-      alignSelf: 'center',
-      alignItems: 'center',
-      justifyContent: 'center',
-    },
-    fox: {
-      width: 110,
-      height: 110,
-      alignSelf: 'center',
-      alignItems: 'center',
-      justifyContent: 'center',
+      height: Dimensions.get("window").height,
+      width: Dimensions.get("window").width,
+      ...StyleSheet.absoluteFillObject,
     },
   });
 
@@ -69,27 +42,15 @@ const MetaMaskAnimation = ({
 
   return (
     <View style={styles.main}>
-      <Animated.View style={[styles.logoWrapper, { opacity }]}>
-        <View style={styles.fox}>
-          <View style={styles.foxAndName}>
             <LottieView
               ref={animation}
               style={styles.animation}
               loop={false}
+              resizeMode='cover'
               // eslint-disable-next-line
-              source={require('../../../animations/fox-in.json')}
+              source={require('../../../animations/test-lottie.json')}
               onAnimationFinish={onAnimationFinish}
             />
-            <LottieView
-              ref={animationName}
-              style={styles.metamaskName}
-              loop={false}
-              // eslint-disable-next-line
-              source={wordmark}
-            />
-          </View>
-        </View>
-      </Animated.View>
     </View>
   );
 };
