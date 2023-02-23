@@ -222,6 +222,7 @@ const WalletTabModalFlow = () => (
 
 const NetworkNodeFinderFlow = () => (
   <Stack.Navigator
+  initialRouteName={'Network Node Finder'}
     mode={'modal'}
     screenOptions={{
       cardStyle: { backgroundColor: importedColors.transparent },

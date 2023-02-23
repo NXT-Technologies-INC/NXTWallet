@@ -1,26 +1,17 @@
-import React, { useContext, useEffect, useRef } from 'react';
+import React, { useContext, useEffect, useRef, useState } from 'react';
 import { connect } from 'react-redux';
-import { View, Dimensions, DeviceEventEmitter } from 'react-native';
+import { Image, View, Dimensions, DeviceEventEmitter, StyleSheet, ImageBackground, Pressable } from 'react-native';
 import PropTypes from 'prop-types';
-import {
-  createNewTab,
-  closeAllTabs,
-  closeTab,
-  setActiveTab,
-  updateTab,
-} from '../../../actions/browser';
-import Tabs from '../../UI/Tabs';
 import { getNodeFinderViewNavbarOptions } from '../../UI/Navbar';
-import { captureScreen } from 'react-native-view-shot';
-import Logger from '../../../util/Logger';
 import Device from '../../../util/device';
-import BrowserTab from '../BrowserTab';
-import AppConstants from '../../../core/AppConstants';
 import { baseStyles } from '../../../styles/common';
 import { DrawerContext } from '../../Nav/Main/MainNavigator';
 import { useTheme } from '../../../util/theme';
-import { Text } from 'react-native-svg';
+import Text from '../../Base/Text';
 import FindLocalDevices from 'react-native-find-local-devices';
+import AssetElement from '../../UI/AssetElement';
+import TokenImage from '../../UI/TokenImage';
+import { ScrollView } from 'react-native-gesture-handler';
 
 const margin = 16;
 const THUMB_WIDTH = Dimensions.get('window').width / 2 - margin * 2;
@@ -34,17 +25,56 @@ const NetworkNodeFinder = (props) => {
   const {
     route,
     navigation,
-    createNewTab,
-    closeAllTabs: triggerCloseAllTabs,
-    closeTab: triggerCloseTab,
-    setActiveTab,
-    updateTab,
-    activeTab: activeTabId,
-    tabs,
   } = props;
   const { drawerRef } = useContext(DrawerContext);
-  const previousTabs = useRef(null);
   const { colors } = useTheme();
+
+  const createStyles = (colors) =>
+  StyleSheet.create({
+    logo: {
+      flex: 1,
+      width: 50,
+      height: 50,
+      borderRadius: 25,
+      marginRight: 20,
+      flexBasis: 50,
+    },
+    ipAddress:{
+      flex: 1,
+      paddingTop: 10,
+      fontSize: 18,
+      height: 50,
+      width: "auto", 
+      flexBasis: 300,
+    },
+    arrow: {
+      flex: 1,
+      fontSize: 26,
+      right: 30,
+      top: 3,
+      height: 50,
+      width: 30, 
+      flexBasis: 30,
+    },
+    assetElement: {
+      borderBottomWidth: 1,
+      borderColor: '#333',
+      flex: 1,
+      paddingTop: 10,
+      paddingLeft: 20,
+      paddingRight: 20,
+      height: 90,
+      maxHeight: 70,
+      minHeight: 70,
+      backgroundColor: 'black',
+      overflow: 'hidden'
+    },
+  });
+
+  const getStyles = () => {
+    const styles = createStyles(useTheme());
+    return styles;
+  };
 
   useEffect(
     () => {
@@ -55,17 +85,6 @@ const NetworkNodeFinder = (props) => {
     /* eslint-disable-next-line */
     [navigation, route, colors],
   );
-
-
-  // componentDidMount
-  useEffect(
-    () => {
-      
-    },
-    /* eslint-disable-next-line */
-    [],
-  );
-
 
 
   const NEW_DEVICE_FOUND = 'NEW_DEVICE_FOUND';
@@ -82,12 +101,15 @@ const NetworkNodeFinder = (props) => {
   var NoPortsSubscription = null;
   var ConnectionErrorSubscription = null;
 
+
+  const [devices, setDevices] = useState([]);
+  
   NewDeviceFoundSubscription = DeviceEventEmitter.addListener(
     NEW_DEVICE_FOUND,
     (device) => {
       if (device.ipAddress && device.port) {
-
         console.log("NEW DECIVE FOUND: "+device);
+        setDevices([...devices, device]);
       }
     }
   );
@@ -103,7 +125,14 @@ const NetworkNodeFinder = (props) => {
   CheckDeviceSubscription = DeviceEventEmitter.addListener(
     CHECK,
     (device) => {
-      console.log(device);
+      const lastnumber_arr = String(device.ipAddress).split('.')
+      if(lastnumber_arr[lastnumber_arr.length - 1] == "254"){
+        NewDeviceFoundSubscription.remove();
+        ResultsSubscription.remove();
+        CheckDeviceSubscription.remove();
+        NoDevicesSubscription.remove();
+        NoPortsSubscription.remove();
+      }
     }
   );
 
@@ -133,14 +162,51 @@ const NetworkNodeFinder = (props) => {
     timeout: 40
   });
 
+  const nodeSelected = (node) => {
+    console.log('selected node') 
+  };
 
+  const renderItem = (asset) => {
+  
+    const styles = getStyles(); 
+    return (
+      <Pressable key={asset.ipAddress} onPress={nodeSelected} style={styles.assetElement}>
+        <View
+        testID={'asset'}
+        //onLongPress={asset.isETH ? null : this.showRemoveMenu}
+        style={{
+          flex: 1,
+          height: 90,
+          flexDirection: 'row',
+        }}
+        >
+        <Image source={require("../../../images/server.png")} style={styles.logo}/>
+          <Text
+            style={styles.ipAddress}
+          >
+            {asset.ipAddress}
+          </Text>
+          <Text style={styles.arrow}>{">"}</Text>
+      </View>
+      </Pressable>
+    );
+  };
 
   return (
-
-    
-
-    <View style={baseStyles.flexGrow} testID={'browser-screen'}>
-      <Text>{'test'}</Text>
+    <View style={{flex: 1}}>
+      <ImageBackground
+          source={require("../../../images/bluedotbackground.png")}
+          style={{ flex: 1,
+            width: null,
+            height: null, 
+            paddingTop: 100,
+            marginTop: -100
+            }}
+          >
+      <ScrollView>
+      {devices.map((item) => renderItem(item))}
+      </ScrollView>
+      </ImageBackground>
     </View>
   );
 };
