@@ -1,17 +1,24 @@
 import React, { useContext, useEffect, useRef, useState } from 'react';
 import { connect } from 'react-redux';
-import { Image, View, Dimensions, DeviceEventEmitter, StyleSheet, ImageBackground, Pressable } from 'react-native';
+import {
+  Image,
+  View,
+  Dimensions,
+  DeviceEventEmitter,
+  StyleSheet,
+  ImageBackground,
+  Pressable,
+} from 'react-native';
 import PropTypes from 'prop-types';
 import { getNodeFinderViewNavbarOptions } from '../../UI/Navbar';
 import Device from '../../../util/device';
-import { baseStyles } from '../../../styles/common';
 import { DrawerContext } from '../../Nav/Main/MainNavigator';
 import { useTheme } from '../../../util/theme';
 import Text from '../../Base/Text';
-import FindLocalDevices from 'react-native-find-local-devices';
-import AssetElement from '../../UI/AssetElement';
-import TokenImage from '../../UI/TokenImage';
 import { ScrollView } from 'react-native-gesture-handler';
+
+import { NetworkInfo } from 'react-native-network-info';
+var net = require('react-native-tcp');
 
 const margin = 16;
 const THUMB_WIDTH = Dimensions.get('window').width / 2 - margin * 2;
@@ -22,54 +29,51 @@ const THUMB_HEIGHT = Device.isIos() ? THUMB_WIDTH * 1.81 : THUMB_WIDTH * 1.48;
  * individual tabs and the tabs view
  */
 const NetworkNodeFinder = (props) => {
-  const {
-    route,
-    navigation,
-  } = props;
+  const { route, navigation } = props;
   const { drawerRef } = useContext(DrawerContext);
   const { colors } = useTheme();
 
   const createStyles = (colors) =>
-  StyleSheet.create({
-    logo: {
-      flex: 1,
-      width: 50,
-      height: 50,
-      borderRadius: 25,
-      marginRight: 20,
-      flexBasis: 50,
-    },
-    ipAddress:{
-      flex: 1,
-      paddingTop: 10,
-      fontSize: 18,
-      height: 50,
-      width: "auto", 
-      flexBasis: 300,
-    },
-    arrow: {
-      flex: 1,
-      fontSize: 26,
-      right: 30,
-      top: 3,
-      height: 50,
-      width: 30, 
-      flexBasis: 30,
-    },
-    assetElement: {
-      borderBottomWidth: 1,
-      borderColor: '#333',
-      flex: 1,
-      paddingTop: 10,
-      paddingLeft: 20,
-      paddingRight: 20,
-      height: 90,
-      maxHeight: 70,
-      minHeight: 70,
-      backgroundColor: 'black',
-      overflow: 'hidden'
-    },
-  });
+    StyleSheet.create({
+      logo: {
+        flex: 1,
+        width: 50,
+        height: 50,
+        borderRadius: 25,
+        marginRight: 20,
+        flexBasis: 50,
+      },
+      ipAddress: {
+        flex: 1,
+        paddingTop: 10,
+        fontSize: 18,
+        height: 50,
+        width: 'auto',
+        flexBasis: 300,
+      },
+      arrow: {
+        flex: 1,
+        fontSize: 26,
+        right: 30,
+        top: 3,
+        height: 50,
+        width: 30,
+        flexBasis: 30,
+      },
+      assetElement: {
+        borderBottomWidth: 1,
+        borderColor: '#333',
+        flex: 1,
+        paddingTop: 10,
+        paddingLeft: 20,
+        paddingRight: 20,
+        height: 90,
+        maxHeight: 70,
+        minHeight: 70,
+        backgroundColor: 'black',
+        overflow: 'hidden',
+      },
+    });
 
   const getStyles = () => {
     const styles = createStyles(useTheme());
@@ -86,126 +90,174 @@ const NetworkNodeFinder = (props) => {
     [navigation, route, colors],
   );
 
-
-  const NEW_DEVICE_FOUND = 'NEW_DEVICE_FOUND';
-  const CHECK = 'CHECK';
-  const NO_DEVICES = 'NO_DEVICES';
-  const NO_PORTS = 'NO_PORTS';
-  const RESULTS = 'RESULTS';
-  const CONNECTION_ERROR = 'CONNECTION_ERROR';
-
-  var NewDeviceFoundSubscription = null;
-  var ResultsSubscription = null;
-  var CheckDeviceSubscription = null;
-  var NoDevicesSubscription = null;
-  var NoPortsSubscription = null;
-  var ConnectionErrorSubscription = null;
-
-
   const [devices, setDevices] = useState([]);
-  
-  NewDeviceFoundSubscription = DeviceEventEmitter.addListener(
-    NEW_DEVICE_FOUND,
-    (device) => {
-      if (device.ipAddress && device.port) {
-        console.log("NEW DECIVE FOUND: "+device);
-        setDevices([...devices, device]);
+
+  const [runned, setRunned] = useState(false);
+  const [randomNum, setRandom] = useState(0);
+
+  // Function to scan hosts
+  var scanHost = function (hostIP, hostPort) {
+    return new Promise(function (resolve, reject) {
+      var client = net.connect(
+        {
+          host: hostIP,
+          port: hostPort,
+        },
+        function () {
+          //'connect' listener
+          console.log('Connected');
+        },
+      );
+
+      client.setTimeout(2000, function () {
+        // called after timeout -> same as socket.on('timeout')
+        // it just tells that soket timed out => its ur job to end or destroy the socket.
+        // socket.end() vs socket.destroy() => end allows us to send final data and allows some i/o activity to finish before destroying the socket
+        // whereas destroy kills the socket immediately irrespective of whether any i/o operation is goin on or not...force destry takes place
+        //console.log('Socket timed out');
+      });
+      client.on('connect', function () {
+        fetch('http://' + hostIP + '/node_info')
+          .then(response => response.text())
+          .then(text => {
+            //console.log(response);
+            try {
+              return JSON.parse(text);
+            } catch (e) {
+              console.log(e);
+              return {};
+            }
+          })
+          .then((responseJson) => {
+            console.log(responseJson);
+            if (
+              typeof responseJson !== 'undefined' &&
+              responseJson.result &&
+              responseJson.result.node_name
+            ) {
+              console.log(responseJson);
+              arr_devices.push({
+                node_name: responseJson.result.node_name,
+                ipAddress: hostIP,
+                port: hostPort,
+              });
+              setDevices((devices) => {
+                return arr_devices;
+              });
+              setRandom(Math.random);
+              console.log(arr_devices);
+            }
+          })
+          .catch((error) => {
+            console.error(error);
+          });
+
+        resolve({
+          ipAddress: hostIP,
+          port: hostPort,
+        });
+      });
+      client.on('timeout', function () {
+        //console.log('Socket timed out !');
+        //client.end('Timed out!');
+        // can call socket.destroy() here too.
+      });
+      client.on('end', function (data) {
+        //console.log('Socket ended from other end!');
+        //console.log('End data : ' + data);
+      });
+      client.on('close', function (error) {
+        var bread = client.bytesRead;
+        var bwrite = client.bytesWritten;
+        //console.log('Bytes read : ' + bread);
+        //console.log('Bytes written : ' + bwrite);
+        //console.log('Socket closed!');
+        if (error) {
+          //console.log('Socket was closed as a result of transmission error');
+        }
+      });
+      client.on('error', function (err) {
+        //console.log('******* ERROR : ' + JSON.stringify(err));
+        client.destroy();
+      });
+      setTimeout(function () {
+        var isdestroyed = client.destroyed;
+        //console.log('Socket destroyed:' + isdestroyed);
+        client.destroy();
+      }, 5000);
+    });
+  };
+
+  //let hola = [{"ipAddress": "192.168.1.88", "port": 80},{"ipAddress": "192.168.1.89", "port": 80}]
+
+  // Get Local IP
+
+  const arr_devices = [];
+
+  NetworkInfo.getIPAddress().then((ipAddress) => {
+    if (!runned) {
+      let ip_arr = ipAddress.split('.');
+      let ip = ipAddress.replace(ip_arr[ip_arr.length - 1], '');
+
+      for (let i = 0; i <= 255; i++) {
+        scanHost(ip + i, 80)
+          .then((response) => {
+            console.log(response);
+          })
+          .catch((err) => {
+            //console.error(err);
+            return err;
+          });
       }
     }
-  );
-
-  ResultsSubscription = DeviceEventEmitter.addListener(
-    RESULTS,
-    (devices) => {
-      console.log("Results Subscription: "+devices);
-      ResultsSubscription.remove();
-    }
-  );
-
-  CheckDeviceSubscription = DeviceEventEmitter.addListener(
-    CHECK,
-    (device) => {
-      const lastnumber_arr = String(device.ipAddress).split('.')
-      if(lastnumber_arr[lastnumber_arr.length - 1] == "254"){
-        NewDeviceFoundSubscription.remove();
-        ResultsSubscription.remove();
-        CheckDeviceSubscription.remove();
-        NoDevicesSubscription.remove();
-        NoPortsSubscription.remove();
-      }
-    }
-  );
-
-  NoDevicesSubscription = DeviceEventEmitter.addListener(
-    NO_DEVICES,
-    () => {
-      console.log(NO_DEVICES);
-      NoDevicesSubscription.remove();
-    }
-  );
-
-  NoPortsSubscription = DeviceEventEmitter.addListener(NO_PORTS, () => {
-    console.log(NO_PORTS);
-    NoPortsSubscription.remove();
-  });
-
-  ConnectionErrorSubscription = DeviceEventEmitter.addListener(
-    CONNECTION_ERROR,
-    (error) => {
-      // Handle error messages for each socket connection
-       console.log(error.message);
-    }
-  );
-
-  FindLocalDevices.getLocalDevices({
-    ports: [80],
-    timeout: 40
+    setRunned(true);
   });
 
   const nodeSelected = (node) => {
-    console.log('selected node') 
+    console.log('selected node');
   };
 
   const renderItem = (asset) => {
-  
-    const styles = getStyles(); 
+    const styles = getStyles();
     return (
-      <Pressable key={asset.ipAddress} onPress={nodeSelected} style={styles.assetElement}>
+      <Pressable
+        key={asset.ipAddress}
+        onPress={nodeSelected}
+        style={styles.assetElement}
+      >
         <View
-        testID={'asset'}
-        //onLongPress={asset.isETH ? null : this.showRemoveMenu}
-        style={{
-          flex: 1,
-          height: 90,
-          flexDirection: 'row',
-        }}
+          testID={'asset'}
+          //onLongPress={asset.isETH ? null : this.showRemoveMenu}
+          style={{
+            flex: 1,
+            height: 90,
+            flexDirection: 'row',
+          }}
         >
-        <Image source={require("../../../images/server.png")} style={styles.logo}/>
-          <Text
-            style={styles.ipAddress}
-          >
-            {asset.ipAddress}
-          </Text>
-          <Text style={styles.arrow}>{">"}</Text>
-      </View>
+          <Image
+            source={require('../../../images/server.png')}
+            style={styles.logo}
+          />
+          <Text style={styles.ipAddress}>{asset.node_name}</Text>
+          <Text style={styles.arrow}>{'>'}</Text>
+        </View>
       </Pressable>
     );
   };
 
   return (
-    <View style={{flex: 1}}>
+    <View style={{ flex: 1 }}>
       <ImageBackground
-          source={require("../../../images/bluedotbackground.png")}
-          style={{ flex: 1,
-            width: null,
-            height: null, 
-            paddingTop: 100,
-            marginTop: -100
-            }}
-          >
-      <ScrollView>
-      {devices.map((item) => renderItem(item))}
-      </ScrollView>
+        source={require('../../../images/bluedotbackground.png')}
+        style={{
+          flex: 1,
+          width: null,
+          height: null,
+          paddingTop: 100,
+          marginTop: -100,
+        }}
+      >
+        <ScrollView>{devices.map((item) => renderItem(item))}</ScrollView>
       </ImageBackground>
     </View>
   );
@@ -216,8 +268,7 @@ const mapStateToProps = (state) => ({
   activeTab: state.browser.activeTab,
 });
 
-const mapDispatchToProps = (dispatch) => ({
-});
+const mapDispatchToProps = (dispatch) => ({});
 
 NetworkNodeFinder.propTypes = {
   /**
