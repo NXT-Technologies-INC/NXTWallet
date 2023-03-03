@@ -1,4 +1,5 @@
 const Routes = {
+  NETWORKNODEVIEW_TAB_HOME: 'NewtworkNodeViewTabHome',
   NETWORKNODEFINDER_TAB_HOME: 'NewtworkNodeFinderTabHome',
   BROWSER_TAB_HOME: 'BrowserTabHome',
   BROWSER_URL_MODAL: 'BrowserUrlModal',

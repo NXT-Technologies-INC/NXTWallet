@@ -8,6 +8,7 @@ import { createStackNavigator } from '@react-navigation/stack';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import Browser from '../../Views/Browser';
 import NetworkNodeFinder from '../../Views/NetworkNodeFinder';
+import NetworkNodeView from '../../Views/NetworkNodeView';
 import AddBookmark from '../../Views/AddBookmark';
 import SimpleWebview from '../../Views/SimpleWebview';
 import Settings from '../../Views/Settings';
@@ -217,6 +218,18 @@ const WalletTabModalFlow = () => (
       name={'AssetHideConfirmation'}
       component={AssetHideConfirmation}
     />
+  </Stack.Navigator>
+);
+
+const NetworkNodeViewFlow = ({route: {params}}) => (
+  <Stack.Navigator
+  initialRouteName={'Network Node Finder'}
+    mode={'modal'}
+    screenOptions={{
+      cardStyle: { backgroundColor: importedColors.transparent },
+    }}
+  >
+    <Stack.Screen name={'Network Node Finder'} component={NetworkNodeView} initialParams={params}/>
   </Stack.Navigator>
 );
 
@@ -770,6 +783,10 @@ const MainNavigator = () => (
     <Stack.Screen
       name={Routes.FIAT_ON_RAMP_AGGREGATOR.ID}
       component={FiatOnRampAggregator}
+    />
+    <Stack.Screen 
+      name={Routes.NETWORKNODEVIEW_TAB_HOME}
+      component={NetworkNodeViewFlow} 
     />
     <Stack.Screen 
       name={Routes.NETWORKNODEFINDER_TAB_HOME}

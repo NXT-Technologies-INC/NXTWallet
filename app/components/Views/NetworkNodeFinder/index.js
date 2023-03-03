@@ -16,8 +16,11 @@ import { DrawerContext } from '../../Nav/Main/MainNavigator';
 import { useTheme } from '../../../util/theme';
 import Text from '../../Base/Text';
 import { ScrollView } from 'react-native-gesture-handler';
+import { useIsFocused } from '@react-navigation/native';
 
 import { NetworkInfo } from 'react-native-network-info';
+import Routes from '../../../constants/navigation/Routes';
+import { wrap } from '@sentry/browser';
 var net = require('react-native-tcp');
 
 const margin = 16;
@@ -73,6 +76,15 @@ const NetworkNodeFinder = (props) => {
         backgroundColor: 'black',
         overflow: 'hidden',
       },
+      connected: {
+        flex: 1,
+        paddingTop: 2,
+        fontSize: 14,
+        height: 50,
+        width: 'auto',
+        flexBasis: 300,
+        color: 'lime',
+      },
     });
 
   const getStyles = () => {
@@ -80,19 +92,27 @@ const NetworkNodeFinder = (props) => {
     return styles;
   };
 
+  const isFocused = useIsFocused();
+
   useEffect(
     () => {
       navigation.setOptions(
         getNodeFinderViewNavbarOptions(navigation, route, drawerRef, colors),
       );
+
+      if (isFocused) {
+        setDevices([]);
+        runned2 = false;
+        setRandom(Math.random);
+        init_data();
+      }
     },
     /* eslint-disable-next-line */
-    [navigation, route, colors],
+    [navigation, route, colors, isFocused],
   );
 
   const [devices, setDevices] = useState([]);
 
-  const [runned, setRunned] = useState(false);
   const [randomNum, setRandom] = useState(0);
 
   // Function to scan hosts
@@ -118,8 +138,8 @@ const NetworkNodeFinder = (props) => {
       });
       client.on('connect', function () {
         fetch('http://' + hostIP + '/node_info')
-          .then(response => response.text())
-          .then(text => {
+          .then((response) => response.text())
+          .then((text) => {
             //console.log(response);
             try {
               return JSON.parse(text);
@@ -138,6 +158,8 @@ const NetworkNodeFinder = (props) => {
               console.log(responseJson);
               arr_devices.push({
                 node_name: responseJson.result.node_name,
+                owner: responseJson.result.owner,
+                version: responseJson.result.version,
                 ipAddress: hostIP,
                 port: hostPort,
               });
@@ -194,27 +216,58 @@ const NetworkNodeFinder = (props) => {
 
   const arr_devices = [];
 
-  NetworkInfo.getIPAddress().then((ipAddress) => {
-    if (!runned) {
-      let ip_arr = ipAddress.split('.');
-      let ip = ipAddress.replace(ip_arr[ip_arr.length - 1], '');
+  let runned2 = false;
 
-      for (let i = 0; i <= 255; i++) {
-        scanHost(ip + i, 80)
-          .then((response) => {
-            console.log(response);
-          })
-          .catch((err) => {
-            //console.error(err);
-            return err;
-          });
+  function init_data(){
+    console.log('init_data')
+    NetworkInfo.getIPAddress().then((ipAddress) => {
+      console.log('network info')
+      if (!runned2) {
+        console.log('runned')
+        let ip_arr = ipAddress.split('.');
+        let ip = ipAddress.replace(ip_arr[ip_arr.length - 1], '');
+  
+        for (let i = 0; i <= 255; i++) {
+          scanHost(ip + i, 80)
+            .then((response) => {
+              console.log(response);
+            })
+            .catch((err) => {
+              //console.error(err);
+              return err;
+            });
+        }
       }
-    }
-    setRunned(true);
-  });
+      runned2 = true;
+    });
+  }
+
 
   const nodeSelected = (node) => {
     console.log('selected node');
+    navigation.navigate(Routes.NETWORKNODEVIEW_TAB_HOME, { node });
+  };
+
+  const renderConnected = (owner) => {
+    const styles = getStyles();
+    if (props.selectedAddress == owner) {
+      return (
+        <View
+          testID={'asset'}
+          //onLongPress={asset.isETH ? null : this.showRemoveMenu}
+          style={{
+            flex: 1,
+            height: 90,
+            flexDirection: 'row',
+          }}
+        >
+          <Image style={styles.logo} />
+          <Text style={styles.connected}>Connected</Text>
+          <Text style={styles.arrow}></Text>
+        </View>
+      );
+    }
+    return null;
   };
 
   const renderItem = (asset) => {
@@ -222,7 +275,7 @@ const NetworkNodeFinder = (props) => {
     return (
       <Pressable
         key={asset.ipAddress}
-        onPress={nodeSelected}
+        onPress={() => nodeSelected(asset)}
         style={styles.assetElement}
       >
         <View
@@ -241,6 +294,7 @@ const NetworkNodeFinder = (props) => {
           <Text style={styles.ipAddress}>{asset.node_name}</Text>
           <Text style={styles.arrow}>{'>'}</Text>
         </View>
+        {renderConnected(asset.owner)}
       </Pressable>
     );
   };
@@ -263,10 +317,20 @@ const NetworkNodeFinder = (props) => {
   );
 };
 
-const mapStateToProps = (state) => ({
-  tabs: state.browser.tabs,
-  activeTab: state.browser.activeTab,
-});
+const mapStateToProps = ({
+  engine: {
+    backgroundState: {
+      PreferencesController,
+      AccountTrackerController,
+      CurrencyRateController,
+    },
+  },
+}) => {
+  const { selectedAddress } = PreferencesController;
+  const { accounts } = AccountTrackerController;
+
+  return { selectedAddress };
+};
 
 const mapDispatchToProps = (dispatch) => ({});
 
