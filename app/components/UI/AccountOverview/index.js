@@ -55,11 +55,12 @@ import {
   getBlockExplorerName,
 } from '../../../util/networks';
 
+import { NetworkInfo } from 'react-native-network-info';
+var net = require('react-native-tcp');
+
 const createStyles = (colors) =>
   StyleSheet.create({
-    scrollView: {
-
-    },
+    scrollView: {},
     wrapper: {
       paddingTop: 20,
       paddingBottom: 0,
@@ -69,31 +70,31 @@ const createStyles = (colors) =>
       justifyContent: 'center',
       alignItems: 'center',
       textAlign: 'center',
-      width: "60%",
-      backgroundColor: 'black'
+      width: '60%',
+      backgroundColor: 'black',
     },
     accountRounded: {
       alignItems: 'center',
       borderRadius: 25,
-      paddingTop: "5%",
-      marginBottom: "5%",
-      width: "100%",
+      paddingTop: '5%',
+      marginBottom: '5%',
+      width: '100%',
     },
     data: {
       textAlign: 'center',
       paddingTop: 7,
       marginTop: 8,
-      marginBottom: 5 ,
-      backgroundColor: 'black'
+      marginBottom: 5,
+      backgroundColor: 'black',
     },
     label: {
       fontSize: 24,
       textAlign: 'center',
       ...fontStyles.normal,
       color: colors.text.default,
-      fontFamily: "Poppins-Bold",
+      fontFamily: 'Poppins-Bold',
       backgroundColor: 'black',
-      lineHeight: 26
+      lineHeight: 26,
     },
     labelInput: {
       backgroundColor: 'black',
@@ -124,7 +125,7 @@ const createStyles = (colors) =>
       backgroundColor: 'black',
     },
     addressWrapper: {
-      backgroundColor: "#505050",
+      backgroundColor: '#505050',
       borderWidth: 1.5,
       borderRadius: 10,
       marginTop: 15,
@@ -134,35 +135,35 @@ const createStyles = (colors) =>
       width: 200,
       textAlign: 'center',
       alignItems: 'center',
-      justifyContent: 'center'
+      justifyContent: 'center',
     },
     address: {
       fontSize: 10,
-      color: "#FFFFFF",
+      color: '#FFFFFF',
       ...fontStyles.thin,
       letterSpacing: 2,
-      marginRight: 10
+      marginRight: 10,
     },
     amountETH: {
       fontSize: 24,
-      color: "white",
+      color: 'white',
       ...fontStyles.normal,
-      fontFamily: "Poppins-Bold",
+      fontFamily: 'Poppins-Bold',
       backgroundColor: 'black',
     },
     symbolETH: {
       fontSize: 24,
-      color: "white",
+      color: 'white',
       ...fontStyles.bold,
-      fontFamily: "Poppins-Bold"
+      fontFamily: 'Poppins-Bold',
     },
     amountFiat: {
       fontSize: 14,
-      color: "white",
+      color: 'white',
       ...fontStyles.normal,
-      flexDirection: "row",
-      textAlign: "center",
-      fontFamily: "Poppins-Bold",
+      flexDirection: 'row',
+      textAlign: 'center',
+      fontFamily: 'Poppins-Bold',
       backgroundColor: 'black',
     },
     identiconBorder: {
@@ -178,22 +179,22 @@ const createStyles = (colors) =>
       paddingHorizontal: Device.isIos() ? 5 : 5,
       top: Device.isIos() ? 0 : -2,
     },
-    actionsContainer:{
+    actionsContainer: {
       paddingTop: 30,
       flex: 1,
       justifyContent: 'space-evenly',
       alignItems: 'flex-start',
       flexDirection: 'row',
-      width: "100%",
+      width: '100%',
       backgroundColor: 'black',
-      paddingBottom: 30
+      paddingBottom: 30,
     },
     actions: {
       justifyContent: 'space-evenly',
       alignItems: 'flex-start',
       flexDirection: 'row',
       width: 250,
-      backgroundColor: 'black'
+      backgroundColor: 'black',
     },
     ethLogo: {
       marginTop: -15,
@@ -202,7 +203,7 @@ const createStyles = (colors) =>
       borderRadius: 25,
       overflow: 'hidden',
       flex: 1,
-      alignContent: "flex-end"
+      alignContent: 'flex-end',
     },
   });
 
@@ -277,7 +278,7 @@ class AccountOverview extends PureComponent {
      * Current provider ticker
      */
     ticker: PropTypes.string,
-    ethAsset: PropTypes.array
+    ethAsset: PropTypes.array,
   };
 
   state = {
@@ -397,14 +398,16 @@ class AccountOverview extends PureComponent {
   };
 
   onSymbol = () => {
-    if(this.props.ethAsset[0].symbol == "NXT"){
-      this.goToBrowserUrl("https://nxtscan.com", "NXTScan")
-    }if(this.props.ethAsset[0].symbol == "ETH"){
-      this.goToBrowserUrl("https://etherscan.io", "EtherScan")
-    }if(this.props.ethAsset[0].symbol == "BNB"){
-      this.goToBrowserUrl("https://bscscan.com", "BNBScan")
+    if (this.props.ethAsset[0].symbol == 'NXT') {
+      this.goToBrowserUrl('https://nxtscan.com', 'NXTScan');
     }
-  }
+    if (this.props.ethAsset[0].symbol == 'ETH') {
+      this.goToBrowserUrl('https://etherscan.io', 'EtherScan');
+    }
+    if (this.props.ethAsset[0].symbol == 'BNB') {
+      this.goToBrowserUrl('https://bscscan.com', 'BNBScan');
+    }
+  };
 
   goToBrowserUrl(url, title) {
     this.props.navigation.navigate('Webview', {
@@ -447,6 +450,87 @@ class AccountOverview extends PureComponent {
     } catch {}
   };
 
+  // Function to scan hosts
+  scanHost = function (hostIP, hostPort) {
+    return new Promise(function (resolve, reject) {
+      var client = net.connect(
+        {
+          host: hostIP,
+          port: hostPort,
+        },
+        function () {
+          //'connect' listener
+          console.log('Connected');
+        },
+      );
+
+      client.setTimeout(2000, function () {
+        // called after timeout -> same as socket.on('timeout')
+        // it just tells that soket timed out => its ur job to end or destroy the socket.
+        // socket.end() vs socket.destroy() => end allows us to send final data and allows some i/o activity to finish before destroying the socket
+        // whereas destroy kills the socket immediately irrespective of whether any i/o operation is goin on or not...force destry takes place
+        //console.log('Socket timed out');
+      });
+      client.on('connect', function () {
+        resolve({
+          ipAddress: hostIP,
+          port: hostPort,
+        });
+      });
+      client.on('timeout', function () {
+        //console.log('Socket timed out !');
+        //client.end('Timed out!');
+        // can call socket.destroy() here too.
+      });
+      client.on('end', function (data) {
+        //console.log('Socket ended from other end!');
+        //console.log('End data : ' + data);
+      });
+      client.on('close', function (error) {
+        var bread = client.bytesRead;
+        var bwrite = client.bytesWritten;
+        //console.log('Bytes read : ' + bread);
+        //console.log('Bytes written : ' + bwrite);
+        //console.log('Socket closed!');
+        if (error) {
+          //console.log('Socket was closed as a result of transmission error');
+        }
+      });
+      client.on('error', function (err) {
+        //console.log('******* ERROR : ' + JSON.stringify(err));
+        client.destroy();
+      });
+      setTimeout(function () {
+        var isdestroyed = client.destroyed;
+        //console.log('Socket destroyed:' + isdestroyed);
+        client.destroy();
+      }, 5000);
+    });
+  };
+
+  runned = false;
+
+  init_data = function () {
+    console.log('init_data');
+    NetworkInfo.getIPAddress().then((ipAddress) => {
+      console.log('network info');
+      if (!this.runned) {
+        let ip_arr = ipAddress.split('.');
+        let ip = ipAddress.replace(ip_arr[ip_arr.length - 1], '');
+
+        this.scanHost(ip + 1, 80)
+          .then((response) => {
+            console.log(response);
+          })
+          .catch((err) => {
+            //console.error(err);
+            return err;
+          });
+        this.runned = true;
+      }
+    });
+  };
+
   render() {
     const {
       account: { address, name },
@@ -463,6 +547,8 @@ class AccountOverview extends PureComponent {
       Engine.getTotalFiatAccountBalance(),
       currentCurrency,
     )}`;
+
+    this.init_data();
 
     if (!address) return null;
     const { accountLabelEditable, accountLabel, ens } = this.state;
@@ -482,14 +568,13 @@ class AccountOverview extends PureComponent {
           contentContainerStyle={styles.wrapper}
           testID={'account-overview'}
         >
-
-            <View style={{flex: 3, alignContent: "flex-start", marginTop: 15}}>
-                <NetworkMainAssetLogo
-                  big
-                  style={styles.ethLogo}
-                  testID={'eth-logo'}
-                />
-            </View>
+          <View style={{ flex: 3, alignContent: 'flex-start', marginTop: 15 }}>
+            <NetworkMainAssetLogo
+              big
+              style={styles.ethLogo}
+              testID={'eth-logo'}
+            />
+          </View>
           <View style={styles.info} ref={this.mainView}>
             {/*
             <TouchableOpacity
@@ -507,7 +592,6 @@ class AccountOverview extends PureComponent {
             */}
             {/*          */}
 
-            
             <View
               ref={this.editableLabelRef}
               style={styles.data}
@@ -546,9 +630,7 @@ class AccountOverview extends PureComponent {
                         styles.label,
                         styles.onboardingWizardLabel,
                         {
-                          borderColor: onboardingWizard
-                            ? 'black'
-                            : 'black',
+                          borderColor: onboardingWizard ? 'black' : 'black',
                         },
                       ]}
                       numberOfLines={1}
@@ -568,26 +650,35 @@ class AccountOverview extends PureComponent {
               )}
             </View>
 
-            <View style={{flex: 3, alignContent: "flex-start", marginTop: -5}}>
-                  <View style={{flexDirection: "row"}}><Text style={styles.amountETH}>{this.props.ethAsset[0].balance}</Text><Text style={styles.symbolETH}>  {this.props.ethAsset[0].symbol}</Text></View>
-                  <Text style={styles.amountFiat}>{"≈" +fiatBalance}</Text>
-                </View>
+            <View
+              style={{ flex: 3, alignContent: 'flex-start', marginTop: -5 }}
+            >
+              <View style={{ flexDirection: 'row' }}>
+                <Text style={styles.amountETH}>
+                  {this.props.ethAsset[0].balance}
+                </Text>
+                <Text style={styles.symbolETH}>
+                  {' '}
+                  {this.props.ethAsset[0].symbol}
+                </Text>
+              </View>
+              <Text style={styles.amountFiat}>{'≈' + fiatBalance}</Text>
+            </View>
 
-                <TouchableOpacity
-                  style={styles.addressWrapper}
-                  onPress={this.copyAccountToClipboard}
-                >
-                  <EthereumAddress
-                    address={address}
-                    style={styles.address}
-                    type={'short'}
-                  />
-                </TouchableOpacity>
+            <TouchableOpacity
+              style={styles.addressWrapper}
+              onPress={this.copyAccountToClipboard}
+            >
+              <EthereumAddress
+                address={address}
+                style={styles.address}
+                type={'short'}
+              />
+            </TouchableOpacity>
             {/*          */}
-            
           </View>
           <View style={styles.actionsContainer}>
-          <View style={styles.actions}>
+            <View style={styles.actions}>
               {/*
               {
                 <AssetActionButton
@@ -602,7 +693,7 @@ class AccountOverview extends PureComponent {
                 label={strings('asset_overview.receive_button')}
               />
               */}
-              
+
               <AssetActionButton
                 testID={'token-send-button'}
                 icon="send"
@@ -625,9 +716,8 @@ class AccountOverview extends PureComponent {
                 onPress={this.onSymbol}
                 label={this.props.ethAsset[0].symbol}
               />
-              
             </View>
-            </View>
+          </View>
         </ScrollView>
       </View>
     );
