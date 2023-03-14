@@ -18,6 +18,7 @@ import { useTheme } from '../../../util/theme';
 import Text from '../../Base/Text';
 import StyledButton from '../../UI/StyledButton';
 import { ScrollView } from 'react-native-gesture-handler';
+import { OutlinedTextField } from 'react-native-material-textfield';
 
 import { NetworkInfo } from 'react-native-network-info';
 var net = require('react-native-tcp');
@@ -117,6 +118,24 @@ const NetworkNodeView = (props) => {
         textAlign: 'center',
         fontSize: 16,
       },
+      label_input: {
+        textAlign: 'left',
+        fontSize: 16,
+        marginTop: 10,
+        marginBottom: 5,
+      },
+      field: {
+        backgroundColor: 'black',
+        marginBottom: 0,
+        paddingBottom: 0,
+        height: 'auto',
+        minHeight: 0,
+        maxHeight: 55
+      },
+      input: {
+        marginBottom: 0,
+        paddingBottom: 0
+      },
       status: {
         marginTop: 10,
         textAlign: 'center',
@@ -148,7 +167,7 @@ const NetworkNodeView = (props) => {
 
   const link = () => {
     console.log('link_node');
-    fetch('http://' + node.ipAddress + '/link_to_wallet/' + props.selectedAddress)
+    fetch('http://' + node.ipAddress + '/link_to_wallet/' + props.selectedAddress + '/' + email + '/' + name)
       .then((response) => response.text())
       .then((text) => {
         //console.log(response);
@@ -253,12 +272,56 @@ const NetworkNodeView = (props) => {
   const node = route.params.node;
   const styles = createStyles(useTheme());
 
+  const [email, setEmail] = useState('');
+  const [name, setName] = useState('');
+
   const renderConnected = (owner) => {
 
     if (owner == '')
       return (
         <View>
           <Text style={styles.status}>You can Link this node to your address</Text>
+
+          <Text style={styles.label_input}>Email</Text>
+              <View style={styles.field}>
+                <OutlinedTextField
+                  style={styles.input}
+                  placeholder={"Email"}
+                  placeholderTextColor={colors.text.muted}
+                  testID={'email-input'}
+                  returnKeyType={'done'}
+                  autoCapitalize="none"
+                  secureTextEntry
+                  ref={this.fieldRef}
+                  onChangeText={setEmail}
+                  value={email}
+                  baseColor={colors.border.default}
+                  tintColor={colors.primary.default}
+                  onSubmitEditing={this.triggerLogIn}
+                  keyboardAppearance={'light'}
+                />
+              </View>
+
+              <Text style={styles.label_input}>Name</Text>
+              <View style={styles.field}>
+                <OutlinedTextField
+                  style={styles.input}
+                  placeholder={"Name"}
+                  placeholderTextColor={colors.text.muted}
+                  testID={'name-input'}
+                  returnKeyType={'done'}
+                  autoCapitalize="none"
+                  secureTextEntry
+                  ref={this.fieldRef}
+                  onChangeText={setName}
+                  value={name}
+                  baseColor={colors.border.default}
+                  tintColor={colors.primary.default}
+                  onSubmitEditing={this.triggerLogIn}
+                  keyboardAppearance={'light'}
+                />
+              </View>
+          
           <StyledButton
             type="blue"
             onPress={link}
