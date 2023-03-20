@@ -225,10 +225,11 @@ const NetworkNodeFinder = (props) => {
       if (!runned2) {
         console.log('runned')
         let ip_arr = ipAddress.split('.');
-        let ip = ipAddress.replace(ip_arr[ip_arr.length - 1], '');
-  
+        let ip = ip_arr[0]+'.'+ip_arr[1]+'.'+ip_arr[2]+'.'
+        console.log(ip)
         for (let i = 0; i <= 255; i++) {
-          scanHost(ip + i, 80)
+          console.log(ip+i)
+          scanHost(ip+ i, 80)
             .then((response) => {
               console.log(response);
             })

@@ -234,6 +234,39 @@ const NetworkNodeView = (props) => {
       });
   };
 
+  const restart = () => {
+    console.log('unlink node');
+    fetch('http://' + node.ipAddress + '/restart_node/' + props.selectedAddress)
+      .then((response) => response.text())
+      .then((text) => {
+        //console.log(response);
+        try {
+          return JSON.parse(text);
+        } catch (e) {
+          console.log(e);
+          return {};
+        }
+      })
+      .then((responseJson) => {
+        console.log(responseJson);
+        if (
+          typeof responseJson !== 'undefined' &&
+          responseJson.status &&
+          responseJson.status.statusCode
+        ) {
+          if(responseJson.status.statusCode == 200){
+            notifyMessage(responseJson.status.message);
+          }else{
+            notifyMessage(responseJson.status.message);
+          }
+          console.log(responseJson);
+        }
+      })
+      .catch((error) => {
+        console.error(error);
+      });
+  };
+
   const test = () => {
     console.log('unlink node');
     fetch('http://' + node.ipAddress + '/node_info/')
@@ -339,6 +372,16 @@ const NetworkNodeView = (props) => {
       return (
         <View>
           <Text style={styles.statusConnected}>Connected</Text>
+          <StyledButton
+            type="blue"
+            onPress={restart}
+            containerStyle={[styles.button, styles.rightButton]}
+            testID={'drawer-receive-button'}
+          >
+            <View style={styles.buttonContent}>
+              <Text style={styles.buttonTextBlack}>{'Restart Node'}</Text>
+            </View>
+          </StyledButton>
           <StyledButton
             type="warning"
             onPress={unlink}
