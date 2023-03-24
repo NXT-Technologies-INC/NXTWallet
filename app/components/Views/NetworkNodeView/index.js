@@ -130,11 +130,13 @@ const NetworkNodeView = (props) => {
         paddingBottom: 0,
         height: 'auto',
         minHeight: 0,
-        maxHeight: 55
+        maxHeight: 55,
+        color: 'white'
       },
       input: {
         marginBottom: 0,
-        paddingBottom: 0
+        paddingBottom: 0,
+        color: 'white'
       },
       status: {
         marginTop: 10,
@@ -324,7 +326,6 @@ const NetworkNodeView = (props) => {
                   testID={'email-input'}
                   returnKeyType={'done'}
                   autoCapitalize="none"
-                  secureTextEntry
                   ref={this.fieldRef}
                   onChangeText={setEmail}
                   value={email}
@@ -344,7 +345,6 @@ const NetworkNodeView = (props) => {
                   testID={'name-input'}
                   returnKeyType={'done'}
                   autoCapitalize="none"
-                  secureTextEntry
                   ref={this.fieldRef}
                   onChangeText={setName}
                   value={name}
