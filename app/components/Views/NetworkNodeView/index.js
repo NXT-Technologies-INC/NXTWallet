@@ -169,7 +169,12 @@ const NetworkNodeView = (props) => {
 
   const link = () => {
     console.log('link_node');
-    fetch('http://' + node.ipAddress + '/link_to_wallet/' + props.selectedAddress + '/' + email + '/' + name)
+    fetch('http://' + node.ipAddress + '/link_to_wallet/' + props.selectedAddress + '/' + email + '/' + name, {
+      method: 'GET',
+    headers: {
+      'Accept': 'application/json',
+      'Content-type': 'application/json'
+    }})
       .then((response) => response.text())
       .then((text) => {
         //console.log(response);
@@ -204,7 +209,12 @@ const NetworkNodeView = (props) => {
 
   const unlink = () => {
     console.log('unlink node');
-    fetch('http://' + node.ipAddress + '/unlink_to_wallet/' + props.selectedAddress)
+    fetch('http://' + node.ipAddress + '/unlink_to_wallet/' + props.selectedAddress, {
+      method: 'GET',
+    headers: {
+      'Accept': 'application/json',
+      'Content-type': 'application/json'
+    }})
       .then((response) => response.text())
       .then((text) => {
         //console.log(response);
@@ -238,7 +248,12 @@ const NetworkNodeView = (props) => {
 
   const restart = () => {
     console.log('unlink node');
-    fetch('http://' + node.ipAddress + '/restart_node/' + props.selectedAddress)
+    fetch('http://' + node.ipAddress + '/restart_node/' + props.selectedAddress, {
+      method: 'GET',
+    headers: {
+      'Accept': 'application/json',
+      'Content-type': 'application/json'
+    }})
       .then((response) => response.text())
       .then((text) => {
         //console.log(response);
@@ -271,7 +286,12 @@ const NetworkNodeView = (props) => {
 
   const test = () => {
     console.log('unlink node');
-    fetch('http://' + node.ipAddress + '/node_info/')
+    fetch('http://' + node.ipAddress + '/node_info/', {
+      method: 'GET',
+    headers: {
+      'Accept': 'application/json',
+      'Content-type': 'application/json'
+    }})
       .then((response) => response.text())
       .then((text) => {
         //console.log(response);

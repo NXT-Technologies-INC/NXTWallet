@@ -137,7 +137,13 @@ const NetworkNodeFinder = (props) => {
         //console.log('Socket timed out');
       });
       client.on('connect', function () {
-        fetch('http://' + hostIP + '/node_info')
+        console.log("try to connect");
+        fetch('http://' + hostIP + '/node_info', {
+          method: 'GET',
+        headers: {
+          'Accept': 'application/json',
+          'Content-type': 'application/json'
+        }})
           .then((response) => response.text())
           .then((text) => {
             //console.log(response);
