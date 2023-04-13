@@ -226,7 +226,7 @@ const NetworkNodeFinder = (props) => {
 
   function init_data(){
     console.log('init_data')
-    NetworkInfo.getIPAddress().then((ipAddress) => {
+    NetworkInfo.getIPV4Address().then((ipAddress) => {
       console.log('network info')
       if (!runned2) {
         console.log('runned')

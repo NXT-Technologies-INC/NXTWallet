@@ -191,7 +191,7 @@ const createStyles = (colors) =>
     },
     buttonText: {
       paddingTop: 3,
-      fontSize: 18,
+      fontSize: 14,
       color: "black",
       ...fontStyles.normal,
       textTransform: 'uppercase',
@@ -1305,7 +1305,7 @@ class DrawerView extends PureComponent {
               <View style={styles.buttonContent}>
                 
                 <Text style={styles.buttonText}>
-                  {'Add Node'}
+                  {'Sync NXTreme'}
                 </Text>
                 <MaterialIcon
                   name={'keyboard-tab'}
