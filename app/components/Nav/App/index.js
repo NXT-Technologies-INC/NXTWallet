@@ -250,20 +250,19 @@ const App = ({ userLoggedIn }) => {
     initAnalytics();
   }, []);
 
+
   useEffect(() => {
-    async function checkExsiting() {
+    async function checkExisting() {
       const existingUser = await AsyncStorage.getItem(EXISTING_USER);
       const route = !existingUser
         ? Routes.ONBOARDING.ROOT_NAV
         : Routes.ONBOARDING.LOGIN;
       setRoute(route);
-      if (!existingUser) {
-        triggerCheckedAuth();
-      }
     }
 
-    checkExsiting();
-  },[]);
+    checkExisting();
+    /* eslint-disable react-hooks/exhaustive-deps */
+  }, []);
 
   useEffect(() => {
     async function startApp() {
@@ -326,6 +325,7 @@ const App = ({ userLoggedIn }) => {
 
   const renderSplash = () => {
     if (!animationPlayed) {
+      /*
       return (
         <MetaMaskAnimation
           animation={animation}
@@ -334,6 +334,8 @@ const App = ({ userLoggedIn }) => {
           onAnimationFinish={onAnimationFinished}
         />
       );
+      */
+     onAnimationFinished()
     }
     return null;
   };
@@ -415,7 +417,7 @@ const App = ({ userLoggedIn }) => {
             />
           </Stack.Navigator>
         </NavigationContainer>
-        {/*renderSplash()*/}
+        {renderSplash()}
         <Toast ref={toastRef} />
       </>
     )) ||
