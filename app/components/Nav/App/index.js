@@ -263,13 +263,13 @@ const App = ({ userLoggedIn }) => {
     }
 
     checkExsiting();
-  });
+  },[]);
 
   useEffect(() => {
     async function startApp() {
       const existingUser = await AsyncStorage.getItem(EXISTING_USER);
       try {
-        const currentVersion = await getVersion();
+        const currentVersion = getVersion();
         const savedVersion = await AsyncStorage.getItem(CURRENT_APP_VERSION);
         if (currentVersion !== savedVersion) {
           if (savedVersion)
