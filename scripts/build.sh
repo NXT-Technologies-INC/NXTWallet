@@ -292,7 +292,7 @@ startWatcher() {
 	if [ "$MODE" == "clean" ]; then
 		watchman watch-del-all
 		rm -rf $TMPDIR/react-*
-		react-native start -- --reset-cache
+		react-native start --reset-cache
 	else
 		react-native start
 	fi
